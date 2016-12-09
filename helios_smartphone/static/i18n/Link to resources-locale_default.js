@@ -1,0 +1,1 @@
+/home/karo/Projects/Masterthesis/Programming/helios_usabilitystudy/helios_smartphone/static/i18n/resources-locale_en.js
