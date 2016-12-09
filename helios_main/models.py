@@ -6,6 +6,8 @@ class Subjects(models.Model):
 
 
 class TimeSpent (models.Model):
+    has_verified = models.BooleanField('Verification performed', editable=False)
+    verification_number = models.BigIntegerField('Number of verifications', editable=False)
     overall_duration = models.BigIntegerField('Overall (Millisec)', editable=False)
     voting_duration = models.BigIntegerField('Voting (Millisec)', editable=False)
     verification_duration = models.BigIntegerField('Verification (Millisec)', editable=False)
