@@ -1,7 +1,7 @@
 'use strict';
 
 var heliosStudyMainApp = angular.module(
-    "heliosStudy",
+    "heliosStudyMain",
     [
         "ngAnimate",
         "ngRoute",
