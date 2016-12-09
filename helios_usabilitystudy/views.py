@@ -7,6 +7,5 @@ def home(request):
         return HttpResponse(index_html_file.read(), content_type='text/html')
 
 
-def welcome(request):
-    with open(os.path.join(os.path.dirname(__file__), "../static/partials/welcome.html"), 'r') as index_html_file:
-        return HttpResponse(index_html_file.read(), content_type='text/html')
+# @csrf_exempt
+# def welcome(request):
