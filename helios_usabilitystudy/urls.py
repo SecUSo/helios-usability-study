@@ -20,5 +20,6 @@ admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^welcome/', views.welcome, name='welcome'),
     url(r'^.*', views.home, name='home'),
 ]
