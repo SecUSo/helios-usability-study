@@ -16,4 +16,3 @@ class Choices(models.Model):
     option1 = models.CharField(max_length=2000)
     option2 = models.CharField(max_length=2000)
     option3 = models.CharField(max_length=2000)
-stat
