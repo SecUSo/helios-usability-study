@@ -70,6 +70,11 @@
         "description": "Used in description of voting booth"
     },
     {
+        "key"        : "_confirmChoices_",
+        "value"      : "Confirm Choices and Encrypt Ballot",
+        "description": ""
+    },
+    {
         "key"        : "_reviewFollow_",
         "value"      : " your choices.",
         "description": "Defines what to review"
@@ -377,6 +382,16 @@
     {
         "key"        : "_logoutMessage_",
         "value"      : "For your safety, we have logged you out.",
+        "description": ""
+    },
+    {
+        "key"        : "_doneMessage_",
+        "value"      : "Your Vote is Being Submitted",
+        "description": ""
+    },
+    {
+        "key"        : "_doneWaitMessage_",
+        "value"      : "Please wait a few seconds while your vote is submitted to the casting server....",
         "description": ""
     },
     {
