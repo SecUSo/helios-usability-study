@@ -1,5 +1,10 @@
 [
     {
+        "key"        : "_mainHeading_",
+        "value"      : "Helios Usability Study",
+        "description": ""
+    },
+    {
         "key"        : "_loginButton_",
         "value"      : "Login",
         "description": ""

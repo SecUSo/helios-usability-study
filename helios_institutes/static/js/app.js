@@ -22,7 +22,7 @@ var heliosStudyInstitutesApp = angular.module(
 heliosStudyInstitutesApp.run(function ($rootScope, $window, $document, localize) {
     // root scope functions
     $rootScope.getLanguages = function () {
-        return ['en', 'jp'];
+        return ['en', 'de'];
     };
     $rootScope.$watch('language', function (newLang) {
         localize.setLanguage(newLang);
@@ -37,6 +37,6 @@ heliosStudyInstitutesApp.run(function ($rootScope, $window, $document, localize)
             $rootScope.language = $rootScope.language.substr(0, 2);
         }
         //If hard coding a language is desired, do it here, if not delete the following line
-        $rootScope.language = "jp";
+        $rootScope.language = "en";
     }
 });
