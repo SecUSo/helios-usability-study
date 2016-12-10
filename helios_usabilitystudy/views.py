@@ -9,4 +9,4 @@ def welcome(request):
 
 def login(request):
     print(request.POST)
-    return redirect('helios_main/')
+    return redirect('main/')
