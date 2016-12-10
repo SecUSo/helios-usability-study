@@ -4,6 +4,7 @@ from django.db import models
 class Subjects(models.Model):
     subject_id = models.CharField('Subject ID', max_length=30, unique=True, editable=False)
     subject_token = models.CharField('Subject_Token', max_length=30, unique=False, editable=False)
+    experiment_type = models.CharField('Experiment_Type', max_length=30, unique=False, editable=False)
 
 
 class TimeSpent (models.Model):
