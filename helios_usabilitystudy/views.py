@@ -8,4 +8,5 @@ def welcome(request):
 
 
 def login(request):
-    pass
+    print(request.POST)
+    return HttpResponse('{}', content_type='application/json')
