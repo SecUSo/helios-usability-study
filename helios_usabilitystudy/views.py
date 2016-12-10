@@ -9,4 +9,4 @@ def welcome(request):
 
 def login(request):
     print(request.POST)
-    return HttpResponse('{}', content_type='application/json')
+    return redirect('helios_main/')
