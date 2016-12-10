@@ -7,5 +7,5 @@ def home(request):
         return HttpResponse(index_html_file.read(), content_type='text/html')
 
 
-# @csrf_exempt
-# def welcome(request):
+def welcome(request):
+    pass
