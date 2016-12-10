@@ -10,8 +10,9 @@
         <input type="text"><br>
 
         <fieldset>
-            <input type="radio" id="german" label="German" accesskey="DE"/>
-            <input type="radio" id="english" label="English" accesskey="EN" selected="true"/>
+            <legend>Select language</legend><br>
+            <input type="radio" name="language" value="german"/><label>German</label><br>
+            <input type="radio" name="language" value="english"/><label>English</label>
         </fieldset>
 
         <button>{% trans "Login" %}</button>
