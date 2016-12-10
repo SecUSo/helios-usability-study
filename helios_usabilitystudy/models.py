@@ -2,12 +2,9 @@ from django.db import models
 
 
 class Subjects(models.Model):
-    subject_id = models.CharField('Subject ID', max_length=30, unique=True, editable=False)
+    subject_id = models.CharField('Subject ID', max_length=30, unique=True, primary_key=True, editable=False)
     subject_token = models.CharField('Subject_Token', max_length=30, unique=False, editable=False)
     experiment_type = models.CharField('Experiment_Type', max_length=30, unique=False, editable=False)
-
-
-class TimeSpent (models.Model):
     has_verified = models.BooleanField('Verification performed', editable=False)
     verification_number = models.BigIntegerField('Number of verifications', editable=False)
     overall_duration = models.BigIntegerField('Overall (Millisec)', editable=False)
@@ -15,9 +12,15 @@ class TimeSpent (models.Model):
     verification_duration = models.BigIntegerField('Verification (Millisec)', editable=False)
 
 
-class Choices(models.Model):
-    question = models.CharField(max_length=2000)
-    option1 = models.CharField(max_length=2000)
-    option2 = models.CharField(max_length=2000)
-    option3 = models.CharField(max_length=2000)
+class Options(models.Model):
+    option_code = models.CharField('Option_code', max_length=4, unique=True, primary_key=True, editable=False)
+    option = models.CharField('Option', max_length=2000, editable=False)
+
+
+class Questions(models.Model):
+    question = models.CharField('Question', max_length=2000, editable=False)
+    option = models.ManyToManyField(Options)
+
+
+
 
