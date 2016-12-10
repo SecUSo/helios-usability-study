@@ -1,0 +1,16 @@
+<div>
+
+    <h2 style="text-align: center;">{% trans "Welcome" %}</h2>
+
+    <form method="post" action="/login">
+        ID:<br>
+        <input type="text"><br>
+        Token:<br>
+        <input type="text">
+        <input type="radio" value="german" checked> German<br>
+        <input type="radio" value="english"> English<br>
+
+        <button>{% trans "Login" %}</button>
+    </form>
+
+</div>
