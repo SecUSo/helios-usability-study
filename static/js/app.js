@@ -10,7 +10,6 @@ var heliosStudyApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-         when('/welcome', {templateUrl: '/selectionTask/static/partials/welcome.html', controller: 'welcomeCtrl'}).
         // when('/task/:id', {templateUrl: '/selectionTask/static/partials/task.html', controller: 'taskCtrl'}).
         // when('/thanks/:id', {templateUrl: '/selectionTask/static/partials/thanks.html', controller: 'thanksCtrl'}).
         // when('/error/:id/:error', {templateUrl: '/selectionTask/static/partials/error.html', controller: 'errorCtrl'}).
