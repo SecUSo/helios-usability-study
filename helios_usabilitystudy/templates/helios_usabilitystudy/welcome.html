@@ -8,10 +8,14 @@
         <input type="text"><br>
         Token:<br>
         <input type="text"><br>
-        <input type="radio" value="german" checked> German<br>
-        <input type="radio" value="english"> English<br>
+
+        <radiogroup>
+            <radio id="german" label="German" accesskey="DE"/>
+            <radio id="english" label="English" accesskey="EN" selected="true"/>
+        </radiogroup>
 
         <button>{% trans "Login" %}</button>
     </form>
+
 
 </div>
