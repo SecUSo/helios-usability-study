@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'helios_usabilitystudy',
+    'helios_main',
+    'helios_institutes',
+    'helios_smartphone',
 ]
 
 MIDDLEWARE = [
