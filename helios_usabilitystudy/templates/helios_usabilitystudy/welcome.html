@@ -4,6 +4,7 @@
     <h2 style="text-align: center;">{% trans "Welcome" %}</h2>
 
     <form method="post" action="/login">
+        {% csrf_token %}
         ID:<br>
         <input type="text"><br>
         Token:<br>
