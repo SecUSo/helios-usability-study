@@ -10,10 +10,10 @@ var heliosStudyMainApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        // when('/:id', {templateUrl: '/selectionTask/static/partials/introduction.html', controller: 'introductionCtrl'}).
+        when('/:id', {templateUrl: '/helios_main/static/helios_main/partials/introduction.html', controller: 'introductionCtrl'}).
         // when('/task/:id', {templateUrl: '/selectionTask/static/partials/task.html', controller: 'taskCtrl'}).
         // when('/thanks/:id', {templateUrl: '/selectionTask/static/partials/thanks.html', controller: 'thanksCtrl'}).
-        when('/error/:id/:error', {templateUrl: '/helios_main/static/helios_main/partials/error.html', controller: 'errorCtrl'}).
+        when('/error/', {templateUrl: '/helios_main/static/helios_main/partials/error.html', controller: 'errorCtrl'}).
         // otherwise({templateUrl: '/selectionTask/static/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
