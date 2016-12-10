@@ -123,10 +123,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "helios_main/static"),
-    os.path.join(BASE_DIR, "helios_institutes/static"),
-    os.path.join(BASE_DIR, "helios_smartphone/static"),
-)
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, "helios_main/static"),
+#     os.path.join(BASE_DIR, "helios_institutes/static"),
+#     os.path.join(BASE_DIR, "helios_smartphone/static"),
+# ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
