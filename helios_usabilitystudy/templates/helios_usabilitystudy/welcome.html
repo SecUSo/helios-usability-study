@@ -6,9 +6,9 @@
     <form method="post" action="/login">
         {% csrf_token %}
         ID:<br>
-        <input type="text"><br>
+        <input name="id" type="text"><br>
         Token:<br>
-        <input type="text"><br>
+        <input name="token" type="password"><br>
 
         <fieldset>
             <legend>Select language</legend><br />
