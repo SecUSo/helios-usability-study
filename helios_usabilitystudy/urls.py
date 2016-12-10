@@ -16,9 +16,11 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from helios_usabilitystudy import views
+from django.conf.urls.static import static
+from django.conf import settings
 admin.autodiscover()
 
-urlpatterns = [
+urlpatterns = urlpatterns = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + [
     url(r'^admin/', admin.site.urls),
     url(r'^login$', views.login, name='login'),
     url(r'^main/', include('helios_main.urls')),
