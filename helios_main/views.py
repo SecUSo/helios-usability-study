@@ -7,4 +7,3 @@ def home(request):
         return HttpResponse(index_html_file.read(), content_type='text/html')
 
 
-
