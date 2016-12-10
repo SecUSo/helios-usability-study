@@ -10,9 +10,11 @@
         <input type="text"><br>
 
         <fieldset>
-            <legend>Select language</legend><br>
-            <input type="radio" name="language" value="german"/><label>German</label><br>
-            <input type="radio" name="language" value="english"/><label>English</label>
+            <legend>Select language</legend><br />
+            <input type="radio" name="language" id="german" value="german" />
+            <label for="german">{% trans "German" %}</label><br />
+            <input type="radio" name="language" id="english" value="english" checked="checked" />
+            <label for="english">{% trans "English" %}</label><br />
         </fieldset>
 
         <button>{% trans "Login" %}</button>
