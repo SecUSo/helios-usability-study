@@ -3,7 +3,6 @@ from django.db import models
 
 class Subject(models.Model):
     subject_id = models.CharField('Subject ID', max_length=30, unique=True, primary_key=True)
-    subject_token = models.CharField('Subject_Token', max_length=30, unique=False)
     experiment_type = models.CharField('Experiment_Type', max_length=30, unique=False)
 
     def __str__(self):
