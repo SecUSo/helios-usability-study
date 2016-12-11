@@ -15,8 +15,13 @@ def home(request):
 def assign(request):
     if 'id' not in request.POST:
         return HttpResponse('{"Error": "No ID supplied."}', content_type='application/json', status=400)
-    question = Question.objects.all()
-    return HttpResponse(json.dump({
-        'question_id': question.pk,
-        'question': question.question,
+
+    question = Question.objects.all()[0]
+    options = question.option.all()
+
+    return HttpResponse(json.dumps({
+        'question': {
+            'question_id': question.pk,
+            'question': question.question,
+            'options': [{op.option_code: op.text} for op in options]}
     }), content_type='application/json')
