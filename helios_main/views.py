@@ -19,9 +19,21 @@ def assign(request):
     question = Question.objects.all()[0]
     options = question.option.all()
 
+    print("Experiment assigned")
+
     return HttpResponse(json.dumps({
         'question': {
             'question_id': question.pk,
             'question': question.question,
             'options': [{op.option_code: op.text} for op in options]}
     }), content_type='application/json')
+
+
+@csrf_exempt
+def submit(request):
+    pass
+
+
+@csrf_exempt
+def audit(request):
+    pass
