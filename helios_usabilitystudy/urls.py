@@ -18,6 +18,7 @@ from django.contrib import admin
 from helios_usabilitystudy import views
 from django.conf.urls.static import static
 from django.conf import settings
+
 admin.autodiscover()
 
 urlpatterns = urlpatterns = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + [
@@ -25,5 +26,7 @@ urlpatterns = urlpatterns = static(settings.STATIC_URL, document_root=settings.S
     url(r'^login$', views.login, name='login'),
     # url(r'^logout$', views.logout, name='logout'),
     url(r'^main/', include('helios_main.urls')),
+    url(r'^institute/', include('helios_institutes.urls')),
+    url(r'^smartphone/', include('helios_smartphone.urls')),
     url(r'^.*', views.welcome, name='welcome')
 ]

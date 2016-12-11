@@ -28,9 +28,18 @@ def login(request):
         django_login(request, user)
         subject = Subject.objects.get(subject_id=username)
         type = subject.experiment_type
-        print("Experiment type" + type)
+        print("Experiment type is " + type)
 
-        return redirect('main/' + username)
+        # Conditional redirect depending on experiment type
+        return returnExperiment(experiment_type=type, username=username)
     else:
         print("User doesn't exist")
         return redirect('login/')
+
+
+def returnExperiment(experiment_type, username):
+    return {
+        '1': redirect('main/' + username),
+        '2': redirect('institute/' + username),
+        '3': redirect('smartphone/' + username),
+    }.get(experiment_type, 1)
