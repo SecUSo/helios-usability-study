@@ -7,3 +7,8 @@ def home(request):
         return HttpResponse(index_html_file.read(), content_type='text/html')
 
 
+def assign(request):
+    if 'id' not in request.POST:
+        return HttpResponse('{"Error": "No ID supplied."}', content_type='application/json', status=400)
+
+
