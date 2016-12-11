@@ -23,6 +23,7 @@ admin.autodiscover()
 urlpatterns = urlpatterns = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + [
     url(r'^admin/', admin.site.urls),
     url(r'^login$', views.login, name='login'),
+    # url(r'^logout$', views.logout, name='logout'),
     url(r'^main/', include('helios_main.urls')),
     url(r'^.*', views.welcome, name='welcome')
 ]
