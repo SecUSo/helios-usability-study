@@ -11,15 +11,24 @@ class Subject(models.Model):
     voting_duration = models.BigIntegerField('Voting (Millisec)', editable=False)
     verification_duration = models.BigIntegerField('Verification (Millisec)', editable=False)
 
+    def __str__(self):
+        return 'Subject: ' + str(self.subject_id)
+
 
 class Option(models.Model):
-    option_code = models.CharField('Option_code', max_length=4, unique=True, primary_key=True, editable=False)
-    option = models.CharField('Option', max_length=2000, editable=False)
+    option_code = models.CharField('Option_code', max_length=4, unique=True, primary_key=True)
+    option = models.CharField('Option', max_length=50)
+
+    def __str__(self):
+        return 'Option: ' + str(self.option)
 
 
 class Question(models.Model):
-    question = models.CharField('Question', max_length=2000, editable=False)
+    question = models.CharField('Question', max_length=2000)
     option = models.ManyToManyField(Option)
+
+    def __str__(self):
+        return 'Question: ' + str(self.question)
 
 
 
