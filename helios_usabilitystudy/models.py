@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 class Subject(models.Model):
+    user = models.ForeignKey(User)
     subject_id = models.CharField('Subject ID', max_length=30, unique=True, primary_key=True)
-    experiment_type = models.CharField('Experiment_Type', max_length=30, unique=False)
+    experiment_type = models.CharField('Experiment_Type', max_length=2, unique=False)
 
     def __str__(self):
         return 'Subject: ' + str(self.subject_id)

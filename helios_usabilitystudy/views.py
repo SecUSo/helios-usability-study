@@ -3,8 +3,9 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as django_login
-from django import forms
 from django.views.decorators.csrf import csrf_exempt
+from django import forms
+from helios_usabilitystudy.models import Subject
 import os
 
 
@@ -25,6 +26,10 @@ def login(request):
     user = authenticate(username=username, password=password)
     if user is not None:
         django_login(request, user)
+        subject = Subject.objects.get(subject_id=username)
+        type = subject.experiment_type
+        print("Experiment type" + type)
+
         return redirect('main/' + username)
     else:
         print("User doesn't exist")
