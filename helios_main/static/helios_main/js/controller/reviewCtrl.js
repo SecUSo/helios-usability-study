@@ -6,7 +6,7 @@ heliosStudyMainApp.controller("reviewCtrl", function ($scope, $routeParams, $loc
     }
 
     $scope.castVoteButton = function () {
-        //    $location.path('review/' + $routeParams['id']);
+        $location.path('cast/' + $routeParams['id']);
     }
 
     $scope.backButton = function () {
