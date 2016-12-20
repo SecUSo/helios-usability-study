@@ -9,7 +9,7 @@ heliosStudyMainApp.controller("introductionCtrl", function ($scope, $routeParams
                 $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
             }
             $scope.experimentData = result;
-            $scope.startTime = Date.now();
+            $scope.startTimeAll = Date.now();
             $location.path('election/' + $routeParams['id']);
         });
     }
