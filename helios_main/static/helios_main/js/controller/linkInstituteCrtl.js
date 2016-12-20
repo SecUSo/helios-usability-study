@@ -2,7 +2,7 @@
 
 heliosStudyMainApp.controller("linkInstituteCtrl", function ($scope, $routeParams, $location, Backend) {
     $scope.chooseInstitute = function () {
-        // TODO Redirect to institute $location.path('review/' + $routeParams['id']);
+        //$location.path('institute/' + $routeParams['id']);
      }
 
        $scope.backButton = function () {

@@ -2,14 +2,14 @@
 
 heliosStudyMainApp.controller("reviewCtrl", function ($scope, $routeParams, $location, Backend) {
     $scope.auditButton = function () {
-        //    $location.path('review/' + $routeParams['id']);
+        $location.path('institute/' + $routeParams['id']);
     }
 
     $scope.castVoteButton = function () {
         //    $location.path('review/' + $routeParams['id']);
     }
 
-     $scope.backButton = function () {
+    $scope.backButton = function () {
         $location.path('election/' + $routeParams['id']);
     }
 });
