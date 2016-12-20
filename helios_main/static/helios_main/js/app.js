@@ -13,6 +13,7 @@ var heliosStudyMainApp = angular.module(
         when('/:id', {templateUrl: '/static/helios_main/partials/introduction.html', controller: 'introductionCtrl'}).
         when('/election/:id', {templateUrl: '/static/helios_main/partials/election.html', controller: 'electionCtrl'}).
         when('/review/:id', {templateUrl: '/static/helios_main/partials/review.html', controller: 'reviewCtrl'}).
+        when('/institute/:id', {templateUrl: '/static/helios_main/partials/linkInstitute.html', controller: 'linkInstituteCtrl'}).
         // when('/thanks/:id', {templateUrl: '/selectionTask/static/partials/thanks.html', controller: 'thanksCtrl'}).
         when('/error/', {templateUrl: '/static/helios_main/partials/error.html', controller: 'errorCtrl'}).
         otherwise({templateUrl: '/static/helios_main/partials/introduction.html', controller: 'introductionCtrl'});
