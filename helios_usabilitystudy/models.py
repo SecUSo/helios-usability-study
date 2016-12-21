@@ -14,6 +14,7 @@ class Subject(models.Model):
 class Duration(models.Model):
     subject = models.ForeignKey(Subject)
     has_verified = models.NullBooleanField('Verification performed', editable=False)
+    instruction_duration = models.BigIntegerField('Instruction (Millisec)', editable=False)
     verification_number = models.BigIntegerField('Number of verifications', editable=False)
     overall_duration = models.BigIntegerField('Overall (Millisec)', editable=False)
     voting_duration = models.BigIntegerField('Voting (Millisec)', editable=False)
@@ -33,6 +34,7 @@ class Option(models.Model):
 
 class Question(models.Model):
     question = models.CharField('Question', max_length=2000)
+    number_answers = models.IntegerField('Allowed number answers', max_length=2)
     option = models.ManyToManyField(Option)
 
     def __str__(self):
