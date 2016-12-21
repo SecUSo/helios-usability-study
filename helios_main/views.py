@@ -22,11 +22,11 @@ def assign(request):
     print("Experiment assigned")
 
     return HttpResponse(json.dumps({
-        'question': {
+        'question_data': {
             'question_id': question.pk,
-            'question': question.question,
-            'answers': question.number_answers,
-            'options': [{op.option_code: op.option} for op in options]}
+            'question':    question.question,
+            'answers':     question.number_answers,
+            'options':     [{op.option_code: op.option} for op in options]}
     }), content_type='application/json')
 
 
