@@ -25,6 +25,7 @@ def assign(request):
         'question': {
             'question_id': question.pk,
             'question': question.question,
+            'answers': question.number_answers,
             'options': [{op.option_code: op.option} for op in options]}
     }), content_type='application/json')
 
