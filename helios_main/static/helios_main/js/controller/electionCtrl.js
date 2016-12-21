@@ -2,6 +2,9 @@
 
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend) {
 
+    var choiceBackground = 123456
+    var hashBackground = 'test'
+
     //Do when page to loaded
     Backend.assign($routeParams['id']).success(function (data) {
         var result = angular.fromJson(data);
@@ -10,12 +13,16 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
         $scope.experimentData = result;
         $scope.experimentData.question = result.question.question;
+        $scope.experimentData.answers = result.question.answers;
         $scope.startTimeAll = Date.now();
     });
 
     //From election to review
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
+        $scope.choice = choiceBackground
+        $scope.hash = hashBackground
+        console.log('Hash is ' + $scope.hash)
         $location.path('review/' + $routeParams['id']);
     }
 

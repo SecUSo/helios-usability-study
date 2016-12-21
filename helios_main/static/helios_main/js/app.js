@@ -31,15 +31,16 @@ heliosStudyMainApp.run(function ($rootScope, $window, $document, localize) {
         localize.setLanguage(newLang);
         $rootScope.$broadcast('langChange', newLang);
     });
+
     // initialization
-    if (!$rootScope.language) {
-        $rootScope.language = $window.navigator.userLanguage ||
-                              $window.navigator.language ||
-                              $document.getElementsByTagName('html')[0].lang;
-        if ($rootScope.language && ($rootScope.language.length > 2)) {
-            $rootScope.language = $rootScope.language.substr(0, 2);
-        }
+    // if (!$rootScope.language) {
+    //     $rootScope.language = $window.navigator.userLanguage ||
+    //                           $window.navigator.language ||
+    //                           $document.getElementsByTagName('html')[0].lang;
+    //     if ($rootScope.language && ($rootScope.language.length > 2)) {
+    //         $rootScope.language = $rootScope.language.substr(0, 2);
+    //     }
         //If hard coding a language is desired, do it here, if not delete the following line
-        $rootScope.language = "en";
-    }
+        //$rootScope.language = "en";
+    // }
 });

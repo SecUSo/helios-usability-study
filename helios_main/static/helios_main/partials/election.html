@@ -1,12 +1,14 @@
-<form method="post">
+<form>
 
-    <p>Question: {{ experimentData.question }}</p>
+    <b><span>Question: {{ experimentData.question }}</span></b><br/>
+
+    <span>Please choose {{ experimentData.answers }} answers.</span>
 
     <fieldset>
-        <input type="radio" name="language" id="german" value="german"/>
-        <label for="german">{{ experimentData.question }}</label><br/>
-        <input type="radio" name="language" id="english" value="english" checked="checked"/>
-        <label for="english">{{ experimentData.question }}</label><br/>
+        <input type="checkbox" name="choice" ng-model="choice" ng-value="option"/>
+        <label for="option_one">{{ experimentData.question }}</label><br/>
+        <input type="checkbox" name="choice" ng-model="choice" ng-value="option"/>
+        <label for="option_two">{{ experimentData.question }}</label><br/>
     </fieldset>
 
     <div align="center">
