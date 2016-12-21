@@ -2,7 +2,7 @@
 
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend) {
 
-    var choiceBackground = 123456
+    var choiceBackground = '123456'
     var hashBackground = 'test'
 
     //Do when page to loaded
@@ -12,17 +12,23 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
         $scope.experimentData = result;
-        $scope.experimentData.question = result.question.question;
-        $scope.experimentData.answers = result.question.answers;
+
         $scope.startTimeAll = Date.now();
     });
+
+    $scope.updateSelection = function (position, entities) {
+        angular.forEach(entities, function (subscription, index) {
+            if (position != index)
+                subscription.checked = false;
+        });
+    }
 
     //From election to review
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
-        $scope.choice = choiceBackground
-        $scope.hash = hashBackground
-        console.log('Hash is ' + $scope.hash)
+        $scope.choice = choiceBackground;
+        $scope.hash = hashBackground;
+        console.log('Hash is ' + $scope.hash);
         $location.path('review/' + $routeParams['id']);
     }
 

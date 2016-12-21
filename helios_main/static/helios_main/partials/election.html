@@ -1,15 +1,9 @@
 <form>
 
-    <b><span>Question: {{ experimentData.question }}</span></b><br/>
+    <b><span>Question: {{ experimentData.question_data.question }}</span></b><br/>
 
-    <span>Please choose {{ experimentData.answers }} answers.</span>
+    <span>Please choose {{ experimentData.question_data.answers }} answers.</span>
 
-    <fieldset>
-        <input type="checkbox" name="choice" ng-model="choice" ng-value="option"/>
-        <label for="option_one">{{ experimentData.question }}</label><br/>
-        <input type="checkbox" name="choice" ng-model="choice" ng-value="option"/>
-        <label for="option_two">{{ experimentData.question }}</label><br/>
-    </fieldset>
 
     <div align="center">
         <button data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
