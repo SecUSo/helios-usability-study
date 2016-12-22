@@ -27,8 +27,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     });
     
     
-    $scope.saveChoice = function (code) {
+    $scope.saveChoice = function (code, choice) {
         choiceBackground = code;
+        $rootScope.choice = choice;
         console.log('Choice is ' + choiceBackground);
     };
 
