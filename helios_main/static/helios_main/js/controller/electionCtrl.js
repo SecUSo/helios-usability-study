@@ -12,6 +12,10 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         if ("Error" in result) {
             $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
+
+        //TODO Why is this not displayed?
+        $scope.subject = $routeParams['id'];
+        console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
         console.log(result);
@@ -40,7 +44,8 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
 
         //"Hashing" the encrypted vote. No seriously this is not a hash.
-        hashBackground = btoa(encrypted_vote);
+         //TODO Trim the hash to 43
+         hashBackground = btoa(encrypted_vote);
          console.log(encrypted_vote);
 
     }
