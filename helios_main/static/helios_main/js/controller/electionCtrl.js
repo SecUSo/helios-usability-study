@@ -1,6 +1,6 @@
 'use strict';
 
-heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend) {
+heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope) {
 
     var choiceBackground = "00";
     var hashBackground;
@@ -54,7 +54,10 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
         console.log(encrypted_vote);
 
+        $rootScope.ballot_tracker = hashBackground.toString();
+
         console.log('Hash is ' + hashBackground);
+        console.log('Hash in scope ' + $scope.ballot_tracker);
         $location.path('review/' + $routeParams['id']);
     }
 
