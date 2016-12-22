@@ -19,14 +19,20 @@ def assign(request):
     question = Question.objects.all()[0]
     options = question.option.all()
 
+    options_dict = {}
+
+    for op in options:
+        options_dict[op.option_code] = op.option
+
     print("Experiment assigned")
+
 
     return HttpResponse(json.dumps({
         'question_data': {
             'question_id': question.pk,
-            'question':    question.question,
-            'answers':     question.number_answers,
-            'options':     [{op.option_code: op.option} for op in options]}
+            'question': question.question,
+            'answers': question.number_answers,
+            'options': options_dict}
     }), content_type='application/json')
 
 
