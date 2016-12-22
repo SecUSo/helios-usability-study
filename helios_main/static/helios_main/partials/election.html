@@ -7,7 +7,7 @@
     <div ng-repeat="(code, option) in options">
 
 
-        <input ng-value="choice.checked" type="checkbox"/>
+        <input type="checkbox" ng-click="saveChoice(code)"/>
         <label>{{ option }} </label>
     </div>
 

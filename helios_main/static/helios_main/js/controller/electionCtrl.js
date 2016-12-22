@@ -21,16 +21,15 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     });
     
     
-    $scope.saveChoice = function () {
-
+    $scope.saveChoice = function (code) {
+        choiceBackground = code;
+        console.log('Choice is ' + choiceBackground);
     };
     
 
     //From election to review
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
-        $scope.choice = choiceBackground;
-        $scope.hash = hashBackground;
         console.log('Hash is ' + $scope.hash);
         $location.path('review/' + $routeParams['id']);
     }
