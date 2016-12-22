@@ -2,8 +2,9 @@
 
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend) {
 
-    var choiceBackground = '123456';
-    var hashBackground = 'test';
+    var choiceBackground = "00";
+    var hashBackground;
+    var encrypted_vote = "";
 
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
@@ -25,11 +26,39 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         choiceBackground = code;
         console.log('Choice is ' + choiceBackground);
     };
+
+
+    //Pseudo-encryption of the vote
+    $scope.encrypt = function () {
+        for (var i=0; i<50; i++){
+            encrypted_vote += Math.floor( Math.random() * (10));
+        }
+        encrypted_vote += choiceBackground;
+
+         for (var i=0; i<50; i++){
+            encrypted_vote += Math.floor( Math.random() * (10));
+        }
+
+        console.log(encrypted_vote);
+
+    }
     
 
     //From election to review
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
+
+        for (var i=0; i<50; i++){
+            encrypted_vote += Math.floor( Math.random() * (10));
+        }
+        encrypted_vote += choiceBackground;
+
+         for (var j=0; j<50; j++){
+            encrypted_vote += Math.floor( Math.random() * (10));
+        }
+
+        console.log(encrypted_vote);
+
         console.log('Hash is ' + $scope.hash);
         $location.path('review/' + $routeParams['id']);
     }
