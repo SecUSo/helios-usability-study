@@ -5,6 +5,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     var choiceBackground = "00";
     var hashBackground;
     var encrypted_vote = "";
+    $scope.auditClick = false;
 
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
@@ -66,8 +67,18 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         $location.path('review/' + $routeParams['id']);
     }
 
-    //From review to audit
+    //From displays audit info
     $scope.auditButton = function () {
+        if ($scope.auditClick==false) {
+            $scope.auditClick=true;
+        } else {
+            $scope.auditClick=false
+        }
+
+    };
+
+    //From review to audit
+     $scope.verifyButton = function () {
         $location.path('institute/' + $routeParams['id']);
     };
 
