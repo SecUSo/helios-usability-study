@@ -28,18 +28,20 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     };
 
 
-    //Pseudo-encryption of the vote
-    $scope.encrypt = function () {
-        for (var i=0; i<50; i++){
+    //Pseudo-encryption of the vote. Well, the option code is hidden between random values.
+     function encrypt() {
+        for (var i=0; i<100; i++){
             encrypted_vote += Math.floor( Math.random() * (10));
         }
         encrypted_vote += choiceBackground;
 
-         for (var i=0; i<50; i++){
+         for (var i=0; i<100; i++){
             encrypted_vote += Math.floor( Math.random() * (10));
         }
 
-        console.log(encrypted_vote);
+        //"Hashing" the encrypted vote. No seriously this is not a hash.
+        hashBackground = btoa(encrypted_vote);
+         console.log(encrypted_vote);
 
     }
     
@@ -48,18 +50,11 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
 
-        for (var i=0; i<50; i++){
-            encrypted_vote += Math.floor( Math.random() * (10));
-        }
-        encrypted_vote += choiceBackground;
-
-         for (var j=0; j<50; j++){
-            encrypted_vote += Math.floor( Math.random() * (10));
-        }
+        encrypt();
 
         console.log(encrypted_vote);
 
-        console.log('Hash is ' + $scope.hash);
+        console.log('Hash is ' + hashBackground);
         $location.path('review/' + $routeParams['id']);
     }
 
