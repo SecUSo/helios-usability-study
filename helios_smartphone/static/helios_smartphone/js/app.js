@@ -1,7 +1,7 @@
 'use strict';
 
 var heliosStudySmartphoneApp = angular.module(
-    "heliosStudy",
+    "heliosStudySmartPhone",
     [
         "ngAnimate",
         "ngRoute",
@@ -10,11 +10,14 @@ var heliosStudySmartphoneApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        // when('/:id', {templateUrl: '/selectionTask/static/partials/introduction.html', controller: 'introductionCtrl'}).
-        // when('/task/:id', {templateUrl: '/selectionTask/static/partials/task.html', controller: 'taskCtrl'}).
-        // when('/thanks/:id', {templateUrl: '/selectionTask/static/partials/thanks.html', controller: 'thanksCtrl'}).
-        // when('/error/:id/:error', {templateUrl: '/selectionTask/static/partials/error.html', controller: 'errorCtrl'}).
-        // otherwise({templateUrl: '/selectionTask/static/partials/introduction.html', controller: 'introductionCtrl'});
+        when('/:id', {templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'introductionCtrl'}).
+        //when('/election/:id', {templateUrl: '/static/helios_smartphone/partials/election.html', controller: 'electionCtrl'}).
+        //when('/review/:id', {templateUrl: '/static/helios_smartphone/partials/review.html', controller: 'electionCtrl'}).
+        //when('/institute/:id', {templateUrl: '/static/helios_smartphone/partials/institute.html', controller: 'electionCtrl'}).
+        //when('/cast/:id', {templateUrl: '/static/helios_smartphone/partials/cast.html', controller: 'electionCtrl'}).
+        //when('/final/:id', {templateUrl: '/static/helios_smartphone/partials/finaloverview.html', controller: 'electionCtrl'}).
+        //when('/error/', {templateUrl: '/static/helios_smartphone/partials/error.html', controller: 'errorCtrl'}).
+        otherwise({templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
 }]);
@@ -37,6 +40,6 @@ heliosStudySmartphoneApp.run(function ($rootScope, $window, $document, localize)
             $rootScope.language = $rootScope.language.substr(0, 2);
         }
         //If hard coding a language is desired, do it here, if not delete the following line
-        $rootScope.language = "en";
+        //$rootScope.language = "en";
     }
 });
