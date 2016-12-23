@@ -7,10 +7,9 @@
     <div ng-repeat="(code, option) in options">
 
 
-        <input type="checkbox" ng-click="saveChoice(code, option)"/>
+        <input type="checkbox" ng-click="saveChoice(code, option)">
         <label>{{ option }} </label>
     </div>
-
 
     <div align="center">
         <button data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
