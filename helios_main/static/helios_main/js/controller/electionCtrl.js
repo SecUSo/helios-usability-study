@@ -4,6 +4,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     var choiceBackground = "00";
     var hashBackground;
+    var hashVisible;
     var encrypted_vote = "";
     $scope.auditClick = false;
 
@@ -42,9 +43,10 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             encrypted_vote += Math.floor( Math.random() * (10));
         }
 
-        //"Hashing" the encrypted vote. No seriously this is not a hash.
+        //"Hashing" the encrypted vote. No seriously, this is not a hash.
          //TODO Trim the hash to 43
          hashBackground = btoa(encrypted_vote);
+         hashVisible = hashBackground.toString().substr(0, 42);
          console.log(encrypted_vote);
 
     }
@@ -58,9 +60,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
         console.log(encrypted_vote);
 
-        $rootScope.ballot_tracker = hashBackground.toString();
+        $rootScope.ballot_tracker = hashVisible;
 
-        console.log('Hash is ' + hashBackground);
+        console.log('Hash is ' + hashVisible);
         console.log('Hash in scope ' + $scope.ballot_tracker);
         $location.path('review/' + $routeParams['id']);
     }
