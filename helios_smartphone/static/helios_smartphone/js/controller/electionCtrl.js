@@ -2,7 +2,7 @@
 
 heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-    var choiceBackground = "00";
+    var choiceBackground;
     var hashBackground;
     var hashVisible;
     var encrypted_vote = "";
@@ -26,8 +26,14 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     
     
     $scope.saveChoice = function (code, choice) {
-        choiceBackground = code;
-        $rootScope.choice = choice;
+
+        if (code.length > 0) {
+              choiceBackground = code;
+              $rootScope.choice = choice;
+        } else {
+             choiceBackground = "00";
+             $rootScope.choice = "Invalid Vote";
+        }
         console.log('Choice is ' + choiceBackground);
     };
 
