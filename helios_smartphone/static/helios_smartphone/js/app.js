@@ -1,12 +1,14 @@
 'use strict';
 
+
 var heliosStudySmartphoneApp = angular.module(
     "heliosStudySmartPhone",
     [
         "ngAnimate",
         "ngRoute",
         "localization",
-        "BackendService"
+        "BackendService",
+        "monospaced.qrcode"
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.

@@ -1,0 +1,23 @@
+{
+  "name": "helios-usability-study",
+  "version": "1.0.0",
+  "description": "This project is a collection of three different user-interfaces for the remote electronic voting protocol Helios.<br /> As this solely is the user-interface a component for tallying and administering elections is not included. <br /> Furthermore encryption is only simulated and thus we do not recomment to use this interface for serious elections as secrecy can be broken easily.",
+  "main": "index.js",
+  "dependencies": {
+    "angular-qrcode": "^6.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonjuni/helios-usability-study.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yonjuni/helios-usability-study/issues"
+  },
+  "homepage": "https://github.com/yonjuni/helios-usability-study#readme"
+}
