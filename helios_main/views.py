@@ -26,7 +26,6 @@ def assign(request):
 
     print("Experiment assigned")
 
-
     return HttpResponse(json.dumps({
         'question_data': {
             'question_id': question.pk,
