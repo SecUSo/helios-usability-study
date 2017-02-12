@@ -1,0 +1,18 @@
+<form>
+
+    <b><span>Question: {{ experimentData.question_data.question }}</span></b><br/>
+
+    <span>Please choose {{ experimentData.question_data.answers }} answer(s).</span>
+
+    <div ng-repeat="(code, option) in options">
+
+
+        <input type="checkbox" ng-click="saveChoice(code, option)">
+        <label>{{ option }} </label>
+    </div>
+
+    <div align="center">
+        <button data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
+    </div>
+
+</form>

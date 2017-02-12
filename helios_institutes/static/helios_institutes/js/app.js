@@ -10,11 +10,14 @@ var heliosStudyInstitutesApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        // when('/:id', {templateUrl: '/selectionTask/static/partials/introduction.html', controller: 'introductionCtrl'}).
-        // when('/task/:id', {templateUrl: '/selectionTask/static/partials/task.html', controller: 'taskCtrl'}).
-        // when('/thanks/:id', {templateUrl: '/selectionTask/static/partials/thanks.html', controller: 'thanksCtrl'}).
-        // when('/error/:id/:error', {templateUrl: '/selectionTask/static/partials/error.html', controller: 'errorCtrl'}).
-        // otherwise({templateUrl: '/selectionTask/static/partials/introduction.html', controller: 'introductionCtrl'});
+        when('/:id', {templateUrl: '/static/helios_institute/partials/introduction.html', controller: 'introductionCtrl'}).
+        when('/election/:id', {templateUrl: '/static/helios_institute/partials/election.html', controller: 'electionCtrl'}).
+        when('/review/:id', {templateUrl: '/static/helios_institute/partials/review.html', controller: 'electionCtrl'}).
+        when('/institute/:id', {templateUrl: '/static/helios_institute/partials/institute.html', controller: 'electionCtrl'}).
+        when('/cast/:id', {templateUrl: '/static/helios_institute/partials/cast.html', controller: 'electionCtrl'}).
+        when('/final/:id', {templateUrl: '/static/helios_institute/partials/finaloverview.html', controller: 'electionCtrl'}).
+        when('/error/', {templateUrl: '/static/helios_institute/partials/error.html', controller: 'errorCtrl'}).
+        otherwise({templateUrl: '/static/helios_institute/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
 }]);
