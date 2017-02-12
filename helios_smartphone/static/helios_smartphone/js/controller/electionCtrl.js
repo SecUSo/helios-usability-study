@@ -2,7 +2,7 @@
 
 heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-    var choiceBackground;
+    var choiceBackground = "00";
     var hashBackground;
     var hashVisible;
     var encrypted_vote = "";
@@ -27,7 +27,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     
     $scope.saveChoice = function (code, choice) {
 
-        if (code.length > 0) {
+        if (code != null) {
               choiceBackground = code;
               $rootScope.choice = choice;
         } else {
@@ -61,6 +61,10 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
 
+        if (choiceBackground === "00") {
+             $rootScope.choice = "Invalid Vote";
+        }
+
         encrypt();
 
         console.log(encrypted_vote);
@@ -84,7 +88,8 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     //From review to audit
      $scope.verifyButton = function () {
-        $location.path('institute/' + $routeParams['id']);
+        //$location.path('institute/' + $routeParams['id'], '_blank');
+        $window.open('institute/' + $routeParams['id'], '_blank');
     };
 
     //From review to final overview
@@ -99,7 +104,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     //Redirect to new tab with institutes
     $scope.chooseInstitute = function () {
-        //$location.path('institute/' + $routeParams['id']);
+        //$location.path('institute/' + $routeParams['id'], '_blank');
     };
 
     //From institutes back to review
@@ -112,11 +117,6 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.castButton = function () {
         $location.path('cast/' + $routeParams['id']);
-    };
-
-    $scope.redirectToInstituteButton = function (){
-        $window.open('https://www.google.com', '_blank');
-        $location.path('main/' + $routeParams['id']);
     }
 
 });
