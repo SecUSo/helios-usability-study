@@ -1,7 +1,7 @@
 'use strict';
 
 var heliosStudyInstitutesApp = angular.module(
-    "heliosStudy",
+    "heliosStudyInstitutes",
     [
         "ngAnimate",
         "ngRoute",
