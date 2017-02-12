@@ -1,6 +1,6 @@
 'use strict';
 
-heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
+heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
     var choiceBackground = "00";
     var hashBackground;
