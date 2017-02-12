@@ -6,7 +6,8 @@ import os
 
 
 def home(request):
-    with open(os.path.join(os.path.dirname(__file__), "../helios_institutes/static/helios_institutes/index.html"), 'r') as index_html_file:
+    with open(os.path.join(os.path.dirname(__file__), "../helios_institutes/static/helios_institutes/index.html"),
+              'r') as index_html_file:
         return HttpResponse(index_html_file.read(), content_type='text/html')
 
 
@@ -33,3 +34,21 @@ def assign(request):
             'options': options_dict}
     }), content_type='application/json')
 
+
+@csrf_exempt
+def save_instruction_time(request):
+    subject = Subject.objects.filter(subject_id=request.POST['id']).all()[0]
+    result_time = json.loads(request.POST['result_time'])
+    duration = Duration(subject=subject)
+    duration.instruction_duration = result_time
+    duration.save()
+
+
+@csrf_exempt
+def submit(request):
+    pass
+
+
+@csrf_exempt
+def audit(request):
+    pass
