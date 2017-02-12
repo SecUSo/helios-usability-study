@@ -1,6 +1,6 @@
 'use strict';
 
-heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope) {
+heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
     var choiceBackground = "00";
     var hashBackground;
@@ -44,7 +44,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-         //TODO Trim the hash to 43
          hashBackground = btoa(encrypted_vote);
          hashVisible = hashBackground.toString().substr(0, 42);
          console.log(encrypted_vote);
@@ -108,4 +107,10 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.castButton = function () {
         $location.path('cast/' + $routeParams['id']);
     };
+
+    $scope.redirectToInstituteButton = function (){
+        $window.open('https://www.google.com', '_blank');
+        $location.path('main/' + $routeParams['id']);
+    }
+
 });
