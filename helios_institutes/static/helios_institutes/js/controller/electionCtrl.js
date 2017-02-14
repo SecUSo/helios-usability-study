@@ -66,16 +66,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $location.path('review/' + $routeParams['id']);
     }
 
-    //From displays audit info
-    $scope.auditButton = function () {
-        if ($scope.auditClick==false) {
-            $scope.auditClick=true;
-        } else {
-            $scope.auditClick=false
-        }
-
-    };
-
     //From review to audit
      $scope.verifyButton = function () {
         $location.path('institute/' + $routeParams['id']);
