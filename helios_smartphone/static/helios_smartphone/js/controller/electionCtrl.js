@@ -50,6 +50,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
+         $scope.ballot = encrypted_vote;
          hashBackground = btoa(encrypted_vote);
          hashVisible = hashBackground.toString().substr(0, 42);
          console.log(encrypted_vote);
