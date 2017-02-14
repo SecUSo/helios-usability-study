@@ -160,6 +160,11 @@
         "description": "Submit vote button on review page"
     },
     {
+        "key"        : "_editResponsesButton_",
+        "value"      : "edit responses",
+        "description": ""
+    },
+    {
         "key"        : "_auditButton_",
         "value"      : "Audit",
         "description": "Button that opens audit description on review page"
