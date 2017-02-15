@@ -405,6 +405,26 @@
         "description": ""
     },
     {
+        "key"        : "_submitVoteHeading_",
+        "value"      : "Submitting your vote...",
+        "description": "Final login page"
+    },
+    {
+        "key"        : "_loginCastHint_",
+        "value"      : "Wait! You need to log in.",
+        "description": "Final login page"
+    },
+    {
+        "key"        : "_loginCastVoteHint_",
+        "value"      : "Don't worry, we'll remember your ballot while you log in.",
+        "description": "Final login page"
+    },
+    {
+        "key"        : "_loginCastBallotTracker_",
+        "value"      : "Your smart ballot tracker is:",
+        "description": "Final login page"
+    },
+    {
         "key"        : "_proceedButton_",
         "value"      : "Proceed",
         "description": "Button to proceed to the next step"
