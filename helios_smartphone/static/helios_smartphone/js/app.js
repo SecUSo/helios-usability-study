@@ -42,6 +42,6 @@ heliosStudySmartphoneApp.run(function ($rootScope, $window, $document, localize)
             $rootScope.language = $rootScope.language.substr(0, 2);
         }
         //If hard coding a language is desired, do it here, if not delete the following line
-        //$rootScope.language = "en";
+        $rootScope.language = "en";
     }
 });
