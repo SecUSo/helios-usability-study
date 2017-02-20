@@ -3,9 +3,7 @@
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
     var choiceBackground = "00";
-    var hashBackground;
     var encrypted_vote = "";
-    var auditData = "";
     $scope.auditClick = false;
 
     //Do when page loaded
@@ -47,10 +45,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        auditData = "{\"choice\": \"" + encrypted_vote + "}\"";
-        hashBackground = btoa(encrypted_vote);
-        $rootScope.ballot_tracker = hashBackground.toString().substr(0, 42);
-        console.log(auditData);
+        $rootScope.auditData = "{\"choice\": \"" + encrypted_vote + "\"}";
+        $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 42);
+        console.log($rootScope.auditData);
         console.log(encrypted_vote);
         console.log('Hash in scope ' + $scope.ballot_tracker);
     }
@@ -104,8 +101,8 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     };
 
     $scope.backToVotingButton = function () {
-        $location.path('review/' + $routeParams['id']);
         encrypt();
+        $location.path('review/' + $routeParams['id']);
     }
 
     $scope.cancelButton = function () {
