@@ -1,4 +1,14 @@
+<!DOCTYPE html>
 {% load i18n %}
+{% load staticfiles %}
+
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Helios Voting</title>
+    <link rel="stylesheet" href="{% static 'helios_usabilitystudy/style.css' %}" type="text/css"/>
+</head>
+<body>
 <div>
 
     <h2 style="text-align: center;">{% trans "Welcome" %}</h2>
@@ -11,11 +21,12 @@
         <input name="password" type="password"><br>
 
         <fieldset>
-            <legend>Select language</legend><br />
-            <input type="radio" name="language" id="german" value="german" />
-            <label for="german">{% trans "German" %}</label><br />
-            <input type="radio" name="language" id="english" value="english" checked="checked" />
-            <label for="english">{% trans "English" %}</label><br />
+            <legend>Select language</legend>
+            <br/>
+            <input type="radio" name="language" id="german" value="german"/>
+            <label for="german">{% trans "German" %}</label><br/>
+            <input type="radio" name="language" id="english" value="english" checked="checked"/>
+            <label for="english">{% trans "English" %}</label><br/>
         </fieldset>
 
         <button>{% trans "Login" %}</button>
@@ -23,3 +34,5 @@
 
 
 </div>
+</body>
+</html>
