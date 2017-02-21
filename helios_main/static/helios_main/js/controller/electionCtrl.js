@@ -18,7 +18,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
-        $scope.startTimeAll = Date.now();
+        $rootScope.startTimeAll = Date.now();
 
     });
 
@@ -34,6 +34,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     function encrypt() {
 
         encrypted_vote = "";
+        $rootScope.auditData = "";
 
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
@@ -45,8 +46,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        $rootScope.auditData = "{\"choice\": \"" + encrypted_vote + "\"}";
+        //$rootScope.auditData += "{\"randomness\": \"" + encrypted_vote + "\"}";
         $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 42);
+        $rootScope.auditData = buildBallot(encrypted_vote);
         console.log($rootScope.auditData);
         console.log(encrypted_vote);
         console.log('Hash in scope ' + $scope.ballot_tracker);
@@ -114,6 +116,34 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     $scope.redirectToInstituteButton = function () {
         $location.path('audit/' + $routeParams['id']);
+    }
+
+    function buildBallot(encrypted_vote) {
+        var auditInfo = "{\"answers\": [{\"choices\": ["+makeAlphaBeta()+", "+makeAlphaBeta()+", "+makeAlphaBeta()+
+            "], \"individual_proofs\": [["+makeCCR()+", "+makeCCR()+"], ["+makeCCR()+", "+makeCCR()+"], ["+makeCCR()+", "
+            +makeCCR()+"]], \"overall_proof\": ["+makeCCR()+", "+makeCCR()+"], \"answer\": [0], \"randomness\": \""+
+        encrypted_vote+"\"}]}";
+        return auditInfo;
+    }
+
+    function makeAlphaBeta() {
+        var res = "{\"alpha\": "+makeXRandoms(616)+", \"beta\": "+makeXRandoms(616)+"}";
+        return res;
+    }
+
+    function makeCCR() {
+        var res = "{\"challenge\": "+makeXRandoms(77)+", \"commitment\": {\"A\": "+makeXRandoms(616)+", \"B\": "+
+            makeXRandoms(616)+"}, \"response\": "+makeXRandoms(77)+"}";
+        return res;
+    }
+
+    function makeXRandoms(count) {
+        var res = "\"";
+        for (var i = 0; i < count; i++) {
+            res += Math.floor(Math.random() * (10));
+        }
+        res += "\"";
+        return res;
     }
 
 });
