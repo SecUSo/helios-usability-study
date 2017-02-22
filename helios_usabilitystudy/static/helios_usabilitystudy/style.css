@@ -6,7 +6,7 @@ body {
 }
 
 fieldset {
-     margin: 1em auto;
+    margin: 1em auto;
 }
 
 .content {
@@ -14,9 +14,10 @@ fieldset {
 }
 
 .welcome_text {
+    max-width: 250px;
     text-align: left;
     display: inline-block;
-    border: solid 1px #393f46;
+    border: solid 1px indianred;
     border-radius: 5px;
     padding: 1.5em;
     background-color: white;
@@ -24,6 +25,7 @@ fieldset {
 }
 
 .login_form {
+    max-width: 250px;
     text-align: left;
     display: inline-block;
     border: solid 1px #393f46;
@@ -42,6 +44,6 @@ button {
     padding: 0.5em;
 }
 
-button:hover{
+button:hover {
     background-color: #5ba05b;
 }
