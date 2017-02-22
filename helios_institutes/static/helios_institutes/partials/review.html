@@ -1,18 +1,22 @@
-<h3 data-i18n="_reviewBallotHeading_"></h3>
+<div class="content_box"><h3 data-i18n="_reviewBallotHeading_"></h3>
 
-<div>
+    <div>
 
-    <p>Question: {{ experimentData.question_data.question }}</p>
-    <p>Choice: {{ choice }}</p>
+        <p>Question: {{ experimentData.question_data.question }}</p>
+        <p>Choice: {{ choice }}</p>
+
+    </div>
+
+    <div data-i18n="_ballotTrackerHeading_"></div>
+    <p><b>{{ ballot_tracker }}</b></p>
+    <div data-i18n="_ballotTrackerFollow_"></div>
+
+    <div data-i18n="_clickSubmitHint_"></div>
+
+        <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+
+        <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
+
+        <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
 
 </div>
-
-<div data-i18n="_ballotTrackerHeading_"></div><p><b>{{ ballot_tracker }}</b></p><div data-i18n="_ballotTrackerFollow_"></div>
-
-<div data-i18n="_clickSubmitHint_"></div>
-
-<div align="center"><span data-i18n="_auditMoreInfoOne_"></span>
-    <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button></div>
-
-<div align="center"><button data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button></div>
-<div align="center"><button data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button></div>
