@@ -5,6 +5,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     var choiceBackground = "00";
     var encrypted_vote = "";
     $scope.auditClick = false;
+    $scope.head_line = "HEADLINE";
 
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
