@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ededed;
+    color: #393f46;
+    margin: 0;
+}
+
+.content {
+    text-align: left;
+    display: inline-block;
+}
+
+.login_form {
+    text-align: left;
+    display: inline-block;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
+}
+
+button {
+    margin: 1em auto;
+    background-color: #66b266;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em;
+}
+
+button:hover {
+    background-color: #5ba05b;
+}
+
+.login_button {
+    width: 100%;
+}
+
+.content_box {
+    text-align: left;
+    display: inline-block;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
+    margin: 1em auto;
+    max-width: 950px;
+}
+
+.audit_box {
+    background-color: lightyellow;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    max-width: 200px;
+}
+
+.audit_content {
+    padding: 1em;
+}
+
+.ballot_number {
+    margin: 1em auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d3d3d3;
+    padding: 0;
+}
