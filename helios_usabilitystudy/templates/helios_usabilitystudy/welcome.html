@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load i18n %}
 {% load staticfiles %}
 
 <html>
@@ -13,6 +12,8 @@
 
     <h2 style="text-align: center;">{% trans "Welcome" %}</h2>
 
+    <div id="welcome_text">Hinweistext wieso Login gebraucht wird.</div>
+
     <form method="post" action="/login">
         {% csrf_token %}
         ID:<br>
@@ -24,12 +25,12 @@
             <legend>Select language</legend>
             <br/>
             <input type="radio" name="language" id="german" value="german"/>
-            <label for="german">{% trans "German" %}</label><br/>
+            <label for="german">German</label><br/>
             <input type="radio" name="language" id="english" value="english" checked="checked"/>
-            <label for="english">{% trans "English" %}</label><br/>
+            <label for="english">English</label><br/>
         </fieldset>
 
-        <button>{% trans "Login" %}</button>
+        <button>Login</button>
     </form>
 
 
