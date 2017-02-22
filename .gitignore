@@ -35,3 +35,7 @@ coverage.xml
 *.mo
 
 .idea/*
+
+#Picture data
+*.png
+*.jpg
