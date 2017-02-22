@@ -1,114 +1,74 @@
 body {
-  font-family: Arial;
-  background: white;
-  padding: 0px;
-  margin: 0px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ededed;
+    color: #393f46;
+    margin: 0;
 }
 
-
-.nomargin 
-	{
-	    margin:0
-	}
-
-#wrapper {
-  position: absolute;
-  padding: 0px;
-  background: white;
-  border: 1px solid #666;
-  top: 20px;
-  margin-left: 100px;
-  margin-top: 0px;
-  width: 1000px;
+.content {
+    text-align: left;
+    display: inline-block;
 }
 
-#content {
-  padding: 20px 30px 20px 30px;
+.login_form {
+    text-align: left;
+    display: inline-block;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
 }
 
-#header {
-  padding-top: 0px;
-  text-align: center;
-  padding-bottom: 5px;
+button {
+    margin: 1em auto;
+    background-color: #66b266;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em;
 }
 
-#header h1 {
-  font-size: 28pt;
-  padding: 0px;
-  margin: 0px;
-  line-height: 120%;
+button:hover {
+    background-color: #5ba05b;
 }
 
-#header h2 {
-  font-size: 20pt;
-  padding: 0px;
-  margin: 0px;
-  line-height: 100%;
-  font-weight: none;
+.login_button {
+    width: 100%;
 }
 
-#banner {
-  width: 100%;
-  text-align: center;
-  padding: 2px 0px 2px 0px;
-  background: #ccc;
-  font-size: 18pt;
-  border-bottom: 1px solid #666;
+.content_box {
+    text-align: left;
+    display: inline-block;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
+    margin: 1em auto;
+    max-width: 950px;
 }
 
-#progress_div {
-  width: 100%;
-  font-size: 14pt;
+.audit_box {
+    background-color: lightyellow;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    max-width: 200px;
 }
 
-#progress_div table {
-  border-collapse: collapse;
-  text-align: center;
-  border: 0px;
+.audit_content {
+    padding: 1em;
 }
 
-#progress_div td.unselected {
-  background: #ccc;
-  color: #888;
-  border: 1px solid #333;
+.ballot_number {
+    margin: 1em auto;
 }
 
-#progress_div td.selected {
-  background: #fc9;
-  color: black;
-  font-weight: bold;
-  border: 1px solid black;
-}
-
-#footer {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  text-align: center;
-  margin-top: 10px;
-  padding: 2px 0px 2px 0px;
-  background: #ddd;
-  border-top: 1px solid #666;
-}
-
-#page h2 {
-  background: #fc9;
-  border-bottom: 1px solid #f90;
-  padding: 5px 0px 2px 5px;
-}
-
-h3 {
-	font-size: 1.6em;
-}
-
-#election_info {
-  font-size: 16pt;
-}
-
-#election_hash {
-  font-family: courier;
-}
-
-#loading_div {
-  display: none;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d3d3d3;
+    padding: 0;
 }
