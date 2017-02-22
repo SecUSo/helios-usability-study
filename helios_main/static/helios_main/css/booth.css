@@ -52,3 +52,6 @@ button:hover {
     display: inline-block;
     float: right;
 }
+.ballot_number {
+    margin: 1em auto;
+}

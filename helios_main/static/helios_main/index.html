@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Helios</title>
     <link rel="stylesheet" href="/static/helios_main/css/booth.css"/>
+    <link rel="stylesheet" href="/static/helios_main/css/header.css"/>
 
     <script type="text/javascript" src="/static/helios_main/lib/angular.js"></script>
     <script type="text/javascript" src="/static/helios_main/lib/angular-route.js"></script>
@@ -18,6 +19,9 @@
     <script type="text/javascript" src="/static/helios_main/js/controller/electionCtrl.js"></script>
 </head>
 <body>
+
+    <div ng-include src="'/static/helios_main/partials/header.html'"></div>
     <div ng-view></div>
+
 </body>
 </html>

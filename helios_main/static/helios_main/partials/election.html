@@ -4,15 +4,15 @@
 
         <form>
 
-            <b><span>Question: {{ experimentData.question_data.question }}</span></b><br/>
+            <b><span class="ballot_question">Question: {{ experimentData.question_data.question }}</span></b><br/>
 
-            <span>Please choose {{ experimentData.question_data.answers }} answer(s).</span>
+            <span class="ballot_number">Please choose {{ experimentData.question_data.answers }} answer(s).</span>
 
             <div ng-repeat="(code, option) in options">
 
-
                 <input type="checkbox" ng-click="saveChoice(code, option)">
                 <label>{{ option }} </label>
+                <hr />
             </div>
 
             <div align="center">
