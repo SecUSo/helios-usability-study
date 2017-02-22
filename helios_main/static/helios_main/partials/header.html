@@ -1,3 +1,14 @@
 <div id="header" ng-controller="electionCtrl">
-    {{ head_line }}
+    <h2>{{ head_line }}
+    </h2>
+    <div class="progress" ng-show="show_progress">
+        <table>
+            <tr>
+                <td id="progress_1"><span>(1) Select</span></td>
+                <td id="progress_2"><span>(2) Review</span></td>
+                <td id="progress_3"><span>(3) Submit</span></td>
+            </tr>
+        </table>
+    </div>
+
 </div>

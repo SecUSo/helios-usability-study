@@ -1,7 +1,15 @@
 #header {
     background-color: white;
     color: #393f46;
-    font-size: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.progress {
+
+}
+
+h2 {
     text-align: left;
-    height: 3em;
+    margin-left: 2em;
 }

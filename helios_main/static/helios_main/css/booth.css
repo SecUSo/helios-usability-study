@@ -56,6 +56,11 @@ button:hover {
     float: right;
     max-width: 200px;
 }
+
+.audit_content {
+    padding: 1em;
+}
+
 .ballot_number {
     margin: 1em auto;
 }
