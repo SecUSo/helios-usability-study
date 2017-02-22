@@ -2,22 +2,6 @@
 
     <div class="content_box">
 
-        <h3 data-i18n="_reviewBallotHeading_"></h3>
-
-        <div>
-
-            <p>Question: {{ experimentData.question_data.question }}</p>
-            <p>Choice: {{ choice }}</p>
-
-        </div>
-
-        <div data-i18n="_ballotTrackerHeading_"></div>
-        <p><b>{{ ballot_tracker }}</b></p>
-        <p><a href="" ng-click="printButton()">print</a></p>
-        <div data-i18n="_ballotTrackerFollow_"></div>
-
-        <div data-i18n="_clickSubmitHint_"></div>
-
         <div class="audit_box">
 
             <div style="float: right;">
@@ -33,6 +17,22 @@
             </div>
 
         </div>
+
+        <h3 data-i18n="_reviewBallotHeading_"></h3>
+
+        <div>
+
+            <p>Question: {{ experimentData.question_data.question }}</p>
+            <p>Choice: {{ choice }}</p>
+
+        </div>
+
+        <span data-i18n="_ballotTrackerHeading_"></span>
+        <span><b>{{ ballot_tracker }}</b></span>
+        <span><a href="" ng-click="printButton()">print</a></span>
+        <span data-i18n="_ballotTrackerFollow_"></span><br>
+
+        <span data-i18n="_clickSubmitHint_"></span>
 
         <div>
             <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>

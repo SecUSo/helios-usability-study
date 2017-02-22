@@ -13,7 +13,7 @@ var heliosStudyMainApp = angular.module(
         when('/:id', {templateUrl: '/static/helios_main/partials/introduction.html', controller: 'introductionCtrl'}).
         when('/election/:id', {templateUrl: '/static/helios_main/partials/election.html', controller: 'electionCtrl'}).
         when('/review/:id', {templateUrl: '/static/helios_main/partials/review.html', controller: 'electionCtrl'}).
-        when('/print/:id', {templateUrl: '/static/helios_main/partials/printTracker.html', controller: 'electionCtrl'}).
+        when('/print/:id', {templateUrl: '/static/helios_main/partials/printtracker.html', controller: 'electionCtrl'}).
         when('/institute/:id', {templateUrl: '/static/helios_main/partials/institute.html', controller: 'electionCtrl'}).
         when('/cast/:id', {templateUrl: '/static/helios_main/partials/cast.html', controller: 'electionCtrl'}).
         when('/castlogin/:id', {templateUrl: '/static/helios_main/partials/loginforcast.html', controller: 'electionCtrl'}).
