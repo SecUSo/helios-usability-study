@@ -72,6 +72,11 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     };
 
+    //Opens new tab for printing the ballot tracker
+    $scope.printButton = function () {
+        $window.open('print/' + $routeParams['id']);
+    }
+
     //From review to audit
     $scope.verifyButton = function () {
         $location.path('institute/' + $routeParams['id']);

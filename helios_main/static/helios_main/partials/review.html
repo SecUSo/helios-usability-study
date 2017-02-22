@@ -1,35 +1,44 @@
 <div class="content">
 
-    <h3 data-i18n="_reviewBallotHeading_"></h3>
+    <div class="content_box">
 
-    <div>
+        <h3 data-i18n="_reviewBallotHeading_"></h3>
 
-        <p>Question: {{ experimentData.question_data.question }}</p>
-        <p>Choice: {{ choice }}</p>
+        <div>
 
-    </div>
+            <p>Question: {{ experimentData.question_data.question }}</p>
+            <p>Choice: {{ choice }}</p>
 
-    <div data-i18n="_ballotTrackerHeading_"></div>
-    <p><b>{{ ballot_tracker }}</b></p>
-    <div data-i18n="_ballotTrackerFollow_"></div>
+        </div>
 
-    <div data-i18n="_clickSubmitHint_"></div>
+        <div data-i18n="_ballotTrackerHeading_"></div>
+        <p><b>{{ ballot_tracker }}</b></p>
+        <p><a href="" ng-click="printButton()">print</a></p>
+        <div data-i18n="_ballotTrackerFollow_"></div>
 
-    <div align="center">
-        <button data-i18n="_auditButton_" ng-click="auditButton()"></button>
-        <span data-i18n="_auditButtonLabel_"></span></div>
+        <div data-i18n="_clickSubmitHint_"></div>
 
-    <div align="center" ng-show="auditClick">
+        <div class="audit_box">
 
-        <span data-i18n="_auditMoreInfoOne_"></span>
+            <div style="float: right;">
+                <button data-i18n="_auditButton_" ng-click="auditButton()"></button>
+                <span data-i18n="_auditButtonLabel_"></span></div>
+            <br>
 
-        <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
-    </div>
+            <div ng-show="auditClick" style="float: right;">
 
-    <div align="center">
-        <button data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
-    </div>
-    <div align="center">
-        <button data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
+                <span data-i18n="_auditMoreInfoOne_"></span>
+
+                <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
+            </div>
+
+        </div>
+
+        <div>
+            <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+        </div>
+        <div>
+            <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
+        </div>
     </div>
 </div>
