@@ -49,6 +49,7 @@ button:hover {
 }
 
 .audit_box {
+    background-color: lightyellow;
     border: solid 1px #393f46;
     border-radius: 5px;
     display: inline-block;
