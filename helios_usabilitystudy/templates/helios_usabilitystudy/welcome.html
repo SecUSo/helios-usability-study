@@ -10,30 +10,35 @@
 <body>
 <div>
 
-    <h2 style="text-align: center;">{% trans "Welcome" %}</h2>
+    <div class="content">
 
-    <div id="welcome_text">Hinweistext wieso Login gebraucht wird.</div>
+        <h2 style="text-align: center;">Welcome</h2>
 
-    <form method="post" action="/login">
-        {% csrf_token %}
-        ID:<br>
-        <input name="id" type="text"><br>
-        Password:<br>
-        <input name="password" type="password"><br>
+        <div class="welcome_text">Hinweistext wieso Login gebraucht wird.</div>
 
-        <fieldset>
-            <legend>Select language</legend>
-            <br/>
-            <input type="radio" name="language" id="german" value="german"/>
-            <label for="german">German</label><br/>
-            <input type="radio" name="language" id="english" value="english" checked="checked"/>
-            <label for="english">English</label><br/>
-        </fieldset>
+        <form class="login_form" method="post" action="/login">
+            {% csrf_token %}
+            ID:<br>
+            <input name="id" type="text"><br>
+            Password:<br>
+            <input name="password" type="password"><br>
 
-        <button>Login</button>
-    </form>
+            <fieldset>
+                <legend>Select language</legend>
+                <br/>
+                <input type="radio" name="language" id="german" value="german"/>
+                <label for="german">German</label><br/>
+                <input type="radio" name="language" id="english" value="english" checked="checked"/>
+                <label for="english">English</label><br/>
+            </fieldset>
+
+            <br>
+
+            <button>Login</button>
+        </form>
 
 
+    </div>
 </div>
 </body>
 </html>

@@ -1,3 +1,30 @@
 body {
     font-family: sans-serif;
+    text-align: center;
+}
+
+fieldset {
+    display: inline-block;
+    margin: 2em auto;
+}
+
+button {
+    margin: 1em auto;
+}
+
+
+.content {
+    padding: 30px 29px;
+}
+
+.welcome_text {
+    margin: 2em auto;
+}
+
+.login_form {
+    text-align: left;
+    display: inline-block;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 1.5em;
 }
