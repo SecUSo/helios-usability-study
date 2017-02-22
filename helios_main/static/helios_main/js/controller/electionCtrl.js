@@ -119,21 +119,21 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     }
 
     function buildBallot(encrypted_vote) {
-        var auditInfo = "{\"answers\": [{\"choices\": ["+makeAlphaBeta()+", "+makeAlphaBeta()+", "+makeAlphaBeta()+
-            "], \"individual_proofs\": [["+makeCCR()+", "+makeCCR()+"], ["+makeCCR()+", "+makeCCR()+"], ["+makeCCR()+", "
-            +makeCCR()+"]], \"overall_proof\": ["+makeCCR()+", "+makeCCR()+"], \"answer\": [0], \"randomness\": \""+
-        encrypted_vote+"\"}]}";
+        var auditInfo = "{\"answers\": [{\"choices\": [" + makeAlphaBeta() + ", " + makeAlphaBeta() + ", " + makeAlphaBeta() +
+            "], \"individual_proofs\": [[" + makeCCR() + ", " + makeCCR() + "], [" + makeCCR() + ", " + makeCCR() + "], [" + makeCCR() + ", "
+            + makeCCR() + "]], \"overall_proof\": [" + makeCCR() + ", " + makeCCR() + "], \"answer\": [0], \"randomness\": \"" +
+            encrypted_vote + "\"}]}";
         return auditInfo;
     }
 
     function makeAlphaBeta() {
-        var res = "{\"alpha\": "+makeXRandoms(616)+", \"beta\": "+makeXRandoms(616)+"}";
+        var res = "{\"alpha\": " + makeXRandoms(616) + ", \"beta\": " + makeXRandoms(616) + "}";
         return res;
     }
 
     function makeCCR() {
-        var res = "{\"challenge\": "+makeXRandoms(77)+", \"commitment\": {\"A\": "+makeXRandoms(616)+", \"B\": "+
-            makeXRandoms(616)+"}, \"response\": "+makeXRandoms(77)+"}";
+        var res = "{\"challenge\": " + makeXRandoms(77) + ", \"commitment\": {\"A\": " + makeXRandoms(616) + ", \"B\": " +
+            makeXRandoms(616) + "}, \"response\": " + makeXRandoms(77) + "}";
         return res;
     }
 
