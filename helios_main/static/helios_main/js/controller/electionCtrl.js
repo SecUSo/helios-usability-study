@@ -4,7 +4,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     var choiceBackground = "00";
     var encrypted_vote = "";
-    $rootScope.choice = "Invalid Vote";
     $scope.auditClick = false;
     $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
