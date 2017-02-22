@@ -1,20 +1,25 @@
 <div class="content">
-    <form>
 
-        <b><span>Question: {{ experimentData.question_data.question }}</span></b><br/>
+    <div class="content_box">
 
-        <span>Please choose {{ experimentData.question_data.answers }} answer(s).</span>
+        <form>
 
-        <div ng-repeat="(code, option) in options">
+            <b><span>Question: {{ experimentData.question_data.question }}</span></b><br/>
+
+            <span>Please choose {{ experimentData.question_data.answers }} answer(s).</span>
+
+            <div ng-repeat="(code, option) in options">
 
 
-            <input type="checkbox" ng-click="saveChoice(code, option)">
-            <label>{{ option }} </label>
-        </div>
+                <input type="checkbox" ng-click="saveChoice(code, option)">
+                <label>{{ option }} </label>
+            </div>
 
-        <div align="center">
-            <button data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
-        </div>
+            <div align="center">
+                <button class="login_button" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
+            </div>
 
-    </form>
+        </form>
+
+    </div>
 </div>
