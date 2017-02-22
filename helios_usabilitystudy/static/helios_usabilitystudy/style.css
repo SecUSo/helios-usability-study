@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     text-align: center;
+    background-color: #ededed;
 }
 
 fieldset {
@@ -12,7 +13,13 @@ fieldset {
 }
 
 .welcome_text {
-    margin: 2em auto;
+    text-align: left;
+    display: inline-block;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
+    margin: 1em auto;
 }
 
 .login_form {
@@ -21,9 +28,19 @@ fieldset {
     border: solid 1px #393f46;
     border-radius: 5px;
     padding: 1.5em;
+    background-color: white;
 }
 
 button {
     margin: 1em auto;
     width: 100%;
+    background-color: #66b266;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em;
+}
+
+button:hover{
+    background-color: #5ba05b;
 }
