@@ -4,14 +4,8 @@ body {
 }
 
 fieldset {
-    display: inline-block;
-    margin: 2em auto;
+     margin: 1em auto;
 }
-
-button {
-    margin: 1em auto;
-}
-
 
 .content {
     padding: 30px 29px;
@@ -24,7 +18,12 @@ button {
 .login_form {
     text-align: left;
     display: inline-block;
-    border: solid 1px;
+    border: solid 1px #393f46;
     border-radius: 5px;
     padding: 1.5em;
+}
+
+button {
+    margin: 1em auto;
+    width: 100%;
 }
