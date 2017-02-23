@@ -51,7 +51,12 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "To cast a vote, you will be led through the following steps. If you have not yet logged in, you will be asked to do so at the very end of the process.",
+        "value"      : "To cast a vote, you will be led through the following steps.",
+        "description": "Introduction"
+    },
+    {
+        "key"        : "_boothIntroductionTwo_",
+        "value"      : "If you have not yet logged in, you will be asked to do so at the very end of the process.",
         "description": "Introduction"
     },
     {
