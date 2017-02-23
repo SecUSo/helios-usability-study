@@ -7,9 +7,9 @@
 }
 
 #header table td {
-  border: 1px solid black;
-  padding: 0.3em;
-  width: 167px;
+    border: 1px solid black;
+    padding: 0.3em;
+    width: 167px;
 }
 
 .progress {

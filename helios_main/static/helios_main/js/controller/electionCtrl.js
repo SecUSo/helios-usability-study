@@ -11,6 +11,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     switch ($location.path().split("/")[1]) {
         case "final":
+            $scope.show_progress = false;
             break;
         case "election":
             $scope.show_progress = true;
@@ -77,7 +78,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         console.log($rootScope.auditData);
         console.log(encrypted_vote);
         console.log('Hash in scope ' + $scope.ballot_tracker);
-    };
+    }
 
 
     //From election to review
@@ -135,7 +136,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.backToVotingButton = function () {
         encrypt();
         $location.path('review/' + $routeParams['id']);
-    }
+    };
 
     $scope.cancelButton = function () {
     };
@@ -154,18 +155,18 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             + makeCCR() + "]], \"overall_proof\": [" + makeCCR() + ", " + makeCCR() + "], \"answer\": [0], \"randomness\": \"" +
             encrypted_vote + "\"}]}";
         return auditInfo;
-    };
+    }
 
     function makeAlphaBeta() {
         var res = "{\"alpha\": " + makeXRandoms(616) + ", \"beta\": " + makeXRandoms(616) + "}";
         return res;
-    };
+    }
 
     function makeCCR() {
         var res = "{\"challenge\": " + makeXRandoms(77) + ", \"commitment\": {\"A\": " + makeXRandoms(616) + ", \"B\": " +
             makeXRandoms(616) + "}, \"response\": " + makeXRandoms(77) + "}";
         return res;
-    };
+    }
 
     function makeXRandoms(count) {
         var res = "\"";
@@ -174,6 +175,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
         res += "\"";
         return res;
-    };
+    }
 
 });
