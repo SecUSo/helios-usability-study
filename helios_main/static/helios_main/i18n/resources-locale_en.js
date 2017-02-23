@@ -310,6 +310,11 @@
         "description": ""
     },
     {
+        "key"        : "_printHeading_",
+        "value"      : "Your smart ballot tracker for Test Election:",
+        "description": ""
+    },
+    {
         "key"        : "_loadingElectionString_",
         "value"      : "loading election...",
         "description": ""
