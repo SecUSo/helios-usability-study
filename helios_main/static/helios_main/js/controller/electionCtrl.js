@@ -54,7 +54,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         console.log($rootScope.auditData);
         console.log(encrypted_vote);
         console.log('Hash in scope ' + $scope.ballot_tracker);
-    }
+    };
 
 
     //From election to review
@@ -62,7 +62,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         //$scope.startTime = Date.now();
         encrypt();
         $location.path('review/' + $routeParams['id']);
-    }
+    };
 
     //From displays audit info
     $scope.auditButton = function () {
@@ -77,7 +77,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     //Opens new tab for printing the ballot tracker
     $scope.printButton = function () {
         $window.open('print/' + $routeParams['id']);
-    }
+    };
 
     //From review to audit
     $scope.verifyButton = function () {
@@ -92,7 +92,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     //Login for casting the ballot and redirect to final overview
     $scope.loginCastButton = function () {
         $location.path('final/' + $routeParams['id']);
-    }
+    };
 
     //From review to election
     $scope.backToElectionButton = function () {
@@ -123,7 +123,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     $scope.redirectToInstituteButton = function () {
         $location.path('audit/' + $routeParams['id']);
-    }
+    };
 
     function buildBallot(encrypted_vote) {
         var auditInfo = "{\"answers\": [{\"choices\": [" + makeAlphaBeta() + ", " + makeAlphaBeta() + ", " + makeAlphaBeta() +
@@ -131,18 +131,18 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             + makeCCR() + "]], \"overall_proof\": [" + makeCCR() + ", " + makeCCR() + "], \"answer\": [0], \"randomness\": \"" +
             encrypted_vote + "\"}]}";
         return auditInfo;
-    }
+    };
 
     function makeAlphaBeta() {
         var res = "{\"alpha\": " + makeXRandoms(616) + ", \"beta\": " + makeXRandoms(616) + "}";
         return res;
-    }
+    };
 
     function makeCCR() {
         var res = "{\"challenge\": " + makeXRandoms(77) + ", \"commitment\": {\"A\": " + makeXRandoms(616) + ", \"B\": " +
             makeXRandoms(616) + "}, \"response\": " + makeXRandoms(77) + "}";
         return res;
-    }
+    };
 
     function makeXRandoms(count) {
         var res = "\"";
@@ -151,6 +151,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
         res += "\"";
         return res;
-    }
+    };
 
 });
