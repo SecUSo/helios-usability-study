@@ -140,19 +140,24 @@
         "description": "Heading of Ballot Review on review page"
     },
     {
-        "key"        : "_ballotTrackerHeading_",
-        "value"      : "Your ballot tracker is ",
-        "description": "Heading of ballot tracker"
+        "key"        : "_reviewBallotDescription_",
+        "value"      : "Your ballot has been encrypted to keep the vote secret.",
+        "description": "First line on review page"
     },
     {
-        "key"        : "_ballotTrackerFollow_",
-        "value"      : ", and you can print it.",
-        "description": "comes after ballot tracker"
+        "key"        : "_reviewBallotCheckCodeHeading_",
+        "value"      : "Your Check Code is: ",
+        "description": ""
     },
     {
-        "key"        : "_clickSubmitHint_",
-        "value"      : "Once you click 'Submit', the unencrypted version of your ballot will be destroyed, and only the encrypted version will remain. The encrypted version will be submitted to the Helios server.",
-        "description": "Information about ballot after submit has been clicked"
+        "key"        : "_reviewBallotCheckCodeExplanation_",
+        "value"      : "With the help of this check code you can verify whether your vote is correctly tallied. For this please write down this check code or use the following alternatives:",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotVerificationExplanation_",
+        "value"      : "To ensure that your is correctly encrypted, you can have this encryption verified. You can repeat this process as many times as you want, until you are convinced that this vote system functions correctly.",
+        "description": ""
     },
     {
         "key"        : "_submitVoteButton_",

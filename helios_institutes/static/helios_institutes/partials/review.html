@@ -1,12 +1,10 @@
 <div class="content_box">
 
-    <p>Your ballot has been encrypted to keep the vote secret.</p>
-    <p><b>Your Check Code is: {{ ballot_tracker }}</b></p>
-    <p>With the help of this check code you can verify whether your vote is correctly tallied. For this please
-    write down this check code or use the following alternatives:</p>
+    <p data-i18n="_reviewBallotDescription_"></p>
+    <p data-i18n="_reviewBallotCheckCodeHeading_"><b> {{ ballot_tracker }}</b></p>
+    <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
 
-    <p>To ensure that your is correctly encrypted, you can have this encryption verified. You can repeat this process
-    as many times as you want, until you are convinced that this vote system functions correctly. </p>
+    <p data-i18n="_reviewBallotVerificationExplanation_"></p>
 
         <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
 
