@@ -8,6 +8,29 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
 
+
+    switch ($location.path().split("/")[1]) {
+        case "final":
+            break;
+        case "election":
+            $scope.show_progress = true;
+            $scope.current_step = 1;
+            break;
+        case "review":
+            $scope.show_progress = true;
+            $scope.current_step = 2;
+            break;
+        case "castlogin":
+            $scope.show_progress = false;
+            $scope.current_step = 3;
+            break;
+        case "cast":
+            $scope.show_progress = false;
+            break;
+        default:
+            $scope.show_progress = false;
+    }
+
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
         var result = angular.fromJson(data);
