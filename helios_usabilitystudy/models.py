@@ -35,7 +35,7 @@ class Option(models.Model):
 class Question(models.Model):
     question = models.CharField('Question', max_length=2000)
     number_answers = models.IntegerField('Allowed number answers')
-    option = models.ManyToManyField(Option)
+    options = models.ManyToManyField(Option)
 
     def __str__(self):
         return 'Question: ' + str(self.question)
