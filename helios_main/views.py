@@ -17,11 +17,11 @@ def assign(request):
         return HttpResponse('{"Error": "No ID supplied."}', content_type='application/json', status=400)
 
     question = Question.objects.all()[0]
-    options = question.option.all()
+    options_list = question.options.all()
 
     options_dict = {}
 
-    for op in options:
+    for op in options_list:
         options_dict[op.option_code] = op.option
 
     print("Experiment assigned")
