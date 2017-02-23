@@ -22,14 +22,14 @@
 
         <div>
 
-            <p>Question: {{ experimentData.question_data.question }}</p>
-            <p>Choice: {{ choice }}</p>
+            <p data-i18n="_questionLabel_"> {{ experimentData.question_data.question }}</p>
+            <p><b>✓</b> {{ choice }}</p>
 
         </div>
 
         <span data-i18n="_ballotTrackerHeading_"></span>
         <span><b>{{ ballot_tracker }}</b></span>
-        <span data-i18n="_ballotTrackerFollow_"></span><span><a href="" ng-click="printButton()">print it</a>.</span><br>
+        <span data-i18n="_ballotTrackerFollow_"></span><span><a data-i18n="_ballotTrackerPrint_" href="" ng-click="printButton()">print it</a>.</span><br>
 
         <span data-i18n="_clickSubmitHint_"></span>
 

@@ -155,6 +155,11 @@
         "description": "comes after ballot tracker"
     },
     {
+        "key"        : "_ballotTrackerPrint_",
+        "value"      : " print it",
+        "description": "Link to printing the ballot tracker."
+    },
+    {
         "key"        : "_clickSubmitHint_",
         "value"      : "Once you click 'Submit', the unencrypted version of your ballot will be destroyed, and only the encrypted version will remain. The encrypted version will be submitted to the Helios server.",
         "description": "Information about ballot after submit has been clicked"
@@ -428,12 +433,16 @@
         "key"        : "_loginCastBallotTracker_",
         "value"      : "Your smart ballot tracker is:",
         "description": "Final login page"
-    }
-    ,
+    },
     {
         "key"        : "_outOf_",
         "value"      : "# 1 of 1 - vote for",
         "description": "Number of choice in booth"
+    },
+    {
+        "key"        : "_questionLabel_",
+        "value"      : "Question: ",
+        "description": "review page label for question"
     },
     {
         "key"        : "_proceedButton_",
