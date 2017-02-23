@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div id="header" ng-controller="electionCtrl">
+
+    <h2>{{ head_line }}
+    </h2>
+    <div class="progress" ng-show="show_progress">
+        <table>
+            <tr>
+                <td id="progress_0"><span>Instructions</span></td>
+                <td id="progress_1"><span>Ballot</span></td>
+                <td id="progress_2"><span>Check Code</span></td>
+                <td id="progress_3"><span>Ballot Casting</span></td>
+            </tr>
+        </table>
+    </div>
+
+</div>

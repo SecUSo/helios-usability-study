@@ -99,7 +99,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     };
 
     $scope.redirectToInstituteButton = function (){
-        $window.open('https://www.google.com', '_blank');
+        $window.open('127.0.0.1:8080/verifier_one', '_blank');
         $location.path('main/' + $routeParams['id']);
     }
 

@@ -6,7 +6,7 @@
 
             <b><span class="ballot_question">Question: {{ experimentData.question_data.question }}</span></b><br/>
 
-            <span class="ballot_number">Please choose {{ experimentData.question_data.answers }} answer(s).</span>
+            <span class="ballot_number">You can select {{ experimentData.question_data.answers }} candidate(s) (or invalid vote).</span>
 
             <div ng-repeat="(code, option) in options">
 
@@ -16,7 +16,7 @@
 
             </div>
             <input type="checkbox" ng-click="saveChoice(code, option)">
-            <label>Empty vote </label>
+            <label>Invalid vote </label>
             <div align="center">
                 <button class="login_button" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
             </div>

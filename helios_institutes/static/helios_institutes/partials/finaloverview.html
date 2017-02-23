@@ -1,12 +1,21 @@
-<div class="content_box"><p data-i18n="_loginMessage_">{{ subject }}</p>
+<div class="content_box">
 
-    <div align="center">
-        <button data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
-    </div>
-    <p data-i18n="_CastingHintOne_"></p>
-    <p data-i18n="_CastingHintTwo_"></p>
-    <div align="center">
-        <button data-i18n="_cancelButton_" ng-click="cancelButton()"></button>
-    </div>
-    <p data-i18n="_cancelHint_"></p>
-    <p data-i18n="_restartMessage_"></p></div>
+
+    <span>Check code of the ballot to be cast is: </span> <b>{{ ballot_tracker }}</b><br>
+    <p>Please compare the shown check code with the one you wrote down during the previous step.</p>
+
+    <p>Please enter your user-name and password if you want to cast your ballot. Yan can find your user-name and
+        password
+        in the invitation to vote letter</p>
+
+    <form class="login_form" method="post">
+        ID:<br>
+        <input name="id" type="text"><br>
+        Password:<br>
+        <input name="password" type="password"><br>
+    </form>
+
+
+    <button data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+
+</div>
