@@ -14,11 +14,12 @@
 
 #header table td.active {
     font-weight: bold;
-    background-color: #fc9;
+    background-color: #66b266;
+    color: white;
 }
 
 #header table td.inactive {
-    background-color: #ccc;
+    background-color: #ededed;
     color: #888;
 }
 
