@@ -12,6 +12,10 @@
     width: 167px;
 }
 
+#header table {
+    border-collapse: collapse;
+}
+
 .progress {
     display: inline-block;
 }
