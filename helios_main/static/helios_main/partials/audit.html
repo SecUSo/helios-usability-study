@@ -5,19 +5,18 @@
         <h3 data-i18n="_auditedBallotHeading_"></h3>
 
         <b><span data-i18n="_importantHeading_"></span></b><span data-i18n="_importantMessagePartOne_"></span><i><span data-i18n="_importantMessagePartTwo_"></span></i><br>
-        <span data-i18n="_importantHeading_"></span>To cast a ballot, you must click the "Back to Voting" button below, re-encrypt it, and choose "cast" instead of
-        "audit."<br>
+        <span data-i18n="_auditCastInstruction_"></span><br>
         <br>
-        Why? Helios prevents you from auditing and casting the same ballot to provide you with some protection against
-        coercion.<br>
+        <span data-i18n="_whyHeading_"></span><span data-i18n="_whyMessage_"></span><br>
         <br>
-        Now what? <a onclick="" href="">Select your ballot audit info</a>, copy it to your clipboard, then use the <a
-            href="http://127.0.0.1:8080/" target="_blank">ballot verifier</a> to verify it.<br>
-        Once you're satisfied, click the "back to voting" button to re-encrypt and cast your ballot.<br>
+        <span data-i18n="_nowWhatHeading_"></span><a data-i18n="_nowWhatInfoLink_" onclick="" href=""></a>
+        <span data-i18n="_nowWhatInfoAfterLink_"></span> <a data-i18n="_nowWhatBallotVerifierLink_"
+            href="http://127.0.0.1:8080/" target="_blank"></a> <span data-i18n="_nowWhatBallotVerifierAfterLink_"></span><br>
+        <span data-i18n="_nowWhatBackToVoting_"></span><br>
         <br>
         <textarea name="auditDataTextArea" ng-model="auditData" rows="10" cols="63"></textarea> <br>
         <br>
 
-        <button ng-click="backToVotingButton()">Back to voting</button>
+        <button data-i18n="_backToVotingButton_" ng-click="backToVotingButton()"></button>
     </div>
 </div>

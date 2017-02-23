@@ -455,24 +455,8 @@
         "description": ""
     },
     {
-        "key"        : "_auditHeadingImportant_",
-        "value"      : "IMPORTANT",
-        "description": ""
-    },
-    {
-        "key"        : "_auditHeadingImportantFollow_",
-        "value"      : ": this ballot, now that it has been audited, ",
-        "description": ""
-    },
-    {
-        "key"        : "_auditHeadingImportantFollowCursive_",
-        "value"      : "will not be tallied.",
-        "description": ""
-    },
-    {
         "key"        : "_auditCastInstruction_",
         "value"      : "To cast a ballot, you must click the \"Back to Voting\" button below, re-encrypt it, and choose \"cast\" instead of \"audit.\"",
         "description": ""
     }
-
 ]
