@@ -12,6 +12,16 @@
     width: 167px;
 }
 
+#header table td.active {
+    font-weight: bold;
+    background-color: #fc9;
+}
+
+#header table td.inactive {
+    background-color: #ccc;
+    color: #888;
+}
+
 #header table {
     border-collapse: collapse;
 }
