@@ -54,10 +54,7 @@ button:hover {
     border-radius: 5px;
     display: inline-block;
     float: right;
-    max-width: 200px;
-}
-
-.audit_content {
+    width: 200px;
     padding: 1em;
 }
 

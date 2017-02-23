@@ -6,16 +6,15 @@
 
         <div class="audit_box">
 
-            <div style="float: right;">
-                <b><u><a style="text-align: left;" data-i18n="_auditButton_" ng-click="auditButton()"></a></u></b>
-                <span data-i18n="_auditButtonLabel_"></span></div>
+                <b><a style="float: left; text-decoration: underline;" data-i18n="_auditButton_" ng-click="auditButton()"></a></b>
+                <span data-i18n="_auditButtonLabel_"></span>
             <br>
 
             <div ng-show="auditClick">
 
-                <span class="audit_content" data-i18n="_auditMoreInfoOne_"></span> <br>
+                <div data-i18n="_auditMoreInfoOne_"></div>
 
-                <button style="text-align: center" data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
+                <button style="text-align: center; width: 100%; margin: 0;" data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
             </div>
 
         </div>
