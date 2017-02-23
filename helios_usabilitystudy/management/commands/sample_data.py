@@ -1,4 +1,4 @@
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from helios_usabilitystudy.models import Question, Option
 import json
 import os
