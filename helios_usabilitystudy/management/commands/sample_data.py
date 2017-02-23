@@ -29,8 +29,9 @@ class Command(BaseCommand):
                 question = Question()
                 question.question = question_data['question']
                 question.number_answers = question_data['number_answers']
+                question.save()
                 for option_id in question_data['options']:
-                    question.add(Option.objects.get(pk=option_id))
+                    question.options.add(Option.objects.get(pk=option_id))
                 question.save()
 
         self.stdout.write("Done inserting initial data ...\n")
