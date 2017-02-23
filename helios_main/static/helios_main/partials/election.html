@@ -4,22 +4,24 @@
 
         <form>
 
-            <b><span class="ballot_question">Question: {{ experimentData.question_data.question }}</span></b><br/>
+            <b><span class="ballot_question booth_heading">{{ experimentData.question_data.question }}</span></b><br/>
 
-            <span class="ballot_number">Please choose {{ experimentData.question_data.answers }} answer(s).</span>
+            <span data-i18n="_outOf_"
+                  class="ballot_number booth_miniheading"> {{ experimentData.question_data.answers }}</span>
 
-            <div ng-repeat="(code, option) in options">
+            <div style="margin-top: 2em;">
+                <div ng-repeat="(code, option) in options">
 
-                <input type="checkbox" ng-click="saveChoice(code, option)">
-                <label>{{ option }} </label>
-                <hr />
-            </div>
+                    <input type="checkbox" ng-click="saveChoice(code, option)">
+                    <label>{{ option }} </label>
+                    <hr/>
+                </div>
 
-            <div align="center">
-                <button class="login_button" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
-            </div>
+                <div align="center">
+                    <button class="login_button" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
+                </div>
 
         </form>
-
     </div>
+</div>
 </div>

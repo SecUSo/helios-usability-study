@@ -73,6 +73,10 @@ hr {
     padding: 0;
 }
 
-.booth_introduction{
+.booth_heading{
     font-size: 1.2em;
+}
+
+.booth_miniheading {
+    font-size: 0.6em;
 }

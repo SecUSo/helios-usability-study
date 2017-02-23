@@ -428,6 +428,12 @@
         "key"        : "_loginCastBallotTracker_",
         "value"      : "Your smart ballot tracker is:",
         "description": "Final login page"
+    }
+    ,
+    {
+        "key"        : "_outOf_",
+        "value"      : "# 1 of 1 - vote for",
+        "description": "Number of choice in booth"
     },
     {
         "key"        : "_proceedButton_",
