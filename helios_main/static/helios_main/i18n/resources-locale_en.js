@@ -146,7 +146,7 @@
     },
     {
         "key"        : "_ballotTrackerFollow_",
-        "value"      : ", and you can print it.",
+        "value"      : ", and you can ",
         "description": "comes after ballot tracker"
     },
     {
