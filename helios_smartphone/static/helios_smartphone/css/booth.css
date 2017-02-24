@@ -72,3 +72,13 @@ hr {
     border-top: 1px solid #d3d3d3;
     padding: 0;
 }
+
+table.ballot td.ballot {
+    border: 1px solid #A9A9A9;
+    padding: 0.3em;
+}
+
+table.ballot {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
