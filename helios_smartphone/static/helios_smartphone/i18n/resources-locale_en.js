@@ -421,7 +421,22 @@
     },
     {
         "key"        : "_finalLoginMessage_",
-        "value"      : "Please enter your user-name and password if you want to cast your ballot. Yan can find your user-name and password in the invitation to vote letter",
+        "value"      : "Please enter your username and password if you want to cast your ballot.",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginMessageTwo_",
+        "value"      : "You can find your username and password in the invitation to vote letter.",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginUsername_",
+        "value"      : "Username",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginPassword_",
+        "value"      : "Password",
         "description": ""
     },
     {

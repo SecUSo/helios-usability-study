@@ -22,6 +22,9 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
             $scope.show_progress = true;
             $scope.current_step = 3;
             break;
+        case "institute":
+            $scope.show_progress = false;
+            break;
         case "cast":
             $scope.show_progress = false;
             break;
@@ -72,7 +75,6 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        $scope.ballot = encrypted_vote;
         hashBackground = btoa(encrypted_vote);
         hashVisible = hashBackground.toString().substr(0, 16);
         console.log(encrypted_vote);
@@ -105,8 +107,8 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     //From review to audit
     $scope.verifyButton = function () {
-        $location.path('election/' + $routeParams['id'], '_blank');
-        $window.open('institute/' + $routeParams['id'], '_blank');
+        $location.path('election/' + $routeParams['id']);
+        $window.open('institute/' + encrypted_vote, '_blank');
     };
 
     //From review to final overview
@@ -117,11 +119,6 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     //From review to election
     $scope.backToElectionButton = function () {
         $location.path('election/' + $routeParams['id']);
-    };
-
-    //Redirect to new tab with institutes
-    $scope.chooseInstitute = function () {
-        //$location.path('institute/' + $routeParams['id'], '_blank');
     };
 
     //From institutes back to review
