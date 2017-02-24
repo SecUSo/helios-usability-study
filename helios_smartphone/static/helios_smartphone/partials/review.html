@@ -2,28 +2,19 @@
 
 <div class="content_box">
 
-    <h3 data-i18n="_reviewBallotHeading_"></h3>
-
-    <div>
-
-        <p>Question: {{ experimentData.question_data.question }}</p>
-        <p>Choice: {{ choice }}</p>
-
-    </div>
+    <p data-i18n="_reviewBallotDescription_"></p>
+    <p data-i18n="_reviewBallotCheckCodeHeading_"></p><p><b>{{ ballot_tracker }}</b></p>
+    <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
 
     <qrcode version="5" error-correction-level="H" size="100" data="{{ ballot_tracker }}"></qrcode>
 
-    <div data-i18n="_ballotTrackerHeading_"></div>
-    <p><b>{{ ballot_tracker }}</b></p>
-    <div data-i18n="_ballotTrackerFollow_"></div>
+    <p data-i18n="_reviewBallotVerificationExplanation_"></p>
 
-    <div data-i18n="_clickSubmitHint_"></div>
+    <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
 
-        <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+    <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
 
-        <button  data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
-
-        <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
+    <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
 
 
 </div>
