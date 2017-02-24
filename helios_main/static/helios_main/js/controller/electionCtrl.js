@@ -3,7 +3,7 @@
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
     //TODO Set language here
-    $rootScope.language = "en"
+    $rootScope.language = "en";
 
     var choiceBackground = "00";
     var encrypted_vote = "";
@@ -103,7 +103,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //Opens new tab for printing the ballot tracker
     $scope.printButton = function () {
-        $window.open('print/' + $routeParams['id']);
+         $window.open('print/' + $rootScope.ballot_tracker, '_blank');
     };
 
     //From review to audit
