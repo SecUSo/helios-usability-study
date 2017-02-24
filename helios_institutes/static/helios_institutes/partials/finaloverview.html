@@ -7,18 +7,22 @@
     <p data-i18n="_finalCompareCheckCode_"></p>
 
     <p data-i18n="_finalLoginMessage_"></p>
+    <p data-i18n="_finalLoginMessageTwo_"></p>
 
     <div style="text-align: center">
 
-    <form class="login_form" method="post">
-        ID:<br>
-        <input name="id" type="text"><br>
-        Password:<br>
-        <input name="password" type="password"><br>
-    </form>
+        <form class="login_form" method="post">
+            <span data-i18n="_finalLoginUsername_"></span><br>
+            <input name="id" type="text"><br>
+            <span data-i18n="_finalLoginPassword_"></span><br>
+            <input name="password" type="password"><br>
+        </form>
 
-</div>
-    <button style="float: right;" data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
-    <button style="float: left;" data-i18n="_castToReviewButton_" ng-click="backToReviewButton()"></button>
+    </div>
+
+    <div style="margin-top: 2em">
+        <button style="float: right;" data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+        <button style="float: left;" data-i18n="_castToReviewButton_" ng-click="backToReviewButton()"></button>
+    </div>
 
 </div>

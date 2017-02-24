@@ -69,7 +69,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         console.log(encrypted_vote);
     }
 
-
     //From election to review
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
