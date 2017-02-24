@@ -13,7 +13,7 @@
     {
       "option_code": "03",
       "option": "DIE LINKE",
-      "option_description": ""
+      "option_description": "DIE LINKE"
     },
     {
       "option_code": "04",
@@ -43,7 +43,7 @@
     {
       "option_code": "09",
       "option": "FREIE WÄHLER",
-      "option_description": ""
+      "option_description": "FREIE WÄHLER"
     },
     {
       "option_code": "10",
@@ -104,11 +104,6 @@
       "option_code": "21",
       "option": "BIG",
       "option_description": "Bündnis für Innovation und Gerechtigkeit"
-    },
-    {
-      "option_code": "00",
-      "option": "Ungültige Stimme",
-      "option_description": ""
     }
   ],
   "question": [
@@ -136,8 +131,7 @@
         "18",
         "19",
         "20",
-        "21",
-        "00"
+        "21"
       ]
     }
   ]
