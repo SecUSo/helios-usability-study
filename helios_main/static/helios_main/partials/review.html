@@ -1,44 +1,42 @@
 <div ng-include src="'/static/helios_main/partials/header.html'"></div>
 
-<div class="content">
+<div class="content_box">
 
-    <div class="content_box">
+    <div class="audit_box">
 
-        <div class="audit_box">
+        <a style="float: left; text-decoration: underline; font-weight: bold;" data-i18n="_auditButton_"
+           ng-click="auditButton()"></a>
+        <span data-i18n="_auditButtonLabel_"></span>
+        <br>
 
-                <a style="float: left; text-decoration: underline; font-weight: bold;" data-i18n="_auditButton_" ng-click="auditButton()"></a>
-                <span data-i18n="_auditButtonLabel_"></span>
-            <br>
+        <div ng-show="auditClick">
 
-            <div ng-show="auditClick">
+            <div data-i18n="_auditMoreInfoOne_"></div>
 
-                <div data-i18n="_auditMoreInfoOne_"></div>
-
-                <button style="text-align: center; width: 100%; margin: 0;" data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
-            </div>
-
+            <button style="text-align: center; width: 100%; margin: 0;" data-i18n="_verifyButton_"
+                    ng-click="verifyButton()"></button>
         </div>
 
-        <h3 data-i18n="_reviewBallotHeading_"></h3>
+    </div>
 
-        <div>
+    <h3 data-i18n="_reviewBallotHeading_"></h3>
 
-            <p data-i18n="_questionLabel_"> {{ experimentData.question_data.question }}</p>
-            <p><b>✓</b> {{ choice }}</p>
+    <div>
 
-        </div>
+        <p data-i18n="_questionLabel_"> {{ experimentData.question_data.question }}</p>
+        <p><b>✓</b> {{ choice }}</p>
 
-        <span data-i18n="_ballotTrackerHeading_"></span>
-        <span><b>{{ ballot_tracker }}</b></span>
-        <span data-i18n="_ballotTrackerFollow_"></span><span><a data-i18n="_ballotTrackerPrint_" href="" ng-click="printButton()">print it</a>.</span><br>
+    </div>
 
-        <span data-i18n="_clickSubmitHint_"></span>
+    <span data-i18n="_ballotTrackerHeading_"></span>
+    <span><b>{{ ballot_tracker }}</b></span>
+    <span data-i18n="_ballotTrackerFollow_"></span><span><a data-i18n="_ballotTrackerPrint_" href=""
+                                                            ng-click="printButton()">print it</a>.</span><br>
 
-        <div>
-            <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
-        </div>
-        <div>
-            <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
-        </div>
+    <span data-i18n="_clickSubmitHint_"></span>
+
+    <div style="margin-top: 1em;">
+        <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+        <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
     </div>
 </div>

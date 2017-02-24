@@ -35,6 +35,8 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             $scope.show_progress = false;
     }
 
+    $rootScope.subject = $routeParams['id'];
+
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
         var result = angular.fromJson(data);
@@ -42,8 +44,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
 
-        //TODO Why is this not displayed?
-        $rootScope.subject = $routeParams['id'];
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;

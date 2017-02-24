@@ -1,29 +1,25 @@
 <div ng-include src="'/static/helios_main/partials/header.html'"></div>
 
-<div class="content">
 
-    <div class="content_box">
+<div class="content_box">
 
-        <form>
+    <form>
 
-            <b><span class="ballot_question booth_heading">{{ experimentData.question_data.question }}</span></b><br/>
+        <b><span class="ballot_question booth_heading">{{ experimentData.question_data.question }}</span></b><br/>
 
-            <span data-i18n="_outOf_"
-                  class="ballot_number booth_miniheading"> {{ experimentData.question_data.answers }}</span>
+        <span data-i18n="_outOf_"
+              class="ballot_number booth_miniheading"> {{ experimentData.question_data.answers }}</span>
 
-            <div style="margin-top: 2em;">
-                <div ng-repeat="(code, option) in options">
+        <div style="margin-top: 2em;">
+            <div ng-repeat="(code, option) in options">
 
-                    <input type="checkbox" ng-click="saveChoice(code, option)">
-                    <label>{{ option }} </label>
-                    <hr/>
-                </div>
+                <input type="checkbox" ng-click="saveChoice(code, option)">
+                <label>{{ option }} </label>
+                <hr/>
+            </div>
+        </div>
+            <button style="float: right" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
 
-                <div align="center">
-                    <button class="login_button" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
-                </div>
-
-        </form>
-    </div>
+    </form>
 </div>
 </div>

@@ -6,11 +6,6 @@ body {
     margin: 0;
 }
 
-.content {
-    text-align: left;
-    display: inline-block;
-}
-
 .login_form {
     text-align: left;
     display: inline-block;
@@ -21,7 +16,6 @@ body {
 }
 
 button {
-    margin: 1em auto;
     background-color: #66b266;
     border: none;
     border-radius: 5px;
@@ -36,6 +30,7 @@ button:hover {
 
 .login_button {
     width: 100%;
+    margin-top: 1em;
 }
 
 .content_box {
