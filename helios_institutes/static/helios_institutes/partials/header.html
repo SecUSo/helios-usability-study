@@ -5,10 +5,10 @@
     <div class="progress" ng-show="show_progress">
         <table>
             <tr>
-                <td id="progress_0"><span>Instructions</span></td>
-                <td id="progress_1"><span>Ballot</span></td>
-                <td id="progress_2"><span>Check Code</span></td>
-                <td id="progress_3"><span>Ballot Casting</span></td>
+                <td id="progress_0" ng-class="{true: 'active', false: 'inactive'}[current_step == 0]"><span>Instructions</span></td>
+                <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]"><span>Ballot</span></td>
+                <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]"><span>Check Code</span></td>
+                <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]"><span>Ballot Casting</span></td>
             </tr>
         </table>
     </div>
