@@ -64,7 +64,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 42);
+        $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 16);
         console.log(encrypted_vote);
     }
 
