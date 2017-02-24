@@ -30,14 +30,14 @@ def login(request):
         type = subject.experiment_type
         print("Experiment type is " + type)
 
-        return returnExperiment(experiment_type=type, username=username)
+        return return_experiment(experiment_type=type, username=username)
     else:
         print("User doesn't exist")
         return redirect('login/')
 
 
 # Conditional redirect depending on experiment type
-def returnExperiment(experiment_type, username):
+def return_experiment(experiment_type, username):
     return {
         '1': redirect('main/' + username),
         '2': redirect('institute/' + username),
