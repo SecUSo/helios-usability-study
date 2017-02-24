@@ -1,95 +1,122 @@
 {
-    "option": [
-        {
-            "option_code": "01",
-            "option": "CDU"
-        },
-	{
-            "option_code": "02",
-            "option": "SPD"
-        },
-	{
-            "option_code": "03",
-            "option": "DIE LINKE"
-        },
-	{
-            "option_code": "04",
-            "option": "GRÜNE"
-        },
-	{
-            "option_code": "05",
-            "option": "CSU"
-        },
-	{
-            "option_code": "06",
-            "option": "FDP"
-        },
-	{
-            "option_code": "07",
-            "option": "AFD"
-        },
-	{
-            "option_code": "08",
-            "option": "PIRATEN"
-        },
-	{
-            "option_code": "09",
-            "option": "FREIE WÄHLER"
-        },
-	{
-            "option_code": "10",
-            "option": "NPD"
-        },
-	{
-            "option_code": "11",
-            "option": "TIERSCHUTZPARTEI"
-        },
-	{
-            "option_code": "12",
-            "option": "ÖDP"
-        },
-	{
-            "option_code": "13",
-            "option": "REP"
-        },
-	{
-            "option_code": "14",
-            "option": "DIE PARTEI"
-        },
-	{
-            "option_code": "15",
-            "option": "PRO DEUTSCHLAND"
-        },
-	{
-            "option_code": "16",
-            "option": "BP"
-        },
-	{
-            "option_code": "17",
-            "option": "Volksabstimmung"
-        },
-	{
-            "option_code": "18",
-            "option": "PDV"
-        },
-	{
-            "option_code": "19",
-            "option": "MLPD"
-        },
-	{
-            "option_code": "20",
-            "option": "PBC"
-        },
-	{
-            "option_code": "21",
-            "option": "BIG"
-        }
-    ],
-    "question": [
-        {
-            "question": "Bitte geben Sie eine Stimme für die Wahl einer Landesliste (Partei) ab. Zweitstimme",
-            "number_answers": 1,
-            "options": ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"  ]
- 	}
-    ]
+  "option": [
+    {
+      "option_code": "01",
+      "option": "CDU"
+    },
+    {
+      "option_code": "02",
+      "option": "SPD"
+    },
+    {
+      "option_code": "03",
+      "option": "DIE LINKE"
+    },
+    {
+      "option_code": "04",
+      "option": "GRÜNE"
+    },
+    {
+      "option_code": "05",
+      "option": "CSU"
+    },
+    {
+      "option_code": "06",
+      "option": "FDP"
+    },
+    {
+      "option_code": "07",
+      "option": "AFD"
+    },
+    {
+      "option_code": "08",
+      "option": "PIRATEN"
+    },
+    {
+      "option_code": "09",
+      "option": "FREIE WÄHLER"
+    },
+    {
+      "option_code": "10",
+      "option": "NPD"
+    },
+    {
+      "option_code": "11",
+      "option": "TIERSCHUTZPARTEI"
+    },
+    {
+      "option_code": "12",
+      "option": "ÖDP"
+    },
+    {
+      "option_code": "13",
+      "option": "REP"
+    },
+    {
+      "option_code": "14",
+      "option": "DIE PARTEI"
+    },
+    {
+      "option_code": "15",
+      "option": "PRO DEUTSCHLAND"
+    },
+    {
+      "option_code": "16",
+      "option": "BP"
+    },
+    {
+      "option_code": "17",
+      "option": "Volksabstimmung"
+    },
+    {
+      "option_code": "18",
+      "option": "PDV"
+    },
+    {
+      "option_code": "19",
+      "option": "MLPD"
+    },
+    {
+      "option_code": "20",
+      "option": "PBC"
+    },
+    {
+      "option_code": "21",
+      "option": "BIG"
+    },
+    {
+      "option_code": "00",
+      "option": "Ungültige Stimme"
+    }
+  ],
+  "question": [
+    {
+      "question": "Bitte geben Sie eine Stimme für die Wahl einer Landesliste (Partei) ab. Zweitstimme",
+      "number_answers": 1,
+      "options": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "00"
+      ]
+    }
+  ]
 }
