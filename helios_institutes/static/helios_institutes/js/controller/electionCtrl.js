@@ -2,7 +2,7 @@
 
 heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-    var choiceBackground = "00";
+    var choiceBackground;
     var encrypted_vote = "";
     $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
@@ -28,7 +28,8 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
             $scope.current_step = 0;
     }
 
-    //Do when page loaded
+    $rootScope.choice = choiceBackground;
+
     Backend.assign($routeParams['id']).success(function (data) {
         var result = angular.fromJson(data);
         if ("Error" in result) {
@@ -114,7 +115,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.redirectToInstituteButton = function () {
         $window.open('//127.0.0.1:8080/verifier_one', '_blank');
-        $location.path('main/' + $routeParams['id']);
+        $location.path('election/' + $routeParams['id']);
     };
 
 });

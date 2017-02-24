@@ -87,3 +87,26 @@ table.ballot {
     border-collapse: collapse;
     margin: 1em auto;
 }
+
+.vote_button_inactive {
+    padding: 1em;
+    border: solid 2px #d3d3d3;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.vote_button_inactive:hover {
+    background-color: black;
+}
+
+.vote_button_active {
+    padding: 1em;
+    border: solid 2px black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.vote_button_active:hover {
+    background-color: black;
+    color: black;
+}
