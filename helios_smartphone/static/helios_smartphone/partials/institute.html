@@ -1,12 +1,21 @@
 <div ng-include src="'/static/helios_smartphone/partials/header.html'"></div>
 
-<div class="content_box">Manual what to do with the app<br>
+<div class="content_box">
 
-    Press the "Scan vote code"-button and scan the QR Code below.
+    <h3>Vote Verification</h3>
 
-    <qrcode version="12" error-correction-level="M" size="200" data=" {{ ballot }}"></qrcode>
+    The QR Code below represents all data which is required for verification by the application.<br>
+    Press the "Scan vote code"-button in the application and scan the QR Code below.<br>
 
-    <div align="center">
-        <button data-i18n="_closeButton_" ng-click="closeAudit()"></button>
+    <div style="text-align: center; margin: 2em 2em;">
+
+        <qrcode version="12" error-correction-level="M" size="200" data=" {{ ballot }}"></qrcode>
+        <br>
+
     </div>
+
+    Now you can follow the instructions given by the application and close this window afterwards.<br>
+
+    <button style="float: right" data-i18n="_closeButton_" ng-click="closeAudit()"></button>
+
 </div>
