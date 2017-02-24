@@ -5,8 +5,8 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     var choiceBackground = "00";
     var hashBackground;
     var hashVisible;
-    var encrypted_vote;
-    $scope.head_line = "HEADLINE";
+    var encrypted_vote = "";
+    $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
 
     switch ($location.path().split("/")[1]) {
