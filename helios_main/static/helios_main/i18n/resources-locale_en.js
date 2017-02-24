@@ -311,7 +311,7 @@
     },
     {
         "key"        : "_printHeading_",
-        "value"      : "Your smart ballot tracker for Test Election:",
+        "value"      : "Your smart ballot tracker:",
         "description": ""
     },
     {
