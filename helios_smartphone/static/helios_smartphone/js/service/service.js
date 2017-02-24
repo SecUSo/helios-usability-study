@@ -6,7 +6,7 @@ angular.module('BackendService', [])
             assign: function (id) {
                 return $http({
                     method: "POST",
-                    url: '/main/assign',
+                    url: '/smartphone/assign',
                     data: 'id=' + id,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
