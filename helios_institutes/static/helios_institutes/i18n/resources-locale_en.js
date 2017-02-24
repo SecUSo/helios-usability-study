@@ -346,7 +346,12 @@
     },
     {
         "key"        : "_castThisBallotButton_",
-        "value"      : "CAST this ballot",
+        "value"      : "Conclude the ballot casting",
+        "description": ""
+    },
+    {
+        "key"        : "_castToReviewButton_",
+        "value"      : "Back to the Check Code",
         "description": ""
     },
     {

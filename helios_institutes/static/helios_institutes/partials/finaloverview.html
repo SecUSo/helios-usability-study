@@ -8,6 +8,8 @@
 
     <p data-i18n="_finalLoginMessage_"></p>
 
+    <div style="text-align: center">
+
     <form class="login_form" method="post">
         ID:<br>
         <input name="id" type="text"><br>
@@ -15,7 +17,8 @@
         <input name="password" type="password"><br>
     </form>
 
-
-    <button data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+</div>
+    <button style="float: right;" data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+    <button style="float: left;" data-i18n="_castToReviewButton_" ng-click="backToReviewButton()"></button>
 
 </div>
