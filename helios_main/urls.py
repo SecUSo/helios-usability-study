@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from helios_main import views
+from helios_institutes import views
 
 
 urlpatterns = [
