@@ -51,7 +51,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "This election will be executed in 3 steps:.",
+        "value"      : "This election will be executed in 3 steps:",
         "description": "Introduction"
     },
     {

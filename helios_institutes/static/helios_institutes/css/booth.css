@@ -79,11 +79,11 @@ hr {
 }
 
 table.ballot td.ballot {
-    border: 1px solid black;
+    border: 1px solid #A9A9A9;
     padding: 0.3em;
-    width: 167px;
 }
 
 table.ballot {
     border-collapse: collapse;
+    margin: 1em auto;
 }
