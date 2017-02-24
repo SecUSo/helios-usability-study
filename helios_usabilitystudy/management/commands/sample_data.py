@@ -23,6 +23,7 @@ class Command(BaseCommand):
                 option = Option()
                 option.option_code = option_data['option_code']
                 option.option = option_data['option']
+                option.option_description = option_data['option_description']
                 option.save()
 
             for question_data in data['question']:

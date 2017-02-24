@@ -12,7 +12,8 @@
     },
     {
       "option_code": "03",
-      "option": "DIE LINKE"
+      "option": "DIE LINKE",
+      "option_description": ""
     },
     {
       "option_code": "04",
@@ -41,7 +42,8 @@
     },
     {
       "option_code": "09",
-      "option": "FREIE WÄHLER"
+      "option": "FREIE WÄHLER",
+      "option_description": ""
     },
     {
       "option_code": "10",
@@ -105,7 +107,8 @@
     },
     {
       "option_code": "00",
-      "option": "Ungültige Stimme"
+      "option": "Ungültige Stimme",
+      "option_description": ""
     }
   ],
   "question": [

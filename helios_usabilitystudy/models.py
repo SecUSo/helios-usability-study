@@ -27,6 +27,7 @@ class Duration(models.Model):
 class Option(models.Model):
     option_code = models.CharField('Option_code', max_length=4, unique=True, primary_key=True)
     option = models.CharField('Option', max_length=50)
+    option_description = models.CharField('Description', max_length=2000, null=True)
 
     def __str__(self):
         return 'Option: ' + str(self.option)
