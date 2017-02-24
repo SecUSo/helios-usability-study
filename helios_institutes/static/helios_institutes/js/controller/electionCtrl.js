@@ -41,6 +41,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
+        console.log($scope.options);
         $scope.startTimeAll = Date.now();
 
     });
