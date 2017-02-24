@@ -2,11 +2,13 @@
   "option": [
     {
       "option_code": "01",
-      "option": "CDU"
+      "option": "CDU",
+      "option_description": "Christlich Demokratische Union Deutschlands"
     },
     {
       "option_code": "02",
-      "option": "SPD"
+      "option": "SPD",
+      "option_description": "Sozialdemokratische Partei Deutschlands"
     },
     {
       "option_code": "03",
@@ -14,23 +16,28 @@
     },
     {
       "option_code": "04",
-      "option": "GRÜNE"
+      "option": "GRÜNE",
+      "option_description": "Bündnis 90 / Die Grünen"
     },
     {
       "option_code": "05",
-      "option": "CSU"
+      "option": "CSU",
+      "option_description": "Christlich-Soziale Union in Bayern e.V."
     },
     {
       "option_code": "06",
-      "option": "FDP"
+      "option": "FDP",
+      "option_description": "Freie Demokratische Partei"
     },
     {
       "option_code": "07",
-      "option": "AFD"
+      "option": "AFD",
+      "option_description": "Alternative für Deutschland"
     },
     {
       "option_code": "08",
-      "option": "PIRATEN"
+      "option": "PIRATEN",
+      "option_description": "Piratenpartei Deutschland"
     },
     {
       "option_code": "09",
@@ -38,51 +45,63 @@
     },
     {
       "option_code": "10",
-      "option": "NPD"
+      "option": "NPD",
+      "option_description": "Nationaldemokratische Partei Deutschlands"
     },
     {
       "option_code": "11",
-      "option": "TIERSCHUTZPARTEI"
+      "option": "TIERSCHUTZPARTEI",
+      "option_description": "Partei Mensch Umwelt Tierschutz"
     },
     {
       "option_code": "12",
-      "option": "ÖDP"
+      "option": "ÖDP",
+      "option_description": "Ökologisch-Demokratische Partei"
     },
     {
       "option_code": "13",
-      "option": "REP"
+      "option": "REP",
+      "option_description": "Die Republikaner"
     },
     {
       "option_code": "14",
-      "option": "DIE PARTEI"
+      "option": "DIE PARTEI",
+      "option_description": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
     },
     {
       "option_code": "15",
-      "option": "PRO DEUTSCHLAND"
+      "option": "PRO DEUTSCHLAND",
+      "option_description": "Bürgerbewegung pro Deutschland"
     },
     {
       "option_code": "16",
-      "option": "BP"
+      "option": "BP",
+      "option_description": "Bayernpartei"
     },
     {
       "option_code": "17",
-      "option": "Volksabstimmung"
+      "option": "Volksabstimmung",
+      "option_description": "Ab jetzt … Demokratie durch Volksabstimmung – Politik für die Menschen"
     },
     {
       "option_code": "18",
-      "option": "PDV"
+      "option": "PDV",
+      "option_description": "Partei der Vernunft"
     },
     {
       "option_code": "19",
-      "option": "MLPD"
+      "option": "MLPD",
+      "option_description": "Marxistisch-Leninistische Partei Deutschlands"
     },
     {
       "option_code": "20",
-      "option": "PBC"
+      "option": "PBC",
+      "option_description": "Partei Bibeltreuer Christen"
     },
     {
       "option_code": "21",
-      "option": "BIG"
+      "option": "BIG",
+      "option_description": "Bündnis für Innovation und Gerechtigkeit"
     },
     {
       "option_code": "00",
