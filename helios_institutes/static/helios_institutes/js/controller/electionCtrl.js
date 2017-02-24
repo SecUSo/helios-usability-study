@@ -6,14 +6,10 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     var hashBackground;
     var hashVisible;
     var encrypted_vote = "";
-    $scope.auditClick = false;
     $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
 
-    switch ($location.path().split("/")[1]) {
-        case "final":
-            $scope.show_progress = false;
-            break;
+ switch ($location.path().split("/")[1]) {
         case "election":
             $scope.show_progress = true;
             $scope.current_step = 1;
@@ -22,15 +18,16 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
             $scope.show_progress = true;
             $scope.current_step = 2;
             break;
-        case "castlogin":
-            $scope.show_progress = false;
+        case "final":
+            $scope.show_progress = true;
             $scope.current_step = 3;
             break;
         case "cast":
             $scope.show_progress = false;
             break;
         default:
-            $scope.show_progress = false;
+            $scope.show_progress = true;
+            $scope.current_step = 0;
     }
 
     //Do when page loaded
@@ -89,7 +86,11 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         console.log('Hash is ' + hashVisible);
         console.log('Hash in scope ' + $scope.ballot_tracker);
         $location.path('review/' + $routeParams['id']);
-    }
+    };
+
+    $scope.startButton = function () {
+            $location.path('election/' + $routeParams['id']);
+    };
 
     //From review to audit
      $scope.verifyButton = function () {
@@ -126,6 +127,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     $scope.redirectToInstituteButton = function (){
         $window.open('127.0.0.1:8080/verifier_one', '_blank');
         $location.path('main/' + $routeParams['id']);
-    }
+    };
 
 });

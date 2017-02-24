@@ -12,7 +12,7 @@ var heliosStudySmartphoneApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        when('/:id', {templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'introductionCtrl'}).
+        when('/:id', {templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'electionCtrl'}).
         when('/election/:id', {templateUrl: '/static/helios_smartphone/partials/election.html', controller: 'electionCtrl'}).
         when('/review/:id', {templateUrl: '/static/helios_smartphone/partials/review.html', controller: 'electionCtrl'}).
         when('/institute/:id', {templateUrl: '/static/helios_smartphone/partials/institute.html', controller: 'electionCtrl'}).
@@ -20,7 +20,7 @@ var heliosStudySmartphoneApp = angular.module(
         when('/castlogin/:id', {templateUrl: '/static/helios_smartphone/partials/loginforcast.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/helios_smartphone/partials/finaloverview.html', controller: 'electionCtrl'}).
         when('/error/', {templateUrl: '/static/helios_smartphone/partials/error.html', controller: 'errorCtrl'}).
-        otherwise({templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'introductionCtrl'});
+        otherwise({templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'electionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
 }]);
