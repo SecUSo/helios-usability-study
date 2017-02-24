@@ -410,6 +410,21 @@
         "description": ""
     },
     {
+        "key"        : "_finalCheckCode_",
+        "value"      : "Check code of the ballot to be cast is:",
+        "description": ""
+    },
+    {
+        "key"        : "_finalCompareCheckCode_",
+        "value"      : "Please compare the shown check code with the one you wrote down during the previous step.",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginMessage_",
+        "value"      : "Please enter your user-name and password if you want to cast your ballot. Yan can find your user-name and password in the invitation to vote letter",
+        "description": ""
+    },
+    {
         "key"        : "_proceedButton_",
         "value"      : "Proceed",
         "description": "Button to proceed to the next step"
