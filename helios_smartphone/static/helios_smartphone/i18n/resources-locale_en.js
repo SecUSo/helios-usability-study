@@ -265,8 +265,8 @@
         "description": ""
     },
     {
-        "key"        : "_backToVotingButton_",
-        "value"      : "back to voting",
+        "key"        : "_closeButton_",
+        "value"      : "Close",
         "description": ""
     },
     {
