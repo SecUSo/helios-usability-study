@@ -5,7 +5,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     var choiceBackground = "00";
     var hashBackground;
     var hashVisible;
-    var encrypted_vote = "";
+    var encrypted_vote;
     $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
 
@@ -78,7 +78,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         hashBackground = btoa(encrypted_vote);
         hashVisible = hashBackground.toString().substr(0, 16);
         console.log(encrypted_vote);
-
+        $rootScope.encrypted_vote = encrypted_vote;
     }
 
 
@@ -108,7 +108,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     //From review to audit
     $scope.verifyButton = function () {
         $location.path('election/' + $routeParams['id']);
-        $window.open('institute/' + encrypted_vote, '_blank');
+        $window.open('institute/' + $rootScope.encrypted_vote, '_blank');
     };
 
     //From review to final overview
