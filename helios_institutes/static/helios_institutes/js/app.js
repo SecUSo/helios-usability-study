@@ -10,14 +10,14 @@ var heliosStudyInstitutesApp = angular.module(
     ]
 ).config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $routeProvider.
-        when('/:id', {templateUrl: '/static/helios_institutes/partials/introduction.html', controller: 'introductionCtrl'}).
+        when('/:id', {templateUrl: '/static/helios_institutes/partials/introduction.html', controller: 'electionCtrl'}).
         when('/election/:id', {templateUrl: '/static/helios_institutes/partials/election.html', controller: 'electionCtrl'}).
         when('/review/:id', {templateUrl: '/static/helios_institutes/partials/review.html', controller: 'electionCtrl'}).
         when('/institute/:id', {templateUrl: '/static/helios_institutes/partials/institute.html', controller: 'electionCtrl'}).
         when('/cast/:id', {templateUrl: '/static/helios_institutes/partials/cast.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/helios_institutes/partials/finaloverview.html', controller: 'electionCtrl'}).
         when('/error/', {templateUrl: '/static/helios_institutes/partials/error.html', controller: 'errorCtrl'}).
-        otherwise({templateUrl: '/static/helios_institutes/partials/introduction.html', controller: 'introductionCtrl'});
+        otherwise({templateUrl: '/static/helios_institutes/partials/introduction.html', controller: 'electionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
 }]);
