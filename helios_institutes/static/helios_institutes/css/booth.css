@@ -77,3 +77,13 @@ hr {
     font-size: 14pt;
     font-weight: bold;
 }
+
+table.ballot td.ballot {
+    border: 1px solid black;
+    padding: 0.3em;
+    width: 167px;
+}
+
+table.ballot {
+    border-collapse: collapse;
+}

@@ -4,26 +4,23 @@
 
     <div class="content_box">
 
-        <form>
+        <span style="font-weight: bold"
+              class="ballot_question">Question: {{ experimentData.question_data.question }}</span><br/>
 
-            <b><span class="ballot_question">Question: {{ experimentData.question_data.question }}</span></b><br/>
+        <span class="ballot_number">You can select {{ experimentData.question_data.answers }} candidate(s) (or invalid vote).</span>
 
-            <span class="ballot_number">You can select {{ experimentData.question_data.answers }} candidate(s) (or invalid vote).</span>
+            <table class="ballot">
+                <tr ng-repeat="(code, option) in options">
 
-            <div ng-repeat="(code, option) in options">
+                    <td class="ballot"><input type="checkbox" ng-click="saveChoice(code, option)"></td>
+                    <td class="ballot"><label>{{ option }} </label></td>
+                    <td class="ballot">{{ code }}</td>
+                </tr>
+            </table>
 
-                <input type="checkbox" ng-click="saveChoice(code, option)">
-                <label>{{ option }} </label>
-                <hr/>
+        <button style="float: right; margin-top: 1em;" data-i18n="_proceedButton_"
+                ng-click="proceedButton()"></button>
 
-            </div>
-            <input type="checkbox" ng-click="saveChoice(code, option)">
-            <label>Invalid vote </label>
-            <div align="center">
-                <button class="login_button" data-i18n="_proceedButton_" ng-click="proceedButton()"></button>
-            </div>
-
-        </form>
 
     </div>
 </div>
