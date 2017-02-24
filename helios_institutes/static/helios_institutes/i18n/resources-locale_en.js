@@ -51,58 +51,33 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "To cast a vote, you will be led through the following steps. If you have not yet logged in, you will be asked to do so at the very end of the process.",
+        "value"      : "This election will be executed in 3 steps:.",
         "description": "Introduction"
     },
     {
-        "key"        : "_selectHeading_",
-        "value"      : "Select",
-        "description": "Used in description of voting booth"
-    },
-    {
-        "key"        : "_selectFollow_",
-        "value"      : " your preferred options.",
-        "description": "Defines what to select"
-    },
-    {
-        "key"        : "_selectMoreInfo_",
-        "value"      : "You can easily navigate forwards and backwards.",
+        "key"        : "_firstMoreInfo_",
+        "value"      : "In the first step you will see the where you can vote for the candidate of your choice.",
         "description": "More info below select description"
     },
     {
-        "key"        : "_reviewHeading_",
-        "value"      : "Review & Confirm",
-        "description": "Used in description of voting booth"
-    },
-    {
-        "key"        : "_confirmChoices_",
-        "value"      : "Confirm Choices and Encrypt Ballot",
-        "description": ""
-    },
-    {
-        "key"        : "_reviewFollow_",
-        "value"      : " your choices.",
-        "description": "Defines what to review"
-    },
-    {
-        "key"        : "_reviewMoreInfo_",
-        "value"      : "Your choices are encrypted safely inside your browser, and you get a smart ballot tracker.",
+        "key"        : "_secondMoreInfo_",
+        "value"      : "After you choose a candidate, your ballot will be encrypted in order to keep the vote secret. Furthermore a check code will be generated for your ballot. To ensure that your ballot is correctly encrypted, you can have this encryption verified by any of several independent institutes. You can repeat this process as many times as you need until you are convinced that this vote system functions correctly.",
         "description": "More info below review description"
     },
     {
-        "key"        : "_SubmitHeading_",
-        "value"      : "Submit",
-        "description": "Used in description of voting booth"
-    },
-        {
-        "key"        : "_submitFollow_",
-        "value"      : " your encrypted ballot.",
-        "description": "Defines what to submit"
+        "key"        : "_thirdMoreInfo_",
+        "value"      : "The actual ballot-casting process is performed in the last step. By entering your username und password, your (encrypted) ballot will be cast. As long as you have not cast your ballot you can cancel the procedure any time by closing the vote system's window. You are free to continue at another time. This will not cause you to loose your eligibility to vote. ",
+        "description": "More info below submit description"
     },
     {
-        "key"        : "_submitMoreInfo_",
-        "value"      : "You will be asked to log in to submit your encrypted ballot for tallying.",
+        "key"        : "_introductionFollow_",
+        "value"      : "At the end of the election, a list of check codes for all tallied votes will be published. If you want to confirm whether your vote has been correctly tallied, you can look up your check code in this list. ",
         "description": "More info below submit description"
+    },
+    {
+        "key"        : "_introductionStart_",
+        "value"      : "To start the election procedure, click on the \"Proceed to ballot\" button.",
+        "description": ""
     },
     {
         "key"        : "_exitButton_",
