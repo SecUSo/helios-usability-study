@@ -10,7 +10,7 @@
 
             <span class="ballot_number">Please choose {{ experimentData.question_data.answers }} answer(s).</span>
 
-            <div ng-repeat="(code, option) in options">
+            <div ng-repeat="(code, option, description) in options">
 
                 <input type="checkbox" ng-click="saveChoice(code, option)">
                 <label>{{ option }} </label>
