@@ -4,7 +4,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     var choiceBackground = "00";
     var encrypted_vote = "";
-    $scope.head_line = "HEADLINE";
+    $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
 
     switch ($location.path().split("/")[1]) {
@@ -113,7 +113,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     };
 
     $scope.redirectToInstituteButton = function () {
-        $window.open('127.0.0.1:8080/verifier_one', '_blank');
+        $window.open('//127.0.0.1:8080/verifier_one', '_blank');
         $location.path('main/' + $routeParams['id']);
     };
 
