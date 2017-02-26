@@ -3,8 +3,14 @@
 <div class="content_box">
     Redirect to OSCE<br>
 
-    <button data-i18n="_OSCE_" ng-click="redirectToInstituteButton()"></button>
+
+    <form target="_blank" method="post" action="//127.0.0.1:8080/verifier_one">
+        <input name="vote" type="hidden" ng-value="vote">
+        <input name="tracker" type="hidden" ng-value="tracker">
+        <button type="submit" data-i18n="_OSCE_"></button>
+    </form>
 
     <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
+
 
 </div>

@@ -14,8 +14,8 @@ heliosStudyInstitutesApp.controller("auditCtrl", function ($rootScope, $scope, $
     };
 
     $scope.redirectToInstituteButton = function () {
-        $http.post('//127.0.0.1:8080/verifier_one', "vote" + $scope.vote + "tracker" + $scope.ballot_tracker);
-        $window.open('//127.0.0.1:8080/verifier_one', '_blank');
+        //$http.post('//127.0.0.1:8080/verifier_one', "vote" + $scope.vote + "tracker" + $scope.ballot_tracker);
+        //$window.open('//127.0.0.1:8080/verifier_one', '_blank');
         $location.path('election/' + $routeParams['id']);
 
     };
