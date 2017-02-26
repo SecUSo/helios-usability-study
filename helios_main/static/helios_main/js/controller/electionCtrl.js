@@ -13,7 +13,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $rootScope.choice;
     $rootScope.selected_code = null;
 
-
     switch ($location.path().split("/")[1]) {
         case "final":
             $scope.show_progress = false;
@@ -49,8 +48,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
-        $rootScope.startTimeAll = Date.now();
-
     });
 
 
@@ -65,7 +62,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
     };
 
-
     $scope.saveChoiceInvalid = function (choice) {
 
         if ($rootScope.selected_code == "00") {
@@ -76,7 +72,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             console.log('Choice is ' + $rootScope.choice);
         }
     };
-
 
     //Pseudo-encryption of the vote. Well, the option code is hidden between random values.
     function encrypt() {
@@ -102,10 +97,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         console.log('Hash in scope ' + $scope.ballot_tracker);
     }
 
-
     //From election to review
     $scope.proceedButton = function () {
-        //$scope.startTime = Date.now();
+        $rootScope.votingTime = Date.now() - $rootScope.startTime;
         encrypt();
         $location.path('review/' + $routeParams['id']);
     };
