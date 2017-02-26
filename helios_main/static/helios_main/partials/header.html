@@ -1,14 +1,24 @@
+<div style="background-color: #ededed; height: 32px"></div>
+
 <div id="header" ng-controller="electionCtrl">
 
-    <img ng-src="../images/adler.png">
+    <div style="text-align: left; margin-left: 4em">
 
-    <h2>{{ head_line }}</h2>
+        <img ng-src="/static/helios_main/images/logo_header.png">
+
+        {{ HEADLINE }}
+
+    </div>
+
     <div class="progress" ng-show="show_progress">
         <table>
             <tr>
-                <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]"><span>(1) Select</span></td>
-                <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]"><span>(2) Review</span></td>
-                <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]"><span>(3) Submit</span></td>
+                <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]">
+                    <span>(1) Select</span></td>
+                <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]">
+                    <span>(2) Review</span></td>
+                <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]">
+                    <span>(3) Submit</span></td>
             </tr>
         </table>
     </div>
