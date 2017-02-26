@@ -38,19 +38,12 @@ def assign(request):
 
 
 @csrf_exempt
-def save_instruction_time(request):
-    subject = Subject.objects.filter(subject_id=request.POST['id']).all()[0]
-    result_time = json.loads(request.POST['result_time'])
-    duration = Duration(subject=subject)
-    duration.instruction_duration = result_time
+def save_duration(request):
+    try:
+        subject = Subject.objects.filter(subject_id=request.POST['id']).all()[0]
+    except IndexError:
+        return HttpResponse('{"Error": "Unknown subject."}', content_type='application/json')
+    duration = Duration(subject_id=subject, instruction_duration=request.POST['intro'],
+                        verification_number=request.POST['number'], overall_duration=request.POST['overall'],
+                        voting_duration=request.POST['voting'], verification_duration=request.POST['verification'])
     duration.save()
-
-
-@csrf_exempt
-def submit(request):
-    pass
-
-
-@csrf_exempt
-def audit(request):
-    pass

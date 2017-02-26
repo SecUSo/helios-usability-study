@@ -17,7 +17,7 @@ angular.module('BackendService', [])
                     url: '/main/submit',
                     data:
                     'id=' + id +
-                    '&introduction=' + angular.toJson(introduction) +
+                    '&intro=' + angular.toJson(introduction) +
                     '&number=' + angular.toJson(number_verification) +
                     '&overall=' + angular.toJson(overall) +
                     '&voting=' + angular.toJson(voting) +
