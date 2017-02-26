@@ -142,6 +142,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     };
 
     $scope.cancelButton = function () {
+        $location.path('/' + $routeParams['id']);
     };
 
     $scope.castButton = function () {
