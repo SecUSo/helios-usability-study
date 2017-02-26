@@ -89,6 +89,15 @@ table.ballot {
     margin: 1em auto;
 }
 
-.vote_button_inactive {
-    background: url("../images/button_inactive.png");
+button.vote_button_inactive {
+    background: url("../images/button_inactive.png") no-repeat;
+    width: 50px;
+    height: 50px;
 }
+
+button.vote_button_inactive:hover {
+    background: url("../images/button_active.png") no-repeat;
+    width: 50px;
+    height: 50px;
+}
+

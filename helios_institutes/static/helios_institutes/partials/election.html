@@ -9,24 +9,29 @@
 
         <span class="ballot_number">You can select {{ experimentData.question_data.answers }} candidate(s) (or invalid vote).</span>
 
-            <table id="fixed_height" class="ballot">
-                <tr ng-repeat="(code, option) in options">
+        <table id="fixed_height" class="ballot">
+            <tr ng-repeat="(code, option) in options">
 
-                    <td class="ballot">
-                        <img ng-src="/static/helios_institutes/images/button_inactive.png" ng-click="saveChoice(code, option.option)">
-                    </td>
-                    <td class="ballot">{{ option.option }} </td>
-                    <td class="ballot" style="max-width: 250px;"><span style="font-size: 8pt; font-weight: bold">{{ option.option_description }}</span></td>
-                    <td style="text-align: right" class="ballot">{{ code-0 }}</td>
-                </tr>
-                <tr>
-                    <td class="ballot"> <img ng-src="/static/helios_institutes/images/button_active.png" ng-click="saveChoice('00', 'Invalid Vote')"></td>
+                <td class="ballot">
+                    <button class="vote_button_inactive" ng-src="/static/helios_institutes/images/button_inactive.png"
+                            ng-click="saveChoice(code, option.option)"></button>
+                </td>
+                <td class="ballot">{{ option.option }} </td>
+                <td class="ballot" style="max-width: 250px;"><span
+                        style="font-size: 8pt; font-weight: bold">{{ option.option_description }}</span></td>
+                <td style="text-align: right" class="ballot">{{ code-0 }}</td>
+            </tr>
+            <tr>
+                <td class="ballot">
+                    <button class="vote_button_inactive" ng-src="/static/helios_institutes/images/button_inactive.png"
+                            ng-click="saveChoice('00', 'Invalid Vote')"></button>
+                </td>
 
-                    <td class="ballot"> Invalid Vote </td>
-                    <td class="ballot"></td>
-                    <td class="ballot"></td>
-                </tr>
-            </table>
+                <td class="ballot"> Invalid Vote</td>
+                <td class="ballot"></td>
+                <td class="ballot"></td>
+            </tr>
+        </table>
 
         <button style="float: right; margin-top: 1em;" data-i18n="_proceedButton_"
                 ng-click="proceedButton()"></button>
