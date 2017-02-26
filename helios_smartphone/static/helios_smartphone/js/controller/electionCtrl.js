@@ -9,6 +9,9 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
 
+    $rootScope.choice = choiceBackground;
+    $rootScope.selected_choice = null;
+
     switch ($location.path().split("/")[1]) {
         case "election":
             $scope.show_progress = true;
@@ -53,14 +56,27 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.saveChoice = function (code, choice) {
 
-        if (code != null) {
+        if ($rootScope.selected_choice == code) {
+            $rootScope.selected_choice = null;
+        } else {
+            $rootScope.selected_choice = code;
             choiceBackground = code;
             $rootScope.choice = choice;
-        } else {
-            choiceBackground = "00";
-            $rootScope.choice = "Invalid Vote";
+            console.log('Choice is ' + choiceBackground);
         }
-        console.log('Choice is ' + choiceBackground);
+    };
+
+
+    $scope.saveChoiceInvalid = function (choice) {
+
+        if ($rootScope.selected_choice == "00") {
+            $rootScope.selected_choice = null;
+        } else {
+            $rootScope.selected_choice = "00";
+            choiceBackground = "00";
+            $rootScope.choice = choice;
+            console.log('Choice is ' + choiceBackground);
+        }
     };
 
 

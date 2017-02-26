@@ -11,6 +11,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
 
+    $rootScope.choice = choiceBackground;
+    $rootScope.selected_choice = null;
+
 
     switch ($location.path().split("/")[1]) {
         case "final":
@@ -53,9 +56,28 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
 
     $scope.saveChoice = function (code, choice) {
-        choiceBackground = code;
-        $rootScope.choice = choice;
-        console.log('Choice is ' + choiceBackground);
+
+        if ($rootScope.selected_choice == code) {
+            $rootScope.selected_choice = null;
+        } else {
+            $rootScope.selected_choice = code;
+            choiceBackground = code;
+            $rootScope.choice = choice;
+            console.log('Choice is ' + choiceBackground);
+        }
+    };
+
+
+    $scope.saveChoiceInvalid = function (choice) {
+
+        if ($rootScope.selected_choice == "00") {
+            $rootScope.selected_choice = null;
+        } else {
+            $rootScope.selected_choice = "00";
+            choiceBackground = "00";
+            $rootScope.choice = choice;
+            console.log('Choice is ' + choiceBackground);
+        }
     };
 
 
@@ -103,7 +125,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //Opens new tab for printing the ballot tracker
     $scope.printButton = function () {
-         $window.open('print/' + $rootScope.ballot_tracker, '_blank');
+        $window.open('print/' + $rootScope.ballot_tracker, '_blank');
     };
 
     //From review to audit

@@ -22,7 +22,9 @@ def assign(request):
     options_dict = {}
 
     for op in options_list:
-        options_dict[op.option_code] = op.option
+        options_dict[op.option_code] = {
+            'option': op.option,
+            'option_description': op.option_description}
 
     print("Experiment assigned")
 
