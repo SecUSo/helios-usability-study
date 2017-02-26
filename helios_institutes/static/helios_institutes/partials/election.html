@@ -5,7 +5,7 @@
     <div class="content_box">
 
         <span style="font-weight: bold"
-              class="ballot_question">Question: {{ experimentData.question_data.question }}</span><br/>
+              class="ballot_question"> {{ experimentData.question_data.question }}</span><br/>
 
         <span class="ballot_number">You can select {{ experimentData.question_data.answers }} candidate(s) (or invalid vote).</span>
 
@@ -13,15 +13,14 @@
                 <tr ng-repeat="(code, option) in options">
 
                     <td class="ballot">
-                        <button class="vote_button_inactive" ng-click="saveChoice(code, option.option)"></button>
-                        <input type="checkbox" ng-click="saveChoice(code, option.option)">
+                        <img ng-src="/static/helios_institutes/images/button_inactive.png" ng-click="saveChoice(code, option.option)">
                     </td>
                     <td class="ballot">{{ option.option }} </td>
                     <td class="ballot" style="max-width: 250px;"><span style="font-size: 8pt; font-weight: bold">{{ option.option_description }}</span></td>
                     <td style="text-align: right" class="ballot">{{ code-0 }}</td>
                 </tr>
                 <tr>
-                    <td class="ballot"> <button class="vote_button_active" ng-click="saveChoice(0, 'Invalid Vote')"></button></td>
+                    <td class="ballot"> <img ng-src="/static/helios_institutes/images/button_active.png" ng-click="saveChoice('00', 'Invalid Vote')"></td>
 
                     <td class="ballot"> Invalid Vote </td>
                     <td class="ballot"></td>

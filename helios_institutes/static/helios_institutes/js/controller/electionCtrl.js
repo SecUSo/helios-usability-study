@@ -42,10 +42,9 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
         console.log($scope.options);
-        $scope.startTimeAll = Date.now();
+        $rootScope.startTimeAll = Date.now();
 
     });
-
 
     $scope.saveChoice = function (code, choice) {
         choiceBackground = code;
