@@ -1,6 +1,14 @@
+<div style="background-color: #ededed; height: 32px"></div>
+
 <div id="header" ng-controller="electionCtrl">
 
-    <h2>{{ head_line }}</h2>
+    <div style="text-align: left; margin-left: 4em">
+
+        <img ng-src="/static/helios_main/images/logo_header.png">
+
+        {{ HEADLINE }}
+
+    </div>
     <div class="progress" ng-show="show_progress">
         <table>
             <tr>
