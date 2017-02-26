@@ -24,8 +24,8 @@
             </tr>
             <tr>
                 <td class="ballot">
-                    <button ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_code == code]"
-                            ng-click="saveChoiceInvalid('Invalid Vote')"></button>
+                    <button ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_code == '00']"
+                            ng-click="saveChoice('00', 'Invalid Vote')"></button>
                 </td>
 
                 <td class="ballot"> Invalid Vote</td>
