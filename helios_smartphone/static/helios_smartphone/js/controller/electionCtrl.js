@@ -2,15 +2,12 @@
 
 heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-    var choiceBackground = "00";
-    var hashBackground;
-    var hashVisible;
     var encrypted_vote = "";
     $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
 
-    $rootScope.choice = choiceBackground;
-    $rootScope.selected_choice = null;
+    $rootScope.choice;
+    $rootScope.selected_code = null;
 
     switch ($location.path().split("/")[1]) {
         case "election":
@@ -56,26 +53,24 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.saveChoice = function (code, choice) {
 
-        if ($rootScope.selected_choice == code) {
-            $rootScope.selected_choice = null;
+        if ($rootScope.selected_code == code) {
+            $rootScope.selected_code = null;
         } else {
-            $rootScope.selected_choice = code;
-            choiceBackground = code;
+            $rootScope.selected_code = code;
             $rootScope.choice = choice;
-            console.log('Choice is ' + choiceBackground);
+            console.log('Choice is ' + $rootScope.choice);
         }
     };
 
 
     $scope.saveChoiceInvalid = function (choice) {
 
-        if ($rootScope.selected_choice == "00") {
-            $rootScope.selected_choice = null;
+        if ($rootScope.selected_code == "00") {
+            $rootScope.selected_code = null;
         } else {
-            $rootScope.selected_choice = "00";
-            choiceBackground = "00";
+            $rootScope.selected_code = "00";
             $rootScope.choice = choice;
-            console.log('Choice is ' + choiceBackground);
+            console.log('Choice is ' + $rootScope.choice);
         }
     };
 
@@ -85,15 +80,14 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
         }
-        encrypted_vote += choiceBackground;
+        encrypted_vote += $rootScope.selected_code;
 
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        hashBackground = btoa(encrypted_vote);
-        hashVisible = hashBackground.toString().substr(0, 16);
+        $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 16);
         console.log(encrypted_vote);
         $rootScope.encrypted_vote = encrypted_vote;
     }
@@ -103,17 +97,10 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
     $scope.proceedButton = function () {
         //$scope.startTime = Date.now();
 
-        if (choiceBackground === "00") {
-            $rootScope.choice = "Invalid Vote";
-        }
-
         encrypt();
 
         console.log(encrypted_vote);
 
-        $rootScope.ballot_tracker = hashVisible;
-
-        console.log('Hash is ' + hashVisible);
         console.log('Hash in scope ' + $scope.ballot_tracker);
         $location.path('review/' + $routeParams['id']);
     };
