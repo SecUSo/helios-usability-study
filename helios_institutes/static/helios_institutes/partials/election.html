@@ -13,7 +13,8 @@
             <tr ng-repeat="(code, option) in options">
 
                 <td class="ballot">
-                    <button class="vote_button_inactive" ng-src="/static/helios_institutes/images/button_inactive.png"
+                    <button
+                            ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_choice == code]"
                             ng-click="saveChoice(code, option.option)"></button>
                 </td>
                 <td class="ballot">{{ option.option }} </td>
@@ -23,8 +24,8 @@
             </tr>
             <tr>
                 <td class="ballot">
-                    <button class="vote_button_inactive" ng-src="/static/helios_institutes/images/button_inactive.png"
-                            ng-click="saveChoice('00', 'Invalid Vote')"></button>
+                    <button ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_choice == code]"
+                            ng-click="saveChoiceInvalid('Invalid Vote')"></button>
                 </td>
 
                 <td class="ballot"> Invalid Vote</td>

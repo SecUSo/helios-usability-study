@@ -29,6 +29,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     }
 
     $rootScope.choice = choiceBackground;
+    $rootScope.selected_choice = null;
 
     Backend.assign($routeParams['id']).success(function (data) {
         var result = angular.fromJson(data);
@@ -47,9 +48,28 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     });
 
     $scope.saveChoice = function (code, choice) {
-        choiceBackground = code;
-        $rootScope.choice = choice;
-        console.log('Choice is ' + choiceBackground);
+
+        if ($rootScope.selected_choice == code) {
+            $rootScope.selected_choice = null;
+        } else {
+            $rootScope.selected_choice = code;
+            choiceBackground = code;
+            $rootScope.choice = choice;
+            console.log('Choice is ' + choiceBackground);
+        }
+    };
+
+
+        $scope.saveChoiceInvalid = function (choice) {
+
+        if ($rootScope.selected_choice == "00") {
+            $rootScope.selected_choice = null;
+        } else {
+            $rootScope.selected_choice = "00";
+            choiceBackground = "00";
+            $rootScope.choice = choice;
+            console.log('Choice is ' + choiceBackground);
+        }
     };
 
 
