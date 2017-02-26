@@ -5,14 +5,13 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     //TODO Set language here
     $rootScope.language = "en";
 
-    var choiceBackground = "00";
     var encrypted_vote = "";
     $scope.auditClick = false;
     $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
 
-    $rootScope.choice = choiceBackground;
-    $rootScope.selected_choice = null;
+    $rootScope.choice;
+    $rootScope.selected_code = null;
 
 
     switch ($location.path().split("/")[1]) {
@@ -57,26 +56,24 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     $scope.saveChoice = function (code, choice) {
 
-        if ($rootScope.selected_choice == code) {
-            $rootScope.selected_choice = null;
+        if ($rootScope.selected_code == code) {
+            $rootScope.selected_code = null;
         } else {
-            $rootScope.selected_choice = code;
-            choiceBackground = code;
+            $rootScope.selected_code = code;
             $rootScope.choice = choice;
-            console.log('Choice is ' + choiceBackground);
+            console.log('Choice is ' + $rootScope.choice);
         }
     };
 
 
     $scope.saveChoiceInvalid = function (choice) {
 
-        if ($rootScope.selected_choice == "00") {
-            $rootScope.selected_choice = null;
+        if ($rootScope.selected_code == "00") {
+            $rootScope.selected_code = null;
         } else {
-            $rootScope.selected_choice = "00";
-            choiceBackground = "00";
+            $rootScope.selected_code = "00";
             $rootScope.choice = choice;
-            console.log('Choice is ' + choiceBackground);
+            console.log('Choice is ' + $rootScope.choice);
         }
     };
 
@@ -90,7 +87,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
         }
-        encrypted_vote += choiceBackground;
+        encrypted_vote += $rootScope.choice;
 
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
