@@ -87,10 +87,12 @@ button.vote_button_inactive {
     background: url("../images/button_inactive.png") no-repeat;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 button.vote_button_active {
     background: url("../images/button_active.png") no-repeat;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
