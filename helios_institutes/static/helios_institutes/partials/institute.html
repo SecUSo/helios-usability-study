@@ -4,13 +4,12 @@
     Redirect to OSCE<br>
 
 
-    <form target="_blank" method="post" action="//127.0.0.1:8080/verifier_one">
+    <form ng-submit="redirectToInstituteButton()" target="_blank" method="post" action="//127.0.0.1:8080/verifier_one">
         <input name="vote" type="hidden" ng-value="vote">
-        <input name="tracker" type="hidden" ng-value="tracker">
+        <input name="tracker" type="hidden" ng-value="ballot_tracker">
         <button type="submit" data-i18n="_OSCE_"></button>
     </form>
 
     <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
-
 
 </div>
