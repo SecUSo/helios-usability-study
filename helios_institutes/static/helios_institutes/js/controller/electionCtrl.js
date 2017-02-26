@@ -84,6 +84,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
         $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 16);
         console.log(encrypted_vote);
+        $rootScope.encrypted_vote = encrypted_vote;
     }
 
     //From election to review
@@ -99,7 +100,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     //From review to audit
     $scope.verifyButton = function () {
-        $location.path('institute/' + $routeParams['id']);
+        $location.path('institute/' + $rootScope.encrypted_vote);
     };
 
     //From review to final overview
@@ -110,11 +111,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     //From review to election
     $scope.backToElectionButton = function () {
         $location.path('election/' + $routeParams['id']);
-    };
-
-    //Redirect to new tab with institutes
-    $scope.chooseInstitute = function () {
-        //$location.path('institute/' + $routeParams['id']);
     };
 
     //From institutes back to review
