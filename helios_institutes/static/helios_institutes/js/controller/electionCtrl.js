@@ -37,8 +37,8 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         }
 
         //TODO Why is this not displayed?
-        $scope.subject = $routeParams['id'];
-        console.log($routeParams['id']);
+        $rootScope.subject = $routeParams['id'];
+        //console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
         console.log($scope.options);
