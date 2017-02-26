@@ -108,7 +108,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From review to audit
     $scope.verifyButton = function () {
-        $location.path('institute/' + $routeParams['id']);
+        $location.path('audit/' + $routeParams['id']);
     };
 
     //From review to login for casting
@@ -149,9 +149,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         $location.path('cast/' + $routeParams['id']);
     };
 
-    $scope.redirectToInstituteButton = function () {
-        $location.path('audit/' + $routeParams['id']);
-    };
+    // $scope.redirectToInstituteButton = function () {
+    //     $location.path('audit/' + $routeParams['id']);
+    // };
 
     function buildBallot(encrypted_vote) {
         var auditInfo = "{\"answers\": [{\"choices\": [" + makeAlphaBeta() + ", " + makeAlphaBeta() + ", " + makeAlphaBeta() +
