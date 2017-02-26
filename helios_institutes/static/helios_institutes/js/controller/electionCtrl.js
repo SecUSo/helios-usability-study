@@ -2,7 +2,6 @@
 
 heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-    var choiceBackground;
     var encrypted_vote = "";
     $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
@@ -28,8 +27,8 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
             $scope.current_step = 0;
     }
 
-    $rootScope.choice = choiceBackground;
-    $rootScope.selected_choice = null;
+    $rootScope.choice;
+    $rootScope.selected_code = null;
 
     Backend.assign($routeParams['id']).success(function (data) {
         var result = angular.fromJson(data);
@@ -49,26 +48,24 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.saveChoice = function (code, choice) {
 
-        if ($rootScope.selected_choice == code) {
-            $rootScope.selected_choice = null;
+        if ($rootScope.selected_code == code) {
+            $rootScope.selected_code = null;
         } else {
-            $rootScope.selected_choice = code;
-            choiceBackground = code;
+            $rootScope.selected_code = code;
             $rootScope.choice = choice;
-            console.log('Choice is ' + choiceBackground);
+            console.log('Choice is ' + $rootScope.selected_code);
         }
     };
 
 
         $scope.saveChoiceInvalid = function (choice) {
 
-        if ($rootScope.selected_choice == "00") {
-            $rootScope.selected_choice = null;
+        if ($rootScope.selected_code == "00") {
+            $rootScope.selected_code = null;
         } else {
-            $rootScope.selected_choice = "00";
-            choiceBackground = "00";
+            $rootScope.selected_code = "00";
             $rootScope.choice = choice;
-            console.log('Choice is ' + choiceBackground);
+            console.log('Choice is ' + $rootScope.selected_code);
         }
     };
 
@@ -78,7 +75,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
         }
-        encrypted_vote += choiceBackground;
+        encrypted_vote += $rootScope.selected_code;
 
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
