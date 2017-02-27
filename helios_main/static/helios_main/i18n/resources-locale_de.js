@@ -340,6 +340,11 @@
         "description": "Button to proceed to the next step"
     },
     {
+        "key"        : "_redirectHeading_",
+        "value"      : "Bitte wählen Sie ein Institut zum Verifizieren.",
+        "description": ""
+    },
+    {
         "key"        : "_auditHeading_",
         "value"      : "Your audited ballot",
         "description": ""

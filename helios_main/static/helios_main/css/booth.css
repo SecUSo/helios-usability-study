@@ -102,3 +102,8 @@ button.vote_button_active {
     height: 50px;
     cursor: pointer;
 }
+
+.verification_institute {
+    margin: 2em;
+    cursor: pointer;
+}

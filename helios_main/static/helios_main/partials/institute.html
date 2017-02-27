@@ -1,18 +1,19 @@
 <div ng-include src="'/static/helios_main/partials/header.html'"></div>
 
-<div class="content_box">
+<div class="content_box" style="text-align: center">
 
-    Institute<br>
-    Redirect to Institute<br>
+    <span data-i18n="_redirectHeading_"></span><br>
 
-    <div align="center" style="margin-top: 1em">
-        <button data-i18n="_BSI_" ng-click="redirectToInstituteBsiButton()"></button>
+    <div class="verification_institute">
+        <img ng-src="/static/helios_main/images/bsi_logo.png" ng-click="redirectToInstituteBsiButton()"><br>
+        <a data-i18n="_verifyButton_" href="" ng-click="redirectToInstituteBsiButton()"></a>
     </div>
 
-    <div align="center" style="margin-top: 1em">
-        <button data-i18n="_OSZE_" ng-click="redirectToInstituteOszeButton()"></button>
-    </div>
+    <div class="verification_institute">
 
+        <img ng-src="/static/helios_main/images/osze_logo.png" ng-click="redirectToInstituteOszeButton()"><br>
+        <a data-i18n="_verifyButton_" href="" ng-click="redirectToInstituteOszeButton()"></a>
+    </div>
     <div align="center" style="margin-top: 1em">
         <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
     </div>
