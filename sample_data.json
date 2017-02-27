@@ -108,7 +108,7 @@
   ],
   "question": [
     {
-      "question": "Bitte geben Sie eine Stimme für die Wahl einer Landesliste (Partei) ab. Zweitstimme",
+      "question": "Bitte geben Sie eine Stimme für die Wahl einer Landesliste (Partei) ab.",
       "number_answers": 1,
       "options": [
         "01",
