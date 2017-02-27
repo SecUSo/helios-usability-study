@@ -72,7 +72,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
         }
-        encrypted_vote += $rootScope.choice;
+        encrypted_vote += $rootScope.selected_code;
 
         for (var i = 0; i < 100; i++) {
             encrypted_vote += Math.floor(Math.random() * (10));
@@ -128,11 +128,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         $location.path('election/' + $routeParams['id']);
     };
 
-    //Redirect to new tab with institutes
-    $scope.chooseInstitute = function () {
-        //$location.path('institute/' + $routeParams['id']);
-    };
-
     //From institutes back to review
     $scope.backToReviewButton = function () {
         $location.path('review/' + $routeParams['id']);
@@ -148,12 +143,8 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     };
 
     $scope.castButton = function () {
-        $location.path('cast/' + $routeParams['id']);
+        $location.path('cast/');
     };
-
-    // $scope.redirectToInstituteButton = function () {
-    //     $location.path('audit/' + $routeParams['id']);
-    // };
 
     function buildBallot(encrypted_vote) {
         var auditInfo = "{\"answers\": [{\"choices\": [" + makeAlphaBeta() + ", " + makeAlphaBeta() + ", " + makeAlphaBeta() +

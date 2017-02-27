@@ -15,7 +15,7 @@ var heliosStudyMainApp = angular.module(
         when('/review/:id', {templateUrl: '/static/helios_main/partials/review.html', controller: 'electionCtrl'}).
         when('/print/:ballot_tracker', {templateUrl: '/static/helios_main/partials/printtracker.html', controller: 'printCtrl'}).
         when('/institute/:id', {templateUrl: '/static/helios_main/partials/institute.html', controller: 'electionCtrl'}).
-        when('/cast/:id', {templateUrl: '/static/helios_main/partials/cast.html', controller: 'electionCtrl'}).
+        when('/cast/', {templateUrl: '/static/helios_main/partials/cast.html', controller: 'electionCtrl'}).
         when('/castlogin/:id', {templateUrl: '/static/helios_main/partials/loginforcast.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/helios_main/partials/finaloverview.html', controller: 'electionCtrl'}).
         when('/audit/:id', {templateUrl: '/static/helios_main/partials/audit.html', controller: 'electionCtrl'}).
@@ -44,6 +44,6 @@ heliosStudyMainApp.run(function ($rootScope, $window, $document, localize) {
             $rootScope.language = $rootScope.language.substr(0, 2);
         }
         //If hard coding a language is desired, do it here, if not delete the following line
-        //$rootScope.language = "en";
+        $rootScope.language = "en";
      }
 });
