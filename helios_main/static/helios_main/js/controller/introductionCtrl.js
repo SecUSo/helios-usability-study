@@ -2,8 +2,6 @@
 
 heliosStudyMainApp.controller("introductionCtrl", function (Backend, $rootScope, $scope, $routeParams, $location) {
 
-    //TODO Set language here
-    $rootScope.language = "en";
     $rootScope.startTimeAll = Date.now();
 
     $scope.startButton = function () {

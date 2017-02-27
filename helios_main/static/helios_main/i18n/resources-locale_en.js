@@ -360,16 +360,6 @@
         "description": ""
     },
     {
-        "key"        : "_CastingHintOne_",
-        "value"      : "You can cast as many ballots as you want.",
-        "description": ""
-    },
-    {
-        "key"        : "_CastingHintTwo_",
-        "value"      : "Only the last one counts.",
-        "description": ""
-    },
-    {
         "key"        : "_cancelButton_",
         "value"      : "Cancel",
         "description": ""

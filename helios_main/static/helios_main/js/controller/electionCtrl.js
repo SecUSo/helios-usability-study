@@ -2,8 +2,6 @@
 
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-    //TODO Set language here
-    $rootScope.language = "en";
 
     var encrypted_vote = "";
     $scope.auditClick = false;

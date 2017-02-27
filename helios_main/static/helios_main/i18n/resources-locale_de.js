@@ -1,35 +1,5 @@
 [
     {
-        "key"        : "_mainHeading_",
-        "value"      : "Helios-Benutzbarkeitsstudie",
-        "description": ""
-    },
-    {
-        "key"        : "_loginButton_",
-        "value"      : "Login",
-        "description": ""
-    },
-    {
-        "key"        : "_userIDHeading_",
-        "value"      : "User ID: ",
-        "description": ""
-    },
-    {
-        "key"        : "_enterTokenMessage_",
-        "value"      : "Bitte geben Sie Ihr Token ein.",
-        "description": ""
-    },
-    {
-        "key"        : "_tokenHeading_",
-        "value"      : "Token:",
-        "description": ""
-    },
-    {
-        "key"        : "_enterIDMessage_",
-        "value"      : "Bitte geben Sie Ihre ID ein.",
-        "description": ""
-    },
-    {
         "key"        : "_loadingMessageOne_",
         "value"      : "Checking capabilities and loading election booth...",
         "description": "Loading message on the first screen"
@@ -45,88 +15,78 @@
         "description": "Button to start the voting procedure"
     },
     {
-        "key"        : "_boothHeading_",
-        "value"      : "Helios Voting Booth",
-        "description": "Heading of the voting booth"
-    },
-    {
         "key"        : "_boothIntroduction_",
-        "value"      : "To cast a vote, you will be led through the following steps.",
+        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen.",
         "description": "Introduction"
     },
     {
         "key"        : "_boothIntroductionTwo_",
-        "value"      : "If you have not yet logged in, you will be asked to do so at the very end of the process.",
+        "value"      : "Sie werden am Ende des ganzen Prozesses sich einzuloggen, falls das noch nicht erfolgt ist.",
         "description": "Introduction"
     },
     {
         "key"        : "_selectHeading_",
-        "value"      : "Select",
+        "value"      : "Wählen",
         "description": "Used in description of voting booth"
     },
     {
         "key"        : "_selectFollow_",
-        "value"      : " your preferred options.",
+        "value"      : " Sie Ihren bevorzugten Kandidaten.",
         "description": "Defines what to select"
     },
     {
         "key"        : "_selectMoreInfo_",
-        "value"      : "You can easily navigate forwards and backwards.",
+        "value"      : "Sie können einfach vor- und zurücknavigieren.",
         "description": "More info below select description"
     },
     {
         "key"        : "_reviewHeading_",
-        "value"      : "Review & Confirm",
+        "value"      : "Überprüfen & bestätigen",
         "description": "Used in description of voting booth"
     },
     {
         "key"        : "_confirmChoices_",
-        "value"      : "Confirm Choices and Encrypt Ballot",
+        "value"      : "Sie Ihre Auswahl und Ihren verschlüsselten Stimmzettel.",
         "description": ""
     },
     {
         "key"        : "_reviewFollow_",
-        "value"      : " your choices.",
+        "value"      : " Ihre Auswahl.",
         "description": "Defines what to review"
     },
     {
         "key"        : "_reviewMoreInfo_",
-        "value"      : "Your choices are encrypted safely inside your browser, and you get a smart ballot tracker.",
+        "value"      : "Ihre Auswahl ist sicher in Ihrem Browser verschlüsselt und Sie erhalten einen Smart Ballot Tracker.",
         "description": "More info below review description"
     },
     {
         "key"        : "_SubmitHeading_",
-        "value"      : "Submit",
+        "value"      : "Abgeben",
         "description": "Used in description of voting booth"
     },
         {
         "key"        : "_submitFollow_",
-        "value"      : " your encrypted ballot.",
+        "value"      : " Ihres verschlüsselten Stimmzettels.",
         "description": "Defines what to submit"
     },
     {
         "key"        : "_submitMoreInfo_",
-        "value"      : "You will be asked to log in to submit your encrypted ballot for tallying.",
+        "value"      : "Sie werden aufgefordert sich einzuloggen, um Ihren verschlüsselten Stimmzettel für die Auszählung abzugeben.",
         "description": "More info below submit description"
     },
     {
-        "key"        : "_exitButton_",
-        "value"      : "Exit",
-        "description": "Button to exit booth."
-    },
-    {
         "key"        : "_selectWizard_",
-        "value"      : "(1) Select",
+        "value"      : "(1) Auswahl",
         "description": "Action points in the wizard"
     },
     {
         "key"        : "_reviewWizard_",
-        "value"      : "(2) Review",
+        "value"      : "(2) Überprüfung",
         "description": "Action points in the wizard"
     },
     {
         "key"        : "_submitWizard_",
-        "value"      : "(3) Submit",
+        "value"      : "(3) Abgabe",
         "description": "Action points in the wizard"
     },
     {
@@ -140,43 +100,38 @@
         "description": "Loading message after voting, info about duration"
     },
     {
-        "key"        : "_reviewBallotHeading_",
-        "value"      : "Review your Ballot",
-        "description": "Heading of Ballot Review on review page"
-    },
-    {
         "key"        : "_ballotTrackerHeading_",
-        "value"      : "Your ballot tracker is ",
+        "value"      : "Ihr Ballot Tracker ist ",
         "description": "Heading of ballot tracker"
     },
     {
         "key"        : "_ballotTrackerFollow_",
-        "value"      : ", and you can ",
+        "value"      : " und Sie können Ihn ",
         "description": "comes after ballot tracker"
     },
     {
         "key"        : "_ballotTrackerPrint_",
-        "value"      : " print it",
+        "value"      : " ausdrucken",
         "description": "Link to printing the ballot tracker."
     },
     {
         "key"        : "_clickSubmitHint_",
-        "value"      : "Once you click 'Submit', the unencrypted version of your ballot will be destroyed, and only the encrypted version will remain. The encrypted version will be submitted to the Helios server.",
+        "value"      : "Sobald Sie auf 'Absenden' geklickt haben, wird die unverschlüsselte Version Ihres Stimmzettels gelöscht, sodass nur eine verschlüsselte Version übrig bleibt. Dieser verschlüsselte Stimmzettel wird dann an den Helios Server übermittelt.",
         "description": "Information about ballot after submit has been clicked"
     },
     {
         "key"        : "_submitVoteButton_",
-        "value"      : "Submit this Vote!",
+        "value"      : "Stimmzettel absenden!",
         "description": "Submit vote button on review page"
     },
     {
         "key"        : "_editResponsesButton_",
-        "value"      : "edit responses",
+        "value"      : "Auswahl ändern",
         "description": ""
     },
     {
         "key"        : "_auditButton_",
-        "value"      : "Audit",
+        "value"      : "Überprüfung",
         "description": "Button that opens audit description on review page"
     },
     {
@@ -186,7 +141,7 @@
     },
     {
         "key"        : "_auditMoreInfoOne_",
-        "value"      : "If you choose, you can audit your ballot and reveal how your choices were encrypted.",
+        "value"      : "Wenn Sie dies auswählen, können Sie Ihren Stimmzettel überprüfen und zeigen, wie Ihr Auswahl verschlüsselt wurde.",
         "description": ""
     },
     {
@@ -196,67 +151,67 @@
     },
     {
         "key"        : "_verifyEncryptionButton_",
-        "value"      : "Verify Encryption",
+        "value"      : "Verschlüsselung verifizieren",
         "description": ""
     },
     {
         "key"        : "_auditedBallotHeading_",
-        "value"      : "Your audited ballot",
+        "value"      : "Ihr geprüfter Stimmzettel",
         "description": ""
     },
     {
         "key"        : "_importantHeading_",
-        "value"      : "IMPORTANT: ",
+        "value"      : "WICHTIG: ",
         "description": ""
     },
     {
         "key"        : "_importantMessagePartOne_",
-        "value"      : " this ballot, now that it has been audited, ",
+        "value"      : " Dieser Stimmzettel wurde überprüft und wird deshalb ",
         "description": ""
     },
     {
         "key"        : "_importantMessagePartTwo_",
-        "value"      : "will not be tallied.",
+        "value"      : "nicht in die Auszählung einfließen.",
         "description": ""
     },
     {
         "key"        : "_whyHeading_",
-        "value"      : "Why? ",
+        "value"      : "Wieso? ",
         "description": ""
     },
     {
         "key"        : "_whyMessage_",
-        "value"      : "Helios prevents you from auditing and casting the same ballot to provide you with some protection against coercion.",
+        "value"      : "Helios verhindert, dass Sie denselben Stimmzettel überprüfen und abgeben, um Sie vor erzwungener Stimmabgabe zu schützen.",
         "description": ""
     },
     {
         "key"        : "_nowWhatHeading_",
-        "value"      : "Now what? ",
+        "value"      : "Was jetzt? ",
         "description": ""
     },
     {
         "key"        : "_nowWhatInfoLink_",
-        "value"      : "Select your ballot audit info",
+        "value"      : "Wählen Sie die Stimmzettelüberprüfungsinformationen aus",
         "description": ""
     },
     {
         "key"        : "_nowWhatInfoAfterLink_",
-        "value"      : ", copy it to your clipboard, then use the ",
+        "value"      : ", kopieren Sie diese in die Zwischenablage und verwenden Sie dann den ",
         "description": ""
     },
     {
         "key"        : "_nowWhatBallotVerifierLink_",
-        "value"      : "ballot verifier",
+        "value"      : "Stimmzettelverifizierer",
         "description": ""
     },
     {
         "key"        : "_nowWhatBallotVerifierAfterLink_",
-        "value"      : " to verify it.",
+        "value"      : " um Ihren Stimmzettel zu verifizieren.",
         "description": ""
     },
     {
         "key"        : "_nowWhatBackToVoting_",
-        "value"      : "Once you're satisfied, click the 'back to voting' button to re-encrypt and cast your ballot.",
+        "value"      : "Sobald Sie zufrieden sind, klicken Sie auf 'Zurück zur Wahl' um Ihre Auswahl erneut zu treffen und Ihre Stimme abzugeben.",
         "description": ""
     },
     {
@@ -271,97 +226,32 @@
     },
     {
         "key"        : "_backToVotingButton_",
-        "value"      : "back to voting",
-        "description": ""
-    },
-    {
-        "key"        : "_trackingCenterButton_",
-        "value"      : "post audited ballot to tracking center",
-        "description": ""
-    },
-    {
-        "key"        : "_trackingCenterSuccessMessage_",
-        "value"      : "This audited ballot has been posted. Remember, this vote will only be used for auditing and will not be tallied. Click 'back to voting' and cast a new ballot to make sure your vote counts.",
-        "description": ""
-    },
-    {
-        "key"        : "_okayButton_",
-        "value"      : "OK",
-        "description": ""
-    },
-    {
-        "key"        : "_ballotVerifierHeading_",
-        "value"      : " Helios Single-Ballot Verifier",
-        "description": ""
-    },
-    {
-        "key"        : "_ballotVerifierIntro_",
-        "value"      : "This single-ballot verifier lets you enter an audited ballot and verify that it was prepared correctly.",
-        "description": ""
-    },
-    {
-        "key"        : "_yourBallotHeading_",
-        "value"      : "Your Ballot: ",
+        "value"      : "Zurück zur Wahl",
         "description": ""
     },
     {
         "key"        : "_verifyButton_",
-        "value"      : "Verfiy",
+        "value"      : "Verifizieren",
         "description": ""
     },
     {
         "key"        : "_printHeading_",
-        "value"      : "Your smart ballot tracker for Test Election:",
-        "description": ""
-    },
-    {
-        "key"        : "_loadingElectionString_",
-        "value"      : "loading election...",
-        "description": ""
-    },
-    {
-        "key"        : "_ballotTrackerString_",
-        "value"      : "smart ballot tracker is ",
-        "description": ""
-    },
-    {
-        "key"        : "_ballotContentsString_",
-        "value"      : "Ballot Contents:",
-        "description": ""
-    },
-    {
-        "key"        : "_encryptionVerifiedString_",
-        "value"      : "Encryption Verified",
-        "description": ""
-    },
-    {
-        "key"        : "_proofsString_",
-        "value"      : "Proofs ok.",
-        "description": ""
-    },
-    {
-        "key"        : "_verificationSuccessMessage_",
-        "value"      : "SUCCESSFUL VERIFICATION, DONE!",
+        "value"      : "Ihr Smart Ballot Tracker:",
         "description": ""
     },
     {
         "key"        : "_submittingVoteString_",
-        "value"      : "Submitting your vote.",
+        "value"      : "Absenden Ihres Stimmzettels.",
+        "description": ""
+    },
+    {
+        "key"        : "_loginButton_",
+        "value"      : "Anmelden",
         "description": ""
     },
     {
         "key"        : "_loginMessage_",
-        "value"      : "You are logged in as ",
-        "description": ""
-    },
-    {
-        "key"        : "_CastingHintOne_",
-        "value"      : "You can cast as many ballots as you want.",
-        "description": ""
-    },
-    {
-        "key"        : "_CastingHintTwo_",
-        "value"      : "Only the last one counts.",
+        "value"      : "Sie sind eingeloggt als ",
         "description": ""
     },
     {
@@ -371,17 +261,17 @@
     },
     {
         "key"        : "_cancelHint_",
-        "value"      : "If you cancel now, your ballot will NOT be recorded.",
+        "value"      : "Wenn Sie jetzt abbrechen, wird Ihr Stimmzettel nicht erfasst.",
         "description": ""
     },
     {
         "key"        : "_restartMessage_",
-        "value"      : "You can start the voting process over again, of course.",
+        "value"      : "Sie können den Wahlvorgang selbstverständlich von vorne starten.",
         "description": ""
     },
     {
         "key"        : "_castThisBallotButton_",
-        "value"      : "Diesen Stimmzettel abgeben",
+        "value"      : "Stimmzettel ABGEBEN",
         "description": ""
     },
     {
@@ -391,7 +281,7 @@
     },
     {
         "key"        : "_voteSuccessCastHeading_",
-        "value"      : "Stimmzettel erfolgreich abgegeben!",
+        "value"      : "Vote Successfully Cast!",
         "description": ""
     },
     {
@@ -421,33 +311,28 @@
     },
     {
         "key"        : "_submitVoteHeading_",
-        "value"      : "Stimme absenden...",
+        "value"      : "Abgabe Ihres Stimmzettels...",
         "description": "Final login page"
     },
     {
         "key"        : "_loginCastHint_",
-        "value"      : "Moment! Sie müssen sich einloggen.",
+        "value"      : "Moment! Sie müssen sich anmelden.",
         "description": "Final login page"
     },
     {
         "key"        : "_loginCastVoteHint_",
-        "value"      : "Machen Sie sich keine Sorgen, wir behalten Ihren Stimmzettel während Sie sich einloggen.",
+        "value"      : "Keine Sorge, wir behalten Ihren Stimmzettel während Sie sich anmelden.",
         "description": "Final login page"
     },
     {
         "key"        : "_loginCastBallotTracker_",
-        "value"      : "Your smart ballot tracker is:",
+        "value"      : "Ihr Smart Ballot Tracker ist:",
         "description": "Final login page"
     },
     {
         "key"        : "_outOf_",
-        "value"      : "# 1 von 1 - wähle",
+        "value"      : "# 1 von 1 - wählen Sie",
         "description": "Number of choice in booth"
-    },
-    {
-        "key"        : "_questionLabel_",
-        "value"      : "Frage: ",
-        "description": "review page label for question"
     },
     {
         "key"        : "_proceedButton_",
