@@ -1,17 +1,17 @@
 <div ng-include src="'/static/helios_main/partials/header.html'"></div>
 
-    <div class="content_box">
+<div class="content_box">
 
-        <p data-i18n="_loginMessage_">{{ subject }}</p>
-        <div align="center">
-            <button data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
-        </div>
-        <p data-i18n="_CastingHintOne_"></p>
-        <p data-i18n="_CastingHintTwo_"></p>
-        <div align="center">
-            <button data-i18n="_cancelButton_" ng-click="cancelButton()"></button>
-        </div>
-        <p data-i18n="_cancelHint_"></p>
-        <p data-i18n="_restartMessage_"></p>
+    <span data-i18n="_loginMessage_"></span> <span style="font-weight: bold">{{ subject }}</span>
+    <div align="center" style="margin-top: 1em">
+        <button data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+    </div>
+    <p data-i18n="_CastingHintOne_"></p>
+    <p data-i18n="_CastingHintTwo_"></p>
+    <div align="center">
+        <button data-i18n="_cancelButton_" ng-click="cancelButton()"></button>
+    </div>
+    <p data-i18n="_cancelHint_"></p>
+    <p data-i18n="_restartMessage_"></p>
 
 </div>

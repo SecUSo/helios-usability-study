@@ -37,6 +37,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     }
 
     $rootScope.subject = $routeParams['id'];
+    console.log("Subject:" + $rootScope.subject );
 
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
@@ -78,7 +79,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        //$rootScope.auditData += "{\"randomness\": \"" + encrypted_vote + "\"}";
         $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 42);
         $rootScope.auditData = buildBallot(encrypted_vote);
         console.log($rootScope.auditData);
