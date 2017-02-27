@@ -56,7 +56,7 @@
     },
     {
         "key"        : "_reviewMoreInfo_",
-        "value"      : "Ihre Auswahl ist sicher in Ihrem Browser verschlüsselt und Sie erhalten einen Smart Ballot Tracker.",
+        "value"      : "Ihre Auswahl ist sicher in Ihrem Browser verschlüsselt und Sie erhalten einen Stimmzettel-Tracking-Code.",
         "description": "More info below review description"
     },
     {
@@ -236,7 +236,7 @@
     },
     {
         "key"        : "_printHeading_",
-        "value"      : "Ihr Smart Ballot Tracker:",
+        "value"      : "Ihr Stimmzettel-Tracking-Code:",
         "description": ""
     },
     {
@@ -291,7 +291,7 @@
     },
     {
         "key"        : "_smartBallotTrackerHeading_",
-        "value"      : "Your smart ballot tracker is:",
+        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
         "description": ""
     },
     {
@@ -326,7 +326,7 @@
     },
     {
         "key"        : "_loginCastBallotTracker_",
-        "value"      : "Ihr Smart Ballot Tracker ist:",
+        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
         "description": "Final login page"
     },
     {
