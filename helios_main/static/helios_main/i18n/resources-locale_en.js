@@ -315,6 +315,11 @@
         "description": ""
     },
     {
+        "key"        : "_votedFor_",
+        "value"      : "You have voted for:",
+        "description": ""
+    },
+    {
         "key"        : "_loadingElectionString_",
         "value"      : "loading election...",
         "description": ""
