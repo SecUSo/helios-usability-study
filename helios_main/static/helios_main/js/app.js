@@ -18,7 +18,8 @@ var heliosStudyMainApp = angular.module(
         when('/cast/:id', {templateUrl: '/static/helios_main/partials/cast.html', controller: 'electionCtrl'}).
         when('/castlogin/:id', {templateUrl: '/static/helios_main/partials/loginforcast.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/helios_main/partials/finaloverview.html', controller: 'electionCtrl'}).
-        when('/audit/:id', {templateUrl: '/static/helios_main/partials/audit.html', controller: 'electionCtrl'}).
+        when('/audit_bsi/:id', {templateUrl: '/static/helios_main/partials/audit_bsi.html', controller: 'electionCtrl'}).
+        when('/audit_osze/:id', {templateUrl: '/static/helios_main/partials/audit_osze.html', controller: 'electionCtrl'}).
         when('/error/', {templateUrl: '/static/helios_main/partials/error.html', controller: 'errorCtrl'}).
         otherwise({templateUrl: '/static/helios_main/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API

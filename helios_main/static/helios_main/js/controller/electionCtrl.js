@@ -9,7 +9,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.show_progress = true;
 
     $rootScope.choice;
-    $rootScope.selected_code = null;
+    $rootScope.selected_code;
 
     switch ($location.path().split("/")[1]) {
         case "final":
@@ -35,7 +35,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     }
 
     $rootScope.subject = $routeParams['id'];
-    console.log("Subject:" + $rootScope.subject );
+    console.log("Subject:" + $rootScope.subject);
 
     //Do when page loaded
     Backend.assign($routeParams['id']).success(function (data) {
@@ -108,7 +108,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From review to audit
     $scope.verifyButton = function () {
-        $location.path('audit/' + $routeParams['id']);
+        $location.path('institute/' + $routeParams['id']);
     };
 
     //From review to login for casting
@@ -124,6 +124,14 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     //From review to election
     $scope.backToElectionButton = function () {
         $location.path('election/' + $routeParams['id']);
+    };
+
+    $scope.redirectToInstituteBsiButton = function () {
+        $location.path('audit_bsi/' + $routeParams['id']);
+    };
+
+    $scope.redirectToInstituteOszeButton = function () {
+        $location.path('audit_osze/' + $routeParams['id']);
     };
 
     //From institutes back to review
