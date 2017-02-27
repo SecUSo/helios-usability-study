@@ -21,16 +21,13 @@ body {
 }
 
 button {
-    background-color: #66b266;
+    background-color: #22505f;
     border: none;
     border-radius: 5px;
     color: white;
     padding: 0.5em;
     width: 167px;
-}
-
-button:hover {
-    background-color: #5ba05b;
+    cursor: pointer;
 }
 
 .login_button {

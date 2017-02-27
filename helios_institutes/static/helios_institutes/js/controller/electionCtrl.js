@@ -1,9 +1,8 @@
 'use strict';
 
-heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
+heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope) {
 
     var encrypted_vote = "";
-    $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
 
     switch ($location.path().split("/")[1]) {
@@ -36,9 +35,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
             $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
 
-        //TODO Why is this not displayed?
         $rootScope.subject = $routeParams['id'];
-        //console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
         console.log($scope.options);
@@ -111,11 +108,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.castButton = function () {
         $location.path('cast/' + $routeParams['id']);
-    };
-
-    $scope.redirectToInstituteButton = function () {
-        $window.open('//127.0.0.1:8080/verifier_one', '_blank');
-        $location.path('election/' + $routeParams['id']);
     };
 
 });

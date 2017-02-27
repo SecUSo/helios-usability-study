@@ -13,10 +13,15 @@ heliosStudyInstitutesApp.controller("auditCtrl", function ($rootScope, $scope, $
         $location.path('review/' + $routeParams['id']);
     };
 
-    $scope.redirectToInstituteButton = function () {
+    $scope.redirectToInstituteBsiButton = function () {
         $timeout(function () {
             $location.path('election/' + $routeParams['id']);
         }, 10);
     };
 
+    $scope.redirectToInstituteOszeButton = function () {
+        $timeout(function () {
+            $location.path('election/' + $routeParams['id']);
+        }, 10);
+    };
 });

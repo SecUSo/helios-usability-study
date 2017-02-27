@@ -1,13 +1,26 @@
 <div ng-include src="'/static/helios_institutes/partials/header.html'"></div>
 
 <div class="content_box">
-    Redirect to OSCE<br>
 
+    <span data-i18n="_redirectHeading_"></span><br>
 
-    <form ng-submit="redirectToInstituteButton()" target="_blank" method="post" action="//127.0.0.1:8080/verifier_one">
+    <img ng-src="/static/helios_main/images/bsi_logo.png"><br>
+
+    <form ng-submit="redirectToInstituteBsiButton()" target="_blank" method="post"
+          action="//127.0.0.1:8080/verifier_one">
         <input name="vote" type="hidden" ng-value="vote">
         <input name="tracker" type="hidden" ng-value="ballot_tracker">
-        <button type="submit" data-i18n="_OSCE_"></button>
+        <button type="submit" data-i18n="_verifyButton_"></button>
+    </form>
+
+
+    <img ng-src="/static/helios_main/images/osze_logo.png"><br>
+
+    <form ng-submit="redirectToInstituteOszeButton()" target="_blank" method="post"
+          action="//127.0.0.1:8080/verifier_two">
+        <input name="vote" type="hidden" ng-value="vote">
+        <input name="tracker" type="hidden" ng-value="ballot_tracker">
+        <button type="submit" data-i18n="_verifyButton_"></button>
     </form>
 
     <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
