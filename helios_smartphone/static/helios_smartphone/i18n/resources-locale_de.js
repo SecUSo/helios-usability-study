@@ -151,12 +151,12 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeHeading_",
-        "value"      : "Ihr Prüfcode ist: ",
+        "value"      : "Ihr Prüf-Code ist: ",
         "description": ""
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie verifizieren, ob Ihre Stimme richtig gezählt wurde. Bitte notieren Sie sich dafür den Prüf-Code oder nutzen Sie eine der folgenden Möglichkeiten:",
+        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie verifizieren, ob Ihre Stimme richtig gezählt wurde. Bitte notieren Sie sich dafür den Prüf-Code.",
         "description": ""
     },
     {
