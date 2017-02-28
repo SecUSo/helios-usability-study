@@ -10,6 +10,11 @@ h3 {
     margin-top: 0;
 }
 
+#review_box p {
+    width: calc(100% - 200px);
+    margin-top: 2em;
+}
+
 a {
     color: #22505f;
 }

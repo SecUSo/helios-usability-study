@@ -1,6 +1,6 @@
 <div ng-include src="'/static/helios_main/partials/header.html'"></div>
 
-<div class="content_box">
+<div class="content_box" id="review_box">
 
     <div class="audit_box">
 
@@ -19,14 +19,15 @@
 
     </div>
 
-    <span data-i18n="_ballotTrackerHeading_"></span>
-    <span><b>{{ ballot_tracker }}</b></span>
-    <span data-i18n="_ballotTrackerFollow_"></span><span><a data-i18n="_ballotTrackerPrint_" href=""
-                                                            ng-click="printButton()"></a>.</span><br>
+    <p>
+        <span data-i18n="_ballotTrackerHeading_"></span>
+        <span><b>{{ ballot_tracker }}</b></span>
+        <span data-i18n="_ballotTrackerFollow_"></span><span><a data-i18n="_ballotTrackerPrint_" href=""
+                                                                ng-click="printButton()"></a>.</span>
+    </p>
+    <p data-i18n="_clickSubmitHint_"></p>
 
-    <span data-i18n="_clickSubmitHint_"></span>
-
-    <div style="margin-top: 1em;">
+    <div style="margin-top: 6em;">
         <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
         <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
     </div>
