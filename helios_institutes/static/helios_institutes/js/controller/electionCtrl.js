@@ -21,6 +21,9 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         case "cast":
             $scope.show_progress = false;
             break;
+        case "institute":
+            $scope.show_progress = false;
+            break;
         default:
             $scope.show_progress = true;
             $scope.current_step = 0;
