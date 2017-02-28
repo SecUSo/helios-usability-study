@@ -10,6 +10,11 @@
         "description": ""
     },
     {
+        "key"        : "_welcomeToElection_",
+        "value"      : "Welcome to the election for the German Bundestag",
+        "description": ""
+    },
+    {
         "key"        : "_userIDHeading_",
         "value"      : "User ID: ",
         "description": ""
