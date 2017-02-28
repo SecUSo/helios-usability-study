@@ -439,6 +439,26 @@
         "value"      : "QR-Code, der den Prüf-Code enthält",
         "description": "Below QR Code"
     },
+       {
+        "key"        : "_verificationHeading_",
+        "value"      : "Stimmzettel-Verifikation",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationQrCode_",
+        "value"      : "Der folgende QR-Code repräsentiert alle Daten, die für eine Verifikation von der App benötigt werden.",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstruction_",
+        "value"      : "Wählen Sie \"Stimmzettel-Code scannen\" in der App und scannen sie den QR-Code.",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstructionsApp_",
+        "value"      : "Bitte folgen Sie den Instruktionen in der App und schließen dieses Fenster am Ende.",
+        "description": ""
+    },
     {
         "key"        : "_proceedButton_",
         "value"      : "Weiter",

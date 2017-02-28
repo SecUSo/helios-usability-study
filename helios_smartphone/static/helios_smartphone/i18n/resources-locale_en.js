@@ -440,6 +440,31 @@
         "description": ""
     },
     {
+        "key"        : "_qrExplanation_",
+        "value"      : "QR-Code, der den Prüf-Code enthält",
+        "description": "Below QR Code"
+    },
+    {
+        "key"        : "_verificationHeading_",
+        "value"      : "Vote Verification",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationQrCode_",
+        "value"      : "The QR Code below represents all data which is required for verification by the application.",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstruction_",
+        "value"      : "Press the \"Scan vote code\"-button in the application and scan the QR Code below.",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstructionsApp_",
+        "value"      : "Now you can follow the instructions given by the application and close this window afterwards.",
+        "description": ""
+    },
+    {
         "key"        : "_proceedButton_",
         "value"      : "Proceed",
         "description": "Button to proceed to the next step"
