@@ -1,11 +1,8 @@
 <div ng-include src="'/static/helios_smartphone/partials/header.html'"></div>
 
-<div class="content">
-
     <div class="content_box">
 
-
-        <b><span class="ballot_question">{{ experimentData.question_data.question }}</span></b><br/>
+        <span style="font-weight: bold" class="ballot_question">{{ experimentData.question_data.question }}</span><br/>
 
         <span class="ballot_number" data-i18n="_yonCanSeletect_"></span>
         <span class="ballot_number">{{ experimentData.question_data.answers }} </span>
@@ -38,6 +35,4 @@
         <button style="float: right; margin-top: 1em;" data-i18n="_proceedButton_"
                 ng-click="proceedButton()"></button>
 
-
-    </div>
 </div>
