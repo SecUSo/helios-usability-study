@@ -1,24 +1,25 @@
 <div ng-include src="'/static/helios_main/partials/header.html'"></div>
 
-<div class="content">
 
-    <div class="content_box">
+<div class="content_box">
 
-        <h3 data-i18n="_auditedBallotHeading_"></h3>
+    <h3 data-i18n="_auditedBallotHeading_"></h3>
 
-        <b><span data-i18n="_importantHeading_"></span></b><span data-i18n="_importantMessagePartOne_"></span><i><span data-i18n="_importantMessagePartTwo_"></span></i><br>
-        <span data-i18n="_auditCastInstruction_"></span><br>
-        <br>
-        <span data-i18n="_whyHeading_"></span><span data-i18n="_whyMessage_"></span><br>
-        <br>
-        <span data-i18n="_nowWhatHeading_"></span><a data-i18n="_nowWhatInfoLink_" onclick="" href=""></a>
-        <span data-i18n="_nowWhatInfoAfterLink_"></span> <a data-i18n="_nowWhatBallotVerifierLink_"
-            href="http://127.0.0.1:8080/verifier_osze" target="_blank"></a> <span data-i18n="_nowWhatBallotVerifierAfterLink_"></span><br>
-        <span data-i18n="_nowWhatBackToVoting_"></span><br>
-        <br>
-        <textarea name="auditDataTextArea" ng-model="auditData" rows="10" cols="63"></textarea> <br>
-        <br>
+    <b><span data-i18n="_importantHeading_"></span></b><span data-i18n="_importantMessagePartOne_"></span><i><span
+        data-i18n="_importantMessagePartTwo_"></span></i><br>
+    <span data-i18n="_auditCastInstruction_"></span><br>
+    <br>
+    <span data-i18n="_whyHeading_"></span><span data-i18n="_whyMessage_"></span><br>
+    <br>
+    <span data-i18n="_nowWhatHeading_"></span><a data-i18n="_nowWhatInfoLink_" onclick="" href=""></a>
+    <span data-i18n="_nowWhatInfoAfterLink_"></span> <a data-i18n="_nowWhatBallotVerifierLink_"
+                                                        href="http://127.0.0.1:8080/verifier_osze" target="_blank"></a>
+    <span data-i18n="_nowWhatBallotVerifierAfterLink_"></span><br>
+    <span data-i18n="_nowWhatBackToVoting_"></span><br>
+    <br>
+    <textarea name="auditDataTextArea" ng-model="auditData" rows="10" cols="63"></textarea> <br>
+    <br>
 
-        <button data-i18n="_backToVotingButton_" ng-click="backToVotingButton()"></button>
-    </div>
+    <button data-i18n="_backToVotingButton_" ng-click="backToVotingButton()"></button>
+
 </div>
