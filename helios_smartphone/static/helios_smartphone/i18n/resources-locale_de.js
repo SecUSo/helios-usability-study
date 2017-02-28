@@ -350,16 +350,6 @@
         "description": ""
     },
     {
-        "key"        : "_doneMessage_",
-        "value"      : "Your Vote is Being Submitted",
-        "description": ""
-    },
-    {
-        "key"        : "_doneWaitMessage_",
-        "value"      : "Please wait a few seconds while your vote is submitted to the casting server....",
-        "description": ""
-    },
-    {
         "key"        : "_finalCheckCode_",
         "value"      : "Der Prüf-Code Ihres Stimmzettels ist:",
         "description": ""
