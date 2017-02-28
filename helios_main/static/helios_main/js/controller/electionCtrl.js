@@ -105,6 +105,12 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         $window.open('print/' + $rootScope.ballot_tracker, '_blank');
     };
 
+    //Selection of textarea in audit
+    $scope.selectTextArea = function () {
+        console.log(document.getElementsByName("auditDataTextArea")[0]);
+        document.getElementsByName("auditDataTextArea")[0].select();
+    };
+
     //From review to audit
     $scope.verifyButton = function () {
         $location.path('institute/' + $routeParams['id']);
