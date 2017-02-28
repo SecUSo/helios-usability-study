@@ -351,7 +351,6 @@
     },
     {
         "key"        : "_auditCastInstruction_",
-        "value"      : "To cast a ballot, you must click the \"Back to Voting\" button below, re-encrypt it, and choose \"cast\" instead of \"audit.\"",
-        "description": ""
+        "value"      : "Wenn Sie eine Stimme abgeben möchten, klicken Sie auf \"Zurück zur Wahl\", wählen Sie einen Kandidaten und wählen anschließend \"Stimmabgabe\" anstatt \"Überprüfung.\"",        "description": ""
     }
 ]
