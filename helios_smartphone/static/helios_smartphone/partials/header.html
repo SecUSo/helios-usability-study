@@ -5,27 +5,25 @@
             ng-src="/static/helios_smartphone/images/logout.png"></div>
     <div style="text-align: left; margin-left: 4em">
 
-        <div style="text-align: left; margin-left: 4em">
 
-            <img ng-src="/static/helios_smartphone/images/logo_header.png">
+        <img ng-src="/static/helios_smartphone/images/logo_header.png">
 
-            {{ HEADLINE }}
-
-        </div>
-        <div class="progress" ng-show="show_progress">
-            <table>
-                <tr>
-                    <td id="progress_0" ng-class="{true: 'active', false: 'inactive'}[current_step == 0]"><span
-                            data-i18n="_instructionsWizard_"></span></td>
-                    <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]"><span
-                            data-i18n="_ballotWizard_"></span></td>
-                    <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]"><span
-                            data-i18n="_checkCodeWizard_"></span></td>
-                    <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]"><span
-                            data-i18n="_submitWizard_"></span></td>
-                </tr>
-            </table>
-        </div>
+        {{ HEADLINE }}
 
     </div>
+    <div class="progress" ng-show="show_progress">
+        <table>
+            <tr>
+                <td id="progress_0" ng-class="{true: 'active', false: 'inactive'}[current_step == 0]"><span
+                        data-i18n="_instructionsWizard_"></span></td>
+                <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]"><span
+                        data-i18n="_ballotWizard_"></span></td>
+                <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]"><span
+                        data-i18n="_checkCodeWizard_"></span></td>
+                <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]"><span
+                        data-i18n="_submitWizard_"></span></td>
+            </tr>
+        </table>
+    </div>
+    
 </div>
