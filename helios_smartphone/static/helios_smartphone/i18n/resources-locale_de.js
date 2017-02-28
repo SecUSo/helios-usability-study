@@ -136,7 +136,7 @@
     },
     {
         "key"        : "_submitVoteButton_",
-        "value"      : "Stimmzettel absenden!",
+        "value"      : "Stimmabgabe",
         "description": "Submit vote button on review page"
     },
     {
@@ -425,19 +425,14 @@
         "description": ""
     },
     {
-        "key"        : "_auditHeading_",
-        "value"      : "Your audited ballot",
-        "description": ""
-    },
-    {
-        "key"        : "_auditCastInstruction_",
-        "value"      : "To cast a ballot, you must click the \"Back to Voting\" button below, re-encrypt it, and choose \"cast\" instead of \"audit.\"",
-        "description": ""
-    },
-    {
         "key"        : "_startButton_",
         "value"      : "Start",
         "description": "Button to start the voting procedure"
+    },
+    {
+        "key"        : "_qrExplanation_",
+        "value"      : "QR-Code, der den Prüf-Code enthält",
+        "description": "Below QR Code"
     },
     {
         "key"        : "_proceedButton_",
