@@ -4,7 +4,7 @@
 
     <span data-i18n="_redirectHeading_"></span><br>
 
-    <div>
+    <div style="text-align: center; margin-top: 2em">
 
         <img ng-src="/static/helios_main/images/bsi_logo.png"><br>
 
@@ -16,7 +16,7 @@
         </form>
 
 
-        <img ng-src="/static/helios_main/images/osze_logo.png"><br>
+        <img style="margin-top: 2em" ng-src="/static/helios_main/images/osze_logo.png"><br>
 
         <form ng-submit="redirectToInstituteOszeButton()" target="_blank" method="post"
               action="//127.0.0.1:8080/verifier_two">
@@ -25,8 +25,8 @@
             <button class="institute_button" type="submit" data-i18n="_verifyButton_"></button>
         </form>
 
-    </div>
+        <button style="margin-top: 2em; margin-bottom: 0" data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
 
-    <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
+    </div>
 
 </div>

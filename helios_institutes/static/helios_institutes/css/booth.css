@@ -116,5 +116,6 @@ button.vote_button_active {
     background-color: white;
     padding: 0;
     color: #393f46;
+    text-decoration: underline;
 }
 
