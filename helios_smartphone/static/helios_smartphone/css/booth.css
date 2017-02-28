@@ -6,11 +6,6 @@ body {
     margin: 0;
 }
 
-.content {
-    text-align: left;
-    display: inline-block;
-}
-
 .login_form {
     text-align: left;
     display: inline-block;
@@ -95,4 +90,17 @@ button.vote_button_active {
     width: 50px;
     height: 50px;
     cursor: pointer;
+}
+
+.qr_box {
+    display: inline-block;
+    border: 1px solid #393f46;
+    padding: 0.3em;
+    border-radius: 5px;
+}
+
+.check_code{
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
 }
