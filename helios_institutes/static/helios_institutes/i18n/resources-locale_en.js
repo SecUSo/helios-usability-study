@@ -100,6 +100,16 @@
         "description": "Action points in the wizard"
     },
     {
+        "key"        : "_yonCanSeletect_",
+        "value"      : "You can select ",
+        "description": ""
+    },
+    {
+        "key"        : "_yonCanSeletectFollow_",
+        "value"      : " candidate(s) (or invalid vote).",
+        "description": ""
+    },
+    {
         "key"        : "_loadingMessageTwo_",
         "value"      : "Helios is now encrypting your ballot",
         "description": "Loading message after voting"
