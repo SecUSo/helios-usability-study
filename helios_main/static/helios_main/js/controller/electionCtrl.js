@@ -139,8 +139,8 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     };
 
     $scope.backToVotingButton = function () {
-        encrypt();
-        $location.path('review/' + $routeParams['id']);
+        $location.path('election/' + $routeParams['id']);
+        $rootScope.selected_code = "00";
     };
 
     $scope.cancelButton = function () {
