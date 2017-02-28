@@ -4,24 +4,28 @@
 
     <span data-i18n="_redirectHeading_"></span><br>
 
-    <img ng-src="/static/helios_main/images/bsi_logo.png"><br>
+    <div>
 
-    <form ng-submit="redirectToInstituteBsiButton()" target="_blank" method="post"
-          action="//127.0.0.1:8080/verifier_one">
-        <input name="vote" type="hidden" ng-value="vote">
-        <input name="tracker" type="hidden" ng-value="ballot_tracker">
-        <button type="submit" data-i18n="_verifyButton_"></button>
-    </form>
+        <img ng-src="/static/helios_main/images/bsi_logo.png"><br>
+
+        <form ng-submit="redirectToInstituteBsiButton()" target="_blank" method="post"
+              action="//127.0.0.1:8080/verifier_one">
+            <input name="vote" type="hidden" ng-value="vote">
+            <input name="tracker" type="hidden" ng-value="ballot_tracker">
+            <button class="institute_button" type="submit" data-i18n="_verifyButton_"></button>
+        </form>
 
 
-    <img ng-src="/static/helios_main/images/osze_logo.png"><br>
+        <img ng-src="/static/helios_main/images/osze_logo.png"><br>
 
-    <form ng-submit="redirectToInstituteOszeButton()" target="_blank" method="post"
-          action="//127.0.0.1:8080/verifier_two">
-        <input name="vote" type="hidden" ng-value="vote">
-        <input name="tracker" type="hidden" ng-value="ballot_tracker">
-        <button type="submit" data-i18n="_verifyButton_"></button>
-    </form>
+        <form ng-submit="redirectToInstituteOszeButton()" target="_blank" method="post"
+              action="//127.0.0.1:8080/verifier_two">
+            <input name="vote" type="hidden" ng-value="vote">
+            <input name="tracker" type="hidden" ng-value="ballot_tracker">
+            <button class="institute_button" type="submit" data-i18n="_verifyButton_"></button>
+        </form>
+
+    </div>
 
     <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
 

@@ -112,3 +112,9 @@ button.vote_button_active {
     cursor: pointer;
 }
 
+.institute_button {
+    background-color: white;
+    padding: 0;
+    color: #393f46;
+}
+
