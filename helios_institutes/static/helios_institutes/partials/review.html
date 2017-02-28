@@ -2,10 +2,13 @@
 
 <div class="content_box">
 
-    <p data-i18n="_reviewBallotDescription_"></p>
-
-    <div class="check_code"><span data-i18n="_reviewBallotCheckCodeHeading_"></span><span
-            style="font-weight: bold"> {{ ballot_tracker }}</span></div>
+    <p style="margin-top: 0; " data-i18n="_reviewBallotDescription_"></p>
+    <div style="margin-left: 50%; width: 0; overflow: visible">
+        <div class="qr_box">
+            <div class="check_code"><span data-i18n="_reviewBallotCheckCodeHeading_"></span><span
+                    style="font-weight: bold"> {{ ballot_tracker }}</span></div>
+        </div>
+    </div>
 
     <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
 
@@ -13,10 +16,10 @@
 
     <div style="text-align: center">
 
-    <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+        <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
 
-    <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
+        <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
 
-    <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
-</div>
+        <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
+    </div>
 </div>

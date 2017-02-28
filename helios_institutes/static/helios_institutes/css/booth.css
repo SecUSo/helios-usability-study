@@ -69,6 +69,19 @@ hr {
     padding: 0;
 }
 
+.qr_box {
+    display: inline-block;
+    border: 1px solid #393f46;
+    padding: 0.3em;
+    border-radius: 5px;
+    width: 260px;
+    margin-left: -130px;
+}
+
+.qr_box p {
+    margin: 0.5em 0;
+}
+
 .check_code{
     text-align: center;
     font-size: 14pt;
