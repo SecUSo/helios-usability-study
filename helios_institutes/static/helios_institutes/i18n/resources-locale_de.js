@@ -41,7 +41,7 @@
     },
     {
         "key"        : "_introductionStart_",
-        "value"      : "Bitte klicken Sie auf \"Weiter\" um mit der Wahl zu beginnen",
+        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen",
         "description": ""
     },
     {

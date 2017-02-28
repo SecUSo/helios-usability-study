@@ -101,7 +101,7 @@
     },
     {
         "key"        : "_ballotTrackerHeading_",
-        "value"      : "Ihr Ballot Tracker ist ",
+        "value"      : "Ihr Stimmzettel-Tracking-Code ist ",
         "description": "Heading of ballot tracker"
     },
     {
