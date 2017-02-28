@@ -5,7 +5,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     var encrypted_vote = "";
     $scope.auditClick = false;
-    $scope.head_line = "HEADLINE";
     $scope.show_progress = true;
 
     $rootScope.choice;
@@ -146,10 +145,11 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     $scope.cancelButton = function () {
         $location.path('/' + $routeParams['id']);
+        $rootScope.selected_code = "00";
     };
 
     $scope.castButton = function () {
-        $location.path('cast/');
+        $location.path('cast/' + "final");
     };
 
     function buildBallot(encrypted_vote) {
