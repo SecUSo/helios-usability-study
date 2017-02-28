@@ -430,6 +430,11 @@
         "description": "Button to start the voting procedure"
     },
     {
+        "key"        : "_closeButton_",
+        "value"      : "Fenster schließen",
+        "description": "Verification instruction"
+    },
+    {
         "key"        : "_qrExplanation_",
         "value"      : "QR-Code, der den Prüf-Code enthält",
         "description": "Below QR Code"
