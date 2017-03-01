@@ -62,19 +62,6 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         }
     };
 
-
-    $scope.saveChoiceInvalid = function (choice) {
-
-        if ($rootScope.selected_code == "00") {
-            $rootScope.selected_code = null;
-        } else {
-            $rootScope.selected_code = "00";
-            $rootScope.choice = choice;
-            console.log('Choice is ' + $rootScope.choice);
-        }
-    };
-
-
     //Pseudo-encryption of the vote. Well, the option code is hidden between random values.
     function encrypt() {
         for (var i = 0; i < 100; i++) {
