@@ -4,17 +4,52 @@ This project is a collection of three different user-interfaces for the remote e
 As this solely is the user-interface a component for tallying and administering elections is not included. <br />
 Furthermore encryption is only simulated and thus we do not recomment to use this interface for serious elections as secrecy can be broken easily. 
 
-## Motivation
-
-TODO
-
 ## Download and more Information
 
-TODO
- 
-### API Reference
+### Building 
 
-TODO
+Requirements:
+* Python 3.5
+* Django 1.11
+
+There are two options of hosting the application: With or without virtualenv 
+
+If you intend to use virtualvenv, navigate to your desired directory and start by: 
+
+    pyenv env
+    source env/bin/activate
+
+On a production server this probably is located somewhere in /var/www , on a developers computer this normally is located somewhere in your $HOME.
+
+Now you can clone the sourcecode of the application into your directory:
+
+    https://github.com/Yonjuni/helios-usability-study.git
+
+After that you should have a subdirectory helios-usability-study/ and if you created a virtualenv also a subdirectory env/. The actual applications are in the directories helios_institutes/, helios_main/ and helios_smartphone/. Please navigate into the helios-usability-study/ directory. 
+
+The application itself is done, but you need to initialize your database. You can canfigure helios-usability-study/settings.py to use mySQL or PostGreSQL described here. Or you can leave the file as it is to use sqlite. 
+
+Initialize your database with
+
+    ./manage.py makemigrations
+    ./manage.py migrate
+    ./manage.py migrate --run-syncdb
+
+
+If you would like to add initial task data for testing or so you can do this by
+
+    python manage.py sample_data
+
+Sample data can be found in sample_data.json file, it is written in Jason format and can of course be changed. Sample data added by default consists of a list of parties which are probably running for the Bundestag election in 2017.
+    
+    
+Start a development Server
+--------------------------
+If you intend to make some changes, you can start the application now with
+
+    python manage.py runserver
+    
+The application can be accessed under the url `http://localhost:8000`.
 
 ## License
 
