@@ -281,12 +281,12 @@
     },
     {
         "key"        : "_voteSuccessCastHeading_",
-        "value"      : "Vote Successfully Cast!",
+        "value"      : "Stimmzettel erfolgreich abgegeben!",
         "description": ""
     },
     {
         "key"        : "_voteSuccessCastMessage_",
-        "value"      : "Congratulations, your vote has been successfully cast!",
+        "value"      : "Herzlichen Glückwunsch, Ihr Stimmzettel wurde erfolgreich abgegeben!",
         "description": ""
     },
     {
@@ -296,7 +296,7 @@
     },
     {
         "key"        : "_logoutMessage_",
-        "value"      : "For your safety, we have logged you out.",
+        "value"      : "Für Ihre Sicherheit wurden Sie ausgeloggt.",
         "description": ""
     },
     {
