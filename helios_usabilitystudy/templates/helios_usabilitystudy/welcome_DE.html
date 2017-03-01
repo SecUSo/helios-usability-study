@@ -25,9 +25,10 @@
             {% csrf_token %}
             ID:<br>
             <input name="id" type="text"><br>
+            {{ error_id }}
             Passwort:<br>
             <input name="password" type="password"><br>
-
+            {{ error_pw }}
             <fieldset>
                 <legend>Sprachauswahl</legend>
                 <br/>

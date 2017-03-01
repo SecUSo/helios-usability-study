@@ -1,13 +1,8 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
-from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as django_login
-from django.contrib.auth import logout as django_logout
 from django.views.decorators.csrf import csrf_exempt
-from django import forms
 from helios_usabilitystudy.models import Subject
-import os
 
 
 def welcome(request):
@@ -21,8 +16,13 @@ def login(request):
     password = request.POST['password']
     language = request.POST['language']
 
-    if not username or not password:
-        print("Invalid login")
+    if not username:
+        error_id = "Bitte geben Sie eine ID ein."
+        return render(request, 'helios_usabilitystudy/welcome_DE.html', {'error': error_id})
+
+    if not password:
+        error_pw = "Bitte geben Sie ein Passwort ein."
+        return render(request, 'helios_usabilitystudy/welcome_DE.html', {'error': error_pw})
 
     user = authenticate(username=username, password=password)
     if user is not None:
@@ -36,7 +36,6 @@ def login(request):
         print("User doesn't exist")
         error = "Die ID ist nicht vergeben oder das Passwort stimmt nicht."
         return render(request, 'helios_usabilitystudy/welcome_DE.html', {'error': error})
-        #return redirect('login/')
 
 
 # Conditional redirect depending on experiment type
