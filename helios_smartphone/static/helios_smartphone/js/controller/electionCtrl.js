@@ -40,8 +40,6 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
             $location.path('/error/' + $routeParams['id'] + '/' + result["Error"]);
         }
 
-        //TODO Why is this not displayed?
-        $scope.subject = $routeParams['id'];
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
