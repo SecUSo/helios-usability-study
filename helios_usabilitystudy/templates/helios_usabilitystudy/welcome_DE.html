@@ -16,7 +16,7 @@
 
         <div class="welcome_text">Dieser Login ist noch kein Teil der Studie,
             erst danach geht es wirklich los.<br><br>
-            Bitte loggen Sie sich mit den Zugangsdaten ein, die Sie erhalten haben.
+            Bitte loggen Sie sich mit den erhaltenen Zugangsdaten ein.
         </div>
 
         <br>
@@ -25,7 +25,7 @@
             {% csrf_token %}
             ID:<br>
             <input name="id" type="text"><br>
-            Password:<br>
+            Passwort:<br>
             <input name="password" type="password"><br>
 
             <fieldset>
@@ -36,6 +36,10 @@
                 <input type="radio" name="language" id="english" value="english" checked="checked"/>
                 <label for="english">Englisch</label><br/>
             </fieldset>
+
+            <br>
+
+            {{ error }}
 
             <br>
 
