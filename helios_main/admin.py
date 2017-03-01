@@ -16,23 +16,21 @@ def export_csv(duration, request, queryset):
     response.write(u'\ufeff'.encode('utf8'))
     writer.writerow([
         smart_str(u"Subject ID"),
+        smart_str(u"Voting duration"),
         smart_str(u"Has verified?"),
-        smart_str(u"Instruction"),
         smart_str(u"Verification number"),
+        smart_str(u"Verification duration"),
         smart_str(u"Overall"),
-        smart_str(u"Voting"),
-        smart_str(u"Verification"),
 
     ])
     for obj in queryset:
         writer.writerow([
             smart_str(obj.subject),
-            smart_str(obj.has_verified),
-            smart_str(obj.instruction_duration),
-            smart_str(obj.verification_number),
-            smart_str(obj.overall_duration),
             smart_str(obj.voting_duration),
+            smart_str(obj.has_verified),
+            smart_str(obj.verification_number),
             smart_str(obj.verification_duration),
+            smart_str(obj.overall_duration),
         ])
     return response
 export_csv.short_description = u"Export CSV"
@@ -41,7 +39,7 @@ export_csv.short_description = u"Export CSV"
 class MyDurationAdmin(admin.ModelAdmin):
     actions = [export_csv]
     list_display = (
-    'subject', 'has_verified', 'instruction_duration', 'verification_number', 'overall_duration', 'voting_duration', 'verification_duration')
+    'subject', 'voting_duration', 'has_verified', 'verification_number', 'verification_duration', 'overall_duration')
 
 
 admin.site.register(Duration, MyDurationAdmin)

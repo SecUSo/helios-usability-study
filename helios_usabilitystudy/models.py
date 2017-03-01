@@ -13,12 +13,11 @@ class Subject(models.Model):
 
 class Duration(models.Model):
     subject = models.ForeignKey(Subject)
-    has_verified = models.NullBooleanField('Verification performed')
-    instruction_duration = models.BigIntegerField('Instruction (Millisec)')
-    verification_number = models.BigIntegerField('Number of verifications')
-    overall_duration = models.BigIntegerField('Overall (Millisec)')
     voting_duration = models.BigIntegerField('Voting (Millisec)')
+    has_verified = models.NullBooleanField('Verification performed')
+    verification_number = models.BigIntegerField('Number of verifications')
     verification_duration = models.BigIntegerField('Verification (Millisec)')
+    overall_duration = models.BigIntegerField('Overall (Millisec)')
 
     def __str__(self):
             return 'Subject: ' + str(self.subject_id)
