@@ -39,3 +39,6 @@ coverage.xml
 #Picture data
 *.png
 *.jpg
+
+#Database
+db.sqlite3
