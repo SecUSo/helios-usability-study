@@ -48,6 +48,7 @@ def return_experiment(experiment_type, username):
     }.get(experiment_type, 1)
 
 
+@csrf_exempt
 def save_timestamp(request):
     subject_temp = request.POST['id']
     timestamp_temp = request.POST['timestamp']
