@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from helios_usabilitystudy.models import Question, Subject, Duration
+from helios_usabilitystudy.models import Question, Subject, Timestamp
 import json
 import os
 
@@ -36,11 +36,3 @@ def assign(request):
             'options': options_dict}
     }), content_type='application/json')
 
-
-@csrf_exempt
-def save_instruction_time(request):
-    subject = Subject.objects.filter(subject_id=request.POST['id']).all()[0]
-    result_time = json.loads(request.POST['result_time'])
-    duration = Duration(subject=subject)
-    duration.instruction_duration = result_time
-    duration.save()

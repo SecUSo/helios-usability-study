@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-from helios_usabilitystudy.models import Question, Subject, Duration
+from helios_usabilitystudy.models import Question, Subject, Timestamp
 import json
 import os
 
@@ -43,7 +43,6 @@ def save_duration(request):
         subject = Subject.objects.filter(subject_id=request.POST['id']).all()[0]
     except IndexError:
         return HttpResponse('{"Error": "Unknown subject."}', content_type='application/json')
-    duration = Duration(subject_id=subject, instruction_duration=request.POST['intro'],
-                        verification_number=request.POST['number'], overall_duration=request.POST['overall'],
-                        voting_duration=request.POST['voting'], verification_duration=request.POST['verification'])
-    duration.save()
+    timestamp = Timestamp(subject=subject, timestamp=request.POST['time'],
+                          type=request.POST['type'])
+    timestamp.save()

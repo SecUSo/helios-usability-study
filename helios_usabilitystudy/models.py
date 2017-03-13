@@ -14,7 +14,7 @@ class Subject(models.Model):
 class Timestamp(models.Model):
     subject = models.ForeignKey(Subject)
     timestamp = models.DateTimeField('Timestamp')
-    type = models.CharField('Type')
+    type = models.CharField('Type', max_length=42)
 
     def __str__(self):
             return 'Subject: ' + str(self.subject_id)
