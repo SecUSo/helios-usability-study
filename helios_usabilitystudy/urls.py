@@ -28,6 +28,6 @@ urlpatterns = urlpatterns = static(settings.STATIC_URL, document_root=settings.S
     url(r'^main/', include('helios_main.urls')),
     url(r'^institute/', include('helios_institutes.urls')),
     url(r'^smartphone/', include('helios_smartphone.urls')),
-    url(r'^save/', views.save_timestamp, name='save_timestamp'),
+    url(r'^save$', views.save_timestamp, name='save_timestamp'),
     url(r'^.*', views.welcome, name='welcome_DE')
 ]
