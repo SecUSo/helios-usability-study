@@ -11,14 +11,10 @@ class Subject(models.Model):
         return 'Subject: ' + str(self.subject_id)
 
 
-class Timestamps(models.Model):
+class Timestamp(models.Model):
     subject = models.ForeignKey(Subject)
-    overall_start = models.BigIntegerField('Overall start')
-    voting_start = models.BigIntegerField('Voting start')
-    has_verified = models.NullBooleanField('Verification performed')
-    verification_number = models.BigIntegerField('Number of verifications')
-    verification_start = models.BigIntegerField('Verification start')
-    overall_end = models.BigIntegerField('Overall end')
+    timestamp = models.DateTimeField('Timestamp')
+    type = models.CharField('Type')
 
     def __str__(self):
             return 'Subject: ' + str(self.subject_id)
