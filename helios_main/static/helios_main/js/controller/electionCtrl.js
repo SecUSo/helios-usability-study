@@ -9,6 +9,8 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $rootScope.choice;
     $rootScope.selected_code;
 
+    Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Election start");
+
     switch ($location.path().split("/")[1]) {
         case "final":
             $scope.show_progress = false;
