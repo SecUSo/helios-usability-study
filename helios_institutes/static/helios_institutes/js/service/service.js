@@ -11,11 +11,14 @@ angular.module('BackendService', [])
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },
-            submit: function (id, resultData) {
+            save_timestamp: function (subject, timestamp, type) {
                 return $http({
                     method: "POST",
-                    url: '/task/submit',
-                    data: 'id=' + id + '&result_data=' + angular.toJson(resultData),
+                    url: '/save',
+                    data:
+                    'id=' + subject +
+                    '&timestamp=' + timestamp +
+                    '&type=' + type,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             }
