@@ -11,7 +11,7 @@ angular.module('BackendService', [])
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },
-            submit: function (subject, timestamp, type) {
+            save_timestamp: function (subject, timestamp, type) {
                 return $http({
                     method: "POST",
                     url: '/main/submit',

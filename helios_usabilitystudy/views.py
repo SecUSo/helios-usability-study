@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as django_login
+from datetime import datetime
 from django.views.decorators.csrf import csrf_exempt
-from helios_usabilitystudy.models import Subject
+from helios_usabilitystudy.models import Subject, Timestamp
 
 
 def welcome(request):
@@ -45,6 +46,17 @@ def return_experiment(experiment_type, username):
         '2': redirect('institute/' + username),
         '3': redirect('smartphone/' + username),
     }.get(experiment_type, 1)
+
+
+def save_timestamp(request):
+    subject_temp = request.POST['id']
+    timestamp_temp = request.POST['timestamp']
+    type_temp = request.POST['type']
+
+    subject = Subject.objects.get(subject_id=subject_temp)
+
+    timestamp = Timestamp(subject=subject, timestamp=datetime.fromtimestamp(timestamp_temp/1000), type=type_temp)
+    timestamp.save()
 
 
 @csrf_exempt
