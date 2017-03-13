@@ -14,7 +14,7 @@ angular.module('BackendService', [])
             save_timestamp: function (subject, timestamp, type) {
                 return $http({
                     method: "POST",
-                    url: '/main/submit',
+                    url: '/save',
                     data:
                     'id=' + subject +
                     '&timestamp=' + angular.toJson(timestamp) +
