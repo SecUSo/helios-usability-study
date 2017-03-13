@@ -11,17 +11,14 @@ angular.module('BackendService', [])
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },
-            submit: function (id, introduction, number_verification, overall, voting, verification) {
+            submit: function (subject, timestamp, type) {
                 return $http({
                     method: "POST",
                     url: '/main/submit',
                     data:
-                    'id=' + id +
-                    '&intro=' + angular.toJson(introduction) +
-                    '&number=' + angular.toJson(number_verification) +
-                    '&overall=' + angular.toJson(overall) +
-                    '&voting=' + angular.toJson(voting) +
-                    '&verification=' + angular.toJson(verification),
+                    'id=' + subject +
+                    '&timestamp=' + angular.toJson(timestamp) +
+                    '&type=' + angular.toJson(type),
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             }

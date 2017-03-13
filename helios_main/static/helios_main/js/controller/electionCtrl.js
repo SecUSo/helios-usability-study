@@ -70,7 +70,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
         encrypted_vote += $rootScope.selected_code;
 
-        for (var i = 0; i < 100; i++) {
+        for (var j = 0; j < 100; j++) {
             encrypted_vote += Math.floor(Math.random() * (10));
         }
 
