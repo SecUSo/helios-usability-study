@@ -11,13 +11,14 @@ class Subject(models.Model):
         return 'Subject: ' + str(self.subject_id)
 
 
-class Duration(models.Model):
+class Timestamps(models.Model):
     subject = models.ForeignKey(Subject)
-    voting_duration = models.BigIntegerField('Voting (Millisec)')
+    overall_start = models.BigIntegerField('Overall start')
+    voting_start = models.BigIntegerField('Voting start')
     has_verified = models.NullBooleanField('Verification performed')
     verification_number = models.BigIntegerField('Number of verifications')
-    verification_duration = models.BigIntegerField('Verification (Millisec)')
-    overall_duration = models.BigIntegerField('Overall (Millisec)')
+    verification_start = models.BigIntegerField('Verification start')
+    overall_end = models.BigIntegerField('Overall end')
 
     def __str__(self):
             return 'Subject: ' + str(self.subject_id)
