@@ -51,7 +51,7 @@ def return_experiment(experiment_type, username):
 @csrf_exempt
 def save_timestamp(request):
     subject_temp = request.POST['id']
-    timestamp_temp = request.POST['timestamp']
+    timestamp_temp = int(request.POST['timestamp'])
     type_temp = request.POST['type']
 
     subject = Subject.objects.get(subject_id=subject_temp)

@@ -17,8 +17,8 @@ angular.module('BackendService', [])
                     url: '/save',
                     data:
                     'id=' + subject +
-                    '&timestamp=' + angular.toJson(timestamp) +
-                    '&type=' + angular.toJson(type),
+                    '&timestamp=' + timestamp +
+                    '&type=' + type,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             }
