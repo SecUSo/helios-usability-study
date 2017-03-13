@@ -17,7 +17,7 @@ class Timestamp(models.Model):
     type = models.CharField('Type', max_length=42)
 
     def __str__(self):
-            return 'Subject: ' + str(self.subject_id)
+            return 'Subject: ' + str(self.subject)
 
 
 class Option(models.Model):

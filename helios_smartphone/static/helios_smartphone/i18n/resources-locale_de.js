@@ -156,7 +156,7 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie verifizieren, ob Ihre Stimme richtig gezählt wurde. Bitte notieren Sie sich dafür den Prüf-Code.",
+        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie verifizieren, ob Ihre Stimme richtig gezählt wurde. Bitte scannen Sie dafür den QR-Code mit der Helios-Verifizierungs-App.",
         "description": ""
     },
     {
