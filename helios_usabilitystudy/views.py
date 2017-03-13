@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate
 from django.contrib.auth import login as django_login
 from datetime import datetime
+from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from helios_usabilitystudy.models import Subject, Timestamp
 
@@ -58,6 +59,8 @@ def save_timestamp(request):
 
     timestamp = Timestamp(subject=subject, timestamp=datetime.fromtimestamp(timestamp_temp/1000), type=type_temp)
     timestamp.save()
+
+    return HttpResponse("OK")
 
 
 @csrf_exempt
