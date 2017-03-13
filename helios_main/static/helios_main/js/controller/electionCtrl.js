@@ -2,7 +2,6 @@
 
 heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
-
     var encrypted_vote = "";
     $scope.auditClick = false;
     $scope.show_progress = true;
@@ -46,6 +45,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
+
+        //Start time for duration starts when election has loaded
+        $rootScope.startTimeAll = Date.now();
     });
 
 
@@ -85,7 +87,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From election to review
     $scope.proceedButton = function () {
-        $rootScope.votingTime = Date.now() - $rootScope.startTime;
+        $rootScope.votingTime = Date.now() - $rootScope.startTimeAll;
         encrypt();
         $location.path('review/' + $routeParams['id']);
     };
@@ -114,6 +116,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     //From review to audit
     $scope.verifyButton = function () {
         $location.path('institute/' + $routeParams['id']);
+        $rootScope.verificationStart = Date.now();
     };
 
     //From review to login for casting
@@ -147,6 +150,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     $scope.backToVotingButton = function () {
         $location.path('election/' + $routeParams['id']);
         $rootScope.selected_code = "00";
+        $rootScope.verificationTime = Date.now() - $rootScope.verificationStart;
     };
 
     $scope.cancelButton = function () {
