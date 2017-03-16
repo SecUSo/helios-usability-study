@@ -86,7 +86,7 @@
     },
     {
         "key"        : "_checkCodeWizard_",
-        "value"      : "Prüf-Code",
+        "value"      : "Übersicht",
         "description": "Action points in the wizard"
     },
     {
@@ -156,12 +156,12 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie verifizieren, ob Ihre Stimme richtig gezählt wurde. Bitte scannen Sie dafür den QR-Code mit der Helios-Verifizierungs-App.",
+        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme richtig gezählt wurde. Bitte scannen Sie dafür den QR-Code mit der App \"Bundestagswahlüberprüfung\".",
         "description": ""
     },
     {
         "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung verifizieren. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlsoftware korrekt funktioniert.",
+        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlsoftware korrekt funktioniert.",
         "description": ""
     },
     {
@@ -235,38 +235,8 @@
         "description": ""
     },
     {
-        "key"        : "_nowWhatBallotVerifierLink_",
-        "value"      : "Stimmzettelverifizierer",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatBallotVerifierAfterLink_",
-        "value"      : " um Ihren Stimmzettel zu verifizieren.",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatBackToVoting_",
-        "value"      : "Sobald Sie zufrieden sind, klicken Sie auf 'Zurück zur Wahl' um Ihre Auswahl erneut zu treffen und Ihre Stimme abzugeben.",
-        "description": ""
-    },
-    {
-        "key"        : "_trackingCenterMessage_",
-        "value"      : "Before going back to voting, you can post this audited ballot to the Helios tracking center so that others might double-check the verification of this ballot.",
-        "description": ""
-    },
-    {
-        "key"        : "_castMessage_",
-        "value"      : "Even if you post your audited ballot, you must go back to voting and choose 'cast' if you want your vote to count.",
-        "description": ""
-    },
-    {
-        "key"        : "_backToVotingButton_",
-        "value"      : "Zurück zur Wahl",
-        "description": ""
-    },
-    {
         "key"        : "_verifyButton_",
-        "value"      : "Verifizieren",
+        "value"      : "Überprüfung",
         "description": ""
     },
     {
@@ -302,31 +272,6 @@
     {
         "key"        : "_restartMessage_",
         "value"      : "Sie können den Wahlvorgang selbstverständlich von vorne starten.",
-        "description": ""
-    },
-    {
-        "key"        : "_castThisBallotButton_",
-        "value"      : "Stimmzettel ABGEBEN",
-        "description": ""
-    },
-    {
-        "key"        : "_loadingMessageThree_",
-        "value"      : "Casting and verifying ballot",
-        "description": ""
-    },
-    {
-        "key"        : "_voteSuccessCastHeading_",
-        "value"      : "Vote Successfully Cast!",
-        "description": ""
-    },
-    {
-        "key"        : "_voteSuccessCastMessage_",
-        "value"      : "Congratulations, your vote has been successfully cast!",
-        "description": ""
-    },
-    {
-        "key"        : "_smartBallotTrackerHeading_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
         "description": ""
     },
     {
