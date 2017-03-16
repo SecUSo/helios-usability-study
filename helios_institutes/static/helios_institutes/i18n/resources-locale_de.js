@@ -326,12 +326,12 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme richtig gezählt wurde. Bitte notieren Sie sich dafür den Prüf-Code.",
+        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Eine überprüfte Stimme kann allerings nicht mehr abgegeben werden, da dies das Wahlgeheimnis verletzen könnte.",
         "description": ""
     },
     {
         "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
+        "value"      : "Sie können Stimmzettel beliebig oft prüfen, bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {
@@ -341,7 +341,7 @@
     },
     {
         "key"        : "_afterAuditExplanation_",
-        "value"      : "Da Sie Ihren Stimmzettel überprüft haben, kann dieser nicht mehr zum Wählen verwendet werden.",
+        "value"      : "Da Sie Ihren Stimmzettel überprüft haben, kann dieser nicht mehr zum Wählen verwendet werden, da sonst das Wahlgeheimnis gebrochen werden kann.",
         "description": ""
     },
     {

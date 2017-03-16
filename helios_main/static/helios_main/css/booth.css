@@ -11,7 +11,7 @@ h3 {
 }
 
 #review_box p {
-    width: calc(100% - 200px);
+    width: calc(100% - 200px - 4em);
     margin-top: 2em;
 }
 
