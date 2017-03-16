@@ -76,17 +76,17 @@
     },
     {
         "key"        : "_selectWizard_",
-        "value"      : "(1) Auswahl",
+        "value"      : "Auswahl",
         "description": "Action points in the wizard"
     },
     {
         "key"        : "_reviewWizard_",
-        "value"      : "(2) Übersicht",
+        "value"      : "Übersicht",
         "description": "Action points in the wizard"
     },
     {
         "key"        : "_submitWizard_",
-        "value"      : "(3) Abgabe",
+        "value"      : "Abgabe",
         "description": "Action points in the wizard"
     },
     {
