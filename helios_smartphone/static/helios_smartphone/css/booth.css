@@ -24,8 +24,8 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
-    padding: 0.5em;
-    width: 167px;
+    padding: 0.5em 1em;
+    cursor: pointer;
 }
 
 .login_button {
