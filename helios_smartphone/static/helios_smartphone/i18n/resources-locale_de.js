@@ -425,6 +425,26 @@
         "description": ""
     },
     {
+        "key"        : "_afterAuditHeading_",
+        "value"      : "Sie müssen einen neuen Stimmzettel verwenden",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanation_",
+        "value"      : "Ihr verschlüsselter Stimmzettel wurde zum Überprüfen verbraucht. Daher kann dieser alte Stimmzettel nicht mehr zum Wählen verwendet werden. Wenn der alte Stimmzettel weiter verwendet werden würde, kann das Wahlgeheimnis gebrochen werden.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanationThree_",
+        "value"      : "Füllen Sie einen neuen Stimmzettel aus und setzen Sie die Wahl fort.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditBallot_",
+        "value"      : "Neuen Stimmzettel ausfüllen",
+        "description": ""
+    },
+    {
         "key"        : "_proceedButton_",
         "value"      : "Weiter",
         "description": "Button to proceed to the next step"

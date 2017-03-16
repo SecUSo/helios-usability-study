@@ -22,6 +22,9 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
             $scope.show_progress = true;
             $scope.current_step = 3;
             break;
+        case "auditdone":
+            $scope.show_progress = false;
+            break;
         case "institute":
             $scope.show_progress = false;
             break;
@@ -120,6 +123,10 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.castButton = function () {
         $location.path('cast/' + $routeParams['id']);
-    }
+    };
+
+    $scope.closeAudit = function () {
+        $window.close();
+    };
 
 });

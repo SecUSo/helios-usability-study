@@ -473,6 +473,27 @@
         "key"        : "_reviewBallotVerificationExplanation_",
         "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
+    }
+    ,
+    {
+        "key"        : "_afterAuditHeading_",
+        "value"      : "Sie müssen einen neuen Stimmzettel verwenden",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanation_",
+        "value"      : "Ihr verschlüsselter Stimmzettel wurde zum Überprüfen verbraucht. Daher kann dieser alte Stimmzettel nicht mehr zum Wählen verwendet werden. Wenn der alte Stimmzettel weiter verwendet werden würde, kann das Wahlgeheimnis gebrochen werden.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanationThree_",
+        "value"      : "Füllen Sie einen neuen Stimmzettel aus und setzen Sie die Wahl fort.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditBallot_",
+        "value"      : "Neuen Stimmzettel ausfüllen",
+        "description": ""
     },
     {
         "key"        : "_auditCastInstruction_",

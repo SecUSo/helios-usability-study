@@ -28,6 +28,9 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         case "audit_bsi":
             $scope.show_progress = false;
             break;
+        case "auditdone":
+            $scope.show_progress = false;
+            break;
         case "cast":
             $scope.show_progress = false;
             break;
@@ -130,6 +133,11 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     //From review to election
     $scope.backToElectionButton = function () {
         $location.path('election/' + $routeParams['id']);
+    };
+
+    //Redirect while verifiying
+    $scope.redirectButton = function () {
+        $location.path('auditdone/' + $routeParams['id']);
     };
 
     $scope.redirectToInstituteBsiButton = function () {

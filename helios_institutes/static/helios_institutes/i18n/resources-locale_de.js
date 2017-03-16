@@ -346,7 +346,7 @@
     },
     {
         "key"        : "_afterAuditExplanationThree_",
-        "value"      : "Sie können nun einen neuen Stimmzettel ausfüllen und die Wahl forsetzen.",
+        "value"      : "Füllen Sie einen neuen Stimmzettel aus und setzen Sie die Wahl fort.",
         "description": ""
     },
     {
