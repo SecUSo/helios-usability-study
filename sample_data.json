@@ -22,86 +22,81 @@
     },
     {
       "option_code": "05",
-      "option": "CSU",
-      "option_description": "Christlich-Soziale Union in Bayern e.V."
-    },
-    {
-      "option_code": "06",
       "option": "FDP",
       "option_description": "Freie Demokratische Partei"
     },
     {
-      "option_code": "07",
+      "option_code": "06",
       "option": "AFD",
       "option_description": "Alternative für Deutschland"
     },
     {
-      "option_code": "08",
+      "option_code": "07",
       "option": "PIRATEN",
       "option_description": "Piratenpartei Deutschland"
     },
     {
-      "option_code": "09",
+      "option_code": "08",
       "option": "FREIE WÄHLER",
       "option_description": "FREIE WÄHLER"
     },
     {
-      "option_code": "10",
+      "option_code": "09",
       "option": "NPD",
       "option_description": "Nationaldemokratische Partei Deutschlands"
     },
     {
-      "option_code": "11",
+      "option_code": "10",
       "option": "TIERSCHUTZPARTEI",
       "option_description": "Partei Mensch Umwelt Tierschutz"
     },
     {
-      "option_code": "12",
+      "option_code": "11",
       "option": "ÖDP",
       "option_description": "Ökologisch-Demokratische Partei"
     },
     {
-      "option_code": "13",
+      "option_code": "12",
       "option": "REP",
       "option_description": "Die Republikaner"
     },
     {
-      "option_code": "14",
+      "option_code": "13",
       "option": "DIE PARTEI",
       "option_description": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
     },
     {
-      "option_code": "15",
+      "option_code": "14",
       "option": "PRO DEUTSCHLAND",
       "option_description": "Bürgerbewegung pro Deutschland"
     },
     {
-      "option_code": "16",
+      "option_code": "15",
       "option": "BP",
       "option_description": "Bayernpartei"
     },
     {
-      "option_code": "17",
+      "option_code": "16",
       "option": "Volksabstimmung",
       "option_description": "Ab jetzt … Demokratie durch Volksabstimmung – Politik für die Menschen"
     },
     {
-      "option_code": "18",
+      "option_code": "17",
       "option": "PDV",
       "option_description": "Partei der Vernunft"
     },
     {
-      "option_code": "19",
+      "option_code": "18",
       "option": "MLPD",
       "option_description": "Marxistisch-Leninistische Partei Deutschlands"
     },
     {
-      "option_code": "20",
+      "option_code": "19",
       "option": "PBC",
       "option_description": "Partei Bibeltreuer Christen"
     },
     {
-      "option_code": "21",
+      "option_code": "20",
       "option": "BIG",
       "option_description": "Bündnis für Innovation und Gerechtigkeit"
     }
@@ -130,8 +125,7 @@
         "17",
         "18",
         "19",
-        "20",
-        "21"
+        "20"
       ]
     }
   ]
