@@ -1,6 +1,6 @@
 'use strict';
 
-heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope) {
+heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $timeout) {
 
     var encrypted_vote = "";
     $scope.show_progress = true;
@@ -116,6 +116,21 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.castButton = function () {
         $location.path('cast/' + $routeParams['id']);
+    };
+
+    //audit specific
+    $scope.redirectToInstituteBsiButton = function () {
+        $timeout(function () {
+            encrypt();
+            $location.path('auditdone/' + $routeParams['id']);
+        }, 10);
+    };
+
+    $scope.redirectToInstituteOszeButton = function () {
+        $timeout(function () {
+            encrypt();
+            $location.path('auditdone/' + $routeParams['id']);
+        }, 10);
     };
 
 });
