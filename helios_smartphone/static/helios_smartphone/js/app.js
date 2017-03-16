@@ -17,7 +17,6 @@ var heliosStudySmartphoneApp = angular.module(
         when('/review/:id', {templateUrl: '/static/helios_smartphone/partials/review.html', controller: 'electionCtrl'}).
         when('/institute/:encrypted_vote', {templateUrl: '/static/helios_smartphone/partials/institute.html', controller: 'auditCtrl'}).
         when('/cast/:id', {templateUrl: '/static/helios_smartphone/partials/cast.html', controller: 'electionCtrl'}).
-        when('/castlogin/:id', {templateUrl: '/static/helios_smartphone/partials/loginforcast.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/helios_smartphone/partials/finaloverview.html', controller: 'electionCtrl'}).
         when('/error/', {templateUrl: '/static/helios_smartphone/partials/error.html', controller: 'errorCtrl'}).
         otherwise({templateUrl: '/static/helios_smartphone/partials/introduction.html', controller: 'electionCtrl'});

@@ -2,15 +2,27 @@
 
 <div class="content_box">
 
-    <span data-i18n="_loginMessage_"></span> <span style="font-weight: bold">{{ subject }}</span>
-    <div align="center" style="margin-top: 1em">
-        <button data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+
+    <span data-i18n="_finalCheckCode_"> </span> <span style="font-weight: bold">{{ ballot_tracker }}</span><br>
+    <p data-i18n="_finalCompareCheckCode_"></p>
+
+    <p data-i18n="_finalLoginMessage_"></p>
+    <p data-i18n="_finalLoginMessageTwo_"></p>
+
+    <div style="text-align: center">
+
+        <form class="login_form" method="post">
+            <span data-i18n="_finalLoginUsername_"></span><br>
+            <input name="id" type="text"><br>
+            <span data-i18n="_finalLoginPassword_"></span><br>
+            <input name="password" type="password"><br>
+        </form>
+
     </div>
 
-    <div align="center" style="margin-top: 1em">
-        <button data-i18n="_cancelButton_" ng-click="cancelButton()"></button>
+    <div style="margin-top: 2em">
+        <button style="float: right;" data-i18n="_castThisBallotButton_" ng-click="castButton()"></button>
+        <button style="float: left;" data-i18n="_castToReviewButton_" ng-click="backToReviewButton()"></button>
     </div>
-    <p data-i18n="_cancelHint_"></p>
-    <p data-i18n="_restartMessage_"></p>
 
 </div>

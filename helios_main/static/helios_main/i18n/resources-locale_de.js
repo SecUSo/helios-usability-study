@@ -100,6 +100,41 @@
         "description": "Loading message after voting, info about duration"
     },
     {
+        "key"        : "_finalCheckCode_",
+        "value"      : "Der Prüf-Code Ihres Stimmzettels ist:",
+        "description": ""
+    },
+    {
+        "key"        : "_finalCompareCheckCode_",
+        "value"      : "Bitte vergleichen Sie den Prüf-Code mit dem von Ihnen im letzten Schritt notierten.",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginMessage_",
+        "value"      : "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort ein, wenn Sie Ihre Stimme absenden möchten.",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginMessageTwo_",
+        "value"      : "Benutzername und Passwort entnehmen Sie der Wahleinladung.",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginUsername_",
+        "value"      : "Benutzername",
+        "description": ""
+    },
+    {
+        "key"        : "_finalLoginPassword_",
+        "value"      : "Passwort",
+        "description": ""
+    },
+    {
+        "key"        : "_castToReviewButton_",
+        "value"      : "Zurück zur Übersicht",
+        "description": ""
+    },
+    {
         "key"        : "_ballotTrackerHeading_",
         "value"      : "Ihr Prüf-Code ist ",
         "description": "Heading of ballot tracker"
@@ -261,7 +296,7 @@
     },
     {
         "key"        : "_castThisBallotButton_",
-        "value"      : "Stimmzettel ABGEBEN",
+        "value"      : "Stimmabgabe",
         "description": ""
     },
     {

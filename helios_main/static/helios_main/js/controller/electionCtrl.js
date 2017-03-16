@@ -117,11 +117,6 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From review to login for casting
     $scope.submitVoteButton = function () {
-        $location.path('castlogin/' + $routeParams['id']);
-    };
-
-    //Login for casting the ballot and redirect to final overview
-    $scope.loginCastButton = function () {
         $location.path('final/' + $routeParams['id']);
     };
 
