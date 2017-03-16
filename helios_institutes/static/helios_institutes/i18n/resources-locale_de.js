@@ -155,26 +155,6 @@
         "description": ""
     },
     {
-        "key"        : "_reviewBallotDescription_",
-        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Wahl geheim zu halten.",
-        "description": "First line on review page"
-    },
-    {
-        "key"        : "_reviewBallotCheckCodeHeading_",
-        "value"      : "Ihr Prüf-Code ist: ",
-        "description": ""
-    },
-    {
-        "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme richtig gezählt wurde. Bitte notieren Sie sich dafür den Prüf-Code.",
-        "description": ""
-    },
-    {
-        "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
-        "description": ""
-    },
-    {
         "key"        : "_auditButton_",
         "value"      : "Überprüfung",
         "description": "Button that opens audit description on review page"

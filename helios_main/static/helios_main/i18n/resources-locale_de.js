@@ -1,8 +1,33 @@
 [
     {
-        "key"        : "_loadingMessageOne_",
-        "value"      : "Checking capabilities and loading election booth...",
-        "description": "Loading message on the first screen"
+        "key"        : "_welcomeToElection_",
+        "value"      : "Herzlich Willkommen zur Bundestagswahl 2017",
+        "description": ""
+    },
+    {
+        "key"        : "_firstMoreInfo_",
+        "value"      : "Wählen Sie Ihren bevorzugten Kandidaten.",
+        "description": "More info below select description"
+    },
+    {
+        "key"        : "_secondMoreInfo_",
+        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Wahl geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
+        "description": "More info below review description"
+    },
+    {
+        "key"        : "_thirdMoreInfo_",
+        "value"      : "Die Stimmabgabe erfolgt erst im letzten Schritt. Durch die Eingabe Ihres Benutzernames und Passworts wird die Stimme abgegeben.",
+        "description": "More info below submit description"
+    },
+    {
+        "key"        : "_introductionFollow_",
+        "value"      : "",
+        "description": "At the end of the election, a list of check codes for all tallied votes will be published. If you want to confirm whether your vote has been correctly tallied, you can look up your check code in this list."
+    },
+    {
+        "key"        : "_introductionStart_",
+        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen",
+        "description": ""
     },
     {
         "key"        : "_loadgingMessageOneDuration_",
