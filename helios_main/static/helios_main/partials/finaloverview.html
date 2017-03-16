@@ -2,7 +2,6 @@
 
 <div class="content_box">
 
-
     <span data-i18n="_finalCheckCode_"> </span> <span style="font-weight: bold">{{ ballot_tracker }}</span><br>
     <p data-i18n="_finalCompareCheckCode_"></p>
 
@@ -13,9 +12,9 @@
 
         <form class="login_form" method="post">
             <span data-i18n="_finalLoginUsername_"></span><br>
-            <input name="id" type="text"><br>
+            <input name="id" type="text" ng-model="userid"><br>
             <span data-i18n="_finalLoginPassword_"></span><br>
-            <input name="password" type="password"><br>
+            <input name="password" type="password" ng-model="userpass"><br>
         </form>
 
     </div>

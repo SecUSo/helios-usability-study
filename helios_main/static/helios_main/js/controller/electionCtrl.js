@@ -163,8 +163,12 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         $rootScope.selected_code = "00";
     };
 
-    $scope.castButton = function () {
-        $location.path('cast/' + "final");
+   $scope.castButton = function () {
+        if ($scope.userid == 'Hugo' && $scope.userpass == '1234') {
+            $location.path('cast/' + "final");
+        } else {
+            alert("Du Idiot!");
+        }
     };
 
     function buildBallot(encrypted_vote) {

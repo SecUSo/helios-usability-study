@@ -115,7 +115,11 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     };
 
     $scope.castButton = function () {
-        $location.path('cast/' + $routeParams['id']);
+        if ($scope.userid == 'Hugo' && $scope.userpass == '1234') {
+            $location.path('cast/' + "final");
+        } else {
+            alert("Du Idiot!");
+        }
     };
 
     //audit specific
