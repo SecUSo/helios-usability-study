@@ -426,7 +426,7 @@
     },
     {
         "key"        : "_redirectHeading_",
-        "value"      : "Bitte wählen Sie ein Institut zum Verifizieren.",
+        "value"      : "Bitte wählen Sie ein Institut zum Überprüfen.",
         "description": ""
     },
     {

@@ -341,12 +341,27 @@
     },
     {
         "key"        : "_redirectHeading_",
-        "value"      : "Bitte wählen Sie ein Institut zum Verifizieren.",
+        "value"      : "Bitte wählen Sie ein Institut zum Verifizieren",
         "description": ""
     },
     {
         "key"        : "_auditHeading_",
         "value"      : "Your audited ballot",
+        "description": ""
+    },
+    {
+        "key"        : "_verifyStart_",
+        "value"      : "Verifizierung starten",
+        "description": ""
+    },
+    {
+        "key"        : "_verifyOSZE_",
+        "value"      : "Organisation für Sicherheit und Zusammenarbeit in Europa",
+        "description": ""
+    },
+    {
+        "key"        : "_verifyBSI_",
+        "value"      : "Bundesamt für Sicherheit in der Informationstechnik",
         "description": ""
     },
     {

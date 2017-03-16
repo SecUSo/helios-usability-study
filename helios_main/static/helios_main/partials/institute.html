@@ -2,21 +2,40 @@
 
 <div class="content_box" style="text-align: center">
 
-    <span data-i18n="_redirectHeading_"></span><br>
+    <h3 data-i18n="_redirectHeading_"></h3>
 
-    <div class="verification_institute">
-        <img ng-src="/static/helios_main/images/bsi_logo.png" ng-click="redirectToInstituteBsiButton()"><br>
-        <a data-i18n="_verifyButton_" href="" ng-click="redirectToInstituteBsiButton()"></a>
-    </div>
+    <table class="verification_institute">
 
-    <div class="verification_institute">
+        <tr style="margin: 1em">
+            <td>
+                <img ng-src="/static/helios_main/images/osze_logo.png" ng-click="redirectToInstituteOszeButton()"></td>
+            <td>
+                <span data-i18n="_verifyOSZE_" ng-click="redirectToInstituteOszeButton()"></span>
+                <img ng-src="/static/helios_main/images/info_icon.png"
+                     title="Die Organisation für Sicherheit und Zusammenarbeit in Europa ist eine verstetigte Staatenkonferenz zur Friedenssicherung.">
+                <br><br>
+                <a data-i18n="_verifyStart_" href="" ng-click="redirectToInstituteOszeButton()"></a></td>
+        </tr>
 
-        <img ng-src="/static/helios_main/images/osze_logo.png" ng-click="redirectToInstituteOszeButton()"><br>
-        <a data-i18n="_verifyButton_" href="" ng-click="redirectToInstituteOszeButton()"></a>
-    </div>
-    <div align="center" style="margin-top: 1em">
-        <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
-    </div>
+        <tr style="height: 1em"></tr>
+        <tr>
+            <td colspan="2" style="border-top: 1px solid #d3d3d3;"></td>
+        </tr>
+        <tr style="height: 1em"></tr>
+        <tr style="margin: 1em;">
+            <td>
+                <img ng-src="/static/helios_main/images/bsi_logo.png" ng-click="redirectToInstituteBsiButton()"></td>
+            <td>
+                <span data-i18n="_verifyBSI_" ng-click="redirectToInstituteOszeButton()"></span>
+                <img ng-src="/static/helios_main/images/info_icon.png"
+                     title="Das Bundesamt für Sicherheit in der Informationstechnik (BSI) ist eine in der Bundesstadt Bonn ansässige zivile obere Bundesbehörde im Geschäftsbereich des Bundesministeriums des Innern, die für Fragen der IT-Sicherheit zuständig ist.">
+                <br><br>
+                <a data-i18n="_verifyStart_" href="" ng-click="redirectToInstituteBsiButton()"></a></td>
+        </tr>
+
+    </table>
+
+    <button data-i18n="_backToVotingButton_" ng-click="backToReviewButton()"></button>
 
 </div>
 
