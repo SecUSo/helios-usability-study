@@ -176,7 +176,7 @@
     },
     {
         "key"        : "_reviewBallotDescription_",
-        "value"      : "Ihr Stimmzettel würde verschlüsselt um Ihre Wahl geheim zu halten.",
+        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Wahl geheim zu halten.",
         "description": "First line on review page"
     },
     {
@@ -366,7 +366,7 @@
     },
     {
         "key"        : "_castThanks_",
-        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Wahlteilnahme",
+        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017.",
         "description": ""
     },
     {
@@ -376,17 +376,7 @@
     },
     {
         "key"        : "_castclose_",
-        "value"      : "Bitte schließen Sie das Browserfenster.",
-        "description": ""
-    },
-    {
-        "key"        : "_doneMessage_",
-        "value"      : "Your Vote is Being Submitted",
-        "description": ""
-    },
-    {
-        "key"        : "_doneWaitMessage_",
-        "value"      : "Please wait a few seconds while your vote is submitted to the casting server....",
+        "value"      : "Bitte schließen Sie nun das Browserfenster.",
         "description": ""
     },
     {
@@ -422,21 +412,6 @@
     {
         "key"        : "_submitVoteHeading_",
         "value"      : "Abgabe Ihres Stimmzettels...",
-        "description": "Final login page"
-    },
-    {
-        "key"        : "_loginCastHint_",
-        "value"      : "Moment! Sie müssen sich anmelden.",
-        "description": "Final login page"
-    },
-    {
-        "key"        : "_loginCastVoteHint_",
-        "value"      : "Keine Sorge, wir behalten Ihren Stimmzettel während Sie sich anmelden.",
-        "description": "Final login page"
-    },
-    {
-        "key"        : "_loginCastBallotTracker_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
         "description": "Final login page"
     },
     {

@@ -21,7 +21,7 @@
     },
     {
         "key"        : "_boothIntroductionTwo_",
-        "value"      : "Sie werden am Ende des ganzen Prozesses sich einzuloggen, falls das noch nicht erfolgt ist.",
+        "value"      : "Sie werden am Ende des ganzen Prozesses gebeten sich anzumelden.",
         "description": "Introduction"
     },
     {
@@ -61,12 +61,12 @@
     },
     {
         "key"        : "_SubmitHeading_",
-        "value"      : "Abgeben",
+        "value"      : "Geben",
         "description": "Used in description of voting booth"
     },
         {
         "key"        : "_submitFollow_",
-        "value"      : " Ihres verschlüsselten Stimmzettels.",
+        "value"      : " Sie Ihren verschlüsselten Stimmzettel ab.",
         "description": "Defines what to submit"
     },
     {
@@ -106,7 +106,7 @@
     },
     {
         "key"        : "_ballotTrackerFollow_",
-        "value"      : " und Sie können Ihn ",
+        "value"      : ". Bitte notieren Sie sich den Stimmzettel-Tracking Code. ",
         "description": "comes after ballot tracker"
     },
     {
@@ -116,7 +116,7 @@
     },
     {
         "key"        : "_clickSubmitHint_",
-        "value"      : "Sobald Sie auf 'Absenden' geklickt haben, wird die unverschlüsselte Version Ihres Stimmzettels gelöscht, sodass nur eine verschlüsselte Version übrig bleibt. Dieser verschlüsselte Stimmzettel wird dann an den Helios Server übermittelt.",
+        "value"      : "Sobald Sie auf 'Absenden' geklickt haben, wird die unverschlüsselte Version Ihres Stimmzettels gelöscht, sodass nur eine verschlüsselte Version übrig bleibt. Dieser verschlüsselte Stimmzettel wird dann an den Wahlserver übermittelt.",
         "description": "Information about ballot after submit has been clicked"
     },
     {

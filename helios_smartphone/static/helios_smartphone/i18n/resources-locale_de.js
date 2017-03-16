@@ -141,7 +141,7 @@
     },
     {
         "key"        : "_reviewBallotDescription_",
-        "value"      : "Ihr Stimmzettel würde verschlüsselt um Ihre Wahl geheim zu halten.",
+        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Wahl geheim zu halten.",
         "description": "First line on review page"
     },
     {
