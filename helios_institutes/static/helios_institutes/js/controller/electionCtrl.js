@@ -101,6 +101,11 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $location.path('election/' + $routeParams['id']);
     };
 
+     //reencrypt after audit
+    $scope.reEncryptButton = function () {
+        $location.path('review/' + $routeParams['id']);
+    };
+
     //From institutes back to review
     $scope.backToReviewButton = function () {
         $location.path('review/' + $routeParams['id']);

@@ -14,6 +14,7 @@ var heliosStudyInstitutesApp = angular.module(
         when('/election/:id', {templateUrl: '/static/helios_institutes/partials/election.html', controller: 'electionCtrl'}).
         when('/review/:id', {templateUrl: '/static/helios_institutes/partials/review.html', controller: 'electionCtrl'}).
         when('/institute/:encrypted_vote', {templateUrl: '/static/helios_institutes/partials/institute.html', controller: 'auditCtrl'}).
+        when('/auditdone/:id', {templateUrl: '/static/helios_institutes/partials/auditdone.html', controller: 'electionCtrl'}).
         when('/cast/:id', {templateUrl: '/static/helios_institutes/partials/cast.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/helios_institutes/partials/finaloverview.html', controller: 'electionCtrl'}).
         when('/error/', {templateUrl: '/static/helios_institutes/partials/error.html', controller: 'errorCtrl'}).

@@ -335,6 +335,41 @@
         "description": ""
     },
     {
+        "key"        : "_afterAuditHeading_",
+        "value"      : "TODO",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanation_",
+        "value"      : "Da Sie Ihren Stimmzettel überprüft haben, kann dieser nicht mehr zum Wählen verwendet werden.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanationTwo_",
+        "value"      : "Sie haben nun zwei Möglichkeiten:",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanationThree_",
+        "value"      : "1) Sie können bei einem leeren Stimmzettel neu starten.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditExplanationFour_",
+        "value"      : "2) Sie können Ihre Auswahl neu verschlüsseln.",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditBallot_",
+        "value"      : "Leerer Stimmzettel",
+        "description": ""
+    },
+    {
+        "key"        : "_afterAuditReEncrypt_",
+        "value"      : "Neu verschlüsseln",
+        "description": ""
+    },
+    {
         "key"        : "_auditCastInstruction_",
         "value"      : "To cast a ballot, you must click the \"Back to Voting\" button below, re-encrypt it, and choose \"cast\" instead of \"audit.\"",
         "description": ""

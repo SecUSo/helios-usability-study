@@ -13,13 +13,13 @@ heliosStudyInstitutesApp.controller("auditCtrl", function ($rootScope, $scope, $
 
     $scope.redirectToInstituteBsiButton = function () {
         $timeout(function () {
-            $location.path('election/' + $routeParams['id']);
+            $location.path('auditdone/' + $routeParams['id']);
         }, 10);
     };
 
     $scope.redirectToInstituteOszeButton = function () {
         $timeout(function () {
-            $location.path('election/' + $routeParams['id']);
+            $location.path('auditdone/' + $routeParams['id']);
         }, 10);
     };
 });
