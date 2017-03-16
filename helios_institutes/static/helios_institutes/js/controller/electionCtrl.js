@@ -111,9 +111,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $location.path('review/' + $routeParams['id']);
     };
 
-    $scope.cancelButton = function () {
-    };
-
     $scope.castButton = function () {
         $location.path('cast/' + $routeParams['id']);
     };
@@ -121,16 +118,20 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     //audit specific
     $scope.redirectToInstituteBsiButton = function () {
         $timeout(function () {
-            encrypt();
             $location.path('auditdone/' + $routeParams['id']);
         }, 10);
     };
 
     $scope.redirectToInstituteOszeButton = function () {
         $timeout(function () {
-            encrypt();
             $location.path('auditdone/' + $routeParams['id']);
         }, 10);
+    };
+
+    $scope.reEncryptButton = function () {
+        encrypt();
+        $location.path('review/' + $routeParams['id']);
+
     };
 
 });
