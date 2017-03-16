@@ -5,8 +5,13 @@
         "description": ""
     },
     {
+        "key"        : "_goodByeElection_",
+        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017",
+        "description": ""
+    },
+    {
         "key"        : "_firstMoreInfo_",
-        "value"      : "Wählen Sie Ihren bevorzugten Kandidaten.",
+        "value"      : "Wählen Sie Ihre bevorzugte Partei.",
         "description": "More info below select description"
     },
     {
@@ -421,12 +426,12 @@
     },
     {
         "key"        : "_castLogoutMessage_",
-        "value"      : "Für Ihre Sicherheit wurden Sie abgemeldet.",
+        "value"      : "Für Ihre Sicherheit wurden Sie von der Wahlwebseite abgemeldet.",
         "description": ""
     },
     {
         "key"        : "_castThanks_",
-        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017.",
+        "value"      : "Ihre Stimme wurde erfolgreich gespeichert.",
         "description": ""
     },
     {

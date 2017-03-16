@@ -1,8 +1,13 @@
 [
     {
-        "key"        : "_loadingMessageOne_",
-        "value"      : "Checking capabilities and loading election booth...",
-        "description": "Loading message on the first screen"
+        "key"        : "_welcomeToElection_",
+        "value"      : "Herzlich Willkommen zur Bundestagswahl 2017",
+        "description": ""
+    },
+    {
+        "key"        : "_goodByeElection_",
+        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017",
+        "description": ""
     },
     {
         "key"        : "_loadgingMessageOneDuration_",
@@ -271,12 +276,12 @@
     },
     {
         "key"        : "_castLogoutMessage_",
-        "value"      : "Für Ihre Sicherheit wurden Sie abgemeldet.",
+        "value"      : "Für Ihre Sicherheit wurden Sie von der Wahlwebseite abgemeldet.",
         "description": ""
     },
     {
         "key"        : "_castThanks_",
-        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017.",
+        "value"      : "Ihre Stimme wurde erfolgreich gespeichert.",
         "description": ""
     },
     {

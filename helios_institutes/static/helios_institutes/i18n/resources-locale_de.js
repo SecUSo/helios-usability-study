@@ -5,6 +5,11 @@
         "description": ""
     },
     {
+        "key"        : "_goodByeElection_",
+        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017",
+        "description": ""
+    },
+    {
         "key"        : "_startButton_",
         "value"      : "Start",
         "description": "Button to start the voting procedure"
@@ -216,12 +221,12 @@
     },
     {
         "key"        : "_castLogoutMessage_",
-        "value"      : "Für Ihre Sicherheit wurden Sie abgemeldet.",
+        "value"      : "Für Ihre Sicherheit wurden Sie von der Wahlwebseite abgemeldet.",
         "description": ""
     },
     {
         "key"        : "_castThanks_",
-        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017.",
+        "value"      : "Ihre Stimme wurde erfolgreich gespeichert.",
         "description": ""
     },
     {
@@ -287,6 +292,26 @@
     {
         "key"        : "_auditHeading_",
         "value"      : "Your audited ballot",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotDescription_",
+        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Wahl geheim zu halten.",
+        "description": "First line on review page"
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeHeading_",
+        "value"      : "Ihr Prüf-Code ist: ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation_",
+        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme richtig gezählt wurde. Bitte notieren Sie sich dafür den Prüf-Code.",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotVerificationExplanation_",
+        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {
