@@ -395,6 +395,26 @@
         "description": ""
     },
     {
+        "key"        : "_castLogoutMessage_",
+        "value"      : "Für Ihre Sicherheit wurden Sie abgemeldet.",
+        "description": ""
+    },
+    {
+        "key"        : "_castThanks_",
+        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017.",
+        "description": ""
+    },
+    {
+        "key"        : "_castHint_",
+        "value"      : "Die Ergebnisse und die Liste der Prüf-Codes werden eine Stunde nach Ende dieser Wahl um 18:00 Uhr veröffentlicht.",
+        "description": ""
+    },
+    {
+        "key"        : "_castclose_",
+        "value"      : "Bitte schließen Sie nun das Browserfenster.",
+        "description": ""
+    },
+    {
         "key"        : "_auditCastInstruction_",
         "value"      : "Wenn Sie eine Stimme abgeben möchten, klicken Sie auf \"Zurück zur Wahl\", wählen Sie einen Kandidaten und wählen anschließend \"Stimmabgabe\" anstatt \"Überprüfung.\"",        "description": ""
     }
