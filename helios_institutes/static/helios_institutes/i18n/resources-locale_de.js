@@ -180,6 +180,21 @@
         "description": ""
     },
     {
+        "key"        : "_verifyStart_",
+        "value"      : "Überprüfung starten",
+        "description": ""
+    },
+    {
+        "key"        : "_verifyOSZE_",
+        "value"      : "Organisation für Sicherheit und Zusammenarbeit in Europa",
+        "description": ""
+    },
+    {
+        "key"        : "_verifyBSI_",
+        "value"      : "Bundesamt für Sicherheit in der Informationstechnik",
+        "description": ""
+    },
+    {
         "key"        : "_printHeading_",
         "value"      : "Ihr Prüf-Code:",
         "description": ""

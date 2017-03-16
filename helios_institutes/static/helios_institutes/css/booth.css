@@ -119,3 +119,7 @@ button.vote_button_active {
     text-decoration: underline;
 }
 
+.verification_institute {
+    margin: 2em;
+    cursor: pointer;
+}
