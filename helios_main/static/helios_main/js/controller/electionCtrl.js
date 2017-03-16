@@ -22,6 +22,12 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
             $scope.show_progress = true;
             $scope.current_step = 3;
             break;
+        case "audit_osze":
+            $scope.show_progress = false;
+            break;
+        case "audit_bsi":
+            $scope.show_progress = false;
+            break;
         case "cast":
             $scope.show_progress = false;
             break;
