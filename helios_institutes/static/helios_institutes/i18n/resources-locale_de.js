@@ -166,7 +166,7 @@
     },
     {
         "key"        : "_submitVoteButton_",
-        "value"      : "Anmeldung",
+        "value"      : "Zur Stimmabgabe",
         "description": "Submit vote button on review page"
     },
     {

@@ -56,7 +56,7 @@
     },
     {
         "key"        : "_reviewMoreInfo_",
-        "value"      : "Ihre Auswahl ist sicher in Ihrem Browser verschlüsselt und Sie erhalten einen Stimmzettel-Tracking-Code.",
+        "value"      : "Ihre Auswahl ist sicher in Ihrem Browser verschlüsselt und Sie erhalten einen Prüf-Code.",
         "description": "More info below review description"
     },
     {
@@ -76,7 +76,7 @@
     },
     {
         "key"        : "_selectWizard_",
-        "value"      : "Auswahl",
+        "value"      : "Stimmzettel",
         "description": "Action points in the wizard"
     },
     {
@@ -86,7 +86,7 @@
     },
     {
         "key"        : "_submitWizard_",
-        "value"      : "Abgabe",
+        "value"      : "Stimmabgabe",
         "description": "Action points in the wizard"
     },
     {
@@ -101,12 +101,12 @@
     },
     {
         "key"        : "_ballotTrackerHeading_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code ist ",
+        "value"      : "Ihr Prüf-Code ist ",
         "description": "Heading of ballot tracker"
     },
     {
         "key"        : "_ballotTrackerFollow_",
-        "value"      : ". Bitte notieren Sie sich den Stimmzettel-Tracking Code. ",
+        "value"      : ". Bitte notieren Sie sich den Prüf-Code. ",
         "description": "comes after ballot tracker"
     },
     {
@@ -116,12 +116,12 @@
     },
     {
         "key"        : "_clickSubmitHint_",
-        "value"      : "Sobald Sie auf 'Absenden' geklickt haben, wird die unverschlüsselte Version Ihres Stimmzettels gelöscht, sodass nur eine verschlüsselte Version übrig bleibt. Dieser verschlüsselte Stimmzettel wird dann an den Wahlserver übermittelt.",
+        "value"      : "Sobald Sie auf 'Zur Stimmabgabe' geklickt haben, wird die unverschlüsselte Version Ihres Stimmzettels gelöscht, sodass nur eine verschlüsselte Version übrig bleibt. Dieser verschlüsselte Stimmzettel wird dann an den Wahlserver übermittelt.",
         "description": "Information about ballot after submit has been clicked"
     },
     {
         "key"        : "_submitVoteButton_",
-        "value"      : "Stimmzettel absenden!",
+        "value"      : "Zur Stimmabgabe",
         "description": "Submit vote button on review page"
     },
     {
@@ -201,27 +201,17 @@
     },
     {
         "key"        : "_nowWhatBallotVerifierLink_",
-        "value"      : "Stimmzettelverifizierer",
+        "value"      : "Stimmzettelüberprüfer",
         "description": ""
     },
     {
         "key"        : "_nowWhatBallotVerifierAfterLink_",
-        "value"      : " um Ihren Stimmzettel zu verifizieren.",
+        "value"      : " um Ihren Stimmzettel zu überprüfen.",
         "description": ""
     },
     {
         "key"        : "_nowWhatBackToVoting_",
         "value"      : "Sobald Sie zufrieden sind, klicken Sie auf 'Zurück zur Wahl' um Ihre Auswahl erneut zu treffen und Ihre Stimme abzugeben.",
-        "description": ""
-    },
-    {
-        "key"        : "_trackingCenterMessage_",
-        "value"      : "Before going back to voting, you can post this audited ballot to the Helios tracking center so that others might double-check the verification of this ballot.",
-        "description": ""
-    },
-    {
-        "key"        : "_castMessage_",
-        "value"      : "Even if you post your audited ballot, you must go back to voting and choose 'cast' if you want your vote to count.",
         "description": ""
     },
     {
@@ -231,12 +221,12 @@
     },
     {
         "key"        : "_verifyButton_",
-        "value"      : "Verifizieren",
+        "value"      : "Überprüfung starten",
         "description": ""
     },
     {
         "key"        : "_printHeading_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code:",
+        "value"      : "Ihr Prüf-Code:",
         "description": ""
     },
     {
@@ -291,7 +281,7 @@
     },
     {
         "key"        : "_smartBallotTrackerHeading_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
+        "value"      : "Ihr Prüf-Code ist:",
         "description": ""
     },
     {
@@ -326,7 +316,7 @@
     },
     {
         "key"        : "_loginCastBallotTracker_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
+        "value"      : "Ihr Prüf-Code ist:",
         "description": "Final login page"
     },
     {
@@ -346,7 +336,7 @@
     },
     {
         "key"        : "_redirectHeading_",
-        "value"      : "Bitte wählen Sie ein Institut zum Verifizieren",
+        "value"      : "Bitte wählen Sie ein Institut zum Überprüfen",
         "description": ""
     },
     {
@@ -356,7 +346,7 @@
     },
     {
         "key"        : "_verifyStart_",
-        "value"      : "Verifizierung starten",
+        "value"      : "Überprüfung starten",
         "description": ""
     },
     {
