@@ -1,18 +1,8 @@
 [
     {
-        "key"        : "_loadingMessageOne_",
-        "value"      : "Checking capabilities and loading election booth...",
-        "description": "Loading message on the first screen"
-    },
-    {
         "key"        : "_welcomeToElection_",
         "value"      : "Herzlich Willkommen zur Bundestagswahl 2017",
         "description": ""
-    },
-    {
-        "key"        : "_loadgingMessageOneDuration_",
-        "value"      : "This may take up to 10 seconds",
-        "description": "Loading message on the first screen about duration"
     },
     {
         "key"        : "_startButton_",
@@ -125,16 +115,6 @@
         "description": "Action points in the wizard"
     },
     {
-        "key"        : "_loadingMessageTwo_",
-        "value"      : "Helios is now encrypting your ballot",
-        "description": "Loading message after voting"
-    },
-    {
-        "key"        : "__loadingMessageDuration__",
-        "value"      : "This may take up to two minutes",
-        "description": "Loading message after voting, info about duration"
-    },
-    {
         "key"        : "_yonCanSeletect_",
         "value"      : "Sie können ",
         "description": ""
@@ -200,96 +180,6 @@
         "description": "Button that opens audit description on review page"
     },
     {
-        "key"        : "_auditButtonLabel_",
-        "value"      : " [optional]",
-        "description": "After audit button on review page"
-    },
-    {
-        "key"        : "_auditMoreInfoOne_",
-        "value"      : "Wenn Sie dies auswählen, können Sie Ihren Stimmzettel überprüfen und zeigen, wie Ihr Auswahl verschlüsselt wurde.",
-        "description": ""
-    },
-    {
-        "key"        : "_auditMoreInfoTwo_",
-        "value"      : "You will then be guided to re-encrypt your choices for final casting.",
-        "description": ""
-    },
-    {
-        "key"        : "_verifyEncryptionButton_",
-        "value"      : "Verschlüsselung verifizieren",
-        "description": ""
-    },
-    {
-        "key"        : "_auditedBallotHeading_",
-        "value"      : "Ihr geprüfter Stimmzettel",
-        "description": ""
-    },
-    {
-        "key"        : "_importantHeading_",
-        "value"      : "WICHTIG: ",
-        "description": ""
-    },
-    {
-        "key"        : "_importantMessagePartOne_",
-        "value"      : " Dieser Stimmzettel wurde überprüft und wird deshalb ",
-        "description": ""
-    },
-    {
-        "key"        : "_importantMessagePartTwo_",
-        "value"      : "nicht in die Auszählung einfließen.",
-        "description": ""
-    },
-    {
-        "key"        : "_whyHeading_",
-        "value"      : "Wieso? ",
-        "description": ""
-    },
-    {
-        "key"        : "_whyMessage_",
-        "value"      : "Helios verhindert, dass Sie denselben Stimmzettel überprüfen und abgeben, um Sie vor erzwungener Stimmabgabe zu schützen.",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatHeading_",
-        "value"      : "Was jetzt? ",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatInfoLink_",
-        "value"      : "Wählen Sie die Stimmzettelüberprüfungsinformationen aus",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatInfoAfterLink_",
-        "value"      : ", kopieren Sie diese in die Zwischenablage und verwenden Sie dann den ",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatBallotVerifierLink_",
-        "value"      : "Stimmzettelverifizierer",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatBallotVerifierAfterLink_",
-        "value"      : " um Ihren Stimmzettel zu verifizieren.",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatBackToVoting_",
-        "value"      : "Sobald Sie zufrieden sind, klicken Sie auf 'Zurück zur Wahl' um Ihre Auswahl erneut zu treffen und Ihre Stimme abzugeben.",
-        "description": ""
-    },
-    {
-        "key"        : "_trackingCenterMessage_",
-        "value"      : "Before going back to voting, you can post this audited ballot to the Helios tracking center so that others might double-check the verification of this ballot.",
-        "description": ""
-    },
-    {
-        "key"        : "_castMessage_",
-        "value"      : "Even if you post your audited ballot, you must go back to voting and choose 'cast' if you want your vote to count.",
-        "description": ""
-    },
-    {
         "key"        : "_backToVotingButton_",
         "value"      : "Zurück zur Wahl",
         "description": ""
@@ -301,7 +191,7 @@
     },
     {
         "key"        : "_printHeading_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code:",
+        "value"      : "Ihr Prüf-Code:",
         "description": ""
     },
     {
@@ -340,23 +230,8 @@
         "description": ""
     },
     {
-        "key"        : "_loadingMessageThree_",
-        "value"      : "Casting and verifying ballot",
-        "description": ""
-    },
-    {
-        "key"        : "_voteSuccessCastHeading_",
-        "value"      : "Vote Successfully Cast!",
-        "description": ""
-    },
-    {
-        "key"        : "_voteSuccessCastMessage_",
-        "value"      : "Congratulations, your vote has been successfully cast!",
-        "description": ""
-    },
-    {
         "key"        : "_smartBallotTrackerHeading_",
-        "value"      : "Ihr Stimmzettel-Tracking-Code ist:",
+        "value"      : "Ihr Prüf-Code ist:",
         "description": ""
     },
     {
@@ -426,7 +301,7 @@
     },
     {
         "key"        : "_redirectHeading_",
-        "value"      : "Bitte wählen Sie ein Institut zum Überprüfen.",
+        "value"      : "Bitte wählen Sie ein Institut zum Überprüfen",
         "description": ""
     },
     {
