@@ -19,14 +19,15 @@
 
     </div>
 
-    <p>
-        <span data-i18n="_ballotTrackerHeading_"></span>
-        <span><b>{{ ballot_tracker }}</b></span>
-        <span data-i18n="_ballotTrackerFollow_"></span>
-<!--        <span><a data-i18n="_ballotTrackerPrint_" href=""-->
-<!--                                                                ng-click="printButton()"></a>.</span>-->
-    </p>
-    <p data-i18n="_clickSubmitHint_"></p>
+    <p style="margin-top: 0; " data-i18n="_reviewBallotDescription_"></p>
+        <div class="qr_box">
+            <div class="check_code"><p data-i18n="_reviewBallotCheckCodeHeading_"></p><p
+                    style="font-weight: bold"> {{ ballot_tracker }}</p></div>
+    </div>
+
+    <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
+
+    <p data-i18n="_reviewBallotVerificationExplanation_"></p>
 
     <div style="margin-top: 6em;">
         <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
