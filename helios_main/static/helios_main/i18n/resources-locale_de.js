@@ -285,6 +285,11 @@
         "description": ""
     },
     {
+        "key"        : "_backToReviewButton_",
+        "value"      : "Zurück zur Übersicht",
+        "description": ""
+    },
+    {
         "key"        : "_backToVotingButton_",
         "value"      : "Zurück zur Wahl",
         "description": ""

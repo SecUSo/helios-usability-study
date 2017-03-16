@@ -165,6 +165,11 @@
         "description": "Button that opens audit description on review page"
     },
     {
+        "key"        : "_backToReviewButton_",
+        "value"      : "Zurück zur Übersicht",
+        "description": ""
+    },
+    {
         "key"        : "_backToVotingButton_",
         "value"      : "Zurück zur Wahl",
         "description": ""
