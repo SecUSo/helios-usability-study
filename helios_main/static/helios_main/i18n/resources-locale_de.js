@@ -330,9 +330,14 @@
         "description": "Final login page"
     },
     {
-        "key"        : "_outOf_",
-        "value"      : "# 1 von 1 - wählen Sie",
-        "description": "Number of choice in booth"
+        "key"        : "_yonCanSeletect_",
+        "value"      : "Sie können ",
+        "description": ""
+    },
+    {
+        "key"        : "_yonCanSeletectFollow_",
+        "value"      : " Partei wählen (oder ungültige Stimme).",
+        "description": ""
     },
     {
         "key"        : "_proceedButton_",

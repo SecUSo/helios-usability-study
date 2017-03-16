@@ -7,8 +7,9 @@
 
         <b><span class="ballot_question booth_heading">{{ experimentData.question_data.question }}</span></b><br/>
 
-        <span data-i18n="_outOf_"
-              class="ballot_number booth_miniheading"> {{ experimentData.question_data.answers }}</span>
+        <span class="ballot_number" data-i18n="_yonCanSeletect_"></span>
+        <span class="ballot_number">{{ experimentData.question_data.answers }} </span>
+        <span class="ballot_number" data-i18n="_yonCanSeletectFollow_"></span>
 
         <table id="fixed_height" class="ballot">
             <tr ng-repeat="(code, option) in options">
