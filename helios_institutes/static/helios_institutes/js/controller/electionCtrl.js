@@ -18,6 +18,9 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
             $scope.show_progress = true;
             $scope.current_step = 3;
             break;
+        case "auditdone":
+            $scope.show_progress = false;
+            break;
         case "cast":
             $scope.show_progress = false;
             break;
@@ -126,12 +129,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $timeout(function () {
             $location.path('auditdone/' + $routeParams['id']);
         }, 10);
-    };
-
-    $scope.reEncryptButton = function () {
-        encrypt();
-        $location.path('review/' + $routeParams['id']);
-
     };
 
 });

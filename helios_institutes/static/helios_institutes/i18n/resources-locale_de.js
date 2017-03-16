@@ -326,7 +326,7 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Eine überprüfte Stimme kann allerings nicht mehr abgegeben werden, da dies das Wahlgeheimnis verletzen könnte.",
+        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Bei der Überprüfung wird der Stimmzettel verbraucht. Daher können Sie anschließend einen neuen ausfüllen.",
         "description": ""
     },
     {
@@ -336,32 +336,22 @@
     },
     {
         "key"        : "_afterAuditHeading_",
-        "value"      : "TODO",
+        "value"      : "Sie müssen einen neuen Stimmzettel verwenden",
         "description": ""
     },
     {
         "key"        : "_afterAuditExplanation_",
-        "value"      : "Da Sie Ihren Stimmzettel überprüft haben, kann dieser nicht mehr zum Wählen verwendet werden, da sonst das Wahlgeheimnis gebrochen werden kann.",
-        "description": ""
-    },
-    {
-        "key"        : "_afterAuditExplanationTwo_",
-        "value"      : "Sie haben nun zwei Möglichkeiten:",
+        "value"      : "Ihr verschlüsselter Stimmzettel wurde zum Überprüfen verbraucht. Daher kann dieser alte Stimmzettel nicht mehr zum Wählen verwendet werden. Wenn der alte Stimmzettel weiter verwendet werden würde, kann das Wahlgeheimnis gebrochen werden.",
         "description": ""
     },
     {
         "key"        : "_afterAuditExplanationThree_",
-        "value"      : "1) Sie können bei einem leeren Stimmzettel neu starten.",
-        "description": ""
-    },
-    {
-        "key"        : "_afterAuditExplanationFour_",
-        "value"      : "2) Sie können Ihre Auswahl neu verschlüsseln.",
+        "value"      : "Sie können nun einen neuen Stimmzettel ausfüllen und die Wahl forsetzen.",
         "description": ""
     },
     {
         "key"        : "_afterAuditBallot_",
-        "value"      : "Leerer Stimmzettel",
+        "value"      : "Neuen Stimmzettel ausfüllen",
         "description": ""
     },
     {
