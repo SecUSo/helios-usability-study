@@ -2,6 +2,8 @@
 
 heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routeParams, $location, Backend, $rootScope, $window) {
 
+    $scope.ballot = $routeParams['encrypted_vote'];
+
     var encrypted_vote = "";
     $scope.head_line = "Bundestagswahl 2017";
     $scope.show_progress = true;
