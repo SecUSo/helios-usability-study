@@ -14,6 +14,8 @@
     <div class="progress" ng-show="show_progress">
         <table>
             <tr>
+                <td id="progress_0" ng-class="{true: 'active', false: 'inactive'}[current_step == 0]">
+                    <span data-i18n="_instructionsWizard_"></span></td>
                 <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]">
                     <span data-i18n="_selectWizard_"></span></td>
                 <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]">

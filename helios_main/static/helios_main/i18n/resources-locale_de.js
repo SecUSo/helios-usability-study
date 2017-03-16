@@ -105,6 +105,11 @@
         "description": "More info below submit description"
     },
     {
+        "key"        : "_instructionsWizard_",
+        "value"      : "Instruktionen",
+        "description": "Action points in the wizard"
+    },
+    {
         "key"        : "_selectWizard_",
         "value"      : "Stimmzettel",
         "description": "Action points in the wizard"
