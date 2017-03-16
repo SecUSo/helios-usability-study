@@ -81,7 +81,7 @@
     },
     {
         "key"        : "_reviewWizard_",
-        "value"      : "(2) Überprüfung",
+        "value"      : "(2) Übersicht",
         "description": "Action points in the wizard"
     },
     {

@@ -116,7 +116,7 @@
     },
     {
         "key"        : "_checkCodeWizard_",
-        "value"      : "Prüf-Code",
+        "value"      : "Übersicht",
         "description": "Action points in the wizard"
     },
     {
@@ -296,7 +296,7 @@
     },
     {
         "key"        : "_verifyButton_",
-        "value"      : "Verifizieren",
+        "value"      : "Überprüfen",
         "description": ""
     },
     {
