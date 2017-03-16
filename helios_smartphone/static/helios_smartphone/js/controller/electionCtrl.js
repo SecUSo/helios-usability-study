@@ -99,7 +99,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     //From review to audit
     $scope.verifyButton = function () {
-        $location.path('election/' + $routeParams['id']);
+        $location.path('auditdone/' + $routeParams['id']);
         $window.open('institute/' + $rootScope.encrypted_vote, '_blank');
     };
 
