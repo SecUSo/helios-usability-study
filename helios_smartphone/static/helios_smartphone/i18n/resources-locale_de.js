@@ -376,12 +376,12 @@
     },
        {
         "key"        : "_verificationHeading_",
-        "value"      : "Stimmzettel-Verifikation",
+        "value"      : "Stimmzettel-Überprüfung",
         "description": ""
     },
     {
         "key"        : "_verificationQrCode_",
-        "value"      : "Der folgende QR-Code repräsentiert alle Daten, die für eine Verifikation von der App benötigt werden.",
+        "value"      : "Der folgende QR-Code repräsentiert alle Daten, die für eine Überprüfung von der App benötigt werden.",
         "description": ""
     },
     {
