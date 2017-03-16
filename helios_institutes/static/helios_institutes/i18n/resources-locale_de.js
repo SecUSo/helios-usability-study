@@ -26,12 +26,12 @@
     },
     {
         "key"        : "_secondMoreInfo_",
-        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Wahl geheim zu halten. Dabei wird auch ein sogenannter Prüf-Code generiert. Um zu überprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde kann ein Verifiziervorgang von Ihnen gestartet werden. Dieser Verifiziervorgang kann von Ihnen beliebig oft wiederholt werden.",
+        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Wahl geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
         "description": "More info below review description"
     },
     {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Die Stimmabgabe erfolgt ersts im letzten Schritt. Durch die Eingabe Ihres Benutzernames und Passworts wird die Stimme abgegeben.",
+        "value"      : "Die Stimmabgabe erfolgt erst im letzten Schritt. Durch die Eingabe Ihres Benutzernames und Passworts wird die Stimme abgegeben.",
         "description": "More info below submit description"
     },
     {
@@ -166,7 +166,7 @@
     },
     {
         "key"        : "_submitVoteButton_",
-        "value"      : "Absenden",
+        "value"      : "Anmeldung",
         "description": "Submit vote button on review page"
     },
     {
@@ -336,7 +336,7 @@
     },
     {
         "key"        : "_castThisBallotButton_",
-        "value"      : "Stimmzettel ABGEBEN",
+        "value"      : "Stimmabgabe",
         "description": ""
     },
     {
@@ -441,7 +441,7 @@
     },
     {
         "key"        : "_castToReviewButton_",
-        "value"      : "Zurück zum Prüf-Code",
+        "value"      : "Zurück zur Übersicht",
         "description": ""
     },
     {

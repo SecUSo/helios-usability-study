@@ -16,7 +16,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen.",
+        "value"      : "Für das Abgeben eines Stimmzettels werden Sie die folgenden Schritte durchlaufen:",
         "description": "Introduction"
     },
     {
@@ -33,11 +33,6 @@
         "key"        : "_selectFollow_",
         "value"      : " Sie Ihren bevorzugten Kandidaten.",
         "description": "Defines what to select"
-    },
-    {
-        "key"        : "_selectMoreInfo_",
-        "value"      : "Sie können einfach vor- und zurücknavigieren.",
-        "description": "More info below select description"
     },
     {
         "key"        : "_reviewHeading_",
@@ -136,7 +131,7 @@
     },
     {
         "key"        : "_submitVoteButton_",
-        "value"      : "Stimmabgabe",
+        "value"      : "Anmeldung",
         "description": "Submit vote button on review page"
     },
     {
@@ -161,7 +156,7 @@
     },
     {
         "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlsoftware korrekt funktioniert.",
+        "value"      : "Um sicher zu stellen, dass Ihr Stimmzettel korrekt verschlüsselt wurde, können sie die Verschlüsselung überprüfen. Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {
@@ -281,7 +276,7 @@
     },
     {
         "key"        : "_castThanks_",
-        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Wahlteilnahme",
+        "value"      : "Ihre Stimme wurde gespeichert. Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017.",
         "description": ""
     },
     {
@@ -291,7 +286,7 @@
     },
     {
         "key"        : "_castclose_",
-        "value"      : "Bitte schließen Sie das Browserfenster.",
+        "value"      : "Bitte schließen Sie nun das Browserfenster.",
         "description": ""
     },
     {
@@ -311,7 +306,7 @@
     },
     {
         "key"        : "_finalLoginMessageTwo_",
-        "value"      : "Benutzername und Passwort entnehmen Sie der Wahleinladung.",
+        "value"      : "Benutzername und Passwort entnehmen Sie den Internetwahlunterlagen.",
         "description": ""
     },
     {
@@ -346,18 +341,13 @@
     },
     {
         "key"        : "_castToReviewButton_",
-        "value"      : "Zurück zum Prüf-Code",
+        "value"      : "Zurück zur Übersicht",
         "description": ""
     },
     {
         "key"        : "_proceedButton_",
         "value"      : "Weiter",
         "description": "Button to proceed to the next step"
-    },
-    {
-        "key"        : "_redirectHeading_",
-        "value"      : "Bitte wählen Sie ein Institut zum Verifizieren.",
-        "description": ""
     },
     {
         "key"        : "_startButton_",
@@ -373,6 +363,11 @@
         "key"        : "_qrExplanation_",
         "value"      : "QR-Code, der den Prüf-Code enthält",
         "description": "Below QR Code"
+    },
+    {
+        "key"        : "_castThisBallotButton_",
+        "value"      : "Stimmzettelabgabe",
+        "description": ""
     },
        {
         "key"        : "_verificationHeading_",
@@ -396,17 +391,17 @@
     },
     {
         "key"        : "_firstMoreInfo_",
-        "value"      : "Wählen Sie Ihren bevorzugten Kandidaten.",
+        "value"      : "Wählen Sie Ihre bevorzugte Partei.",
         "description": "More info below select description"
     },
     {
         "key"        : "_secondMoreInfo_",
-        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Wahl geheim zu halten. Dabei wird auch ein sogenannter Prüf-Code generiert. Um zu überprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde kann ein Verifiziervorgang von Ihnen gestartet werden. Dieser Verifiziervorgang kann von Ihnen beliebig oft wiederholt werden.",
+        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Wahl geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
         "description": "More info below review description"
     },
     {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Die Stimmabgabe erfolgt ersts im letzten Schritt. Durch die Eingabe Ihres Benutzernames und Passworts wird die Stimme abgegeben.",
+        "value"      : "Die Stimmabgabe erfolgt erst im letzten Schritt. Durch die Eingabe Ihres Benutzernames und Passworts wird die Stimme abgegeben.",
         "description": "More info below submit description"
     },
     {
@@ -416,7 +411,7 @@
     },
     {
         "key"        : "_introductionStart_",
-        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen",
+        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen.",
         "description": ""
     },
     {
