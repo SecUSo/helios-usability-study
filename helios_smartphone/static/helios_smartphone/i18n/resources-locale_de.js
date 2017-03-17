@@ -391,7 +391,22 @@
     },
     {
         "key"        : "_verificationInstructionsApp_",
-        "value"      : "Bitte folgen Sie den Instruktionen in der App und schließen dieses Fenster am Ende.",
+        "value"      : "Vergleichen Sie die angezeigte Partei mit der, die Sie angekreuzt haben und wählen Sie die passende Option in der App.",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstructionsAppTwo_",
+        "value"      : "",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstructionsAppThree_",
+        "value"      : "",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstructionsAppEnd_",
+        "value"      : "Sie können dieses Fenster nun schließen.",
         "description": ""
     },
     {

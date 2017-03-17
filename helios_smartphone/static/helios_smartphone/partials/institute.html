@@ -1,11 +1,11 @@
 <div ng-include src="'/static/helios_smartphone/partials/header.html'"></div>
 
-<div class="content_box">
+<div class="content_box" style="width: 600px">
 
     <h3 data-i18n="_verificationHeading_"></h3>
 
-    <span data-i18n="_verificationQrCode_"></span><br>
-    <span data-i18n="_verificationInstruction_"></span><br>
+    <div data-i18n="_verificationQrCode_"></div>
+    <div style="margin-top: 1em" data-i18n="_verificationInstruction_"></div>
 
     <div style="text-align: center; margin: 2em 2em;">
 
@@ -14,7 +14,9 @@
 
     </div>
 
-     <span data-i18n="_verificationInstructionsApp_"></span><br>
+    <span data-i18n="_verificationInstructionsApp_"></span>
+
+    <span data-i18n="_verificationInstructionsAppEnd_"></span><br>
 
     <button style="float: right; margin-top: 1em" data-i18n="_closeButton_" ng-click="closeAudit()"></button>
 
