@@ -131,8 +131,8 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         }
     };
 
-    $scope.closeAudit = function () {
-        $window.close();
-    };
+    // $scope.closeAudit = function () {
+    //     $window.close();
+    // };
 
 });
