@@ -230,33 +230,8 @@
         "description": ""
     },
     {
-        "key"        : "_importantHeading_",
-        "value"      : "WICHTIG: ",
-        "description": ""
-    },
-    {
-        "key"        : "_importantMessagePartOne_",
-        "value"      : " Dieser Stimmzettel wurde überprüft und wird deshalb ",
-        "description": ""
-    },
-    {
-        "key"        : "_importantMessagePartTwo_",
-        "value"      : "nicht in die Auszählung einfließen.",
-        "description": ""
-    },
-    {
-        "key"        : "_whyHeading_",
-        "value"      : "Wieso? ",
-        "description": ""
-    },
-    {
-        "key"        : "_whyMessage_",
-        "value"      : "Helios verhindert, dass Sie denselben Stimmzettel überprüfen und abgeben, um Sie vor erzwungener Stimmabgabe zu schützen.",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatHeading_",
-        "value"      : "Was jetzt? ",
+        "key"        : "_auditedBallotFollow_",
+        "value"      : "Um Ihre Stimme zu prüfen gehen Sie wie folgt vor: ",
         "description": ""
     },
     {
@@ -281,7 +256,7 @@
     },
     {
         "key"        : "_nowWhatBackToVoting_",
-        "value"      : "Sobald Sie zufrieden sind, klicken Sie auf 'Zurück zur Wahl' um Ihre Auswahl erneut zu treffen und Ihre Stimme abzugeben.",
+        "value"      : "Sobald Sie fertig sind, klicken Sie auf 'Zurück zur Wahl' um Ihre Auswahl erneut zu treffen und Ihre Stimme abzugeben.",
         "description": ""
     },
     {
