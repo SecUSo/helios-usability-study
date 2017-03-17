@@ -146,7 +146,7 @@
     },
     {
         "key"        : "_reviewBallotDescription_",
-        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Wahl geheim zu halten.",
+        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Stimme zu halten.",
         "description": "First line on review page"
     },
     {
@@ -416,7 +416,7 @@
     },
     {
         "key"        : "_secondMoreInfo_",
-        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Wahl geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
+        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Stimme geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
         "description": "More info below review description"
     },
     {
