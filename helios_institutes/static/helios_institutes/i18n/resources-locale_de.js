@@ -276,7 +276,7 @@
     },
     {
         "key"        : "_finalLoginMessageTwo_",
-        "value"      : "Benutzername und Passwort entnehmen Sie der Wahleinladung.",
+        "value"      : "Benutzername und Passwort entnehmen Sie den Internetwahlunterlagen.",
         "description": ""
     },
     {
