@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-h3 {
-    margin-top: 0;
-}
-
 #review_box p {
     width: calc(100% - 200px - 4em);
     margin-top: 2em;

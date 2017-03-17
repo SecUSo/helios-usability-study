@@ -16,7 +16,7 @@
     },
     {
         "key"        : "_firstMoreInfo_",
-        "value"      : "Wählen Sie Ihren bevorzugten Kandidaten.",
+        "value"      : "Wählen Sie Ihre bevorzugte Partei.",
         "description": "More info below select description"
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen.",
+        "value"      : "Für das Abgeben eines Stimmzettels werden Sie die folgenden Schritte durchlaufen.",
         "description": "Introduction"
     },
     {

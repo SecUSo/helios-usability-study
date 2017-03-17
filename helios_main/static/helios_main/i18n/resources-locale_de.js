@@ -46,7 +46,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen.",
+        "value"      : "Für das Abgeben eines Stimmzettels werden Sie die folgenden Schritte durchlaufen.",
         "description": "Introduction"
     },
     {

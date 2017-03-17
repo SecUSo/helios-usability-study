@@ -6,10 +6,6 @@ body {
     margin: 0;
 }
 
-h3 {
-    margin-top: 0;
-}
-
 .login_form {
     text-align: left;
     display: inline-block;
@@ -37,7 +33,7 @@ button {
     display: inline-block;
     border: solid 1px #393f46;
     border-radius: 5px;
-    padding: 1em 1.5em;
+    padding: 1.5em;
     background-color: white;
     margin: 1em auto;
     max-width: 950px;
