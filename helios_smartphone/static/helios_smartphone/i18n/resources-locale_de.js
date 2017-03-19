@@ -156,7 +156,7 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Bei der Überprüfung wird der Stimmzettel verbraucht. Daher können Sie anschließend einen neuen ausfüllen.",
+        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
         "description": ""
     },
     {
@@ -446,7 +446,7 @@
     },
     {
         "key"        : "_afterAuditExplanation_",
-        "value"      : "Ihr verschlüsselter Stimmzettel wurde zum Überprüfen verbraucht. Daher kann dieser alte Stimmzettel nicht mehr zum Wählen verwendet werden. Wenn der alte Stimmzettel weiter verwendet werden würde, kann das Wahlgeheimnis gebrochen werden.",
+        "value"      : "Ihr verschlüsselter Stimmzettel wurde zum Überprüfen verwendet. Daher kann dieser alte Stimmzettel nicht mehr zum Wählen verwendet werden. Wenn der alte Stimmzettel weiter verwendet werden würde, könnte das Wahlgeheimnis gebrochen werden.",
         "description": ""
     },
     {
