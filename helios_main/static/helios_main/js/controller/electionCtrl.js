@@ -138,6 +138,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //Redirect while verifiying
     $scope.redirectButton = function () {
+        $rootScope.selected_code = "22";
         $location.path('auditdone/' + $routeParams['id']);
     };
 
