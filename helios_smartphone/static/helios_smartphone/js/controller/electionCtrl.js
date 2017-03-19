@@ -85,22 +85,19 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     //From election to review
     $scope.proceedButton = function () {
-        //$scope.startTime = Date.now();
-
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Smartphone: Election end");
         encrypt();
-
-        console.log(encrypted_vote);
-
-        console.log('Hash in scope ' + $scope.ballot_tracker);
         $location.path('review/' + $routeParams['id']);
     };
 
     $scope.startButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Smartphone: Overall start");
         $location.path('election/' + $routeParams['id']);
     };
 
     //From review to audit
     $scope.verifyButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Smartphone: Audit start");
         $location.path('auditdone/' + $routeParams['id']);
         $window.open('institute/' + $rootScope.encrypted_vote, '_blank');
     };
@@ -115,6 +112,12 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
         $location.path('election/' + $routeParams['id']);
     };
 
+    //From auditEnd to election
+    $scope.auditToElectionButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Smartphone: Audit end");
+        $location.path('election/' + $routeParams['id']);
+    };
+
     //From institutes back to review
     $scope.backToReviewButton = function () {
         $location.path('review/' + $routeParams['id']);
@@ -125,6 +128,7 @@ heliosStudySmartphoneApp.controller("electionCtrl", function ($scope, $routePara
 
     $scope.castButton = function () {
         if ($scope.userid == 'k5k6j2kfL4' && $scope.userpass == '23kg!k?f%v') {
+            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Smartphone: Overall end");
             $location.path('cast/' + "final");
         } else {
             alert("Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Bitte geben Sie es erneut ein.");

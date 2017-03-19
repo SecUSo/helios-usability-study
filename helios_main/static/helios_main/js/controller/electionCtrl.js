@@ -94,7 +94,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From election to review
     $scope.proceedButton = function () {
-        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Election end");
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Old: Election end");
         encrypt();
         $location.path('review/' + $routeParams['id']);
     };
@@ -122,6 +122,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From review to audit
     $scope.verifyButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Old: Audit start");
         $location.path('institute/' + $routeParams['id']);
     };
 
@@ -150,6 +151,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
     //From institutes back to review
     $scope.backToReviewButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Old: Audit abort");
         $location.path('review/' + $routeParams['id']);
     };
 
@@ -165,6 +167,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
 
    $scope.castButton = function () {
         if ($scope.userid == 'k5k6j2kfL4' && $scope.userpass == '23kg!k?f%v') {
+            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Old: Overall end");
             $location.path('cast/' + "final");
         } else {
             alert("Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Bitte geben Sie es erneut ein.");

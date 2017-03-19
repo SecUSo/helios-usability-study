@@ -80,17 +80,19 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     //From election to review
     $scope.proceedButton = function () {
-        //$scope.startTime = Date.now();
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Institute: Election end");
         encrypt();
         $location.path('review/' + $routeParams['id']);
     };
 
     $scope.startButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Institute: Overall start");
         $location.path('election/' + $routeParams['id']);
     };
 
     //From review to audit
     $scope.verifyButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Institute: Audit start");
         $location.path('institute/' + $rootScope.encrypted_vote);
     };
 
@@ -104,6 +106,12 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $location.path('election/' + $routeParams['id']);
     };
 
+    //From auditEnd to election
+    $scope.auditToElectionButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Institute: Audit end");
+        $location.path('election/' + $routeParams['id']);
+    };
+
      //reencrypt after audit
     $scope.reEncryptButton = function () {
         $location.path('review/' + $routeParams['id']);
@@ -111,11 +119,13 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
 
     //From institutes back to review
     $scope.backToReviewButton = function () {
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Institute: Audit abort");
         $location.path('review/' + $routeParams['id']);
     };
 
     $scope.castButton = function () {
         if ($scope.userid == 'k5k6j2kfL4' && $scope.userpass == '23kg!k?f%v') {
+            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Institute: Overall end");
             $location.path('cast/' + "final");
         } else {
             alert("Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Bitte geben Sie es erneut ein.");
