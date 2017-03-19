@@ -136,7 +136,7 @@
     },
     {
         "key"        : "_reviewBallotDescription_",
-        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Stimme zu halten.",
+        "value"      : "Ihre Stimme wurde verschlüsselt um das Wahlgeheimnis zu bewahren.",
         "description": "First line on review page"
     },
     {
@@ -151,7 +151,7 @@
     },
     {
         "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um den Stimmzettel zu überprüfen scannen Sie den angezeigten QR-Code mit der App Bundestagswahlüberprüfung und wählen Sie anschließend \"Überprüfen\". Diesen Prozess können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
+        "value"      : "Um die Überprüfung ddurchzuführen, scannen Sie den angezeigten QR-Code mit der App \"Bundestagswahlüberprüfung\" und wählen Sie anschließend \"Überprüfen\" (unterer mittlerer Button). Die Überprüfung können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {

@@ -316,7 +316,7 @@
     },
     {
         "key"        : "_reviewBallotDescription_",
-        "value"      : "Ihr Stimmzettel wurde verschlüsselt um Ihre Stimme geheim zu halten.",
+        "value"      : "Ihre Stimme wurde verschlüsselt um das Wahlgeheimnis zu bewahren.",
         "description": "First line on review page"
     },
     {
@@ -331,7 +331,7 @@
     },
     {
         "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Sie können Stimmzettel beliebig oft prüfen, bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
+        "value"      : "Sie können die Überprüfung beliebig oft durchführen, bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {
