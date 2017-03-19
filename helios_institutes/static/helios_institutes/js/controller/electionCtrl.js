@@ -5,6 +5,12 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
     var encrypted_vote = "";
     $scope.show_progress = true;
 
+    if ($location.path().split("/")[1] == "institute") {
+        $scope.vote = $routeParams['encrypted_vote'];
+        $scope.ballot_tracker = (btoa($scope.vote).toString()).substr(0, 16);
+    }
+
+
     switch ($location.path().split("/")[1]) {
         case "election":
             $scope.show_progress = true;
@@ -112,7 +118,7 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $location.path('election/' + $routeParams['id']);
     };
 
-     //reencrypt after audit
+    //reencrypt after audit
     $scope.reEncryptButton = function () {
         $location.path('review/' + $routeParams['id']);
     };
@@ -143,6 +149,6 @@ heliosStudyInstitutesApp.controller("electionCtrl", function ($scope, $routePara
         $timeout(function () {
             $location.path('auditdone/' + $routeParams['id']);
         }, 10);
-    };
+};
 
 });
