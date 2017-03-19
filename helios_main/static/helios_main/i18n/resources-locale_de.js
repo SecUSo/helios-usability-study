@@ -211,7 +211,7 @@
     },
     {
         "key"        : "_verifyEncryptionButton_",
-        "value"      : "Verschlüsselung verifizieren",
+        "value"      : "Verschlüsselung überprüfen",
         "description": ""
     },
     {
