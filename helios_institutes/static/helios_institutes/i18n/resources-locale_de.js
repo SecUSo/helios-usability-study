@@ -126,7 +126,7 @@
     },
     {
         "key"        : "_yonCanSeletectFollow_",
-        "value"      : " Partei wählen (oder ungültige Stimme).",
+        "value"      : " Partei wählen (oder eine ungültige Stimme).",
         "description": ""
     },
     {
