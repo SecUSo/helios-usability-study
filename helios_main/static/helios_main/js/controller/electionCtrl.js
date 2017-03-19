@@ -164,10 +164,10 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
     };
 
    $scope.castButton = function () {
-        if ($scope.userid == 'Hugo' && $scope.userpass == '1234') {
+        if ($scope.userid == 'k5k6j2kfL4' && $scope.userpass == '23kg!k?f%v') {
             $location.path('cast/' + "final");
         } else {
-            alert("Du Idiot!");
+            alert("Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Bitte geben Sie es erneut ein.");
         }
     };
 
