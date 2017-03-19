@@ -21,12 +21,12 @@
     },
     {
         "key"        : "_secondMoreInfo_",
-        "value"      : "Ihre Stimme wird verschlüsselt um das Wahlgeheimnis zu gewährleisten.",
+        "value"      : "Verschlüsseln Sie Ihre Stimme um das Wahlgeheimnis zu gewährleisten. Sie können ebenfalls überprüfen, ob eine Stimme richtig verschlüsselt wurde.",
         "description": "More info below review description"
     },
     {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Die Stimmabgabe erfolgt erst im letzten Schritt. Durch die Eingabe Ihres Benutzernames und Passworts wird die Stimme abgegeben.",
+        "value"      : "Geben Sie Ihre Stimm im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
         "description": "More info below submit description"
     },
     {
