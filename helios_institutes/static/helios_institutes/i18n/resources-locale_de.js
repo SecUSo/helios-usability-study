@@ -26,7 +26,7 @@
     },
     {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Geben Sie Ihre Stimm im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
+        "value"      : "Geben Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
         "description": "More info below submit description"
     },
     {

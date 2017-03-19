@@ -95,16 +95,6 @@
         "description": "Action points in the wizard"
     },
     {
-        "key"        : "_loadingMessageTwo_",
-        "value"      : "Helios is now encrypting your ballot",
-        "description": "Loading message after voting"
-    },
-    {
-        "key"        : "__loadingMessageDuration__",
-        "value"      : "This may take up to two minutes",
-        "description": "Loading message after voting, info about duration"
-    },
-    {
         "key"        : "_yonCanSeletect_",
         "value"      : "Sie können ",
         "description": ""
@@ -116,7 +106,7 @@
     },
     {
         "key"        : "_ballotTrackerHeading_",
-        "value"      : "Ihr Ballot Tracker ist ",
+        "value"      : "Ihr Prüf-Code ist ",
         "description": "Heading of ballot tracker"
     },
     {
@@ -421,7 +411,7 @@
     },
     {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Geben Sie Ihre Stimm im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
+        "value"      : "Geben Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
         "description": "More info below submit description"
     },
     {

@@ -25,7 +25,7 @@ SECRET_KEY = 'sdy+8nc@g1693x=l*kao_gzbnz-4&ho(7af_hl@q1l37vw)sl*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bundestagswahl.de']
+ALLOWED_HOSTS = ['bundestagswahl.de', '127.0.0.1']
 
 
 # Application definition
