@@ -25,7 +25,7 @@ SECRET_KEY = 'sdy+8nc@g1693x=l*kao_gzbnz-4&ho(7af_hl@q1l37vw)sl*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bundestagswahl.de']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'helios_main',
     'helios_institutes',
     'helios_smartphone',
+    'sslserver',
 ]
 
 MIDDLEWARE = [
