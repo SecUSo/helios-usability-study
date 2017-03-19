@@ -21,7 +21,7 @@
     },
     {
         "key"        : "_secondMoreInfo_",
-        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Stimme geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
+        "value"      : "Ihre Stimme wird verschlüsselt um das Wahlgeheimnis zu gewährleisten.",
         "description": "More info below review description"
     },
     {
@@ -41,7 +41,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Für das Abgeben eines Stimmzettels werden Sie die folgenden Schritte durchlaufen.",
+        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen:",
         "description": "Introduction"
     },
     {
@@ -166,12 +166,12 @@
     },
     {
         "key"        : "_backToReviewButton_",
-        "value"      : "Zurück zur Übersicht",
+        "value"      : "Zur Übersicht",
         "description": ""
     },
     {
         "key"        : "_backToVotingButton_",
-        "value"      : "Zurück zur Wahl",
+        "value"      : "Zur Wahl",
         "description": ""
     },
     {
@@ -301,7 +301,7 @@
     },
     {
         "key"        : "_proceedButton_",
-        "value"      : "Weiter",
+        "value"      : "Stimme verschlüsseln",
         "description": "Button to proceed to the next step"
     },
     {

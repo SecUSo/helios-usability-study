@@ -16,7 +16,7 @@
     },
     {
         "key"        : "_secondMoreInfo_",
-        "value"      : "Ihr Stimmzettel wird verschlüsselt um Ihre Stimme geheim zu halten. Dabei wird auch ein Prüf-Code generiert. Mit Hilfe dieses Prüf-Codes können Sie übrprüfen, ob ein Stimmzettel korrekt verschlüsselt wurde. Diese Überprüfung kann beliebig oft wiederholt werden.",
+        "value"      : "Ihre Stimme wird verschlüsselt um das Wahlgeheimnis zu gewährleisten.",
         "description": "More info below review description"
     },
     {
@@ -46,7 +46,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Für das Abgeben eines Stimmzettels werden Sie die folgenden Schritte durchlaufen.",
+        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen:",
         "description": "Introduction"
     },
     {
@@ -125,16 +125,6 @@
         "description": "Action points in the wizard"
     },
     {
-        "key"        : "_loadingMessageTwo_",
-        "value"      : "Helios is now encrypting your ballot",
-        "description": "Loading message after voting"
-    },
-    {
-        "key"        : "__loadingMessageDuration__",
-        "value"      : "This may take up to two minutes",
-        "description": "Loading message after voting, info about duration"
-    },
-    {
         "key"        : "_finalCheckCode_",
         "value"      : "Der Prüf-Code Ihres Stimmzettels ist:",
         "description": ""
@@ -166,7 +156,7 @@
     },
     {
         "key"        : "_castToReviewButton_",
-        "value"      : "Zurück zur Übersicht",
+        "value"      : "Zur Übersicht",
         "description": ""
     },
     {
@@ -381,7 +371,7 @@
     },
     {
         "key"        : "_proceedButton_",
-        "value"      : "Weiter",
+        "value"      : "Stimme verschlüsseln",
         "description": "Button to proceed to the next step"
     },
     {
