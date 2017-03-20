@@ -19,18 +19,14 @@
 
     </div>
 
-    <p style="margin-top: 0; " data-i18n="_reviewBallotDescription_"></p>
-    <div style="width: calc(100% - 200px - 4em);">
-        <div style="margin-left: 50%; overflow: visible">
-            <div class="qr_box" style="margin-left: -42%;">
-                <div class="check_code"><p data-i18n="_reviewBallotCheckCodeHeading_"></p>
-                    <p style="font-weight: bold"> {{ ballot_tracker }}</p>
-                </div>
+    <div id="review_box">
+
+        <p style="margin-top: 0; " data-i18n="_reviewBallotDescription_"></p>
+        <div style="text-align: center" class="qr_box">
+            <div class="check_code"><p style="margin: 0.3em" data-i18n="_reviewBallotCheckCodeHeading_"></p>
+                <p style="font-weight: bold; margin: 0.3em"> {{ ballot_tracker }}</p>
             </div>
         </div>
-    </div>
-
-    <div id="review_box">
 
         <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
 

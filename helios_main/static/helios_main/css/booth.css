@@ -113,7 +113,6 @@ button.vote_button_active {
     border: 1px solid #393f46;
     padding: 0.3em;
     border-radius: 5px;
-    width: 260px;
 }
 
 .qr_box p {
@@ -121,7 +120,6 @@ button.vote_button_active {
 }
 
 .check_code{
-    text-align: center;
     font-size: 14pt;
     font-weight: bold;
 }

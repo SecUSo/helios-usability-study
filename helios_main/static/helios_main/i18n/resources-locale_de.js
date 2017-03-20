@@ -10,18 +10,33 @@
         "description": ""
     },
     {
-        "key"        : "_firstMoreInfo_",
-        "value"      : "Wählen Sie Ihre bevorzugte Partei.",
+        "key"        : "_firstInfo_",
+        "value"      : "Wählen",
         "description": "More info below select description"
     },
     {
-        "key"        : "_secondMoreInfo_",
-        "value"      : "Verschlüsseln Sie Ihre Stimme um das Wahlgeheimnis zu gewährleisten. Sie können ebenfalls überprüfen, ob eine Stimme richtig verschlüsselt wurde.",
+        "key"        : "_firstMoreInfo_",
+        "value"      : " Sie Ihre bevorzugte Partei.",
+        "description": "More info below select description"
+    },
+    {
+        "key"        : "_secondInfo_",
+        "value"      : "Verschlüsseln",
         "description": "More info below review description"
     },
     {
+        "key"        : "_secondMoreInfo_",
+        "value"      : " Sie Ihre Stimme um das Wahlgeheimnis zu gewährleisten. Sie können ebenfalls überprüfen, ob eine Stimme richtig verschlüsselt wurde.",
+        "description": "More info below review description"
+    },
+    {
+        "key"        : "_thirdInfo_",
+        "value"      : "Geben",
+        "description": "More info below submit description"
+    },
+    {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Geben Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
+        "value"      : " Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
         "description": "More info below submit description"
     },
     {
@@ -31,7 +46,7 @@
     },
     {
         "key"        : "_introductionStart_",
-        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen",
+        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen.",
         "description": ""
     },
     {
@@ -230,18 +245,8 @@
         "description": ""
     },
     {
-        "key"        : "_nowWhatInfoAfterLink_",
-        "value"      : ", kopieren Sie diese in die Zwischenablage und verwenden Sie dann den ",
-        "description": ""
-    },
-    {
-        "key"        : "_nowWhatBallotVerifierLink_",
-        "value"      : "Stimmzettelüberprüfer",
-        "description": ""
-    },
-    {
         "key"        : "_nowWhatBallotVerifierAfterLink_",
-        "value"      : " um Ihren Stimmzettel zu überprüfen.",
+        "value"      : "und kopieren Sie diese in die Zwischenablage. Wählen Sie anschließend eines der unten gelisteten Institute, um die Überprüfung durchzuführen.",
         "description": ""
     },
     {

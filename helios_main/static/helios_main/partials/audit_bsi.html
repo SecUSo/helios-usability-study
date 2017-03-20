@@ -6,14 +6,46 @@
 
     <div style="margin-top: 1em" data-i18n="_auditedBallotFollow_"></div>
     <a data-i18n="_nowWhatInfoLink_" ng-click="selectTextArea()" href=""></a>
-
-    <span data-i18n="_nowWhatInfoAfterLink_"></span>
-    <a data-i18n="_nowWhatBallotVerifierLink_" href="https://wahlueberpruefung.bsi.de:8080/verifier" target="_blank"></a> <span
-        data-i18n="_nowWhatBallotVerifierAfterLink_"></span><br>
+    <span data-i18n="_nowWhatBallotVerifierAfterLink_"></span><br>
     <span data-i18n="_nowWhatBackToVoting_"></span><br>
     <br>
     <textarea name="auditDataTextArea" ng-model="auditData" rows="10" cols="63"></textarea> <br>
     <br>
+
+    <div style="text-align: center">
+
+    <table class="verification_institute">
+
+        <tr style="margin: 1em">
+            <td>
+                <img ng-src="/static/helios_main/images/osze_logo.png" ng-click="redirectToInstituteOszeButton()"></td>
+            <td>
+                <span data-i18n="_verifyOSZE_" ng-click="redirectToInstituteOszeButton()"></span>
+                <img ng-src="/static/helios_main/images/info_icon.png"
+                     title="Die Organisation für Sicherheit und Zusammenarbeit in Europa ist eine verstetigte Staatenkonferenz zur Friedenssicherung.">
+                <br><br>
+                <a data-i18n="_verifyStart_" href="" ng-click="redirectToInstituteOszeButton()"></a></td>
+        </tr>
+
+        <tr style="height: 1em"></tr>
+        <tr>
+            <td colspan="2" style="border-top: 1px solid #d3d3d3;"></td>
+        </tr>
+        <tr style="height: 1em"></tr>
+        <tr style="margin: 1em;">
+            <td>
+                <img ng-src="/static/helios_main/images/bsi_logo.png" ng-click="redirectToInstituteBsiButton()"></td>
+            <td>
+                <span data-i18n="_verifyBSI_" ng-click="redirectToInstituteOszeButton()"></span>
+                <img ng-src="/static/helios_main/images/info_icon.png"
+                     title="Das Bundesamt für Sicherheit in der Informationstechnik (BSI) ist eine in der Bundesstadt Bonn ansässige zivile obere Bundesbehörde im Geschäftsbereich des Bundesministeriums des Innern, die für Fragen der IT-Sicherheit zuständig ist.">
+                <br><br>
+                <a data-i18n="_verifyStart_" href="" ng-click="redirectToInstituteBsiButton()"></a></td>
+        </tr>
+
+    </table>
+
+        </div>
 
     <button data-i18n="_backToVotingButton_" ng-click="redirectButton()"></button>
 
