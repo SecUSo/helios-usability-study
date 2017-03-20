@@ -105,6 +105,21 @@
         "description": ""
     },
     {
+        "key"        : "_encryptInstruction_",
+        "value"      : "Um Ihre Stimme zu ",
+        "description": "Button to proceed to the next step"
+    },
+    {
+        "key"        : "_encryptInstruction2_",
+        "value"      : "verschlüsseln ",
+        "description": "Button to proceed to the next step"
+    },
+    {
+        "key"        : "_encryptInstruction3_",
+        "value"      : "scrollen Sie bis zum Ende der Seite.",
+        "description": "Button to proceed to the next step"
+    },
+    {
         "key"        : "_ballotTrackerHeading_",
         "value"      : "Ihr Prüf-Code ist ",
         "description": "Heading of ballot tracker"
