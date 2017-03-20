@@ -17,7 +17,7 @@ a:hover {
 .login_form {
     text-align: left;
     display: inline-block;
-    border: solid 1px #393f46;
+    border: solid 3px #393f46;
     border-radius: 5px;
     padding: 1.5em;
     background-color: white;
@@ -40,7 +40,7 @@ button {
 .content_box {
     text-align: left;
     display: inline-block;
-    border: solid 1px #393f46;
+    border: solid 3px #393f46;
     border-radius: 5px;
     padding: 1.5em;
     background-color: white;

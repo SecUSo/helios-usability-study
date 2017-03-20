@@ -361,7 +361,32 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
+        "value"      : "Bitte ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2_",
+        "value"      : "notieren",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation3_",
+        "value"      : " Sie sich den angezeigten Prüf-Code.",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation4_",
+        "value"      : " Mit Hilfe dieses Prüf-Codes können Sie ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation5_",
+        "value"      : "überprüfen",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation6_",
+        "value"      : "ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
         "description": ""
     },
     {

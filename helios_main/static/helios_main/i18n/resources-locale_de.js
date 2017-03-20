@@ -248,10 +248,31 @@
         "key"        : "_nowWhatInfoLink_",
         "value"      : "Wählen Sie die Stimmzettelüberprüfungsinformationen aus",
         "description": ""
-    },
+    }
+    ,
     {
         "key"        : "_nowWhatBallotVerifierAfterLink_",
-        "value"      : "und kopieren Sie diese in die Zwischenablage. Wählen Sie anschließend eines der unten gelisteten Institute, um die Überprüfung durchzuführen.",
+        "value"      : "und ",
+        "description": ""
+    },
+    {
+        "key"        : "_nowWhatBallotVerifierAfterLink2_",
+        "value"      : "kopieren",
+        "description": ""
+    },
+    {
+        "key"        : "_nowWhatBallotVerifierAfterLink3_",
+        "value"      : " Sie diese in die Zwischenablage.",
+        "description": ""
+    },
+    {
+        "key"        : "_nowWhatBallotVerifierAfterLink4_",
+        "value"      : "Wählen",
+        "description": ""
+    },
+    {
+        "key"        : "_nowWhatBallotVerifierAfterLink5_",
+        "value"      : " Sie anschließend eines der unten gelisteten Institute, um die Überprüfung durchzuführen.",
         "description": ""
     },
     {

@@ -161,12 +161,37 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
+        "value"      : "Bitte ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2_",
+        "value"      : "scannen",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation3_",
+        "value"      : " Sie sich den angezeigten Prüf-Code.",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation4_",
+        "value"      : " Mit Hilfe dieses Prüf-Codes können Sie ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation5_",
+        "value"      : "überprüfen",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation6_",
+        "value"      : "ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
         "description": ""
     },
     {
         "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um die Überprüfung ddurchzuführen, scannen Sie den angezeigten QR-Code mit der App \"Bundestagswahlüberprüfung\" und wählen Sie anschließend \"Überprüfen\" (unterer mittlerer Button). Die Überprüfung können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
+        "value"      : "Sie können die Überprüfung beliebig oft durchführen, bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {
