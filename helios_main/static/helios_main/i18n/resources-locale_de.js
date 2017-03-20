@@ -381,17 +381,17 @@
     },
     {
         "key"        : "_encryptInstruction_",
-        "value"      : "Um Ihre Stimme zu ",
+        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_encryptInstruction2_",
-        "value"      : "verschlüsseln ",
+        "value"      : "verschlüsseln",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_encryptInstruction3_",
-        "value"      : "scrollen Sie bis zum Ende der Seite.",
+        "value"      : "",
         "description": "Button to proceed to the next step"
     },
     {
@@ -456,7 +456,32 @@
     },
     {
         "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Bitte notieren Sie sich den angezeigten Prüf-Code. Mit Hilfe dieses Prüf-Codes können Sie überprüfen, ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
+        "value"      : "Bitte ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2_",
+        "value"      : "notieren",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation3_",
+        "value"      : " Sie sich den angezeigten Prüf-Code.",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation4_",
+        "value"      : " Mit Hilfe dieses Prüf-Codes können Sie ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation5_",
+        "value"      : "überprüfen",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation6_",
+        "value"      : "ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
         "description": ""
     },
     {

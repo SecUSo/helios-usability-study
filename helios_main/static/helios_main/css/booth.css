@@ -104,8 +104,8 @@ button.vote_button_active {
 }
 
 .qr_box {
-    margin: auto;
-    border: 1px solid #393f46;
+    margin: 2em auto 3em auto;
+    border: 3px solid #22505f;
     padding: 0.3em;
     border-radius: 5px;
     max-width: 700px;
