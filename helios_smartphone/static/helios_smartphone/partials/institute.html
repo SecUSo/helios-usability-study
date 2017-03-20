@@ -4,18 +4,21 @@
 
     <h3 style="margin-top: 0" data-i18n="_verificationHeading_"></h3>
 
-    <div data-i18n="_verificationQrCode_"></div>
-    <div style="margin-top: 1em" data-i18n="_verificationInstruction_"></div>
+    <div style="line-height: 2em">
 
-    <div style="text-align: center; margin: 2em 2em;">
+        <div data-i18n="_verificationQrCode_"></div>
+        <div data-i18n="_reviewBallotVerificationExplanation_"></div>
+        <div style="text-align: center; margin: 2em 2em;">
 
-        <qrcode version="12" error-correction-level="M" size="200" data=" {{ ballot }}"></qrcode>
-        <br>
+            <qrcode version="12" error-correction-level="M" size="200" data=" {{ ballot }}"></qrcode>
+            <br>
 
+        </div>
+
+        <span data-i18n="_verificationInstruction_"></span>
+        <span style="text-decoration: underline; font-weight: bold" data-i18n="_verificationInstruction2_"></span>
+        <span data-i18n="_verificationInstruction3_"></span><br>
+        <span data-i18n="_verificationInstructionsAppEnd_"></span>
+        <span style="text-decoration: underline; font-weight: bold" data-i18n="_verificationInstructionsAppEnd2_"></span>.
     </div>
-
-    <span data-i18n="_verificationInstructionsApp_"></span>
-
-    <span data-i18n="_verificationInstructionsAppEnd_"></span><br>
-
 </div>

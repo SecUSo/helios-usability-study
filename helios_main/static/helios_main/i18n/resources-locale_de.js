@@ -411,11 +411,6 @@
         "description": "Button to proceed to the next step"
     },
     {
-        "key"        : "_encryptInstruction3_",
-        "value"      : "",
-        "description": "Button to proceed to the next step"
-    },
-    {
         "key"        : "_proceedButton_",
         "value"      : "Stimme verschlüsseln",
         "description": "Button to proceed to the next step"

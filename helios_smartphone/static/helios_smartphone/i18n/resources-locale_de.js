@@ -106,17 +106,12 @@
     },
     {
         "key"        : "_encryptInstruction_",
-        "value"      : "Um Ihre Stimme zu ",
+        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_encryptInstruction2_",
-        "value"      : "verschlüsseln ",
-        "description": "Button to proceed to the next step"
-    },
-    {
-        "key"        : "_encryptInstruction3_",
-        "value"      : "scrollen Sie bis zum Ende der Seite.",
+        "value"      : "verschlüsseln",
         "description": "Button to proceed to the next step"
     },
     {
@@ -415,13 +410,23 @@
         "description": ""
     },
     {
-        "key"        : "_verificationInstruction_",
-        "value"      : "Wählen Sie \"Stimmzettel-Code scannen\" in der App und scannen sie den QR-Code.",
+        "key"        : "_reviewBallotVerificationExplanation_",
+        "value"      : "Um die Überprüfung durchzuführen, scannen Sie den angezeigten QR-Code mit der App \"Bundestagswahlüberprüfung\" und wählen Sie anschließend \"Überprüfen\" (unterer mittlerer Button). Die Überprüfung können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
         "description": ""
     },
     {
-        "key"        : "_verificationInstructionsApp_",
-        "value"      : "Vergleichen Sie die angezeigte Partei mit der, die Sie angekreuzt haben und wählen Sie die passende Option in der App.",
+        "key"        : "_verificationInstruction_",
+        "value"      : "Falls die App anzeigt, dass Sie den falschen QR-Code gescannt haben, schließen Sie dieses Tab, wählen die Partei erneut und scannen den ",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstruction2_",
+        "value"      : "Prüf-Code",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstruction3_",
+        "value"      : " auf der Übersichtsseite.",
         "description": ""
     },
     {
@@ -436,7 +441,12 @@
     },
     {
         "key"        : "_verificationInstructionsAppEnd_",
-        "value"      : "Sie können dieses Fenster nun schließen.",
+        "value"      : "Sie können dieses Tab nun ",
+        "description": ""
+    },
+    {
+        "key"        : "_verificationInstructionsAppEnd2_",
+        "value"      : "schließen",
         "description": ""
     },
     {

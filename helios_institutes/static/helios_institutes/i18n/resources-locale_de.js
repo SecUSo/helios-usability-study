@@ -151,17 +151,12 @@
     },
     {
         "key"        : "_encryptInstruction_",
-        "value"      : "Um Ihre Stimme zu ",
+        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_encryptInstruction2_",
-        "value"      : "verschlüsseln ",
-        "description": "Button to proceed to the next step"
-    },
-    {
-        "key"        : "_encryptInstruction3_",
-        "value"      : "scrollen Sie bis zum Ende der Seite.",
+        "value"      : "verschlüsseln",
         "description": "Button to proceed to the next step"
     },
     {
