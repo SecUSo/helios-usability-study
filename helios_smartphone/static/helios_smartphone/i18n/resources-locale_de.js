@@ -400,18 +400,38 @@
         "description": ""
     },
     {
-        "key"        : "_firstMoreInfo_",
-        "value"      : "Wählen Sie Ihre bevorzugte Partei.",
+        "key"        : "_instructionsInfo_",
+        "value"      : "Bitte lesen Sie die folgenden Hinweise sehr aufmerksam. Sie werden auf den folgenden Seiten ebenfalls Hinweise und Instruktionen erhalten, bitte lesen Sie auch diese sehr aufmerksam.",
+        "description": ""
+    },
+    {
+        "key"        : "_firstInfo_",
+        "value"      : "Wählen",
         "description": "More info below select description"
     },
     {
-        "key"        : "_secondMoreInfo_",
-        "value"      : "Verschlüsseln Sie Ihre Stimme um das Wahlgeheimnis zu gewährleisten. Sie können ebenfalls überprüfen, ob eine Stimme richtig verschlüsselt wurde.",
+        "key"        : "_firstMoreInfo_",
+        "value"      : " Sie Ihre bevorzugte Partei.",
+        "description": "More info below select description"
+    },
+    {
+        "key"        : "_secondInfo_",
+        "value"      : "Verschlüsseln",
         "description": "More info below review description"
     },
     {
+        "key"        : "_secondMoreInfo_",
+        "value"      : " Sie Ihre Stimme um das Wahlgeheimnis zu gewährleisten. Sie können ebenfalls überprüfen, ob eine Stimme richtig verschlüsselt wurde.",
+        "description": "More info below review description"
+    },
+    {
+        "key"        : "_thirdInfo_",
+        "value"      : "Geben",
+        "description": "More info below submit description"
+    },
+    {
         "key"        : "_thirdMoreInfo_",
-        "value"      : "Geben Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
+        "value"      : " Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
         "description": "More info below submit description"
     },
     {
