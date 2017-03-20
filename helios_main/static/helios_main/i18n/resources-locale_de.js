@@ -411,7 +411,7 @@
     },
     {
         "key"        : "_verifyStart_",
-        "value"      : "Überprüfung starten",
+        "value"      : "Überprüfung",
         "description": ""
     },
     {

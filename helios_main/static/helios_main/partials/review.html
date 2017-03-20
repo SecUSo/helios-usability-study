@@ -2,40 +2,28 @@
 
 <div class="content_box">
 
-    <div class="audit_box">
 
-        <a style="float: left; text-decoration: underline; font-weight: bold; cursor: pointer" data-i18n="_auditButton_"
-           ng-click="auditButton()"></a>&nbsp;
-        <span data-i18n="_auditButtonLabel_"></span>
-        <br>
+    <p style="margin-top: 0; " data-i18n="_reviewBallotDescription_"></p>
 
-        <div ng-show="auditClick">
-
-            <div data-i18n="_auditMoreInfoOne_"></div>
-
-            <button style="text-align: center; width: 100%; margin-top: 1em;" data-i18n="_verifyButton_"
-                    ng-click="verifyButton()"></button>
-        </div>
+    <center>
+    <div class="qr_box">
+        <div class="check_code"><p data-i18n="_reviewBallotCheckCodeHeading_"></p>
+            <p
+                    style="font-weight: bold"> {{ ballot_tracker }}</p></div>
 
     </div>
+</center>
+    <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
 
-    <div id="review_box">
+    <p style="margin-top: 0" data-i18n="_reviewBallotVerificationExplanation_"></p>
 
-        <p style="margin-top: 0; " data-i18n="_reviewBallotDescription_"></p>
-        <div style="text-align: center" class="qr_box">
-            <div class="check_code"><p style="margin: 0.3em" data-i18n="_reviewBallotCheckCodeHeading_"></p>
-                <p style="font-weight: bold; margin: 0.3em"> {{ ballot_tracker }}</p>
-            </div>
-        </div>
 
-        <p data-i18n="_reviewBallotCheckCodeExplanation_"></p>
+    <div style="text-align: center">
 
-        <p style="margin-top: 0" data-i18n="_reviewBallotVerificationExplanation_"></p>
-
-    </div>
-
-    <div style="margin-top: 2em;">
         <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+
+        <button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>
+
         <button style="float: right;" data-i18n="_submitVoteButton_" ng-click="submitVoteButton()"></button>
     </div>
 </div>

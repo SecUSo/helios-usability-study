@@ -65,12 +65,11 @@ hr {
 }
 
 .qr_box {
-    display: inline-block;
+    margin: auto;
     border: 1px solid #393f46;
     padding: 0.3em;
     border-radius: 5px;
-    width: 260px;
-    margin-left: -130px;
+    max-width: 700px;
 }
 
 .qr_box p {

@@ -85,11 +85,33 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         }
 
         //"Hashing" the encrypted vote. No seriously, this is not a hash.
-        $rootScope.ballot_tracker = btoa(encrypted_vote).toString().substr(0, 43);
+        var temp_tracker = deconfuse(btoa(encrypted_vote).toString().substr(0, 43), dictionaryBase64);
+
+        $rootScope.ballot_tracker = split43In4s(temp_tracker);
         $rootScope.auditData = buildBallot(encrypted_vote);
         console.log($rootScope.auditData);
         console.log(encrypted_vote);
         console.log('Hash in scope ' + $scope.ballot_tracker);
+    }
+
+    var dictionaryBase64 = {"O": 'o', "I": 'i', "l": 'L'};
+    var dictionaryOutside = {"O": '*', "I": '#', "l": '?'};
+
+    function deconfuse(regularBase64Hash, dictionary) {
+        var res = regularBase64Hash.replace(/O/g, dictionary.O);
+        res = res.replace(/I/g, dictionary.I);
+        res = res.replace(/l/g, dictionary.l);
+        return res;
+    }
+
+
+    function split43In4s(hash43Base64) {
+        var res = hash43Base64.substr(0, 4);
+        var separator = "-";
+        for (var i = 1; i < 11; i++) {
+            res += separator + hash43Base64.substr(i * 4, 4);
+        }
+        return res;
     }
 
     //From election to review
@@ -166,7 +188,7 @@ heliosStudyMainApp.controller("electionCtrl", function ($scope, $routeParams, $l
         $rootScope.selected_code = "00";
     };
 
-   $scope.castButton = function () {
+    $scope.castButton = function () {
         if ($scope.userid == 'k5k6j2kfL4' && $scope.userpass == '23kg!k?f%v') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Old: Overall end");
             $location.path('cast/' + "final");
