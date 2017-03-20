@@ -10,6 +10,11 @@
         "description": ""
     },
     {
+        "key"        : "_instructionsInfo_",
+        "value"      : "Bitte lesen Sie die folgenden Hinweise sehr aufmerksam. Sie werden auf den folgenden Seiten ebenfalls Hinweise und Instruktionen erhalten, bitte lesen Sie auch diese sehr aufmerksam.",
+        "description": ""
+    },
+    {
         "key"        : "_firstInfo_",
         "value"      : "Wählen",
         "description": "More info below select description"
