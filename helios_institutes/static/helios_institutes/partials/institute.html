@@ -8,7 +8,7 @@
 
         <tr style="margin: 1em">
             <td>
-                <img ng-src="/static/helios_main/images/osze_logo.png" ng-click="redirectToInstituteOszeButton()"></td>
+                <img ng-src="/static/helios_institutes/images/osze_logo.png" ng-click="redirectToInstituteOszeButton()"></td>
             <td>
                 <span data-i18n="_verifyOSZE_" ng-click="redirectToInstituteOszeButton()"></span>
                 <img ng-src="/static/helios_main/images/info_icon.png"
@@ -16,8 +16,8 @@
                 <br><br>
                 <form ng-submit="redirectToInstituteOszeButton()" target="_blank" method="post"
                       action="//127.0.0.1:8080/verifier_two">
-                    <input name="vote" type="hidden" ng-value="vote">
-                    <input name="tracker" type="hidden" ng-value="ballot_tracker">
+                    <input name="vote" type="hidden" ng-value="audit_vote">
+                    <input name="tracker" type="hidden" ng-value="audit_tracker">
                     <button class="institute_button" type="submit" data-i18n="_verifyStart_"></button>
                 </form>
             </td>
@@ -30,7 +30,7 @@
         <tr style="height: 1em"></tr>
         <tr style="margin: 1em;">
             <td>
-                <img ng-src="/static/helios_main/images/bsi_logo.png" ng-click="redirectToInstituteBsiButton()"></td>
+                <img ng-src="/static/helios_institutes/images/bsi_logo.png" ng-click="redirectToInstituteBsiButton()"></td>
             <td>
                 <span data-i18n="_verifyBSI_" ng-click="redirectToInstituteOszeButton()"></span>
                 <img ng-src="/static/helios_main/images/info_icon.png"
@@ -38,8 +38,8 @@
                 <br><br>
                 <form ng-submit="redirectToInstituteBsiButton()" target="_blank" method="post"
                       action="//127.0.0.1:8080/verifier_one">
-                    <input name="vote" type="hidden" ng-value="vote">
-                    <input name="tracker" type="hidden" ng-value="ballot_tracker">
+                    <input name="vote" type="hidden" ng-value="audit_vote">
+                    <input name="tracker" type="hidden" ng-value="audit_tracker">
                     <button class="institute_button" type="submit" data-i18n="_verifyStart_"></button>
                 </form>
             </td>
