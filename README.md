@@ -1,6 +1,6 @@
-## Helios Userinterface Study
+## Cast-as-intended Verification Userinterface Study
 
-This project is a collection of three different user-interfaces for the remote electronic voting protocol Helios.<br />
+This project is a collection of three different user-interfaces for cast-as-intended verification using the Benaloh Challenge.<br />
 As this solely is the user-interface a component for tallying and administering elections is not included. <br />
 Furthermore encryption is only simulated and thus we do not recomment to use this interface for serious elections as secrecy can be broken easily. 
 
