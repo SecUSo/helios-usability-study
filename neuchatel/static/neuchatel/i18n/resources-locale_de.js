@@ -371,7 +371,7 @@
     },
     {
         "key"        : "_finalizationCodeHeading_",
-        "value"      : "Ihr Finalisierungscode:",
+        "value"      : "Finalisierungscode",
         "description": ""
     },
     {
