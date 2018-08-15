@@ -4,7 +4,7 @@ from django.contrib.auth import login as django_login
 from datetime import datetime
 from django.http import HttpResponse, HttpResponseServerError
 from django.views.decorators.csrf import csrf_exempt
-from helios_usabilitystudy.models import Subject, Timestamp
+from helios_usabilitystudy.models import Subject, Timestamp, Answer
 import json
 
 
@@ -63,6 +63,30 @@ def save_timestamp(request):
     timestamp = Timestamp(subject=subject, timestamp=datetime.fromtimestamp(timestamp_temp / 1000),
                           timestamp_unix=timestamp_temp, type=type_temp)
     timestamp.save()
+
+    return HttpResponse("OK")
+
+
+@csrf_exempt
+def save_answer(request):
+    subject_temp = request.POST['id']
+    sus_one_temp = request.POST['sus_one']
+    sus_two_temp = request.POST['sus_two']
+    sus_three_temp = request.POST['sus_three']
+    sus_four_temp = request.POST['sus_four']
+    sus_five_temp = request.POST['sus_five']
+    sus_six_temp = request.POST['sus_six']
+    sus_seven_temp = request.POST['sus_seven']
+    sus_eight_temp = request.POST['sus_eight']
+    sus_nine_temp = request.POST['sus_nine']
+    sus_ten_temp = request.POST['sus_ten']
+
+    subject = Subject.objects.get(subject_id=subject_temp)
+    answer = Answer(subject=subject, sus_one=sus_one_temp, sus_two=sus_two_temp, sus_three=sus_three_temp, sus_four=sus_four_temp,
+                    sus_five=sus_five_temp, sus_six=sus_six_temp, sus_seven=sus_seven_temp, sus_eight=sus_eight_temp,
+                    sus_nine=sus_nine_temp, sus_ten=sus_ten_temp)
+
+    answer.save()
 
     return HttpResponse("OK")
 

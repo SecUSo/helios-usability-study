@@ -11,6 +11,26 @@ angular.module('BackendService', [])
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },
+            save_answer: function (subject, sus_one, sus_two, sus_three, sus_four, sus_five, sus_six, sus_seven, sus_eight, sus_nine, sus_ten) {
+                return $http({
+                    method: "POST",
+                    url: '/save',
+                    data:
+                    'id=' + subject +
+                    '&sus_one=' + sus_one +
+                    '&sus_two=' + sus_two +
+                    '&sus_three=' + sus_three +
+                    '&sus_four=' + sus_four +
+                    '&sus_five=' + sus_five +
+                    '&sus_six=' + sus_six +
+                    '&sus_seven=' + sus_seven +
+                    '&sus_eight=' + sus_eight +
+                    '&sus_nine=' + sus_nine +
+                    '&sus_ten=' + sus_ten +
+                    '&type=' + type,
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                });
+            },
             save_timestamp: function (subject, timestamp, type) {
                 return $http({
                     method: "POST",

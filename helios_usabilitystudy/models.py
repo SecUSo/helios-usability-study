@@ -22,6 +22,23 @@ class Timestamp(models.Model):
         return 'Subject: ' + str(self.subject)
 
 
+class Answer(models.Model):
+    subject = models.ForeignKey(Subject, on_delete=models.PROTECT)
+    sus_one = models.IntegerField('SUS One')
+    sus_two = models.IntegerField('SUS Two')
+    sus_three = models.IntegerField('SUS Three')
+    sus_four = models.IntegerField('SUS Four')
+    sus_five = models.IntegerField('SUS Five')
+    sus_six = models.IntegerField('SUS Six')
+    sus_seven = models.IntegerField('SUS Seven')
+    sus_eight = models.IntegerField('SUS Eight')
+    sus_nine = models.IntegerField('SUS Nine')
+    sus_ten = models.IntegerField('SUS Ten')
+
+    def __str__(self):
+        return 'Subject: ' + str(self.subject)
+
+
 class Option(models.Model):
     option_code = models.CharField('Option_code', max_length=4, unique=True, primary_key=True)
     option = models.CharField('Option', max_length=50)
