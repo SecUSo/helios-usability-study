@@ -121,7 +121,7 @@ button.vote_button_active {
     border: 3px solid #22505f;
     padding: 0.3em;
     border-radius: 5px;
-    max-width: 800px;
+    max-width: 750px;
 }
 
 .review_box p {
