@@ -115,13 +115,13 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         $location.path('/' + $routeParams['id']);
     }
 
-    //From login to election
+ //From login to election
     $scope.loginButton = function () {
-        if($scope.userid == 'k5k6j2kfL4' && $scope.userpass == '7FCMvqbyK3') {
+        if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
             $location.path('election/' + $routeParams['id']);
         } else {
-            alert("Sie haben Ihren Benutzernamen oder Ihr Passwort falsch eingegeben. Bitte geben Sie es erneut ein.");
+            alert("Falscher Initialisierungscode. Überprüfen Sie den Code auf den Internetwahlunterlagen und versuchen Sie es erneut.");
         }
     };
 
