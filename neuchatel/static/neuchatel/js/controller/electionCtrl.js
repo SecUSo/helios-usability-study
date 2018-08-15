@@ -25,11 +25,36 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         }
     };
 
+    $scope.saveFirstChoice = function (code, choice) {
+
+        if ($rootScope.selected_code_one == code) {
+            $scope.resetFirstChoice();
+        } else {
+            $rootScope.selected_code_one = code;
+            $rootScope.choice_one = choice;
+
+            // ungueltige Stimme
+            if (code == "00") {
+                $rootScope.return_code_one = "53495435";
+            } else {
+                $rootScope.return_code_one = $scope.options_one[code].option_return_code;
+            }
+
+            console.log('First choice is ' + $rootScope.choice_one);
+        }
+    };
+
+    $scope.resetFirstChoice = function () {
+        $rootScope.selected_code_one = null;
+        $rootScope.choice_one = null;
+        $rootScope.return_code_one = null;
+    };
+
     $scope.resetChoice = function () {
         $rootScope.selected_code = null;
         $rootScope.choice = null;
         $rootScope.return_code = null;
-    }
+    };
 
     switch ($location.path().split("/")[1]) {
         case "error":
@@ -146,7 +171,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     //From first to second vote
         $scope.proceedToPartyButton = function () {
         // if no choice is made vote "invalid"
-        if ($rootScope.selected_code == null) {
+        if ($rootScope.selected_code_one == null) {
             $scope.saveChoice('00', 'Ungültige Stimme');
         }
 
@@ -154,12 +179,12 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         $location.path('election/' + $routeParams['id']);
     };
 
-    // to election
+    //To election
     $scope.backToElectionButton= function () {
         $location.path('election/' + $routeParams['id']);
     };
 
-    // Election to first vote
+    //Election to first vote
     $scope.backToFirstVoteButton= function () {
         $location.path('candidate/' + $routeParams['id']);
     };

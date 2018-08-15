@@ -5,10 +5,8 @@
 
     <div class="qr_box">
         <div class="check_code"><p data-i18n="_reviewPlainHeading_"></p>
-            <p style="font-weight: bold">{{ choice }}</p>
-            <!--<qrcode version="11" error-correction-level="H" size="200" data="{{ ballot_tracker }}"></qrcode>-->
-            <!--<br>-->
-            <!--<div style="font-size: 8pt; font-weight: normal; margin: 1em 0;" data-i18n="_qrExplanation_"></div>-->
+            <p style="font-weight: bold">Erststimme: {{ choice_one }}</p>
+            <p style="font-weight: bold">Zweitstimme: {{ choice }}</p>
         </div>
     </div>
 
@@ -23,8 +21,6 @@
     <div style="text-align: center">
 
         <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
-
-        <!--<button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>-->
 
         <button style="float: right;" data-i18n="_encryptVoteButton_" ng-click="encryptVoteButton()"></button>
     </div>

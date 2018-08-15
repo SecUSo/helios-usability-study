@@ -196,7 +196,7 @@
     },
     {
         "key"        : "_reviewPlainHeading_",
-        "value"      : "Ihre Stimme:",
+        "value"      : "Ihre Auswahl:",
         "description": ""
     },
     {
