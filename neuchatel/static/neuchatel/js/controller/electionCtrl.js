@@ -249,4 +249,5 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         Backend.unmanipulate($rootScope.subject);
         $location.path('/' + $routeParams['id']);
     }
+
 });

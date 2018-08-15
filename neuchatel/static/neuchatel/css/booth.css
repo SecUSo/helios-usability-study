@@ -137,3 +137,34 @@ button.vote_button_active {
   outline: none;
   color: #22505f;
 }
+
+
+.init_key {
+  display: block;
+  border: none;
+  padding: 0;
+  width: 37.5ch;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/37ch 2px no-repeat;
+  font: 2ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+
+.init_key:focus {
+  outline: none;
+  color: #22505f;
+}
+
+.year {
+  display: block;
+  border: none;
+  padding: 0;
+  width: 6ch;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
+  font: 2ch droid sans mono, consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+
+.year:focus {
+  outline: none;
+  color: #22505f;
+}
