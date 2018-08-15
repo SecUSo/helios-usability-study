@@ -14,6 +14,7 @@ var neuchatelApp = angular.module(
         when('/:id', {templateUrl: '/static/neuchatel/partials/introduction.html', controller: 'introductionCtrl'}).
         when('/login/:id', {templateUrl: '/static/neuchatel/partials/login.html', controller: 'electionCtrl'}).
         when('/election/:id', {templateUrl: '/static/neuchatel/partials/election.html', controller: 'electionCtrl'}).
+        when('/candidate/:id', {templateUrl: '/static/neuchatel/partials/candidate.html', controller: 'electionCtrl'}).
         when('/review-plain/:id', {templateUrl: '/static/neuchatel/partials/review-plain.html', controller: 'electionCtrl'}).
         when('/review/:id', {templateUrl: '/static/neuchatel/partials/review.html', controller: 'electionCtrl'}).
         when('/verify/:id', {templateUrl: '/static/neuchatel/partials/verify.html', controller: 'electionCtrl'}).

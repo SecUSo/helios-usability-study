@@ -175,6 +175,11 @@
         "description": ""
     },
     {
+        "key"        : "_yonCanSeletectFollow2_",
+        "value"      : " Kandidaten wählen (oder eine ungültige Stimme).",
+        "description": ""
+    },
+    {
         "key"        : "_encryptInstruction_",
         "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
         "description": "Button to proceed to the next step"

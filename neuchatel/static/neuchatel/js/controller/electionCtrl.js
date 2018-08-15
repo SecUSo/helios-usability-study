@@ -81,6 +81,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         console.log($routeParams['id']);
         $scope.experimentData = result;
         $scope.options = result.question_data.options;
+        $scope.options_one = result.question_data.options_one;
     });
 
     // retrieve information, whether to manipulate the vote or not and encrypt afterwards
@@ -117,13 +118,19 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
  //From login to election
     $scope.loginButton = function () {
+            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
+            $location.path('candidate/' + $routeParams['id']);
+    };
+
+    /* TODO: REAL LOGIN: //From login to election
+    $scope.loginButton = function () {
         if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
-            $location.path('election/' + $routeParams['id']);
+            $location.path('candidate/' + $routeParams['id']);
         } else {
             alert("Falscher Initialisierungscode. Überprüfen Sie den Code auf den Internetwahlunterlagen und versuchen Sie es erneut.");
         }
-    };
+    };*/
 
     //From election to review-plain
     $scope.proceedButton = function () {
@@ -132,8 +139,19 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
             $scope.saveChoice('00', 'Ungültige Stimme');
         }
 
-        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): Election end");
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): Second vote end");
         $location.path('review-plain/' + $routeParams['id']);
+    };
+
+    //From first to second vote
+        $scope.proceedToPartyButton = function () {
+        // if no choice is made vote "invalid"
+        if ($rootScope.selected_code == null) {
+            $scope.saveChoice('00', 'Ungültige Stimme');
+        }
+
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): First vote end");
+        $location.path('election/' + $routeParams['id']);
     };
 
     // to election
