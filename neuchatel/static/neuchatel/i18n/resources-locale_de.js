@@ -1,7 +1,7 @@
 [
     {
         "key"        : "_instructionsWizard_",
-        "value"      : "Instruktionen",
+        "value"      : "Willkommen",
         "description": "Action points in the wizard"
     },
     {
@@ -11,7 +11,7 @@
     },
     {
         "key"        : "_selectWizard_",
-        "value"      : "Stimmzettel",
+        "value"      : "Stimme erfassen",
         "description": "Action points in the wizard"
     },
     {
@@ -21,12 +21,17 @@
     },
     {
         "key"        : "_submitWizard_",
-        "value"      : "Stimmabgabe",
+        "value"      : "Versiegeln und übermitteln",
         "description": "Action points in the wizard"
     },
     {
         "key"        : "_verifyWizard_",
-        "value"      : "Verifikation",
+        "value"      : "Überprüfen und einwerfen",
+        "description": "Action points in the wizard"
+    },
+    {
+        "key"        : "_castWizard_",
+        "value"      : "Stimme eingeworfen",
         "description": "Action points in the wizard"
     },
     {
@@ -41,12 +46,12 @@
     },
     {
         "key"        : "_instructionsInfo_",
-        "value"      : "Bitte lesen Sie die folgenden Hinweise sehr aufmerksam. Sie werden auf den folgenden Seiten ebenfalls Hinweise und Instruktionen erhalten, bitte lesen Sie auch diese sehr aufmerksam.",
+        "value"      : "Sie sind dabei, elektronisch abzustimmen.",
         "description": ""
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Für das Abgeben einer Stimme werden Sie die folgenden Schritte durchlaufen:",
+        "value"      : "Sie sind dabei, elektronisch abzustimmen. Bitte legen Sie sich Ihre Internetwahlunterlagen bereit. Ohne Internetwahlunterlagen können Sie nicht an der Abstimmung teilnehmen.",
         "description": "Introduction"
     },
     {
@@ -86,7 +91,7 @@
     },
     {
         "key"        : "_fourthMoreInfo_",
-        "value"      : " Sie mit dem Prüf-Code, ob Ihre Stimme richtig verschlüsselt wurde.",
+        "value"      : " Sie mit dem Prüfcode, ob Ihre Stimme richtig verschlüsselt wurde.",
         "description": "More info below verify description"
     },
     {
@@ -96,7 +101,7 @@
     },
     {
         "key"        : "_fifthMoreInfo_",
-        "value"      : " Sie die Korrektheit des Prüf-Codes mit dem Bestätigungs-Code.",
+        "value"      : " Sie die Korrektheit des Prüfcodes mit dem Bestätigungscode.",
         "description": "More info below verify description"
     },
     {
@@ -106,7 +111,7 @@
     },
     {
         "key"        : "_sixthMoreInfo_",
-        "value"      : " Sie sicher, dass Ihre Stimme korrekt im Wahlsystem aufgenommen wurde, indem Sie den vom System angezeigten Finalisierungs-Code mit dem Finalisierungs-Code in Ihren Internetwahlunterlagen vergleichen.",
+        "value"      : " Sie sicher, dass Ihre Stimme korrekt im Wahlsystem aufgenommen wurde, indem Sie den vom System angezeigten Finalisierungscode mit dem Finalisierungscode in Ihren Internetwahlunterlagen vergleichen.",
         "description": "More info below finalize description"
     },
     {
@@ -126,27 +131,27 @@
     },
     {
         "key"        : "_loginMessage_",
-        "value"      : "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort ein, um sich am Wahlsystem anzumelden.",
+        "value"      : "Stimmabgabe starten",
         "description": ""
     },
     {
         "key"        : "_loginMessageTwo_",
-        "value"      : "Den Benutzernamen und das Passwort entnehmen Sie der ersten Seite Ihrer Internetwahlunterlagen. Klicken Sie anschließend auf ",
+        "value"      : "Geben Sie Ihren Initialisierungscode und Ihr Geburtsjahr ein. Der Initialisierungscode befindet sich auf Ihren Internetwahlunterlagen, die Sie auf dem Postweg erhalten haben. Drücken Sie anschließend auf ",
         "description": ""
     },
     {
         "key"        : "_loginMessageThree_",
-        "value"      : ", um sich anzumelden.",
+        "value"      : " und haben Sie bitte einen Moment Geduld. Bitte beachten Sie, dass während des Prozesses der Stimmabgabe die Webseite nicht neu geladen werden darf.",
         "description": ""
     },
     {
         "key"        : "_loginUsername_",
-        "value"      : "Benutzername",
+        "value"      : "Initialisierungscode",
         "description": ""
     },
     {
         "key"        : "_loginPassword_",
-        "value"      : "Passwort",
+        "value"      : "Geburtsjahr",
         "description": ""
     },
     {
@@ -156,7 +161,7 @@
     },
     {
         "key"        : "_loginButton_",
-        "value"      : "Anmelden und fortfahren",
+        "value"      : "Starten",
         "description": "Button to login the subject"
     },
     {
@@ -171,7 +176,7 @@
     },
     {
         "key"        : "_encryptInstruction_",
-        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Auswahl zu ",
+        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
         "description": "Button to proceed to the next step"
     },
     {
@@ -181,17 +186,17 @@
     },
     {
         "key"        : "_proceedButton_",
-        "value"      : "Auswahl erfassen",
+        "value"      : "Weiter",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_reviewPlainHeading_",
-        "value"      : "Sie haben die folgende Auswahl getroffen:",
+        "value"      : "Ihre Stimme:",
         "description": ""
     },
     {
         "key"        : "_reviewPlainExplanation_",
-        "value"      : "Kontrollieren Sie Ihre Auswahl, bevor Sie Ihre Stimme verschlüsseln.",
+        "value"      : "Kontrollieren Sie Ihre Stimme, bevor Sie sie versiegeln und übermitteln.",
         "description": ""
     },
     {
@@ -201,22 +206,22 @@
     },
     {
         "key"        : "_reviewPlainExplanation1_",
-        "value"      : " gelangen Sie zurück zum Stimmzettel und können Ihre Auswahl ändern. Mit einem Klick auf ",
+        "value"      : " gelangen Sie zurück zum Stimmzettel und können Ihre Stimme ändern. Mit einem Klick auf ",
         "description": ""
     },
     {
         "key"        : "_reviewPlainExplanation2_",
-        "value"      : " wird Ihre Stimme verschlüsselt und Sie gelangen zum nächsten Schritt.",
+        "value"      : " wird Ihre Stimme versiegelt und Sie gelangen zum nächsten Schritt.",
         "description": ""
     },
     {
         "key"        : "_editResponsesButton_",
-        "value"      : "Auswahl ändern",
+        "value"      : "Stimme ändern",
         "description": ""
     },
     {
         "key"        : "_encryptVoteButton_",
-        "value"      : "Stimme verschlüsseln",
+        "value"      : "Versiegeln und übermitteln",
         "description": "Submit vote button on review page"
     },
     {
@@ -261,7 +266,7 @@
     },
     {
         "key"        : "_returnCodeHeading_",
-        "value"      : "Ihr Prüf-Code lautet:",
+        "value"      : "Ihr Prüfcode:",
         "description": "Heading for return code display"
     },
     {
@@ -271,17 +276,17 @@
     },
     {
         "key"        : "_returnCodeExplanation0_",
-        "value"      : " Sie den hier abgebildeten Prüf-Code mit dem Prüf-Code in Ihren Internetwahlunterlagen.",
+        "value"      : " Sie den hier abgebildeten Prüfcode mit dem Prüfcode in Ihren Internetwahlunterlagen, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
         "description": "Return-code instructions 0"
     },
     {
         "key"        : "_returnCodeExplanation1_",
-        "value"      : "Sollte der Prüf-Code nicht mit dem Prüf-Code, der in Ihren Internetwahlunterlagen neben der von Ihnen gewählte Partei steht, übereinstimmen, wählen Sie ",
+        "value"      : "Sollte der Prüfcode nicht mit dem Prüfcode, der in Ihren Internetwahlunterlagen neben der von Ihnen gewählten Partei steht, übereinstimmen, wählen Sie ",
         "description": "Return-code instructions 1"
     },
     {
         "key"        : "_returnCodeExplanation2_",
-        "value"      : "Falls beide Prüf-Codes identisch sind, bestätigen Sie dies durch einen Klick auf ",
+        "value"      : "Falls beide Prüfcodes identisch sind, bestätigen Sie dies durch einen Klick auf ",
         "description": "Return-code instructions 2"
     },
     {
@@ -296,32 +301,32 @@
     },
     {
         "key"        : "_verificationError_",
-        "value"      : "Die Prüf-Codes stimmen nicht überein. Ihr Wahlgerät ist nicht vertrauenswürdig. Unterbrechen Sie den Vorgang und kontaktieren Sie den Versuchsleiter.",
+        "value"      : "Die Prüfcodes stimmen nicht überein. Ihr Wahlgerät ist nicht vertrauenswürdig. Unterbrechen Sie den Vorgang und kontaktieren Sie den Versuchsleiter.",
         "description": ""
     },
     {
         "key"        : "_confirmReturnButton_",
-        "value"      : "Bestätigen",
+        "value"      : "Stimme einwerfen",
         "description": "Confirm Return-Code Error Button"
     },
     {
         "key"        : "_confirmationCode_",
-        "value"      : "Bestätigungs-Code",
+        "value"      : "Bestätigungscode",
         "description": "Confirmation-Code field"
     },
     {
         "key"        : "_confirmationMessage_",
-        "value"      : "Bitte bestätigen Sie die Korrektheit des Prüf-Codes durch die Eingabe des Bestätigungs-Codes.",
+        "value"      : "Stimmen die generierten Prüfcodes mit den Codes auf Ihrem Stimmrechtsausweis überein? Falls ja, geben Sie unten Ihren Bestätigungscode ein und werfen Sie Ihre Stimme in die elektronische Urne ein.",
         "description": "Confirmation-Code description"
     },
     {
         "key"        : "_confirmationMessage1_",
-        "value"      : "Den Bestätigungs-Code finden Sie in Ihren Internetwahlunterlagen.",
+        "value"      : "Den Bestätigungscode finden Sie in Ihren Internetwahlunterlagen.",
         "description": "Confirmation-Code description"
     },
     {
         "key"        : "_confirmationMessage2_",
-        "value"      : "Geben Sie den Bestätigungs-Code im folgenden Feld ein und senden Sie diesen durch einen Klick auf ",
+        "value"      : "Geben Sie den Bestätigungscode im folgenden Feld ein und senden Sie diesen durch einen Klick auf ",
         "description": "Confirmation-Code description"
     },
     {
@@ -341,7 +346,7 @@
     },
     {
         "key"        : "_confirmVoteButton_",
-        "value"      : "Bestätigungs-Code abschicken",
+        "value"      : "Bestätigungscode abschicken",
         "description": "Confirm vote Button"
     },
     {
@@ -356,17 +361,17 @@
     },
     {
         "key"        : "_finalizationCodeHeading_",
-        "value"      : "Ihr Finalisierungs-Code lautet:",
+        "value"      : "Ihr Finalisierungscode:",
         "description": ""
     },
     {
         "key"        : "_finalizationCodeExplanation0_",
-        "value"      : "Prüfen Sie, dass der hier angezeigte Finalisierungs-Code mit dem Finalisierungs-Code in Ihren Internetwahlunterlagen übereinstimmt.",
+        "value"      : "Prüfen Sie, dass der hier angezeigte Finalisierungscode mit dem Finalisierungscode in Ihren Internetwahlunterlagen übereinstimmt.",
         "description": ""
     },
     {
         "key"        : "_finalizationCodeExplanation1_",
-        "value"      : " Wenn die Finalisierungs-Codes nicht übereinstimmen, kontaktieren Sie umgehend das Supportteam.",
+        "value"      : " Wenn die Finalisierungscodes nicht übereinstimmen, kontaktieren Sie umgehend das Supportteam.",
         "description": ""
     },
     {
