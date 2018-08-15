@@ -211,7 +211,7 @@
     },
     {
         "key"        : "_reviewPlainExplanation1_",
-        "value"      : " gelangen Sie zurück zum Stimmzettel und können Ihre Stimme ändern. Mit einem Klick auf ",
+        "value"      : " gelangen Sie zurück zum Stimmzettel und können Ihre Auswahl ändern. Mit einem Klick auf ",
         "description": ""
     },
     {
@@ -221,7 +221,7 @@
     },
     {
         "key"        : "_editResponsesButton_",
-        "value"      : "Stimme ändern",
+        "value"      : "Auswahl ändern",
         "description": ""
     },
     {

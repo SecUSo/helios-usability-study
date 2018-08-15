@@ -2,21 +2,28 @@
 
 <div class="content_box">
 
+    <p data-i18n="_reviewPlainExplanation_">
 
-    <div class="qr_box">
-        <div class="check_code"><p data-i18n="_reviewPlainHeading_"></p>
-            <p style="font-weight: bold; font-size: 12pt">Erststimme: {{ choice_one }}</p>
-            <p style="font-weight: bold; font-size: 12pt">Zweitstimme: {{ choice }}</p>
+    <div class="review_box">
+        <div class="review">
+            <p class="ballot_question">Erststimme: {{ experimentData.question_data.question_one }}</p>
+            <span>Ihre Auswahl: </span><span style="font-weight: bold;">{{ choice_one }}</span>
+
         </div>
     </div>
 
-    <p><span data-i18n="_reviewPlainExplanation_"></span></p>
+    <div class="review_box">
+        <div class="review">
+            <p class="ballot_question">Zweitstimme: {{ experimentData.question_data.question }}</p>
+            <span>Ihre Auswahl: </span><span style="font-weight: bold;">{{ choice }}</span>
+        </div>
+    </div>
 
     <p><span data-i18n="_reviewPlainExplanation0_"></span><span style="font-weight: bold"
                                                                 data-i18n="_editResponsesButton_"></span><span
             data-i18n="_reviewPlainExplanation1_"></span><span style="font-weight: bold"
-                                                               data-i18n="_encryptVoteButton_"></span><span
-            data-i18n="_reviewPlainExplanation2_"></span></p>
+                                                               data-i18n="_encryptVoteButton_"></span><!--<span
+            data-i18n="_reviewPlainExplanation2_"></span>--></p>
 
     <div style="text-align: center">
 
