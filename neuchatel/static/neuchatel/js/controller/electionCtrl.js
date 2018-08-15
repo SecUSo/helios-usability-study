@@ -207,6 +207,11 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         }, 500);
     };
 
+    //
+    $scope.finishButton = function() {
+        $location.path('sus/' + $routeParams['id']);
+    };
+
     //From review to return code verification
     $scope.submitVoteButton = function () {
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(4): Verify start");
@@ -241,13 +246,10 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
     //From confirmation code input to finalization code verification
     $scope.confirmVoteButton = function () {
-        // if($scope.confcode0 == 'xArc' && $scope.confcode1 == 'uTvK' && $scope.confcode2 == 'MyfY' && $scope.confcode3 == 'mvPN' && $scope.confcode4 == 'na') {
-        //     Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
-        //     $location.path('final/' + $routeParams['id']);
-        // } else {
-        if ($scope.confcode == 'xArcuTvKMyfYmvPNnaEr') {
-            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
-            $location.path('final/' + $routeParams['id']);
+        if($scope.confcode0 === 'xArc' && $scope.confcode1 === 'uTvK' && $scope.confcode2 === 'MyfY'
+            && $scope.confcode3 === 'mvPN' && $scope.confcode4 === 'na') {
+             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
+             $location.path('final/' + $routeParams['id']);
         } else {
             alert("Sie haben Ihren Bestätigungscode falsch eingegeben. Bitte versuchen Sie es erneut.");
         }
@@ -272,5 +274,9 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     //el.addEventListener('keyup', function () {
     //    this.value = $scope.space(this.value, 4);
     //});
+
+    $scope.testChange = function () {
+        console.log('Hallo!');
+    }
 
 });

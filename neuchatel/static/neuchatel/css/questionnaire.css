@@ -1,0 +1,8 @@
+.question_box {
+    margin: 2em auto 3em auto;
+    border: 3px solid #22505f;
+    padding: 2em;
+    border-radius: 5px;
+    max-width: 700px;
+    text-align: left;
+}

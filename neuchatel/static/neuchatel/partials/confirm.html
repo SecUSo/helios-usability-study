@@ -16,18 +16,17 @@
         <input class="confirmation_key" maxlength="20" ng-model="confcode" data-format="4" id="init-code">
 
         <p></p>
-        <move-next>
-        <input name="confirmation_code0" type="text" ng-model="confcode0" class="confirmation_key" size="4"
+
+        <input ng-keyup="testChange()" name="confirmation_code0" type="text" ng-model="confcode0" class="confirmation_key" size="4"
                maxlength="4"> -
-        <input name="confirmation_code1" type="text" ng-model="confcode1" class="confirmation_key" size="4"
+        <input move-next name="confirmation_code1" type="text" ng-model="confcode1" class="confirmation_key" size="4"
+               maxlength="4">
+        <input move-next name="confirmation_code2" type="text" ng-model="confcode2" class="confirmation_key" size="4"
                maxlength="4"> -
-        <input name="confirmation_code2" type="text" ng-model="confcode2" class="confirmation_key" size="4"
-               maxlength="4"> -
-        <input name="confirmation_code3" type="text" ng-model="confcode3" class="confirmation_key" size="4"
+        <input move-next name="confirmation_code3" type="text" ng-model="confcode3" class="confirmation_key" size="4"
                maxlength="4"> -
         <input name="confirmation_code4" type="text" ng-model="confcode4" class="confirmation_key" size="2"
                maxlength="2">
-        </move-next>
         </form>
         </p>
     </div>

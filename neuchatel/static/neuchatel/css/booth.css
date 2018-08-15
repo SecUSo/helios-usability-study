@@ -141,9 +141,11 @@ button.vote_button_active {
 }
 
 .confirmation_key {
-  border: none;
-  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/100% 2px no-repeat;
-  font: 2ch consolas, monospace;
+    border: none;
+    padding: 0;
+  width: 6ch;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
+  font: 2ch droid sans mono, consolas, monospace;
   letter-spacing: 0.5ch;
 }
 

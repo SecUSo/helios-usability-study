@@ -21,6 +21,7 @@ var neuchatelApp = angular.module(
         when('/confirm/:id', {templateUrl: '/static/neuchatel/partials/confirm.html', controller: 'electionCtrl'}).
         when('/final/:id', {templateUrl: '/static/neuchatel/partials/final.html', controller: 'electionCtrl'}).
         when('/cleanup/:id', {templateUrl: '/static/neuchatel/partials/cleanup.html', controller: 'electionCtrl'}).
+        when('/sus/:id', {templateUrl: '/static/neuchatel/partials/sus.html', controller: 'answerCtrl'}).
         otherwise({templateUrl: '/static/neuchatel/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
@@ -49,3 +50,4 @@ neuchatelApp.run(function ($rootScope, $window, $document, localize) {
         $rootScope.language = "de";
      }
 });
+
