@@ -1,0 +1,35 @@
+<div style="background-color: #ededed; height: 32px"></div>
+
+<div id="header" ng-controller="electionCtrl">
+
+    <div style="text-align: left; margin-left: 4em">
+
+        <img ng-src="/static/neuchatel/images/logo_header.png">
+
+        {{ HEADLINE }}
+
+    </div>
+
+
+    <div class="progress" ng-show="show_progress">
+        <table>
+            <tr>
+                <td id="progress_0" ng-class="{true: 'active', false: 'inactive'}[current_step == 0]">
+                    <span data-i18n="_instructionsWizard_"></span></td>
+                <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]">
+                    <span data-i18n="_loginWizard_"></span></td>
+                <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]">
+                    <span data-i18n="_selectWizard_"></span></td>
+                <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]">
+                    <span data-i18n="_submitWizard_"></span></td>
+                <td id="progress_4" ng-class="{true: 'active', false: 'inactive'}[current_step == 4]">
+                    <span data-i18n="_verifyWizard_"></span></td>
+                <td id="progress_5" ng-class="{true: 'active', false: 'inactive'}[current_step == 5]">
+                    <span data-i18n="_confirmWizard_"></span></td>
+                <td id="progress_6" ng-class="{true: 'active', false: 'inactive'}[current_step == 6]"><span
+                        data-i18n="_submitWizard_"></span></td>
+            </tr>
+        </table>
+    </div>
+
+</div>

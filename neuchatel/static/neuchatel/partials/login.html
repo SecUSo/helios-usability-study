@@ -1,0 +1,24 @@
+<div ng-include src="'/static/neuchatel/partials/header.html'"></div>
+
+<div class="content_box">
+
+    <p style="margin-top: 0; font-weight: bold" data-i18n="_loginMessage_"></p>
+    <p><span data-i18n="_loginMessageTwo_"></span><span style="font-weight: bold" data-i18n="_loginButton_"></span><span
+            data-i18n="_loginMessageThree_"></span></p>
+    <div style="text-align: center">
+
+        <form class="login_form" method="post">
+            <span data-i18n="_loginUsername_"></span><br>
+            <input name="id" type="text" ng-model="userid"><br>
+            <span data-i18n="_loginPassword_"></span><br>
+            <input name="password" type="password" ng-model="userpass"><br>
+        </form>
+
+    </div>
+
+    <div style="margin-top: 2em">
+        <button style="float: right;" data-i18n="_loginButton_" ng-click="loginButton()"></button>
+        <button style="float: left;" data-i18n="_introductionButton_" ng-click="backToIntroductionButton()"></button>
+    </div>
+
+</div>

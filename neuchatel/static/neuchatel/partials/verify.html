@@ -1,0 +1,34 @@
+<div ng-include src="'/static/neuchatel/partials/header.html'"></div>
+
+<div class="content_box">
+
+    <!--<h2 style="margin: 0; text-align: center" data-i18n="_verificationHeading_"></h2>-->
+
+    <div class="qr_box" style="text-align: center">
+        <div class="check_code">
+            <p data-i18n="_returnCodeHeading_"></p>
+                <span style="font-weight: bold">{{ return_code }}</span>
+            <!--<div style="font-size: 8pt; font-weight: normal; margin: 1em 0;" data-i18n="_returnCodeExplanation_">-->
+        </div>
+    </div>
+
+    <div style="line-height: 2em; margin-top: 2em">
+        <p><span style="margin-top: 0; font-weight: bold"
+                 data-i18n="_returnCodeExplanation_"></span>
+            <span data-i18n="_returnCodeExplanation0_"></span></p>
+        <span data-i18n="_returnCodeExplanation1_"></span>
+        <span style="margin-top: 0; font-weight: bold"
+              data-i18n="_verificationErrorButton_"></span>
+        <span data-i18n="_returnCodeExplanation2_"></span>
+        <span style="margin-top: 0; font-weight: bold"
+              data-i18n="_confirmReturnButton_"></span>
+        <p/></div>
+
+    <!--{{ choice }} - {{ selected_code }} - {{ return_code }}-->
+
+    <div style="text-align: center">
+        <button style="float: left;" data-i18n="_verificationErrorButton_"
+                ng-click="gotoErrorButton('verify')"></button>
+        <button style="float: right;" data-i18n="_confirmReturnButton_" ng-click="confirmReturnButton()"></button>
+    </div>
+</div>

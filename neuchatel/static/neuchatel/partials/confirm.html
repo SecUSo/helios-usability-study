@@ -1,0 +1,35 @@
+<div ng-include src="'/static/neuchatel/partials/header.html'"></div>
+
+<div class="content_box">
+
+
+    <p style="margin-top: 0; font-weight: bold" data-i18n="_confirmationMessage_"></p>
+    <p data-i18n="_confirmationMessage1_"></p>
+    <p><span data-i18n="_confirmationMessage2_"></span><span style="font-weight: bold"
+                                                             data-i18n="_confirmVoteButton_"></span><span
+            data-i18n="_confirmationMessage3_"></span></p>
+    <div style="text-align: center">
+        <p>
+            <form class="login_form" method="post">
+                <span data-i18n="_confirmationCode_"></span>
+        <p></p>
+        <input name="confirmation_code0" type="text" ng-model="confcode0" placeholder="_ _ _ _" size="3"
+               maxlength="4"> -
+        <input name="confirmation_code1" type="text" ng-model="confcode1" placeholder="_ _ _ _" size="3"
+               maxlength="4"> -
+        <input name="confirmation_code2" type="text" ng-model="confcode2" placeholder="_ _ _ _" size="3"
+               maxlength="4"> -
+        <input name="confirmation_code3" type="text" ng-model="confcode3" placeholder="_ _ _ _" size="3"
+               maxlength="4"> -
+        <input name="confirmation_code4" type="text" ng-model="confcode4" placeholder="_ _" size="1"
+               maxlength="2">
+        </form>
+        </p>
+    </div>
+    <!--<p><span data-i18n="_confirmationMessage3_"></span><span style="font-weight: bold" data-i18n="_confirmationErrorButton_"></span></p>-->
+
+    <div style="text-align: center">
+        <!--<button style="float: left;" data-i18n="_confirmationErrorButton_" ng-click="gotoErrorButton('confirm')"></button>-->
+        <button style="float: right;" data-i18n="_confirmVoteButton_" ng-click="confirmVoteButton()"></button>
+    </div>
+</div>

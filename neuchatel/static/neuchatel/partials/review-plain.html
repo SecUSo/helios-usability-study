@@ -1,0 +1,31 @@
+<div ng-include src="'/static/neuchatel/partials/header.html'"></div>
+
+<div class="content_box">
+
+
+    <div class="qr_box">
+        <div class="check_code"><p data-i18n="_reviewPlainHeading_"></p>
+            <p style="font-weight: bold">{{ choice }}</p>
+            <!--<qrcode version="11" error-correction-level="H" size="200" data="{{ ballot_tracker }}"></qrcode>-->
+            <!--<br>-->
+            <!--<div style="font-size: 8pt; font-weight: normal; margin: 1em 0;" data-i18n="_qrExplanation_"></div>-->
+        </div>
+    </div>
+
+    <p><span data-i18n="_reviewPlainExplanation_"></span></p>
+
+    <p><span data-i18n="_reviewPlainExplanation0_"></span><span style="font-weight: bold"
+                                                                data-i18n="_editResponsesButton_"></span><span
+            data-i18n="_reviewPlainExplanation1_"></span><span style="font-weight: bold"
+                                                               data-i18n="_encryptVoteButton_"></span><span
+            data-i18n="_reviewPlainExplanation2_"></span></p>
+
+    <div style="text-align: center">
+
+        <button style="float: left;" data-i18n="_editResponsesButton_" ng-click="backToElectionButton()"></button>
+
+        <!--<button data-i18n="_verifyButton_" ng-click="verifyButton()"></button>-->
+
+        <button style="float: right;" data-i18n="_encryptVoteButton_" ng-click="encryptVoteButton()"></button>
+    </div>
+</div>

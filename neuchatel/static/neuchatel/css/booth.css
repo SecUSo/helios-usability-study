@@ -1,0 +1,127 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #ededed;
+    color: #393f46;
+    margin: 0;
+}
+
+a {
+    color: #22505f;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.login_form {
+    text-align: left;
+    display: inline-block;
+    border: solid 3px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
+}
+
+button {
+    background-color: #22505f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.login_button {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.content_box {
+    text-align: left;
+    display: inline-block;
+    border: solid 3px #393f46;
+    border-radius: 5px;
+    padding: 1.5em;
+    background-color: white;
+    margin: 1em auto;
+    max-width: 950px;
+}
+
+.audit_box {
+    background-color: lightyellow;
+    border: solid 1px #393f46;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    width: 200px;
+    padding: 1em;
+}
+
+.ballot_number {
+    margin: 1em auto;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d3d3d3;
+    padding: 0;
+}
+
+.booth_heading{
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+.booth_miniheading {
+    font-size: 0.6em;
+}
+
+table.ballot td.ballot {
+    border: 1px solid #A9A9A9;
+    padding: 0.3em;
+}
+
+table.ballot {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+button.vote_button_inactive {
+    background: url("../images/button_inactive.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+button.vote_button_active {
+    background: url("../images/button_active.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.qr_box {
+    margin: 2em auto 3em auto;
+    border: 3px solid #22505f;
+    padding: 0.3em;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+.qr_box p {
+    margin: 0.5em 0;
+}
+
+.check_code {
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.verification_institute {
+    margin: 2em;
+    cursor: pointer;
+}
