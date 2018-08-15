@@ -1,0 +1,25 @@
+<div style="background-color: #ededed; height: 32px"></div>
+
+<div id="header" ng-controller="electionCtrl">
+
+    <div style="text-align: left; margin-left: 4em">
+
+        <img ng-src="/static/neuchatel/images/logo_header.png">
+
+        {{ HEADLINE }}
+
+    </div>
+
+
+    <div class="progress" ng-show="show_progress">
+        <table>
+            <tr>
+                <td id="progress_0" ng-class="{true: 'active', false: 'inactive'}[current_step == 0]">
+                    <span data-i18n="_instructionsWizard_"></span></td>
+                <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]">
+                    <span data-i18n="_loginWizard_"></span></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
