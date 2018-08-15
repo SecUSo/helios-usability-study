@@ -22,12 +22,15 @@ from django.conf import settings
 admin.autodiscover()
 
 urlpatterns = urlpatterns = static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin', admin.site.urls),
     url(r'^login$', views.login, name='login'),
     # url(r'^logout$', views.logout, name='logout'),
-    url(r'^main/', include('helios_main.urls')),
-    url(r'^institute/', include('helios_institutes.urls')),
+    # url(r'^main/', include('helios_main.urls')),
+    url(r'^neuchatel/', include('neuchatel.urls')),
+    # url(r'^institute/', include('helios_institutes.urls')),
     url(r'^smartphone/', include('helios_smartphone.urls')),
     url(r'^save$', views.save_timestamp, name='save_timestamp'),
+    url(r'^unmanipulate$', views.unmanipulate, name='unmanipulate'),
+    url(r'^get_manipulated$', views.get_manipulated, name='get_manipulated'),
     url(r'^.*', views.welcome, name='welcome_DE')
 ]

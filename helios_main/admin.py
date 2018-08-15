@@ -17,6 +17,7 @@ def export_csv(timestamp, request, queryset):
     writer.writerow([
         smart_str(u"Subject"),
         smart_str(u"Timestamp"),
+        smart_str(u"Unix_Timestamp"),
         smart_str(u"Type"),
 
     ])
@@ -24,6 +25,7 @@ def export_csv(timestamp, request, queryset):
         writer.writerow([
             smart_str(obj.subject),
             smart_str(obj.timestamp),
+            smart_str(obj.timestamp_unix),
             smart_str(obj.type),
         ])
     return response
@@ -32,7 +34,7 @@ export_csv.short_description = u"Export CSV"
 
 class MyDurationAdmin(admin.ModelAdmin):
     actions = [export_csv]
-    list_display = ('subject', 'timestamp', 'type')
+    list_display = ('subject', 'timestamp', 'timestamp_unix', 'type')
 
 
 admin.site.register(Timestamp, MyDurationAdmin)

@@ -1,12 +1,12 @@
 [
     {
         "key"        : "_welcomeToElection_",
-        "value"      : "Herzlich Willkommen zur Bundestagswahl 2017",
+        "value"      : "Herzlich Willkommen zur Bundestagswahl 2021",
         "description": ""
     },
     {
         "key"        : "_goodByeElection_",
-        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017",
+        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2021",
         "description": ""
     },
     {
@@ -80,6 +80,11 @@
         "description": "Action points in the wizard"
     },
     {
+        "key"        : "_loginWizard_",
+        "value"      : "Anmeldung",
+        "description": "Action points in the wizard"
+    },
+    {
         "key"        : "_ballotWizard_",
         "value"      : "Stimmzettel",
         "description": "Action points in the wizard"
@@ -106,12 +111,12 @@
     },
     {
         "key"        : "_encryptInstruction_",
-        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
+        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Auswahl zu ",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_encryptInstruction2_",
-        "value"      : "verschlüsseln",
+        "value"      : "erfassen",
         "description": "Button to proceed to the next step"
     },
     {
@@ -145,6 +150,11 @@
         "description": ""
     },
     {
+        "key"        : "_encryptVoteButton_",
+        "value"      : "Stimme verschlüsseln",
+        "description": "Submit vote button on review page"
+    },
+    {
         "key"        : "_reviewBallotDescription_",
         "value"      : "Ihre Stimme wurde verschlüsselt um das Wahlgeheimnis zu bewahren.",
         "description": "First line on review page"
@@ -155,33 +165,43 @@
         "description": ""
     },
     {
-        "key"        : "_reviewBallotCheckCodeExplanation_",
-        "value"      : "Bitte ",
+        "key"        : "_reviewBallotCheckCodeExplanation1-0_",
+        "value"      : "Mit Hilfe des angezeigten Prüf-Codes können Sie ",
         "description": ""
     },
     {
-        "key"        : "_reviewBallotCheckCodeExplanation2_",
-        "value"      : "scannen",
-        "description": ""
-    },
-    {
-        "key"        : "_reviewBallotCheckCodeExplanation3_",
-        "value"      : " Sie sich den angezeigten Prüf-Code.",
-        "description": ""
-    },
-    {
-        "key"        : "_reviewBallotCheckCodeExplanation4_",
-        "value"      : " Mit Hilfe dieses Prüf-Codes können Sie ",
-        "description": ""
-    },
-    {
-        "key"        : "_reviewBallotCheckCodeExplanation5_",
+        "key"        : "_reviewBallotCheckCodeExplanation1-1_",
         "value"      : "überprüfen",
         "description": ""
     },
     {
-        "key"        : "_reviewBallotCheckCodeExplanation6_",
-        "value"      : "ob Ihre Stimme korrekt verschlüsselt wurde. Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
+        "key"        : "_reviewBallotCheckCodeExplanation1-2_",
+        "value"      : "ob Ihre Stimme korrekt verschlüsselt wurde.",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2-0_",
+        "value"      : "Bitte ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2-1_",
+        "value"      : "scannen",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2-2_",
+        "value"      : " Sie diesen Prüf-Code mit der Smartphone-App ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation2-3_",
+        "value"      : "Bundestagswahlüberprüfung",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewBallotCheckCodeExplanation3_",
+        "value"      : "Der verschlüsselte Stimmzettel wird dann ungültig, da es sonst möglich wäre das Wahlgeheimnis zu brechen. Daher können Sie anschließend einen neuen ausfüllen.",
         "description": ""
     },
     {
@@ -275,13 +295,38 @@
         "description": ""
     },
     {
-        "key"        : "_loginButton_",
-        "value"      : "Anmelden",
+        "key"        : "_loginMessage_",
+        "value"      : "Bitte geben Sie Ihren Benutzernamen und Ihr Passwort ein, um sich am Wahlsystem anzumelden.",
         "description": ""
     },
     {
-        "key"        : "_loginMessage_",
-        "value"      : "Sie sind eingeloggt als ",
+        "key"        : "_loginMessageTwo_",
+        "value"      : "Den Benutzernamen und das Passwort entnehmen Sie der ersten Seite Ihrer Internetwahlunterlagen. Klicken Sie anschließend auf ",
+        "description": ""
+    },
+    {
+        "key"        : "_loginMessageThree_",
+        "value"      : ", um sich anzumelden.",
+        "description": ""
+    },
+    {
+        "key"        : "_loginUsername_",
+        "value"      : "Benutzername",
+        "description": ""
+    },
+    {
+        "key"        : "_loginPassword_",
+        "value"      : "Passwort",
+        "description": ""
+    },
+    {
+        "key"        : "_introductionButton_",
+        "value"      : "Zurück",
+        "description": "Button to go back to the instructions"
+    },
+    {
+        "key"        : "_loginButton_",
+        "value"      : "Anmelden und fortfahren",
         "description": ""
     },
     {
@@ -376,8 +421,33 @@
     },
     {
         "key"        : "_proceedButton_",
-        "value"      : "Stimme verschlüsseln",
+        "value"      : "Auswahl erfassen",
         "description": "Button to proceed to the next step"
+    },
+    {
+        "key"        : "_reviewPlainHeading_",
+        "value"      : "Sie haben die folgende Auswahl getroffen:",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewPlainExplanation_",
+        "value"      : "Kontrollieren Sie Ihre Auswahl, bevor Sie Ihre Stimme verschlüsseln.",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewPlainExplanation0_",
+        "value"      : "Mit einen Klick auf ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewPlainExplanation1_",
+        "value"      : " gelangen Sie zurück zum Stimmzettel und können Ihre Auswahl ändern. Mit einem Klick auf ",
+        "description": ""
+    },
+    {
+        "key"        : "_reviewPlainExplanation2_",
+        "value"      : " wird Ihre Stimme verschlüsselt und Sie gelangen zum nächsten Schritt.",
+        "description": ""
     },
     {
         "key"        : "_startButton_",
@@ -410,11 +480,6 @@
         "description": ""
     },
     {
-        "key"        : "_reviewBallotVerificationExplanation_",
-        "value"      : "Um die Überprüfung durchzuführen, scannen Sie den angezeigten QR-Code mit der App \"Bundestagswahlüberprüfung\" und wählen Sie anschließend \"Überprüfen\" (unterer mittlerer Button). Die Überprüfung können Sie so lange wiederholen bis sie überzeugt sind, dass die Wahlwebseite korrekt funktioniert.",
-        "description": ""
-    },
-    {
         "key"        : "_verificationInstruction_",
         "value"      : "Falls die App anzeigt, dass Sie den falschen QR-Code gescannt haben, schließen Sie dieses Tab, wählen die Partei erneut und scannen den ",
         "description": ""
@@ -441,12 +506,7 @@
     },
     {
         "key"        : "_verificationInstructionsAppEnd_",
-        "value"      : "Sie können dieses Tab nun ",
-        "description": ""
-    },
-    {
-        "key"        : "_verificationInstructionsAppEnd2_",
-        "value"      : "schließen",
+        "value"      : "Sie können dieses Tab nun schließen.",
         "description": ""
     },
     {
@@ -456,33 +516,43 @@
     },
     {
         "key"        : "_firstInfo_",
+        "value"      : "Melden",
+        "description": "More info below submit description"
+    },
+    {
+        "key"        : "_firstMoreInfo_",
+        "value"      : " Sie sich durch die Eingabe Ihres Benutzernames und Passworts an.",
+        "description": "More info below submit description"
+    },
+    {
+        "key"        : "_secondInfo_",
         "value"      : "Wählen",
         "description": "More info below select description"
     },
     {
-        "key"        : "_firstMoreInfo_",
+        "key"        : "_secondMoreInfo_",
         "value"      : " Sie Ihre bevorzugte Partei.",
         "description": "More info below select description"
     },
     {
-        "key"        : "_secondInfo_",
+        "key"        : "_thirdInfo_",
         "value"      : "Verschlüsseln",
         "description": "More info below review description"
     },
     {
-        "key"        : "_secondMoreInfo_",
+        "key"        : "_thirdMoreInfo_",
         "value"      : " Sie Ihre Stimme um das Wahlgeheimnis zu gewährleisten. Sie können ebenfalls überprüfen, ob eine Stimme richtig verschlüsselt wurde.",
         "description": "More info below review description"
     },
     {
-        "key"        : "_thirdInfo_",
+        "key"        : "_fourthInfo_",
         "value"      : "Geben",
-        "description": "More info below submit description"
+        "description": "More info below review description"
     },
     {
-        "key"        : "_thirdMoreInfo_",
-        "value"      : " Sie Ihre Stimme im letzten Schritt durch die Eingabe Ihres Benutzernames und Passworts ab.",
-        "description": "More info below submit description"
+        "key"        : "_fourthMoreInfo_",
+        "value"      : " Sie Ihre Stimme ab.",
+        "description": "More info below review description"
     },
     {
         "key"        : "_introductionFollow_",
@@ -490,13 +560,18 @@
         "description": "At the end of the election, a list of check codes for all tallied votes will be published. If you want to confirm whether your vote has been correctly tallied, you can look up your check code in this list."
     },
     {
-        "key"        : "_introductionStart_",
-        "value"      : "Bitte klicken Sie auf \"Start\" um mit der Wahl zu beginnen.",
+        "key"        : "_introductionStart0_",
+        "value"      : "Bitte klicken Sie auf ",
+        "description": ""
+    },
+    {
+        "key"        : "_introductionStart1_",
+        "value"      : ", um mit der Wahl zu beginnen.",
         "description": ""
     },
     {
         "key"        : "_welcomeToElection_",
-        "value"      : "Herzlich Willkommen zur Bundestagswahl 2017",
+        "value"      : "Herzlich Willkommen zur Bundestagswahl 2021",
         "description": ""
     },
     {

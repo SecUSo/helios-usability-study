@@ -25,7 +25,7 @@ SECRET_KEY = 'sdy+8nc@g1693x=l*kao_gzbnz-4&ho(7af_hl@q1l37vw)sl*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bundestagswahl.de', '127.0.0.1']
+ALLOWED_HOSTS = ['www.bundestagswahl.de', '127.0.0.1']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'helios_usabilitystudy',
     'helios_main',
+    'neuchatel',
     'helios_institutes',
     'helios_smartphone',
     'sslserver',
@@ -126,6 +127,7 @@ STATIC_URL = '/static/'
 
 # STATICFILES_DIRS = [
 #     os.path.join(BASE_DIR, "helios_main/static"),
+#     os.path.join(BASE_DIR, "neuchatel/static"),
 #     os.path.join(BASE_DIR, "helios_institutes/static"),
 #     os.path.join(BASE_DIR, "helios_smartphone/static"),
 # ]

@@ -1,12 +1,12 @@
 [
     {
         "key"        : "_welcomeToElection_",
-        "value"      : "Herzlich Willkommen zur Bundestagswahl 2017",
+        "value"      : "Herzlich Willkommen zur Bundestagswahl 2021",
         "description": ""
     },
     {
         "key"        : "_goodByeElection_",
-        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2017",
+        "value"      : "Vielen Dank für Ihre Teilnahme an der Bundestagswahl 2021",
         "description": ""
     },
     {

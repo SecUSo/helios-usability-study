@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
-from helios_usabilitystudy.models import Question, Option
+from helios_usabilitystudy.models import Question, Option, Subject
+from django.contrib.auth.models import User
 import json
 import os
 
@@ -24,6 +25,7 @@ class Command(BaseCommand):
                 option.option_code = option_data['option_code']
                 option.option = option_data['option']
                 option.option_description = option_data['option_description']
+                option.option_return_code = option_data['option_return_code']
                 option.save()
 
             for question_data in data['question']:
@@ -34,5 +36,15 @@ class Command(BaseCommand):
                 for option_id in question_data['options']:
                     question.options.add(Option.objects.get(pk=option_id))
                 question.save()
+
+            for subject_data in data['subject']:
+                user = User.objects.create_user(username=subject_data['user'], email='', password='experiment')
+                user.save()
+                subject = Subject()
+                subject.user = user
+                subject.subject_id = subject_data['subject_id']
+                subject.experiment_type = subject_data['experiment_type']
+                subject.save()
+
 
         self.stdout.write("Done inserting initial data ...\n")

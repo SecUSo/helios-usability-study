@@ -43,6 +43,5 @@ def save_duration(request):
         subject = Subject.objects.filter(subject_id=request.POST['id']).all()[0]
     except IndexError:
         return HttpResponse('{"Error": "Unknown subject."}', content_type='application/json')
-    timestamp = Timestamp(subject=subject, timestamp=request.POST['time'],
-                          type=request.POST['type'])
+    timestamp = Timestamp(subject=subject, timestamp=request.POST['time'], type=request.POST['type'])
     timestamp.save()
