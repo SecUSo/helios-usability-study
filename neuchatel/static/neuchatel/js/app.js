@@ -24,7 +24,7 @@ var neuchatelApp = angular.module(
         otherwise({templateUrl: '/static/neuchatel/partials/introduction.html', controller: 'introductionCtrl'});
     // use the HTML5 History API
     $locationProvider.html5Mode(true).hashPrefix('!');
-    
+
 }]);
 
 neuchatelApp.run(function ($rootScope, $window, $document, localize) {

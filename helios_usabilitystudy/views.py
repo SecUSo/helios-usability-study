@@ -17,7 +17,7 @@ def login(request):
     print(request.POST)
     username = request.POST['id']
     password = request.POST['password']
-    language = request.POST['language']
+    # language = request.POST['language']
 
     if not username:
         error_id = "Bitte geben Sie eine ID ein."

@@ -45,7 +45,7 @@ button {
     padding: 1.5em;
     background-color: white;
     margin: 1em auto;
-    max-width: 950px;
+    max-width: 850px;
 }
 
 .audit_box {
@@ -88,6 +88,7 @@ table.ballot {
     border-collapse: collapse;
     margin: 1em auto;
 }
+
 
 button.vote_button_inactive {
     background: url("../images/button_inactive.png") no-repeat;
