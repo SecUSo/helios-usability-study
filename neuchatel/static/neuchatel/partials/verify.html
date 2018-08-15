@@ -5,14 +5,12 @@
     <!--<h2 style="margin: 0; text-align: center" data-i18n="_verificationHeading_"></h2>-->
 
     <div class="qr_box" style="text-align: center">
-        <div class="check_code">
-            <p data-i18n="_returnCodeHeading_"></p>
+            <span style="font-size: 14pt; font-weight: bold;" data-i18n="_returnCodeHeading_"></span>
                 <p style="font-weight: bold; font-size: 12pt">Erststimme: {{ return_code }}</p>
                 <p style="font-weight: bold; font-size: 12pt">Zweitstimme: {{ return_code_one }}</p>
-        </div>
     </div>
 
-      <div style="line-height: 2em; margin-top: 2em">
+      <div style="line-height: 2em;">
         <p><span style="margin-top: 0; font-weight: bold"
                  data-i18n="_returnCodeExplanation_"></span>
             <span data-i18n="_returnCodeExplanation0_"></span></p>
@@ -28,8 +26,8 @@
 
       <div style="text-align: center">
         <p>
-            <form class="login_form" method="post">
-                <span data-i18n="_confirmationCode_"></span>
+            <form class="qr_box" method="post">
+                <span style="font-size: 14pt; font-weight: bold;" data-i18n="_confirmationCode_"></span>
          <p></p>
         <input class="confirmation_key" maxlength="20" ng-model="confcode" data-format="4" id="init-code">
 

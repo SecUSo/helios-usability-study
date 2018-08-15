@@ -201,7 +201,7 @@
     },
     {
         "key"        : "_reviewPlainExplanation_",
-        "value"      : "Kontrollieren Sie Ihre Auswahl, bevor Sie sie versiegeln und übermitteln.",
+        "value"      : "Kontrollieren Sie Ihre Auswahl, bevor Sie diese versiegeln und übermitteln",
         "description": ""
     },
     {
@@ -276,7 +276,7 @@
     },
     {
         "key"        : "_returnCodeHeading_",
-        "value"      : "Ihre Prüfcodes:",
+        "value"      : "Prüfcodes",
         "description": "Heading for return code display"
     },
     {
@@ -286,12 +286,12 @@
     },
     {
         "key"        : "_returnCodeExplanation0_",
-        "value"      : " Sie die hier abgebildeten Prüfcoden mit den Prüfcodes in Ihren Internetwahlunterlagen, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
+        "value"      : " Sie die hier angezeigten Prüfcoden mit den Prüfcodes auf Ihrem Stimmrechtsausweis, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
         "description": "Return-code instructions 0"
     },
     {
         "key"        : "_returnCodeExplanation1_",
-        "value"      : "Sollte ein Prüfcode nicht mit dem Prüfcode, der in Ihren Internetwahlunterlagen neben der von Ihnen gewählten Partei steht, übereinstimmen, wählen Sie ",
+        "value"      : "Sollte ein Prüfcode nicht mit dem Prüfcode, der auf Ihrem Stimmrechtsausweis neben der von Ihnen gewählten Partei steht, übereinstimmen, wählen Sie ",
         "description": "Return-code instructions 1"
     },
     {
@@ -331,7 +331,7 @@
     },
     {
         "key"        : "_confirmationMessage1_",
-        "value"      : "Den Bestätigungscode finden Sie in Ihren Internetwahlunterlagen.",
+        "value"      : "Den Bestätigungscode finden Sie auf Ihrem Stimmrechtsausweis.",
         "description": "Confirmation-Code description"
     },
     {
@@ -376,7 +376,7 @@
     },
     {
         "key"        : "_finalizationCodeExplanation0_",
-        "value"      : "Prüfen Sie, dass der hier angezeigte Finalisierungscode mit dem Finalisierungscode in Ihren Internetwahlunterlagen übereinstimmt.",
+        "value"      : "Prüfen Sie, dass der hier angezeigte Finalisierungscode mit dem Finalisierungscode auf Ihrem Stimmrechtsausweis übereinstimmt.",
         "description": ""
     },
     {

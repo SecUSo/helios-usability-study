@@ -122,6 +122,7 @@ button.vote_button_active {
     padding: 0.3em;
     border-radius: 5px;
     max-width: 750px;
+    font-size: 12pt;
 }
 
 .review_box p {
@@ -132,10 +133,6 @@ button.vote_button_active {
     text-align: center;
     font-size: 14pt;
     font-weight: bold;
-}
-
-.review {
-    font-size: 12pt;
 }
 
 .verification_institute {
