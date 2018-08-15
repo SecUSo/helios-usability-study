@@ -14,26 +14,26 @@
     },
     {
       "option_code": "03",
-      "option": "DIE LINKE",
-      "option_description": "DIE LINKE",
+      "option": "GRÜNE",
+      "option_description": "Bündnis 90 / Die Grünen",
       "option_return_code": "9ED7FFA"
     },
     {
       "option_code": "04",
-      "option": "GRÜNE",
-      "option_description": "Bündnis 90 / Die Grünen",
+      "option": "DIE LINKE",
+      "option_description": "DIE LINKE",
       "option_return_code": "74F7AZC"
     },
     {
       "option_code": "05",
-      "option": "FDP",
-      "option_description": "Freie Demokratische Partei",
+      "option": "AFD",
+      "option_description": "Alternative für Deutschland",
       "option_return_code": "AFD73DA"
     },
     {
       "option_code": "06",
-      "option": "AFD",
-      "option_description": "Alternative für Deutschland",
+      "option": "FDP",
+      "option_description": "Freie Demokratische Partei",
       "option_return_code": "RK6QW3N"
     },
     {
@@ -44,81 +44,105 @@
     },
     {
       "option_code": "08",
-      "option": "FREIE WÄHLER",
-      "option_description": "FREIE WÄHLER",
+      "option": "NPD",
+      "option_description": "Nationaldemokratische Partei Deutschlands",
       "option_return_code": "J3X8S7U"
     },
     {
       "option_code": "09",
-      "option": "NPD",
-      "option_description": "Nationaldemokratische Partei Deutschlands",
+      "option": "FREIE WÄHLER",
+      "option_description": "FREIE WÄHLER",
       "option_return_code": "2B63SB6"
     },
     {
       "option_code": "10",
-      "option": "TIERSCHUTZPARTEI",
-      "option_description": "Partei Mensch Umwelt Tierschutz",
+      "option": "DIE PARTEI",
+      "option_description": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative",
       "option_return_code": "ZH7PZE7"
     },
     {
       "option_code": "11",
-      "option": "ÖDP",
-      "option_description": "Ökologisch-Demokratische Partei",
+      "option": "BüSo",
+      "option_description": "Bürgerrechtsbewegung Solidarität",
       "option_return_code": "83MS4WW"
     },
     {
       "option_code": "12",
-      "option": "REP",
-      "option_description": "Die Republikaner",
+      "option": "MLPD",
+      "option_description": "Marxistisch-Leninistische Partei Deutschlands",
       "option_return_code": "TBG22HS"
     },
     {
       "option_code": "13",
-      "option": "DIE PARTEI",
-      "option_description": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative",
+      "option": "BGE",
+      "option_description": "Bündnis Grundeinkommen",
       "option_return_code": "8C928EB"
     },
     {
       "option_code": "14",
-      "option": "PRO DEUTSCHLAND",
-      "option_description": "Bürgerbewegung pro Deutschland",
+      "option": "DKP",
+      "option_description": "Deutsche Kommunistische Partei",
       "option_return_code": "3EA82C8"
     },
     {
       "option_code": "15",
-      "option": "BP",
-      "option_description": "Bayernpartei",
+      "option": "DM",
+      "option_description": "Deutsche Mitte",
       "option_return_code": "Z4GU9SP"
     },
     {
       "option_code": "16",
-      "option": "Volksabstimmung",
-      "option_description": "Ab jetzt … Demokratie durch Volksabstimmung – Politik für die Menschen",
+      "option": "ÖDP",
+      "option_description": "Ökologisch-Demokratische Partei",
       "option_return_code": "4ABHQQ2"
     },
     {
       "option_code": "17",
-      "option": "PDV",
-      "option_description": "Partei der Vernunft",
+      "option": "TIERSCHUTZPARTEI",
+      "option_description": "PARTEI MENSCHE UMWELT TIERSCHUTZ",
       "option_return_code": "5VSJ7RG"
     },
     {
       "option_code": "18",
-      "option": "MLPD",
-      "option_description": "Marxistisch-Leninistische Partei Deutschlands",
+      "option": "V-Partei³",
+      "option_description": "V-Partei³ - Partei für Veränderung, Vegetarier und Veganer",
       "option_return_code": "RJUCAW2"
     },
     {
-      "option_code": "19",
-      "option": "PBC",
-      "option_description": "Partei Bibeltreuer Christen",
-      "option_return_code": "DC2962F"
+      "option_code": "21",
+      "option": "Dr. Mannes, Astrid",
+      "option_description": "CDU - Christlich Demokratische Union Deutschlands",
+      "option_return_code": "CBG22HS"
     },
     {
-      "option_code": "20",
-      "option": "BIG",
-      "option_description": "Bündnis für Innovation und Gerechtigkeit",
-      "option_return_code": "CB55EAE"
+      "option_code": "22",
+      "option": "Sprößler, Christel",
+      "option_description": "SPD - Sozialdemokratische Partei Deutschlands",
+      "option_return_code": "CC928EB"
+    },
+    {
+      "option_code": "23",
+      "option": "Wagner, Daniela",
+      "option_description": "GRÜNE - BÜNDNIS 90/DIE GRÜNEN",
+      "option_return_code": "CEA82C8"
+    },
+    {
+      "option_code": "24",
+      "option": "Friedrichs, Michael",
+      "option_description": "DIE LINKE - DIE LINKE",
+      "option_return_code": "C4GU9SP"
+    },
+    {
+      "option_code": "25",
+      "option": "Karnbach, Frank",
+      "option_description": "AfD - Alternative für Deutschland",
+      "option_return_code": "CABHQQ2"
+    },
+    {
+      "option_code": "26",
+      "option": "Wallhäußer, Nicolas",
+      "option_description": "FDP - Freie Demokratische Partei",
+      "option_return_code": "CVSJ7RG"
     }
   ],
   "question": [
@@ -143,9 +167,19 @@
         "15",
         "16",
         "17",
-        "18",
-        "19",
-        "20"
+        "18"
+      ]
+    },
+    {
+      "question": "Bitte geben Sie eine Stimme für die Wahl eines/einer Wahlkreisabgeordneten ab.",
+      "number_answers": 1,
+      "options": [
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26"
       ]
     }
   ],
