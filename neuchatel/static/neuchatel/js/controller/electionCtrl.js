@@ -85,13 +85,15 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
             $scope.show_progress = true;
             $scope.current_step = 5;
             break;
-        case "final":
-            $scope.show_progress = false;
+       case "final":
+            $scope.show_progress = true;
+            $scope.current_step = 5;
             break;
         default:
             $scope.show_progress = true;
             $scope.current_step = 0;
     }
+
 
     $rootScope.subject = $routeParams['id'];
     console.log("Subject:" + $rootScope.subject);
@@ -192,7 +194,8 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     //From review-plain to review
     $scope.encryptVoteButton = function () {
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(3): Plain review end");
-        $location.path('review/' + $routeParams['id']);
+        //$location.path('review/' + $routeParams['id']);
+        $location.path('verify/' + $routeParams['id']);
         setTimeout(function () {
             encrypt();
         }, 500);
@@ -249,5 +252,19 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         Backend.unmanipulate($rootScope.subject);
         $location.path('/' + $routeParams['id']);
     }
+
+    $scope.space = function (str, after) {
+        after = after || 4;
+        var v = str.replace(/[^\dA-Z]/g, ''),
+            reg = new RegExp(".{" + after + "}", "g");
+        return v.replace(reg, function (a) {
+            return a + ' ';
+        });
+    }
+
+    //var el = document.getElementById('init-code');
+    //el.addEventListener('keyup', function () {
+    //    this.value = $scope.space(this.value, 4);
+    //});
 
 });

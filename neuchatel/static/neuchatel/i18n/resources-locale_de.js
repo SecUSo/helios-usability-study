@@ -51,7 +51,7 @@
     },
     {
         "key"        : "_boothIntroduction_",
-        "value"      : "Sie sind dabei, elektronisch abzustimmen. Bitte legen Sie sich Ihre Internetwahlunterlagen bereit. Ohne Internetwahlunterlagen können Sie nicht an der Abstimmung teilnehmen.",
+        "value"      : "Sie sind dabei, elektronisch abzustimmen. Bitte legen Sie sich Ihre Internetwahlunterlagen, die Sie per Post erhalten haben, bereit. Ohne Internetwahlunterlagen können Sie nicht an der Abstimmung teilnehmen.",
         "description": "Introduction"
     },
     {
@@ -121,7 +121,7 @@
     },
     {
         "key"        : "_introductionStart1_",
-        "value"      : ", um mit der Wahl zu beginnen.",
+        "value"      : ", um mit der Wahlteilnahme zu beginnen.",
         "description": ""
     },
     {
@@ -136,7 +136,7 @@
     },
     {
         "key"        : "_loginMessageTwo_",
-        "value"      : "Geben Sie Ihren Initialisierungscode und Ihr Geburtsjahr ein. Der Initialisierungscode befindet sich auf Ihren Internetwahlunterlagen, die Sie auf dem Postweg erhalten haben. Drücken Sie anschließend auf ",
+        "value"      : "Geben Sie Ihren Initialisierungscode und Ihr Geburtsjahr ein. Der Initialisierungscode befindet auf Ihrem Stimmrechtsausweis. Drücken Sie anschließend auf ",
         "description": ""
     },
     {
