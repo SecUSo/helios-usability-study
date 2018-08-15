@@ -225,6 +225,11 @@
         "description": ""
     },
     {
+        "key"        : "_editFirstVoteButton_",
+        "value"      : "Erststimme ändern",
+        "description": ""
+    },
+    {
         "key"        : "_encryptVoteButton_",
         "value"      : "Versiegeln und übermitteln",
         "description": "Submit vote button on review page"

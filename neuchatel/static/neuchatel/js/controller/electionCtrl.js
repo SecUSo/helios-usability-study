@@ -159,6 +159,11 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         $location.path('election/' + $routeParams['id']);
     };
 
+    // Election to first vote
+    $scope.backToFirstVoteButton= function () {
+        $location.path('candidate/' + $routeParams['id']);
+    };
+
     //From review-plain to review
     $scope.encryptVoteButton = function () {
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(3): Plain review end");
