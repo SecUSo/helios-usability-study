@@ -196,12 +196,12 @@
     },
     {
         "key"        : "_reviewPlainHeading_",
-        "value"      : "Ihre Auswahl:",
+        "value"      : "Kontrollieren Sie Ihre Auswahl",
         "description": ""
     },
     {
         "key"        : "_reviewPlainExplanation_",
-        "value"      : "Kontrollieren Sie Ihre Stimme, bevor Sie sie versiegeln und übermitteln.",
+        "value"      : "Kontrollieren Sie Ihre Auswahl, bevor Sie sie versiegeln und übermitteln.",
         "description": ""
     },
     {
@@ -276,7 +276,7 @@
     },
     {
         "key"        : "_returnCodeHeading_",
-        "value"      : "Ihr Prüfcode:",
+        "value"      : "Ihre Prüfcodes:",
         "description": "Heading for return code display"
     },
     {
@@ -286,17 +286,17 @@
     },
     {
         "key"        : "_returnCodeExplanation0_",
-        "value"      : " Sie den hier abgebildeten Prüfcode mit dem Prüfcode in Ihren Internetwahlunterlagen, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
+        "value"      : " Sie die hier abgebildeten Prüfcoden mit den Prüfcodes in Ihren Internetwahlunterlagen, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
         "description": "Return-code instructions 0"
     },
     {
         "key"        : "_returnCodeExplanation1_",
-        "value"      : "Sollte der Prüfcode nicht mit dem Prüfcode, der in Ihren Internetwahlunterlagen neben der von Ihnen gewählten Partei steht, übereinstimmen, wählen Sie ",
+        "value"      : "Sollte ein Prüfcode nicht mit dem Prüfcode, der in Ihren Internetwahlunterlagen neben der von Ihnen gewählten Partei steht, übereinstimmen, wählen Sie ",
         "description": "Return-code instructions 1"
     },
     {
         "key"        : "_returnCodeExplanation2_",
-        "value"      : "Falls beide Prüfcodes identisch sind, bestätigen Sie dies durch einen Klick auf ",
+        "value"      : "Falls die Prüfcodes korrekt sind, bestätigen Sie dies durch einen Klick auf ",
         "description": "Return-code instructions 2"
     },
     {
