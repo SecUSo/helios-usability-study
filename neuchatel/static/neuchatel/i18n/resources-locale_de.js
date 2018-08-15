@@ -181,12 +181,12 @@
     },
     {
         "key"        : "_encryptInstruction_",
-        "value"      : "Wenn Sie Ihre Wahl getroffen haben, scrollen Sie bis zum Ende der Seite, um Ihre Stimme zu ",
+        "value"      : "Wenn Sie Ihre Auswahl getroffen haben, scrollen Sie bis zum Ende der Seite, und wählen Sie ",
         "description": "Button to proceed to the next step"
     },
     {
         "key"        : "_encryptInstruction2_",
-        "value"      : "erfassen",
+        "value"      : "weiter",
         "description": "Button to proceed to the next step"
     },
     {
@@ -211,12 +211,12 @@
     },
     {
         "key"        : "_reviewPlainExplanation1_",
-        "value"      : " gelangen Sie zurück zum Stimmzettel und können Ihre Auswahl ändern. Mit einem Klick auf ",
+        "value"      : "Wählen Sie ",
         "description": ""
     },
     {
         "key"        : "_reviewPlainExplanation2_",
-        "value"      : " wird Ihre Stimme versiegelt und Sie gelangen zum nächsten Schritt.",
+        "value"      : " um fortzufahren.",
         "description": ""
     },
     {
