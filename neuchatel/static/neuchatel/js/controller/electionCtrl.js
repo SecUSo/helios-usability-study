@@ -67,6 +67,9 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         case "election":
             $scope.show_progress = true;
             $scope.current_step = 2;
+            break;        case "election":
+            $scope.show_progress = true;
+            $scope.current_step = 2;
             break;
         case "candidate":
             $scope.show_progress = true;
