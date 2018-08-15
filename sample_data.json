@@ -12,23 +12,23 @@
     },
     {
       "option_code": "03",
-      "option": "DIE LINKE",
-      "option_description": "DIE LINKE"
-    },
-    {
-      "option_code": "04",
       "option": "GRÜNE",
       "option_description": "Bündnis 90 / Die Grünen"
     },
     {
+      "option_code": "04",
+      "option": "DIE LINKE",
+      "option_description": "DIE LINKE"
+    },
+    {
       "option_code": "05",
-      "option": "FDP",
-      "option_description": "Freie Demokratische Partei"
+      "option": "AFD",
+      "option_description": "Alternative für Deutschland"
     },
     {
       "option_code": "06",
-      "option": "AFD",
-      "option_description": "Alternative für Deutschland"
+      "option": "FDP",
+      "option_description": "Freie Demokratische Partei"
     },
     {
       "option_code": "07",
@@ -37,68 +37,59 @@
     },
     {
       "option_code": "08",
+      "option": "NPD",
+      "option_description": "Nationaldemokratische Partei Deutschlands"
+
+    },
+    {
+      "option_code": "09",
       "option": "FREIE WÄHLER",
       "option_description": "FREIE WÄHLER"
     },
     {
-      "option_code": "09",
-      "option": "NPD",
-      "option_description": "Nationaldemokratische Partei Deutschlands"
-    },
-    {
       "option_code": "10",
-      "option": "TIERSCHUTZPARTEI",
-      "option_description": "Partei Mensch Umwelt Tierschutz"
-    },
-    {
-      "option_code": "11",
-      "option": "ÖDP",
-      "option_description": "Ökologisch-Demokratische Partei"
-    },
-    {
-      "option_code": "12",
-      "option": "REP",
-      "option_description": "Die Republikaner"
-    },
-    {
-      "option_code": "13",
       "option": "DIE PARTEI",
       "option_description": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative"
     },
     {
-      "option_code": "14",
-      "option": "PRO DEUTSCHLAND",
-      "option_description": "Bürgerbewegung pro Deutschland"
+      "option_code": "11",
+      "option": "BüSo",
+      "option_description": "Bürgerrechtsbewegung Solidarität"
     },
     {
-      "option_code": "15",
-      "option": "BP",
-      "option_description": "Bayernpartei"
-    },
-    {
-      "option_code": "16",
-      "option": "Volksabstimmung",
-      "option_description": "Ab jetzt … Demokratie durch Volksabstimmung – Politik für die Menschen"
-    },
-    {
-      "option_code": "17",
-      "option": "PDV",
-      "option_description": "Partei der Vernunft"
-    },
-    {
-      "option_code": "18",
+      "option_code": "12",
       "option": "MLPD",
       "option_description": "Marxistisch-Leninistische Partei Deutschlands"
     },
     {
-      "option_code": "19",
-      "option": "PBC",
-      "option_description": "Partei Bibeltreuer Christen"
+      "option_code": "13",
+      "option": "BGE",
+      "option_description": "Bündnis Grundeinkommen"
     },
     {
-      "option_code": "20",
-      "option": "BIG",
-      "option_description": "Bündnis für Innovation und Gerechtigkeit"
+      "option_code": "14",
+      "option": "DKP",
+      "option_description": "Deutsche Kommunistische Partei"
+    },
+    {
+      "option_code": "15",
+      "option": "DM",
+      "option_description": "Deutsche Mitte"
+    },
+    {
+      "option_code": "16",
+      "option": "ÖDP",
+      "option_description": "Ökologisch-Demokratische Partei"
+    },
+    {
+      "option_code": "17",
+      "option": "TIERSCHUTZPARTEI",
+      "option_description": "PARTEI MENSCHE UMWELT TIERSCHUTZ"
+    },
+    {
+      "option_code": "18",
+      "option": "V-Partei³",
+      "option_description": "V-Partei³ - Partei für Veränderung, Vegetarier und Veganer"
     }
   ],
   "question": [
