@@ -125,3 +125,15 @@ button.vote_button_active {
     margin: 2em;
     cursor: pointer;
 }
+
+.confirmation_key {
+  border: none;
+  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/100% 2px no-repeat;
+  font: 2ch consolas, monospace;
+  letter-spacing: 0.5ch;
+}
+
+.confirmation_key:focus {
+  outline: none;
+  color: #22505f;
+}

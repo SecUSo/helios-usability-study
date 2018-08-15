@@ -141,10 +141,10 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         $location.path('/' + $routeParams['id']);
     }
 
- //From login to election
+    //From login to election
     $scope.loginButton = function () {
-            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
-            $location.path('candidate/' + $routeParams['id']);
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
+        $location.path('candidate/' + $routeParams['id']);
     };
 
     /* TODO: REAL LOGIN: //From login to election
@@ -169,7 +169,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     };
 
     //From first to second vote
-        $scope.proceedToPartyButton = function () {
+    $scope.proceedToPartyButton = function () {
         // if no choice is made vote "invalid"
         if ($rootScope.selected_code_one == null) {
             $scope.saveChoice('00', 'Ungültige Stimme');
@@ -180,12 +180,12 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     };
 
     //To election
-    $scope.backToElectionButton= function () {
+    $scope.backToElectionButton = function () {
         $location.path('election/' + $routeParams['id']);
     };
 
     //Election to first vote
-    $scope.backToFirstVoteButton= function () {
+    $scope.backToFirstVoteButton = function () {
         $location.path('candidate/' + $routeParams['id']);
     };
 
@@ -193,7 +193,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     $scope.encryptVoteButton = function () {
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(3): Plain review end");
         $location.path('review/' + $routeParams['id']);
-        setTimeout(function(){
+        setTimeout(function () {
             encrypt();
         }, 500);
     };
@@ -232,11 +232,15 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
     //From confirmation code input to finalization code verification
     $scope.confirmVoteButton = function () {
-        if($scope.confcode0 == 'xArc' && $scope.confcode1 == 'uTvK' && $scope.confcode2 == 'MyfY' && $scope.confcode3 == 'mvPN' && $scope.confcode4 == 'na') {
+        // if($scope.confcode0 == 'xArc' && $scope.confcode1 == 'uTvK' && $scope.confcode2 == 'MyfY' && $scope.confcode3 == 'mvPN' && $scope.confcode4 == 'na') {
+        //     Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
+        //     $location.path('final/' + $routeParams['id']);
+        // } else {
+        if ($scope.confcode == 'xArcuTvKMyfYmvPNnaEr') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
             $location.path('final/' + $routeParams['id']);
         } else {
-            alert("Sie haben Ihren Confirmation-Code falsch eingegeben. Bitte versuchen Sie es erneut.");
+            alert("Sie haben Ihren Bestätigungscode falsch eingegeben. Bitte versuchen Sie es erneut.");
         }
     };
 
