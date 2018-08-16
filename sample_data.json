@@ -4,145 +4,145 @@
       "option_code": "01",
       "option": "CDU",
       "option_description": "Christlich Demokratische Union Deutschlands",
-      "option_return_code": "AD59F2A"
+      "option_return_code": "AD59"
     },
     {
       "option_code": "02",
       "option": "SPD",
       "option_description": "Sozialdemokratische Partei Deutschlands",
-      "option_return_code": "2DM5DEN"
+      "option_return_code": "2DM5"
     },
     {
       "option_code": "03",
       "option": "GRÜNE",
       "option_description": "Bündnis 90 / Die Grünen",
-      "option_return_code": "9ED7FFA"
+      "option_return_code": "9ED7"
     },
     {
       "option_code": "04",
       "option": "DIE LINKE",
       "option_description": "DIE LINKE",
-      "option_return_code": "74F7AZC"
+      "option_return_code": "74F7"
     },
     {
       "option_code": "05",
       "option": "AFD",
       "option_description": "Alternative für Deutschland",
-      "option_return_code": "AFD73DA"
+      "option_return_code": "AFD7"
     },
     {
       "option_code": "06",
       "option": "FDP",
       "option_description": "Freie Demokratische Partei",
-      "option_return_code": "RK6QW3N"
+      "option_return_code": "RK6Q"
     },
     {
       "option_code": "07",
       "option": "PIRATEN",
       "option_description": "Piratenpartei Deutschland",
-      "option_return_code": "E2M3CM3"
+      "option_return_code": "E2M3"
     },
     {
       "option_code": "08",
       "option": "NPD",
       "option_description": "Nationaldemokratische Partei Deutschlands",
-      "option_return_code": "J3X8S7U"
+      "option_return_code": "J3X8"
     },
     {
       "option_code": "09",
       "option": "FREIE WÄHLER",
       "option_description": "FREIE WÄHLER",
-      "option_return_code": "2B63SB6"
+      "option_return_code": "2B63"
     },
     {
       "option_code": "10",
       "option": "DIE PARTEI",
       "option_description": "Partei für Arbeit, Rechtsstaat, Tierschutz, Elitenförderung und basisdemokratische Initiative",
-      "option_return_code": "ZH7PZE7"
+      "option_return_code": "ZH7P"
     },
     {
       "option_code": "11",
       "option": "BüSo",
       "option_description": "Bürgerrechtsbewegung Solidarität",
-      "option_return_code": "83MS4WW"
+      "option_return_code": "83MS"
     },
     {
       "option_code": "12",
       "option": "MLPD",
       "option_description": "Marxistisch-Leninistische Partei Deutschlands",
-      "option_return_code": "TBG22HS"
+      "option_return_code": "TBG2"
     },
     {
       "option_code": "13",
       "option": "BGE",
       "option_description": "Bündnis Grundeinkommen",
-      "option_return_code": "8C928EB"
+      "option_return_code": "8C92"
     },
     {
       "option_code": "14",
       "option": "DKP",
       "option_description": "Deutsche Kommunistische Partei",
-      "option_return_code": "3EA82C8"
+      "option_return_code": "3EA8"
     },
     {
       "option_code": "15",
       "option": "DM",
       "option_description": "Deutsche Mitte",
-      "option_return_code": "Z4GU9SP"
+      "option_return_code": "Z4GU"
     },
     {
       "option_code": "16",
       "option": "ÖDP",
       "option_description": "Ökologisch-Demokratische Partei",
-      "option_return_code": "4ABHQQ2"
+      "option_return_code": "4ABH"
     },
     {
       "option_code": "17",
       "option": "TIERSCHUTZPARTEI",
       "option_description": "PARTEI MENSCHE UMWELT TIERSCHUTZ",
-      "option_return_code": "5VSJ7RG"
+      "option_return_code": "5VSJ"
     },
     {
       "option_code": "18",
       "option": "V-Partei³",
       "option_description": "V-Partei³ - Partei für Veränderung, Vegetarier und Veganer",
-      "option_return_code": "RJUCAW2"
+      "option_return_code": "RJUC"
     },
     {
       "option_code": "21",
       "option": "Dr. Mannes, Astrid",
       "option_description": "CDU - Christlich Demokratische Union Deutschlands",
-      "option_return_code": "CBG22HS"
+      "option_return_code": "CBG2"
     },
     {
       "option_code": "22",
       "option": "Sprößler, Christel",
       "option_description": "SPD - Sozialdemokratische Partei Deutschlands",
-      "option_return_code": "CC928EB"
+      "option_return_code": "CC92"
     },
     {
       "option_code": "23",
       "option": "Wagner, Daniela",
       "option_description": "GRÜNE - BÜNDNIS 90/DIE GRÜNEN",
-      "option_return_code": "CEA82C8"
+      "option_return_code": "CEA8"
     },
     {
       "option_code": "24",
       "option": "Friedrichs, Michael",
       "option_description": "DIE LINKE - DIE LINKE",
-      "option_return_code": "C4GU9SP"
+      "option_return_code": "C4GU"
     },
     {
       "option_code": "25",
       "option": "Karnbach, Frank",
       "option_description": "AfD - Alternative für Deutschland",
-      "option_return_code": "CABHQQ2"
+      "option_return_code": "CABH"
     },
     {
       "option_code": "26",
       "option": "Wallhäußer, Nicolas",
       "option_description": "FDP - Freie Demokratische Partei",
-      "option_return_code": "CVSJ7RG"
+      "option_return_code": "CVSJ"
     }
   ],
   "question": [

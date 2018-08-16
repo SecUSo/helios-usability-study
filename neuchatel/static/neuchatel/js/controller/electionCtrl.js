@@ -16,7 +16,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
             // ungueltige Stimme
             if (code === "00") {
-                $rootScope.return_code = "4B54423";
+                $rootScope.return_code = "4L23";
             } else {
                 $rootScope.return_code = $scope.options[code].option_return_code;
             }
@@ -35,7 +35,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
             // ungueltige Stimme
             if (code === "00") {
-                $rootScope.return_code_one = "53495435";
+                $rootScope.return_code_one = "GS19";
             } else {
                 $rootScope.return_code_one = $scope.options_one[code].option_return_code;
             }
