@@ -131,9 +131,9 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     // "encrypt" the vote
     function encryptContd(is_manipulated) {
         // Manipulate the chosen option to FDP when SPD is voted for.
-        if (is_manipulated && $rootScope.choice == "SPD") {
+        if (is_manipulated && $rootScope.choice === "SPD") {
             for (var option in $scope.options) {
-                if ($scope.options[option].option == "FDP") {
+                if ($scope.options[option].option === "FDP") {
                     $rootScope.selected_code = option;
                     $rootScope.choice = $scope.options[option].option;
                     $rootScope.return_code = $scope.options[option].option_return_code;
@@ -170,7 +170,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         if ($rootScope.selected_code == null) {
             $scope.saveChoice('00', 'Ungültige Stimme');
         }
-        Backend.save_timestamp($rootScope.subject, end_time, 0, "Neuchatel(2): Second vote end");
+        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): Second vote end");
         $location.path('review-plain/' + $routeParams['id']);
     };
 
