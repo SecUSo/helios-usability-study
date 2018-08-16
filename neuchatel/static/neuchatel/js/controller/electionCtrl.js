@@ -177,8 +177,8 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
 //From login to election
     $scope.loginButton = function () {
-        //if($scope.initCode0 == '2rgi' && $scope.initCode1 == 'ptwg' && $scope.initCode2 == '6zpn'
-        //  && $scope.initCode3 == 'j48h' && $scope.initCode4 == '65de' && $scope.userpass == '1987')
+        //if($scope.initCode0 == 'iu6v' && $scope.initCode1 == 'icf3' && $scope.initCode2 == 'zcxf'
+        //  && $scope.initCode3 == 'w2s8' && $scope.initCode4 == 'gsef' && $scope.userpass == '1987')
         if ($scope.initCode0 == '0000' && $scope.initCode1 == '0000' && $scope.initCode2 == '0000'
             && $scope.initCode3 == '0000' && $scope.initCode4 == '0000' && $scope.userpass == '1987') {
             //if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
