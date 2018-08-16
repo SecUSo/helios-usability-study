@@ -9,29 +9,27 @@
 
         <form class="login_form" method="post">
 
-            <input move-next-on-maxlength name="confirmation_code0" type="text" ng-model="initCode0"
+            <span style="font-weight: bold" data-i18n="_loginUsername_"></span><br>
+            <input move-next-on-maxlength name="initCode0" type="text" ng-model="initCode0"
                    class="confirmation_key" size="4"
                    maxlength="4"> -
-            <input move-next-on-maxlength name="confirmation_code1" type="text" ng-model="initCode1"
+            <input move-next-on-maxlength name="initCode1" type="text" ng-model="initCode1"
                    class="confirmation_key" size="4"
                    maxlength="4"> -
-            <input move-next-on-maxlength name="confirmation_code2" type="text" ng-model="initCode2"
+            <input move-next-on-maxlength name="initCode2" type="text" ng-model="initCode2"
                    class="confirmation_key" size="4"
                    maxlength="4"> -
-            <input move-next-on-maxlength name="confirmation_code3" type="text" ng-model="initCode3"
+            <input move-next-on-maxlength name="initCode3" type="text" ng-model="initCode3"
                    class="confirmation_key" size="4"
                    maxlength="4"> -
-            <input name="confirmation_code4" type="text" ng-model="initCode4" class="confirmation_key" size="4"
+            <input name="initCode4" type="text" ng-model="initCode4" class="confirmation_key" size="4"
                    maxlength="4">
 
-            <span style="font-weight: bold" data-i18n="_loginUsername_"></span><br>
-            <input class="init_key" name="id" type="text" ng-model="userid"><br>
+            <!--<input class="init_key" name="id" type="text" ng-model="userid"><br>-->
             <p></p>
             <span style="font-weight: bold" data-i18n="_loginPassword_"></span><br>
             <input class="year" name="password" type="password" ng-model="userpass" size="4" maxlength="4">
-
-
-            <br>
+            
         </form>
 
     </div>

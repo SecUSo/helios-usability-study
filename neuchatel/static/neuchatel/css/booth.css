@@ -184,3 +184,24 @@ button.vote_button_active {
   outline: none;
   color: #22505f;
 }
+
+img .header_row{
+    background-color: #57585C; /* Same as the parents Background */
+    width: auto;
+    display: inline-block;
+    z-index: 3;
+    padding: 0 20px 0 20px;
+    color: white;
+    position: relative;
+    font-family: calibri;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.line_maker {
+
+}
+
+.line_maker:after {
+
+}
