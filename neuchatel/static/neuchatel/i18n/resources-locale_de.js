@@ -286,7 +286,7 @@
     },
     {
         "key"        : "_returnCodeExplanation0_",
-        "value"      : " Sie die hier angezeigten Prüfcoden mit den Prüfcodes auf Ihrem Stimmrechtsausweis, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
+        "value"      : " Sie die hier angezeigten Prüfcodes mit den Prüfcodes auf Ihrem Stimmrechtsausweis, um zu überprüfen, dass Ihre Stimme korrekt übermittelt wurde.",
         "description": "Return-code instructions 0"
     },
     {
