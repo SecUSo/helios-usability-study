@@ -144,21 +144,6 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
             }
         }
     }*/
-    // "encrypt" the vote
-    /*function encryptContd(is_manipulated) {
-        // Manipulate the chosen option to FDP when SPD is voted for.
-        if (is_manipulated && $rootScope.choice === "SPD") {
-            for (var option in $scope.options) {
-                if ($scope.options[option].option === "FDP") {
-                    $rootScope.selected_code = option;
-                    $rootScope.choice = $scope.options[option].option;
-                    $rootScope.return_code = $scope.options[option].option_return_code;
-                    console.log('Choice modified from SPD to ' + $scope.options[$rootScope.selected_code].option);
-                    break;
-                }
-            }
-        }
-    }*/
 
     // "encrypt" the vote
     function encryptContd(is_manipulated) {
