@@ -19,6 +19,17 @@
                 <td id="progress_1" ng-class="{true: 'active', false: 'inactive'}[current_step == 1]">
                     <span data-i18n="_loginWizard_"></span></td>
             </tr>
+              <tr>
+                <td id="progress_2" ng-class="{true: 'active', false: 'inactive'}[current_step == 2]">
+                    <img class="header_row" style="display: inline-block;" ng-src="/static/neuchatel/images/one_line.png" ng-show="current_step < 1">
+                    <img class="header_row" style="display: inline-block;" ng-src="/static/neuchatel/images/done_line.png" ng-show="current_step > 0">
+                </td>
+
+                <td id="progress_3" ng-class="{true: 'active', false: 'inactive'}[current_step == 3]">
+                    <img class="header_row" ng-src="/static/neuchatel/images/two_line.png" ng-show="current_step < 4">
+                    <img class="header_row" ng-src="/static/neuchatel/images/done_line.png" ng-show="current_step > 3">
+                </td>
+            </tr>
         </table>
     </div>
 
