@@ -34,6 +34,7 @@ class Answer(models.Model):
     sus_eight = models.IntegerField('SUS Eight')
     sus_nine = models.IntegerField('SUS Nine')
     sus_ten = models.IntegerField('SUS Ten')
+    sus_total = models.FloatField('SUS Score', default=0.0)
 
     def __str__(self):
         return 'Subject: ' + str(self.subject)

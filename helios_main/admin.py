@@ -5,6 +5,7 @@ from helios_usabilitystudy.models import Subject
 from helios_usabilitystudy.models import Option
 from helios_usabilitystudy.models import Question
 from helios_usabilitystudy.models import Timestamp
+from helios_usabilitystudy.models import Answer
 import csv
 
 
@@ -41,5 +42,6 @@ admin.site.register(Timestamp, MyDurationAdmin)
 admin.site.register(Option)
 admin.site.register(Question)
 admin.site.register(Subject)
+admin.site.register(Answer)
 
 

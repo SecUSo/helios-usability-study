@@ -11,10 +11,13 @@ angular.module('BackendService', [])
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },
-            save_answer: function (subject, sus_one, sus_two, sus_three, sus_four, sus_five, sus_six, sus_seven, sus_eight, sus_nine, sus_ten) {
+            save_answer: function (subject, sus_one, sus_two, sus_three, sus_four, sus_five, sus_six, sus_seven,
+                                   sus_eight, sus_nine, sus_ten) {
+
+                console.log("Saving SUS in Backend");
                 return $http({
                     method: "POST",
-                    url: '/save',
+                    url: '/sus',
                     data:
                     'id=' + subject +
                     '&sus_one=' + sus_one +
@@ -26,8 +29,7 @@ angular.module('BackendService', [])
                     '&sus_seven=' + sus_seven +
                     '&sus_eight=' + sus_eight +
                     '&sus_nine=' + sus_nine +
-                    '&sus_ten=' + sus_ten +
-                    '&type=' + type,
+                    '&sus_ten=' + sus_ten,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },

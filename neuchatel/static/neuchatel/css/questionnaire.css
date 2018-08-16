@@ -3,6 +3,13 @@
     border: 3px solid #22505f;
     padding: 2em;
     border-radius: 5px;
-    max-width: 700px;
+    max-width: 1000px;
+}
+
+.left-box {
     text-align: left;
+}
+
+td {
+    padding: 1em;
 }

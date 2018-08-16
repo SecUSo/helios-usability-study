@@ -69,25 +69,32 @@ def save_timestamp(request):
 
 @csrf_exempt
 def save_answer(request):
+    if 'id' not in request.POST:
+        return HttpResponse('{"Error": "No ID supplied."}', content_type='application/json', status=400)
+
     subject_temp = request.POST['id']
-    sus_one_temp = request.POST['sus_one']
-    sus_two_temp = request.POST['sus_two']
-    sus_three_temp = request.POST['sus_three']
-    sus_four_temp = request.POST['sus_four']
-    sus_five_temp = request.POST['sus_five']
-    sus_six_temp = request.POST['sus_six']
-    sus_seven_temp = request.POST['sus_seven']
-    sus_eight_temp = request.POST['sus_eight']
-    sus_nine_temp = request.POST['sus_nine']
-    sus_ten_temp = request.POST['sus_ten']
+    sus_one_temp = int(request.POST['sus_one'])
+    sus_two_temp = int(request.POST['sus_two'])
+    sus_three_temp = int(request.POST['sus_three'])
+    sus_four_temp = int(request.POST['sus_four'])
+    sus_five_temp = int(request.POST['sus_five'])
+    sus_six_temp = int(request.POST['sus_six'])
+    sus_seven_temp = int(request.POST['sus_seven'])
+    sus_eight_temp = int(request.POST['sus_eight'])
+    sus_nine_temp = int(request.POST['sus_nine'])
+    sus_ten_temp = int(request.POST['sus_ten'])
+
+    sus_total_temp = 2.5 * ((sus_one_temp - 1) + (5 - sus_two_temp) + (sus_three_temp - 1) + (5 - sus_four_temp) + (
+                sus_five_temp - 1) +
+                            (5 - sus_six_temp) + (sus_seven_temp - 1) + (5 - sus_eight_temp) + (
+                                    sus_nine_temp - 1) + (5 - sus_ten_temp))
 
     subject = Subject.objects.get(subject_id=subject_temp)
-    answer = Answer(subject=subject, sus_one=sus_one_temp, sus_two=sus_two_temp, sus_three=sus_three_temp, sus_four=sus_four_temp,
-                    sus_five=sus_five_temp, sus_six=sus_six_temp, sus_seven=sus_seven_temp, sus_eight=sus_eight_temp,
-                    sus_nine=sus_nine_temp, sus_ten=sus_ten_temp)
+    answer = Answer(subject=subject, sus_one=sus_one_temp, sus_two=sus_two_temp, sus_three=sus_three_temp,
+                    sus_four=sus_four_temp, sus_five=sus_five_temp, sus_six=sus_six_temp, sus_seven=sus_seven_temp,
+                    sus_eight=sus_eight_temp, sus_nine=sus_nine_temp, sus_ten=sus_ten_temp, sus_total=sus_total_temp)
 
     answer.save()
-
     return HttpResponse("OK")
 
 
@@ -109,8 +116,3 @@ def get_manipulated(request):
     subject_temp = request.POST['id']
     subject = Subject.objects.get(subject_id=subject_temp)
     return HttpResponse(json.dumps({'is_manipulated': subject.is_manipulated}), content_type='application/json')
-
-
-@csrf_exempt
-def logout(request):
-    pass
