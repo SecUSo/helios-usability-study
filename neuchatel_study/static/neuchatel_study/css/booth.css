@@ -138,7 +138,7 @@ button.vote_button_active {
 .fin_code {
     font-size: 14pt;
     font-weight: bold;
-    margin-left: 70px;
+    text-align: center;
 }
 
 .init_code_box {
