@@ -1,6 +1,6 @@
 'use strict';
 
-neuchatelApp.directive("moveNextOnMaxlength", function() {
+neuchatelStudyApp.directive("moveNextOnMaxlength", function() {
     return {
         restrict: "A",
         link: function($scope, element) {
