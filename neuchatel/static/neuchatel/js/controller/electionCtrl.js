@@ -151,21 +151,15 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
     //From login to election
     $scope.loginButton = function () {
-        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
-        $location.path('candidate/' + $routeParams['id']);
-    };
-
-    /* TODO: REAL LOGIN: //From login to election
-    $scope.loginButton = function () {
-        if($scope.initCode0 === '2rgi' && $scope.initCode1 === 'ptwg' && $scope.initCode2 === '6zpn'
-            && $scope.initCode3 === 'j48h' && $scope.initCode4 === '65de' && $scope.userpass == '1987')
+        if($scope.initCode0 == '2rgi' && $scope.initCode1 == 'ptwg' && $scope.initCode2 == '6zpn'
+            && $scope.initCode3 == 'j48h' && $scope.initCode4 == '65de' && $scope.userpass == '1987') {
         //if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
             $location.path('candidate/' + $routeParams['id']);
         } else {
-            alert("Falscher Initialisierungscode. Überprüfen Sie den Code auf den Internetwahlunterlagen und versuchen Sie es erneut.");
+            alert("Falscher Initialisierungscode oder falsches Geburtsjahr. Überprüfen Sie den Code auf Ihrem Stimmrechtsausweis und versuchen Sie es erneut.");
         }
-    };*/
+    };
 
     //From election to review-plain
     $scope.proceedButton = function () {
