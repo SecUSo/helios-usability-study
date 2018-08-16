@@ -33,13 +33,14 @@ angular.module('BackendService', [])
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });
             },
-            save_timestamp: function (subject, timestamp, type) {
+            save_timestamp: function (subject, timestamp, duration, type) {
                 return $http({
                     method: "POST",
                     url: '/save',
                     data:
                     'id=' + subject +
                     '&timestamp=' + timestamp +
+                    '&duration=' + duration +
                     '&type=' + type,
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 });

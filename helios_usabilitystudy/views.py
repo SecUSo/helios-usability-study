@@ -56,11 +56,13 @@ def return_experiment(experiment_type, username):
 def save_timestamp(request):
     subject_temp = request.POST['id']
     timestamp_temp = int(request.POST['timestamp'])
+    duration_temp = request.POST['duration']
     type_temp = request.POST['type']
 
     subject = Subject.objects.get(subject_id=subject_temp)
 
     timestamp = Timestamp(subject=subject, timestamp=datetime.fromtimestamp(timestamp_temp / 1000),
+                          duration=duration_temp,
                           timestamp_unix=timestamp_temp, type=type_temp)
     timestamp.save()
 

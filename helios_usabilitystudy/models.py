@@ -15,6 +15,7 @@ class Subject(models.Model):
 class Timestamp(models.Model):
     subject = models.ForeignKey(Subject, on_delete=models.PROTECT)
     timestamp = models.DateTimeField('Timestamp')
+    duration = models.CharField('Duration', max_length=100, default='0')
     timestamp_unix = models.CharField('Unix_Timestamp', max_length=14)
     type = models.CharField('Type', max_length=80)
 

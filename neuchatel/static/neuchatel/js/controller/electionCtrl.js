@@ -151,8 +151,11 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
     //From login to election
     $scope.loginButton = function () {
-        if($scope.initCode0 == '2rgi' && $scope.initCode1 == 'ptwg' && $scope.initCode2 == '6zpn'
-            && $scope.initCode3 == 'j48h' && $scope.initCode4 == '65de' && $scope.userpass == '1987') {
+        //if($scope.initCode0 == '2rgi' && $scope.initCode1 == 'ptwg' && $scope.initCode2 == '6zpn'
+          //  && $scope.initCode3 == 'j48h' && $scope.initCode4 == '65de' && $scope.userpass == '1987')
+        if($scope.initCode0 == '0000' && $scope.initCode1 == '0000' && $scope.initCode2 == '0000'
+            && $scope.initCode3 == '0000' && $scope.initCode4 == '0000' && $scope.userpass == '1987')
+        {
         //if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(1): Election start");
             $location.path('candidate/' + $routeParams['id']);
@@ -167,8 +170,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         if ($rootScope.selected_code == null) {
             $scope.saveChoice('00', 'Ungültige Stimme');
         }
-
-        Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): Second vote end");
+        Backend.save_timestamp($rootScope.subject, end_time, 0, "Neuchatel(2): Second vote end");
         $location.path('review-plain/' + $routeParams['id']);
     };
 
