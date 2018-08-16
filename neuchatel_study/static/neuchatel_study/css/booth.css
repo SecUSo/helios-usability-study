@@ -89,9 +89,26 @@ table.ballot {
     margin: 1em auto;
 }
 
+table.blue td.blue {
+    border: 1px solid  #00b8f1;
+    padding: 0.3em;
+}
+
+table.blue {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
 
 button.vote_button_inactive {
     background: url("../images/button_inactive.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+button.vote_button_inactive_blue {
+    background: url("../images/button_inactive_blue.png") no-repeat;
     width: 50px;
     height: 50px;
     cursor: pointer;
