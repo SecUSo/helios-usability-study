@@ -4,10 +4,13 @@
 
     <!--<h2 style="margin: 0; text-align: center" data-i18n="_verificationHeading_"></h2>-->
 
-    <div class="qr_box" style="text-align: center">
+    <div class="conf_code_box">
+        <img style="float: left; margin-top: 15px; margin-left: 15px;" src="/static/neuchatel/images/diamond_57.png">
+
+        <div style="margin-left: 120px;">
             <span style="font-size: 14pt; font-weight: bold;" data-i18n="_returnCodeHeading_"></span>
                 <p style="font-weight: bold; font-size: 12pt">Erststimme: {{ return_code_one }}</p>
-                <p style="font-weight: bold; font-size: 12pt">Zweitstimme: {{ return_code }}</p>
+                <p style="font-weight: bold; font-size: 12pt">Zweitstimme: {{ return_code }}</p></div>
     </div>
 
       <div style="line-height: 2em;">
@@ -26,8 +29,10 @@
 
       <div style="text-align: center">
         <p>
-            <form class="qr_box" method="post">
-                <span style="font-size: 14pt; font-weight: bold;" data-i18n="_confirmationCode_"></span>
+            <form class="conf_code_box" method="post">
+
+                <img style="float: left; margin-top: 7px; margin-left: 10px;" src="/static/neuchatel/images/pentagon_57.png">
+                <span style="font-size: 14pt; font-weight: bold; margin-left: -50px;" data-i18n="_confirmationCode_"></span>
          <p></p>
 
         <input move-next-on-maxlength name="confirmation_code0" type="text" ng-model="confcode0" class="confirmation_key" size="4"

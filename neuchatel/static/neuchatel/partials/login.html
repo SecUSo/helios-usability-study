@@ -7,8 +7,11 @@
     <p></p>
     <div style="text-align: center">
 
-        <form class="login_form" method="post">
+        <form class="init_code_box" method="post">
 
+            <img style="float: left; padding: 10px;" src="/static/neuchatel/images/diamond_57.png">
+
+            <div style="margin-left: 70px;">
             <span style="font-weight: bold" data-i18n="_loginUsername_"></span><br>
             <input move-next-on-maxlength name="initCode0" type="text" ng-model="initCode0"
                    class="confirmation_key" size="4"
@@ -23,12 +26,12 @@
                    class="confirmation_key" size="4"
                    maxlength="4"> -
             <input name="initCode4" type="text" ng-model="initCode4" class="confirmation_key" size="4"
-                   maxlength="4">
+                   maxlength="4"></div>
 
             <!--<input class="init_key" name="id" type="text" ng-model="userid"><br>-->
-            <p></p>
+            <p style="margin-top: 30px"></p>
             <span style="font-weight: bold" data-i18n="_loginPassword_"></span><br>
-            <input class="year" name="password" type="password" ng-model="userpass" size="4" maxlength="4">
+            <input style="margin-left: 68px;" class="year" name="password" type="password" ng-model="userpass" size="4" maxlength="4">
 
         </form>
 

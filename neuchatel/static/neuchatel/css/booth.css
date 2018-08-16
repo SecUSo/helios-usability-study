@@ -141,6 +141,19 @@ button.vote_button_active {
     margin-left: 70px;
 }
 
+.init_code_box {
+    margin: 2em auto 3em auto;
+    border: 3px solid #22505f;
+    padding: 0.3em;
+    border-radius: 5px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.init_code_box p {
+    margin: 0.5em 0;
+}
+
 .fin_code_box {
     margin: 2em auto 3em auto;
     border: 3px solid #22505f;
@@ -153,6 +166,17 @@ button.vote_button_active {
     margin: 0.5em 0;
 }
 
+.conf_code_box {
+    margin: 2em auto 3em auto;
+    border: 3px solid #22505f;
+    padding: 0.3em;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+.conf_code_box p {
+    margin: 0.5em 0;
+}
 
 .verification_institute {
     margin: 2em;
