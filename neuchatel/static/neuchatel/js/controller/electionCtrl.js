@@ -16,7 +16,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
             // ungueltige Stimme
             if (code === "00") {
-                $rootScope.return_code = "4L23";
+                $rootScope.return_code = "6605";
             } else {
                 $rootScope.return_code = $scope.options[code].option_return_code;
             }
@@ -35,7 +35,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
             // ungueltige Stimme
             if (code === "00") {
-                $rootScope.return_code_one = "GS19";
+                $rootScope.return_code_one = "5464";
             } else {
                 $rootScope.return_code_one = $scope.options_one[code].option_return_code;
             }
@@ -150,7 +150,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
         // Manipulate the chosen option to FDP when SPD is voted for.
         if (is_manipulated) {
 
-            var parties = ["CDU", "SPD", "GRÜNE", "DIE LINKE", "AFD", "FDP", "PIRATEN", "NPD", "FREIE WÄHLER",
+            var parties = ["CDU", "SPD", "GRÜNE", "DIE LINKE", "AfD", "FDP", "PIRATEN", "NPD", "FREIE WÄHLER",
                 "DIE PARTEI", "BüSo", "MLPD", "BGE", "DKP", "DM", "ÖDP", "TIERSCHUTZPARTEI", "V-Partei³"];
             var attack = parties[Math.floor(Math.random() * parties.length)];
             console.log(attack);
