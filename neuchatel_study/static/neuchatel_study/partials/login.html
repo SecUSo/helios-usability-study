@@ -1,0 +1,45 @@
+<div ng-include src="'/static/neuchatel/partials/welcome_header.html'"></div>
+
+<div class="content_box">
+    <span data-i18n="_loginMessageTwo_"></span><span style="font-weight: bold" data-i18n="_loginButton_"></span><span
+        data-i18n="_loginMessageThree_"></span>
+
+    <p></p>
+    <div style="text-align: center">
+
+        <form class="init_code_box" method="post">
+
+            <img style="float: left; padding: 10px;" src="/static/neuchatel/images/diamond_57.png">
+
+            <div style="margin-left: 70px;">
+            <span style="font-weight: bold" data-i18n="_loginUsername_"></span><br>
+            <input move-next-on-maxlength name="initCode0" type="text" ng-model="initCode0"
+                   class="confirmation_key" size="4"
+                   maxlength="4"> -
+            <input move-next-on-maxlength name="initCode1" type="text" ng-model="initCode1"
+                   class="confirmation_key" size="4"
+                   maxlength="4"> -
+            <input move-next-on-maxlength name="initCode2" type="text" ng-model="initCode2"
+                   class="confirmation_key" size="4"
+                   maxlength="4"> -
+            <input move-next-on-maxlength name="initCode3" type="text" ng-model="initCode3"
+                   class="confirmation_key" size="4"
+                   maxlength="4"> -
+            <input name="initCode4" type="text" ng-model="initCode4" class="confirmation_key" size="4"
+                   maxlength="4"></div>
+
+            <!--<input class="init_key" name="id" type="text" ng-model="userid"><br>-->
+            <p style="margin-top: 30px"></p>
+            <span style="font-weight: bold" data-i18n="_loginPassword_"></span><br>
+            <input style="margin-left: 68px;" class="year" name="password" type="password" ng-model="userpass" size="4" maxlength="4">
+
+        </form>
+
+    </div>
+
+    <div style="margin-top: 2em">
+        <button style="float: right;" data-i18n="_loginButton_" ng-click="loginButton()"></button>
+        <button style="float: left;" data-i18n="_introductionButton_" ng-click="backToIntroductionButton()"></button>
+    </div>
+
+</div>

@@ -49,6 +49,7 @@ def return_experiment(experiment_type, username):
     return {
         'BE': redirect('smartphone/' + username),
         'NE': redirect('neuchatel/' + username),
+        'NN': redirect('neuchatel_study/' + username),
     }.get(experiment_type, 1)
 
 

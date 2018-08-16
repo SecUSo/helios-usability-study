@@ -1,0 +1,65 @@
+<div ng-include src="'/static/neuchatel/partials/header.html'"></div>
+
+<div class="content_box">
+
+    <span style="font-weight: bold" class="ballot_question">{{ experimentData.question_data.question_one }}</span><br>
+    <br>
+    <span class="ballot_number" data-i18n="_yonCanSeletect_"></span>
+    <span class="ballot_number">{{ experimentData.question_data.answers }} </span>
+    <span class="ballot_number" data-i18n="_yonCanSeletectFollow2_"></span><br>
+    <br>
+    <span data-i18n="_encryptInstruction_"></span> <span style="font-weight: bold"
+                                                         data-i18n="_encryptInstruction2_"></span>.
+    <table style="display: inline-block; float: left" id="fixed_height" class="ballot">
+        <tr ng-repeat="(code, option) in options_one">
+
+            <td style="text-align: right" class="ballot">{{ code-0 }}</td>
+            <td class="ballot">{{ option.option }}</td>
+            <td class="ballot" style="max-width: 150px;"><span
+                    style="font-size: 8pt; font-weight: bold">{{ option.option_description }}</span></td>
+            <td class="ballot">
+                <button
+                        ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_code_one == code]"
+                        ng-click="saveFirstChoice(code, option.option)"></button>
+            </td>
+        </tr>
+        <tr>
+
+            <td class="ballot"></td>
+            <td class="ballot"> Ungültige Stimme</td>
+            <td class="ballot"></td>
+            <td class="ballot">
+                <button ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_code_one == '00']"
+                        ng-click="saveFirstChoice('00', 'Ungültige Stimme')"></button>
+            </td>
+        </tr>
+    </table>
+
+    <table style="display: inline-block; float: right" id="fixed_height" class="ballot">
+        <tr ng-repeat="(code, option) in options">
+
+            <td class="ballot">
+                <button
+                        ng-class="{true: 'vote_button_active', false: 'vote_button_blue_inactive'}[selected_code == code]"
+                        ng-click="saveChoice(code, option.option)"></button>
+            </td>
+            <td class="ballot" style="font-color: #00b8f1">{{ option.option }}</td>
+            <td class="ballot" style="max-width: 150px;"><span
+                    style="font-size: 8pt; font-weight: bold">{{ option.option_description }}</span></td>
+            <td style="text-align: right" class="ballot">{{ code-0 }}</td>
+        </tr>
+        <tr>
+            <td class="ballot">
+                <button ng-class="{true: 'vote_button_active', false: 'vote_button_blue_inactive'}[selected_code == '00']"
+                        ng-click="saveChoice('00', 'Ungültige Stimme')"></button>
+            </td>
+
+            <td class="ballot"> Ungültige Stimme</td>
+            <td class="ballot"></td>
+            <td class="ballot"></td>
+        </tr>
+    </table>
+
+    <button data-i18n="_proceedButton_" ng-click="proceedToPartyButton()"></button>
+
+</div>

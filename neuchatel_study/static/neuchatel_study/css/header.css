@@ -1,0 +1,38 @@
+#header {
+    background-color: white;
+    color: #393f46;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin: auto;
+    font-size: 10pt;
+}
+
+#header table td {
+    border: none;
+    padding: 0.3em;
+    width: 200px;
+}
+
+#header table td.active {
+    font-weight: bold;
+    background-color: white;
+    color: #22505f;
+}
+
+#header table td.inactive {
+    background-color: white;
+    color: #888;
+}
+
+#header table {
+    border-collapse: collapse;
+}
+
+.progress {
+    display: inline-block;
+}
+
+h2 {
+    text-align: left;
+    margin-left: 2em;
+}

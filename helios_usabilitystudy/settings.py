@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'helios_institutes',
     'helios_smartphone',
     'sslserver',
+    'neuchatel_study',
 ]
 
 MIDDLEWARE = [

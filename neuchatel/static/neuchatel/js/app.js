@@ -1,7 +1,7 @@
 'use strict';
 
 var neuchatelApp = angular.module(
-    "heliosStudyMain",
+    "neuchatel",
     [
         "ngAnimate",
         "ngRoute",
