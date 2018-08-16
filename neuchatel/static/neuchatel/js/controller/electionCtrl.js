@@ -14,7 +14,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
             $rootScope.selected_code = code;
             $rootScope.choice = choice;
 
-            // ungueltige Stimme
+            // Keine Angabe
             if (code === "00") {
                 $rootScope.return_code = "6605";
             } else {
@@ -33,7 +33,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
             $rootScope.selected_code_one = code;
             $rootScope.choice_one = choice;
 
-            // ungueltige Stimme
+            // Keine Angabe
             if (code === "00") {
                 $rootScope.return_code_one = "5464";
             } else {
@@ -193,7 +193,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     $scope.proceedButton = function () {
         // if no choice is made vote "invalid"
         if ($rootScope.selected_code == null) {
-            $scope.saveChoice('00', 'Ungültige Stimme');
+            $scope.saveChoice('00', 'Keine Angabe');
         }
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): Second vote end");
         $location.path('review-plain/' + $routeParams['id']);
@@ -203,7 +203,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
     $scope.proceedToPartyButton = function () {
         // if no choice is made vote "invalid"
         if ($rootScope.selected_code_one == null) {
-            $scope.saveFirstChoice('00', 'Ungültige Stimme');
+            $scope.saveFirstChoice('00', 'Keine Angabe');
         }
 
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(2): First vote end");
