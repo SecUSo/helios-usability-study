@@ -265,10 +265,10 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
         $location.path('confirm/' + $routeParams['id']);
     };
 
-    //From confirmation code input to finalization code verification
+//From confirmation code input to finalization code verification
     $scope.confirmVoteButton = function () {
         if ($scope.confcode0 === '6122' && $scope.confcode1 === '0910' && $scope.confcode2 === '5987') {
-            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (6): Confirmation-Code entered valid. Finished");
+            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
             $location.path('final/' + $routeParams['id']);
         } else {
             alert("Sie haben Ihren Bestätigungscode falsch eingegeben. Bitte versuchen Sie es erneut.");

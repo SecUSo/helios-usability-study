@@ -11,4 +11,5 @@ neuchatelStudyApp.controller("answerCtrl", function ($scope, $rootScope, $routeP
             $scope.sus_five, $scope.sus_six, $scope.sus_seven, $scope.sus_eight, $scope.sus_nine, $scope.sus_ten);
         alert("Vielen Dank für Ihre Teilnahme. Bitte holen Sie jetzt die Versuchsleitung.");
     }
+
 });

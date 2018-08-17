@@ -10,6 +10,48 @@
     text-align: left;
 }
 
-td {
+td .sus{
     padding: 1em;
 }
+
+td .item_clicked {
+    background-color: dimgrey;
+}
+
+.text-left {
+			text-align: left;
+		}
+
+		.text-center {
+			text-align: center;
+			font-weight: bold;
+			color: #ccc;
+		}
+
+		.text-right {
+			text-align: right;
+		}
+
+		.scale {
+			width:  100%;
+			margin-bottom: 5px;
+			border: 2px solid #333;
+			background-color: #fff;
+			border-collapse: collapse;
+		}
+
+		.scale td {
+			height: 18px;
+		}
+
+		.scale .tick{
+			border-right: 2px solid #333;
+		}
+
+		.highlighted {
+			background-color: #ccc;
+		}
+
+		.selected {
+			background-color: #f00;
+		}
