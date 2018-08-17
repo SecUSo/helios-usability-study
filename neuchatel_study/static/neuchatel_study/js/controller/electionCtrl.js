@@ -175,8 +175,8 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
 
     //From login to election
     $scope.loginButton = function () {
-        //if($scope.initCode0 == 'iu6v' && $scope.initCode1 == 'icf3' && $scope.initCode2 == 'zcxf'
-        //  && $scope.initCode3 == 'w2s8' && $scope.initCode4 == 'gsef' && $scope.userpass == '1987')
+        //if($scope.initCode0 == 'qb6p' && $scope.initCode1 == '6h9w' && $scope.initCode2 == 'ks9m'
+        //  && $scope.initCode3 == '2xbs' && $scope.initCode4 == '62tx' && $scope.userpass == '1987')
         if ($scope.initCode0 == '0000' && $scope.initCode1 == '0000' && $scope.initCode2 == '0000'
             && $scope.initCode3 == '0000' && $scope.initCode4 == '0000' && $scope.userpass == '1987') {
             //if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
@@ -267,8 +267,7 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
 
     //From confirmation code input to finalization code verification
     $scope.confirmVoteButton = function () {
-        if ($scope.confcode0 === 'xArc' && $scope.confcode1 === 'uTvK' && $scope.confcode2 === 'MyfY'
-            && $scope.confcode3 === 'mvPN' && $scope.confcode4 === 'na') {
+        if ($scope.confcode0 === '6122' && $scope.confcode1 === '0910' && $scope.confcode2 === '5987') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (6): Confirmation-Code entered valid. Finished");
             $location.path('final/' + $routeParams['id']);
         } else {

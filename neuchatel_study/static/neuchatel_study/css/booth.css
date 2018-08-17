@@ -70,7 +70,7 @@ hr {
     padding: 0;
 }
 
-.booth_heading{
+.booth_heading {
     font-size: 1.2em;
     margin-top: 2em;
 }
@@ -90,7 +90,7 @@ table.ballot {
 }
 
 table.blue td.blue {
-    border: 1px solid  #00b8f1;
+    border: 1px solid #00b8f1;
     padding: 0.3em;
 }
 
@@ -99,6 +99,15 @@ table.blue {
     margin: 1em auto;
 }
 
+table.green td.green {
+    border: 1px solid #2a9932;
+    padding: 0.3em;
+}
+
+table.green {
+    border-collapse: collapse;
+    margin: 1em auto;
+}
 
 button.vote_button_inactive {
     background: url("../images/button_inactive.png") no-repeat;
@@ -109,6 +118,13 @@ button.vote_button_inactive {
 
 button.vote_button_inactive_blue {
     background: url("../images/button_inactive_blue.png") no-repeat;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+button.vote_button_inactive_green {
+    background: url("../images/button_inactive_green.png") no-repeat;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -203,49 +219,48 @@ button.vote_button_active {
 .confirmation_key {
     border: none;
     padding: 0;
-  width: 6ch;
-  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
-  font: 2ch droid sans mono, consolas, monospace;
-  letter-spacing: 0.5ch;
+    width: 6ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
+    font: 2ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
 }
 
 .confirmation_key:focus {
-  outline: none;
-  color: #22505f;
+    outline: none;
+    color: #22505f;
 }
 
-
 .init_key {
-  display: block;
-  border: none;
-  padding: 0;
-  width: 37.5ch;
-  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/37ch 2px no-repeat;
-  font: 2ch droid sans mono, consolas, monospace;
-  letter-spacing: 0.5ch;
+    display: block;
+    border: none;
+    padding: 0;
+    width: 37.5ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/37ch 2px no-repeat;
+    font: 2ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
 }
 
 .init_key:focus {
-  outline: none;
-  color: #22505f;
+    outline: none;
+    color: #22505f;
 }
 
 .year {
-  display: block;
-  border: none;
-  padding: 0;
-  width: 6ch;
-  background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
-  font: 2ch droid sans mono, consolas, monospace;
-  letter-spacing: 0.5ch;
+    display: block;
+    border: none;
+    padding: 0;
+    width: 6ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/5.5ch 2px no-repeat;
+    font: 2ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
 }
 
 .year:focus {
-  outline: none;
-  color: #22505f;
+    outline: none;
+    color: #22505f;
 }
 
-img .header_row{
+img .header_row {
     background-color: #57585C; /* Same as the parents Background */
     width: auto;
     display: inline-block;

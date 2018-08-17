@@ -1,6 +1,6 @@
 <div ng-include src="'/static/neuchatel_study/partials/header.html'"></div>
 
-<div class="content_box">
+<div class="content_box" style="color: #2a9932">
 
     <span style="font-size: 14pt; font-weight: bold;">Erststimme</span><br><br>
     <span style="font-weight: bold" class="ballot_question">{{ experimentData.question_data.question_one }}</span><br>
@@ -11,28 +11,28 @@
     <br>
     <span data-i18n="_encryptInstruction_"></span> <span style="font-weight: bold"
                                                          data-i18n="_encryptInstruction2_"></span>.
-    <table id="fixed_height" class="ballot">
+    <table id="fixed_height" class="green">
         <tr ng-repeat="(code, option) in options_one">
 
-            <td class="ballot">
+            <td class="green">
                 <button
-                        ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_code_one == code]"
+                        ng-class="{true: 'vote_button_active', false: 'vote_button_inactive_green'}[selected_code_one == code]"
                         ng-click="saveFirstChoice(code, option.option)"></button>
             </td>
-            <td class="ballot">{{ option.option }}</td>
-            <td class="ballot" style="max-width: 250px;"><span
+            <td class="green">{{ option.option }}</td>
+            <td class="green" style="max-width: 250px;"><span
                     style="font-size: 8pt; font-weight: bold">{{ option.option_description }}</span></td>
-            <td style="text-align: right" class="ballot">{{ code-0 }}</td>
+            <td style="text-align: right" class="green">{{ code-0 }}</td>
         </tr>
         <tr>
-            <td class="ballot">
-                <button ng-class="{true: 'vote_button_active', false: 'vote_button_inactive'}[selected_code_one == '00']"
+            <td class="green">
+                <button ng-class="{true: 'vote_button_active', false: 'vote_button_inactive_green'}[selected_code_one == '00']"
                         ng-click="saveFirstChoice('00', 'Keine Angabe')"></button>
             </td>
 
-            <td class="ballot"> Keine Angabe</td>
-            <td class="ballot"></td>
-            <td class="ballot"></td>
+            <td class="green"> Keine Angabe</td>
+            <td class="green"></td>
+            <td class="green"></td>
         </tr>
     </table>
 
