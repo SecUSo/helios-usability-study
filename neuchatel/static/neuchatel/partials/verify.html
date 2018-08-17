@@ -9,43 +9,49 @@
 
         <div style="margin-left: 120px;">
             <span style="font-size: 14pt; font-weight: bold;" data-i18n="_returnCodeHeading_"></span>
-                <p style="font-weight: bold; font-size: 12pt">Erststimme: {{ return_code_one }}</p>
-                <p style="font-weight: bold; font-size: 12pt">Zweitstimme: {{ return_code }}</p></div>
+            <p style="font-weight: bold; font-size: 12pt">Erststimme: {{ return_code_one }}</p>
+            <p style="font-weight: bold; font-size: 12pt">Zweitstimme: {{ return_code }}</p></div>
     </div>
 
-      <div style="line-height: 2em;">
+    <div style="line-height: 2em;">
         <p><span style="margin-top: 0; font-weight: bold"
                  data-i18n="_returnCodeExplanation_"></span>
             <span data-i18n="_returnCodeExplanation0_"></span></p>
 
-    <!--{{ choice }} - {{ selected_code }} - {{ return_code }}-->
+        <!--{{ choice }} - {{ selected_code }} - {{ return_code }}-->
 
-      <span style="margin-top: 0; " data-i18n="_confirmationMessage_"></span>
-    <span data-i18n="_confirmationMessage1_"></span>
+        <span style="margin-top: 0; " data-i18n="_confirmationMessage_"></span>
+        <span data-i18n="_confirmationMessage1_"></span>
 
         <span data-i18n="_returnCodeExplanation1_"></span>
         <span style="margin-top: 0; font-weight: bold"
               data-i18n="_verificationErrorButton_"></span>
 
-      <div style="text-align: center">
-        <p>
-            <form class="conf_code_box" method="post">
+        <div style="text-align: center">
+            <p>
+                <form class="conf_code_box" method="post">
 
-                <img style="float: left; margin-top: 10px; margin-left: 10px;" src="/static/neuchatel/images/pentagon_57.png">
-                <span style="font-size: 14pt; font-weight: bold; margin-left: -50px;" data-i18n="_confirmationCode_"></span>
-         <p></p>
+                    <img style="float: left; margin-top: 10px; margin-left: 10px;"
+                         src="/static/neuchatel/images/pentagon_57.png">
+                    <span style="font-size: 14pt; font-weight: bold; margin-left: -50px;"
+                          data-i18n="_confirmationCode_"></span>
+            <p></p>
 
-        <input move-next-on-maxlength name="confirmation_code0" type="text" ng-model="confcode0" class="confirmation_key" size="4"
-               maxlength="4"> -
-        <input move-next-on-maxlength name="confirmation_code1" type="text" ng-model="confcode1" class="confirmation_key" size="4"
-               maxlength="4"> -
-        <input move-next-on-maxlength name="confirmation_code2" type="text" ng-model="confcode2" class="confirmation_key" size="4"
-               maxlength="4">
-    </div>
+            <input move-next-on-maxlength name="confirmation_code0" type="text" ng-model="confcode0"
+                   class="confirmation_key" size="4"
+                   maxlength="4"> -
+            <input move-next-on-maxlength name="confirmation_code1" type="text" ng-model="confcode1"
+                   class="confirmation_key" size="4"
+                   maxlength="4"> -
+            <input move-next-on-maxlength name="confirmation_code2" type="text" ng-model="confcode2"
+                   class="confirmation_key" size="4"
+                   maxlength="4">
+        </div>
 
-    <div style="text-align: center">
-        <button style="float: left;" data-i18n="_verificationErrorButton_"
-                ng-click="gotoErrorButton('verify')"></button>
-        <button style="float: right;" data-i18n="_confirmReturnButton_" ng-click="confirmVoteButton()"></button>
+        <div style="text-align: center">
+            <button style="float: left;" data-i18n="_verificationErrorButton_"
+                    ng-click="gotoErrorButton('verify')"></button>
+            <button style="float: right;" data-i18n="_confirmReturnButton_" ng-click="confirmVoteButton()"></button>
+        </div>
     </div>
 </div>
