@@ -14,9 +14,9 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
             $rootScope.selected_code = code;
             $rootScope.choice = choice;
 
-            // ungueltige Stimme
+            // Keine Angabe
             if (code === "00") {
-                $rootScope.return_code = "4B54423";
+                $rootScope.return_code = "6605";
             } else {
                 $rootScope.return_code = $scope.options[code].option_return_code;
             }
@@ -33,9 +33,9 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
             $rootScope.selected_code_one = code;
             $rootScope.choice_one = choice;
 
-            // ungueltige Stimme
+            // Keine Angabe
             if (code === "00") {
-                $rootScope.return_code_one = "53495435";
+                $rootScope.return_code_one = "5464";
             } else {
                 $rootScope.return_code_one = $scope.options_one[code].option_return_code;
             }
@@ -67,7 +67,8 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
         case "election":
             $scope.show_progress = true;
             $scope.current_step = 2;
-            break;        case "election":
+            break;
+        case "election":
             $scope.show_progress = true;
             $scope.current_step = 2;
             break;
@@ -100,7 +101,6 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
             $scope.current_step = 0;
     }
 
-
     $rootScope.subject = $routeParams['id'];
     console.log("Subject:" + $rootScope.subject);
 
@@ -129,7 +129,7 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
     }
 
     // "encrypt" the vote
-    function encryptContd(is_manipulated) {
+    /*function encryptContd(is_manipulated) {
         // Manipulate the chosen option to FDP when SPD is voted for.
         if (is_manipulated && $rootScope.choice === "SPD") {
             for (var option in $scope.options) {
@@ -142,6 +142,30 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
                 }
             }
         }
+    }*/
+
+    // "encrypt" the vote
+    function encryptContd(is_manipulated) {
+        // Manipulate the chosen option to FDP when SPD is voted for.
+        if (is_manipulated) {
+
+            var parties = ["CDU", "SPD", "GRÜNE", "DIE LINKE", "AfD", "FDP", "PIRATEN", "NPD", "FREIE WÄHLER",
+                "DIE PARTEI", "BüSo", "MLPD", "BGE", "DKP", "DM", "ÖDP", "TIERSCHUTZPARTEI", "V-Partei³"];
+            var attack = parties[Math.floor(Math.random() * parties.length)];
+            console.log(attack);
+
+            for (var option in $scope.options) {
+                if ($scope.options[option].option === attack) {
+                    $rootScope.selected_code = option;
+                    console.log($rootScope.selected_code);
+                    $rootScope.choice = $scope.options[option].option;
+                    $rootScope.return_code = $scope.options[option].option_return_code;
+                    console.log('Choice modified to ' + $scope.options[$rootScope.selected_code].option);
+                    break;
+                }
+            }
+
+        }
     }
 
     //From login back to introduction
@@ -151,12 +175,11 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
 
     //From login to election
     $scope.loginButton = function () {
-        //if($scope.initCode0 == '2rgi' && $scope.initCode1 == 'ptwg' && $scope.initCode2 == '6zpn'
-          //  && $scope.initCode3 == 'j48h' && $scope.initCode4 == '65de' && $scope.userpass == '1987')
-        if($scope.initCode0 == '0000' && $scope.initCode1 == '0000' && $scope.initCode2 == '0000'
-            && $scope.initCode3 == '0000' && $scope.initCode4 == '0000' && $scope.userpass == '1987')
-        {
-        //if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
+        //if($scope.initCode0 == 'iu6v' && $scope.initCode1 == 'icf3' && $scope.initCode2 == 'zcxf'
+        //  && $scope.initCode3 == 'w2s8' && $scope.initCode4 == 'gsef' && $scope.userpass == '1987')
+        if ($scope.initCode0 == '0000' && $scope.initCode1 == '0000' && $scope.initCode2 == '0000'
+            && $scope.initCode3 == '0000' && $scope.initCode4 == '0000' && $scope.userpass == '1987') {
+            //if($scope.userid == '2rgiptwg6zpnj48h65de' && $scope.userpass == '1987') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (1): Election start");
             $location.path('candidate/' + $routeParams['id']);
         } else {
@@ -168,7 +191,7 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
     $scope.proceedButton = function () {
         // if no choice is made vote "invalid"
         if ($rootScope.selected_code == null) {
-            $scope.saveChoice('00', 'Ungültige Stimme');
+            $scope.saveChoice('00', 'Keine Angabe');
         }
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (2): Second vote end");
         $location.path('review-plain/' + $routeParams['id']);
@@ -178,7 +201,7 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
     $scope.proceedToPartyButton = function () {
         // if no choice is made vote "invalid"
         if ($rootScope.selected_code_one == null) {
-            $scope.saveFirstChoice('00', 'Ungültige Stimme');
+            $scope.saveFirstChoice('00', 'Keine Angabe');
         }
 
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (2): First vote end");
@@ -200,13 +223,13 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
         Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (3): Plain review end");
         //$location.path('review/' + $routeParams['id']);
         $location.path('verify/' + $routeParams['id']);
-        setTimeout(function () {
-            encrypt();
-        }, 500);
+        //setTimeout(function () {
+        encrypt();
+        //}, 500);
     };
 
     //
-    $scope.finishButton = function() {
+    $scope.finishButton = function () {
         $location.path('sus/' + $routeParams['id']);
     };
 
@@ -244,10 +267,10 @@ neuchatelStudyApp.controller("electionCtrl", function ($scope, $routeParams, $lo
 
     //From confirmation code input to finalization code verification
     $scope.confirmVoteButton = function () {
-        if($scope.confcode0 === 'xArc' && $scope.confcode1 === 'uTvK' && $scope.confcode2 === 'MyfY'
+        if ($scope.confcode0 === 'xArc' && $scope.confcode1 === 'uTvK' && $scope.confcode2 === 'MyfY'
             && $scope.confcode3 === 'mvPN' && $scope.confcode4 === 'na') {
-             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (6): Confirmation-Code entered valid. Finished");
-             $location.path('final/' + $routeParams['id']);
+            Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel Study (6): Confirmation-Code entered valid. Finished");
+            $location.path('final/' + $routeParams['id']);
         } else {
             alert("Sie haben Ihren Bestätigungscode falsch eingegeben. Bitte versuchen Sie es erneut.");
         }
