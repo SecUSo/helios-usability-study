@@ -269,8 +269,7 @@ neuchatelApp.controller("electionCtrl", function ($scope, $routeParams, $locatio
 
 //From confirmation code input to finalization code verification
     $scope.confirmVoteButton = function () {
-        if ($scope.confcode0 === 'xArc' && $scope.confcode1 === 'uTvK' && $scope.confcode2 === 'MyfY'
-            && $scope.confcode3 === 'mvPN' && $scope.confcode4 === 'na') {
+        if ($scope.confcode0 === '5173' && $scope.confcode1 === '7147' && $scope.confcode2 === '0359') {
             Backend.save_timestamp($rootScope.subject, new Date().getTime(), "Neuchatel(6): Confirmation-Code entered valid. Finished");
             $location.path('final/' + $routeParams['id']);
         } else {
